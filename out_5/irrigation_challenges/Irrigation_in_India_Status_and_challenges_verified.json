@@ -1,0 +1,1253 @@
+{
+  "schema_version": "2.0",
+  "paper_title": "Irrigation in India: Status and challenges",
+  "paper_identity": {
+    "paper_id": 26,
+    "paper_title": "Irrigation in India: Status and challenges"
+  },
+  "paper_summary": "This viewpoint article reviews irrigation development in India, emphasizing the shift from canal toward tubewell-based irrigation, gaps between irrigation potential created and utilized, and environmental externalities including groundwater decline, salinization, waterlogging, erosion, sediment and chemical pollution, and nitrate contamination. It synthesizes secondary evidence on irrigation access heterogeneity across states and links irrigation to livelihood outcomes while arguing that technical and institutional measures remain insufficient relative to rising water stress.",
+  "study_region": "India (national and multi-state statistics; secondary survey evidence cited for farm-plot irrigation status)",
+  "study_period": "Long-run irrigation source mix (1951 versus 2012-13 cited); farm-plot irrigation status table from Songqing et al. (2012); policy and budget references through 2017-18",
+  "methodology": "Viewpoint / narrative case-study synthesis with literature citations, secondary tabulated survey statistics (state-wise plot irrigation status), and qualitative environmental-impact review (no district/block-scale primary modeling in this paper).",
+  "paper_type": "review",
+  "paper_type_rationale": "The manuscript is explicitly framed as a status-and-challenges viewpoint that synthesizes prior studies, national programme descriptions, and secondary statistics rather than presenting new identified causal estimates at fine spatial resolution.",
+  "cluster_families_covered": [
+    "irrigation_challenges",
+    "groundwater_stress",
+    "mixed"
+  ],
+  "mechanism_domains_covered": [
+    "irrigation_source_mix_shift",
+    "groundwater_overdraft",
+    "irrigation_induced_salinity",
+    "canal_conveyance_seepage",
+    "waterlogging_productivity",
+    "nutrient_leaching_groundwater_quality",
+    "on_farm_water_management",
+    "irrigation_access_productivity",
+    "rainfed_exposure_context"
+  ],
+  "mapped_variables": [
+    {
+      "taxonomy_name": "irrigation_demand",
+      "canonical_variable_name": "irrigation_demand",
+      "alias_used_in_paper": "over exploitation of groundwater and intensive irrigation",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "intensive irrigation; heavy use of irrigation water; over exploitation of groundwater",
+      "description": "Irrigation water withdrawal / intensive irrigation pressure implicated in groundwater decline, waterlogging where poorly managed, and off-site pollution pathways.",
+      "unit": "dimensionless_intensity_proxy",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Author synthesis of national irrigation-environment literature",
+      "indian_data_source": "CGWB GEC irrigation draft estimates / state irrigation department reports (typical public sources for this construct; not empirically estimated in this paper)",
+      "threshold_or_range": null,
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "groundwater_overdraft",
+        "waterlogging_productivity"
+      ],
+      "paper_context_id": "dogra2022_ijas_irrigation_india::irrigation_demand::national_synthesis",
+      "source_paper": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "excerpt": "Agriculture is the largest consumer sector of water ... over exploitation of groundwater and intensive irrigation in canal commands areas has created many serious problems like salinization, depletion of water tables, groundwater contamination, drying of aquifers, water logging and etc."
+    },
+    {
+      "taxonomy_name": "g_annual_trend",
+      "canonical_variable_name": "g_annual_trend",
+      "alias_used_in_paper": "water table is reducing",
+      "definition_source": "merged",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "water table reducing; constantly depleting of the ground-water table",
+      "description": "Observed or asserted rate of groundwater table decline used as a headline indicator of unsustainable groundwater-supported irrigation expansion.",
+      "unit": "m/year",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "National narrative observation in abstract/introduction",
+      "indian_data_source": "CGWB groundwater monitoring network (typical operationalization for Indian districts/blocks)",
+      "threshold_or_range": "1-2 m/year (national-scale narrative observation)",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_overdraft",
+        "irrigation_source_mix_shift"
+      ],
+      "paper_context_id": "dogra2022_ijas_irrigation_india::g_annual_trend::national_observation",
+      "source_paper": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "excerpt": "It has been observed that in many parts of the country the water table is reducing with the rate of 1-2 m/year."
+    },
+    {
+      "taxonomy_name": "salinity_level",
+      "canonical_variable_name": "salinity_level",
+      "alias_used_in_paper": "salinity; saline soils; saline water",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "salinization; saline soils; saline water; marginal or poor quality pumped groundwater",
+      "description": "Soil salinity / osmotic stress from salt accumulation linked to irrigation water quality and leaching deficits.",
+      "unit": "dS/m_or_index",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "soil",
+      "data_source_in_paper": "Review synthesis citing salinity management and author crop experiments (Dogra et al., 2014; 2017 referenced)",
+      "indian_data_source": "ICAR soil salinity maps / soil testing labs (typical)",
+      "threshold_or_range": null,
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_induced_salinity"
+      ],
+      "paper_context_id": "dogra2022_ijas_irrigation_india::salinity_level::soil",
+      "source_paper": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "excerpt": "Saline soils contain sufficient soluble salts to adversely affect the growth of the plants. The application of saline water adversely affected grain and straw yield and nutrient content in both grain and straw of wheat (Dogra et al., 2014)..."
+    },
+    {
+      "taxonomy_name": "salinity_level",
+      "canonical_variable_name": "salinity_level",
+      "alias_used_in_paper": "marginal or poor quality pumped groundwater",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "pumped groundwater and its marginal or poor quality",
+      "description": "Groundwater salinity / poor-quality groundwater used for irrigation contributing to root-zone salt loading when leaching is insufficient.",
+      "unit": "dS/m_or_RSC_proxy",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "groundwater",
+      "data_source_in_paper": "Literature review (Kijne et al., 1982) plus author-referenced irrigation-water quality studies",
+      "indian_data_source": "CGWB groundwater quality monitoring (typical)",
+      "threshold_or_range": null,
+      "indicator_direction": "high_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "irrigation_induced_salinity"
+      ],
+      "paper_context_id": "dogra2022_ijas_irrigation_india::salinity_level::groundwater",
+      "source_paper": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "excerpt": "The salinity can also be encouraged by the use of pumped groundwater and its marginal or poor quality has been recognized (Kijne et al., 1982)."
+    },
+    {
+      "taxonomy_name": "crop_yield_trend",
+      "canonical_variable_name": "crop_yield_trend",
+      "alias_used_in_paper": "grain and straw yield",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "productivity; grain and straw yield; productivity fallen",
+      "description": "Crop productivity outcomes discussed for salinity stress, waterlogging, and comparative irrigated versus non-irrigated contexts in cited empirical work.",
+      "unit": "kg/ha_or_relative_change",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Cited crop trials (Dogra et al.) and global/national review statistics on waterlogged cropland productivity losses (Mishra, 2008 as cited)",
+      "indian_data_source": "DES / MoA crop statistics (typical for yield monitoring)",
+      "threshold_or_range": "About 20% productivity decline cited for waterlogged cropland contexts (global statistic as cited in paper)",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_induced_salinity",
+        "waterlogging_productivity",
+        "irrigation_access_productivity"
+      ],
+      "paper_context_id": "dogra2022_ijas_irrigation_india::crop_yield_trend::multiple_pathways",
+      "source_paper": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "excerpt": "Worldwide, about 10% of all irrigated land suffers from water logging that resulted in productivity fallen about 20% in these area of cropland (Mishra, 2008)."
+    },
+    {
+      "taxonomy_name": "irrigated_area_fraction",
+      "canonical_variable_name": "irrigated_area_fraction",
+      "alias_used_in_paper": "irrigated plots; rainfed plots; share of irrigation",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "percentage of fields by irrigation status (public/private/both/rainfed)",
+      "description": "Farm-plot irrigation access shares reported at state level (Songqing et al., 2012 as reproduced in Table 1), interpreted as a coarse proxy for irrigated versus rainfed exposure.",
+      "unit": "%",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Songqing et al. (2012) reproduced as Table 1 (total observations n=9994)",
+      "indian_data_source": "same",
+      "threshold_or_range": "National totals (Table 1): public irrigation 27.42%; private irrigation 18.23%; both 3.78%; rainfed 50.57% (implies ~49.43% plots with some irrigation access)",
+      "indicator_direction": "categorical",
+      "relevance": "contextual",
+      "cluster_family": "mixed",
+      "mechanism_domains": [
+        "irrigation_access_productivity",
+        "rainfed_exposure_context"
+      ],
+      "paper_context_id": "dogra2022_ijas_irrigation_india::irrigated_area_fraction::songqing2012_table1",
+      "source_paper": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "excerpt": "Songqing et al., 2012 reported that only about half of the agricultural plots in the sample are irrigated - 27% by public irrigation ... 18% by private irrigation schemes ... and about 4% by both public and private irrigation. The remaining halves of the plots are rainfed (Table 2)."
+    },
+    {
+      "taxonomy_name": "NEW_canal_seepage_loss",
+      "canonical_variable_name": "NEW_canal_seepage_loss",
+      "alias_used_in_paper": "excessive seepage losses from canals",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "seepage losses from canals; poor construction as well as maintenance of irrigation canals",
+      "description": "Canal conveyance seepage emphasized as a pathway raising shallow water tables and contributing to irrigation-induced drainage problems.",
+      "unit": "dimensionless_or_fraction_loss",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Review narrative (Burns, 2018 pathway discussion as cited)",
+      "indian_data_source": "State irrigation department canal loss audits (typical)",
+      "threshold_or_range": null,
+      "indicator_direction": "high_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "canal_conveyance_seepage",
+        "waterlogging_productivity"
+      ],
+      "paper_context_id": "dogra2022_ijas_irrigation_india::NEW_canal_seepage_loss::review",
+      "source_paper": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "excerpt": "Some more problems that led of irrigation-induced salinity includes ... poor construction as well as maintenance of irrigation canals that resulted in excessive seepage losses from canals and inadequate or lack of drainage infrastructure..."
+    },
+    {
+      "taxonomy_name": "NEW_waterlogging_area",
+      "canonical_variable_name": "NEW_waterlogging_area",
+      "alias_used_in_paper": "water logging",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "waterlogging; water logged",
+      "description": "Extent of irrigated land affected by shallow water tables / waterlogging linked to poor irrigation water management and seepage.",
+      "unit": "%_of_irrigated_land_cited_global_statistic",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Mishra (2008) as cited for global irrigated-area share affected",
+      "indian_data_source": "Remote sensing / state land reclamation agencies (typical; not mapped in this paper)",
+      "threshold_or_range": "~10% of irrigated land (cited global statistic in paper)",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "waterlogging_productivity"
+      ],
+      "paper_context_id": "dogra2022_ijas_irrigation_india::NEW_waterlogging_area::mishra2008_cite",
+      "source_paper": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "excerpt": "Worldwide, about 10% of all irrigated land suffers from water logging that resulted in productivity fallen about 20% in these area of cropland (Mishra, 2008)."
+    },
+    {
+      "taxonomy_name": "NEW_water_use_efficiency",
+      "canonical_variable_name": "NEW_water_use_efficiency",
+      "alias_used_in_paper": "on-farm water use efficiency",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "poor on-farm water use efficiency",
+      "description": "On-farm irrigation efficiency identified as a contributor to salt accumulation and irrigation-induced salinity problems.",
+      "unit": "index",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Author review list of salinity drivers",
+      "indian_data_source": "MoA PMKSY / Per Drop More Crop monitoring (typical programme context)",
+      "threshold_or_range": null,
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "on_farm_water_management",
+        "irrigation_induced_salinity"
+      ],
+      "paper_context_id": "dogra2022_ijas_irrigation_india::NEW_water_use_efficiency::salinity_driver_list",
+      "source_paper": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "excerpt": "Some more problems that led of irrigation-induced salinity includes poor on-farm water use efficiency, poor construction as well as maintenance of irrigation canals..."
+    },
+    {
+      "taxonomy_name": "NEW_fertilizer_use_intensity",
+      "canonical_variable_name": "NEW_fertilizer_use_intensity",
+      "alias_used_in_paper": "overuse of urea and other fertilizers",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "overuse of urea ... increased by 400% in the last 30 years",
+      "description": "Fertilizer over-intensification under irrigated intensification implicated in higher nitrate leaching risk to groundwater.",
+      "unit": "relative_change",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "National Fertilizer Recommendation Guide 2005 / IFDC (2013) as cited via Alam et al. (2011)",
+      "indian_data_source": "Fertilizer statistics / soil-test-based recommendations (typical)",
+      "threshold_or_range": "400% increase over 30 years (cited aggregate claim)",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "nutrient_leaching_groundwater_quality"
+      ],
+      "paper_context_id": "dogra2022_ijas_irrigation_india::NEW_fertilizer_use_intensity::alam2011_cite",
+      "source_paper": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "excerpt": "According to the report of National Fertilizer Recommendation Guide 2005, on an average, the overuse of urea (IFDC, 2013) and other fertilizers by the farmer has been increased by 400% in the last 30 years (Alam et al., 2011)."
+    },
+    {
+      "taxonomy_name": "NEW_nitrate_groundwater_concentration",
+      "canonical_variable_name": "NEW_nitrate_groundwater_concentration",
+      "alias_used_in_paper": "nitrate levels in the groundwater",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "high level of nitrate; 50 mg/l; several hundred mg/l",
+      "description": "Groundwater nitrate concentrations discussed as intensified under irrigated farming and leaching-prone soils/cropping patterns.",
+      "unit": "mg/L",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "groundwater",
+      "data_source_in_paper": "FAO (1996) survey summary as cited; WHO discussion cited via Fewtrell (2004)",
+      "indian_data_source": "CGWB / state groundwater quality monitoring (typical)",
+      "threshold_or_range": "About 20 to 50% of wells contain high nitrate up to 50 mg/l; cases up to several hundred mg/l cited",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "nutrient_leaching_groundwater_quality"
+      ],
+      "paper_context_id": "dogra2022_ijas_irrigation_india::NEW_nitrate_groundwater_concentration::fao1996_cite",
+      "source_paper": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "excerpt": "Reports of various surveys in India and Africa submitted that about 20 to 50% of wells contain high level of nitrate as much as 50 mg/l and in some cases it reported several hundred mg/l (FAO, 1996)."
+    },
+    {
+      "taxonomy_name": "NEW_soil_erosion",
+      "canonical_variable_name": "NEW_soil_erosion",
+      "alias_used_in_paper": "soil erosion",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "soil erosion; furrow irrigation causes more erosion than sprinklers or drip",
+      "description": "Soil erosion mobilization linked to irrigation method, runoff, and sediment-associated chemical pollution pathways.",
+      "unit": "dimensionless_relative_ranking_by_method",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "soil",
+      "data_source_in_paper": "Review synthesis (Ongley, 1996; irrigation runoff discussion)",
+      "indian_data_source": "ICAR / watershed soil-loss monitoring (typical)",
+      "threshold_or_range": null,
+      "indicator_direction": "high_means_stressed",
+      "relevance": "contextual",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "on_farm_water_management"
+      ],
+      "paper_context_id": "dogra2022_ijas_irrigation_india::NEW_soil_erosion::irrigation_method_comparison",
+      "source_paper": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "excerpt": "Soil erosion decreases the productivity of the land; furrow irrigation causes more erosion than sprinklers or drip irrigation."
+    }
+  ],
+  "new_variables": [],
+  "mechanism_blocks": [
+    {
+      "name": "intensive_irrigation_groundwater_overdraft",
+      "description": "National narrative that intensive irrigation and groundwater over-exploitation drive rapid water-table decline, with tubewell expansion outpacing canal performance and utilization gaps.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "mechanism": "Higher irrigation withdrawals and intensive groundwater irrigation increase net extraction, lowering water tables when recharge does not keep pace.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Narrative national synthesis; spatial heterogeneity emphasized elsewhere in the paper",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var_value_range": "1-2 m/year decline in water table (quoted national observation)",
+          "to_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_overdraft"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "It has been observed that in many parts of the country the water table is reducing with the rate of 1-2 m/year."
+        }
+      ],
+      "edge_ids": [
+        "e1"
+      ],
+      "context_variables": [
+        "irrigated_area_fraction"
+      ]
+    },
+    {
+      "name": "depletion_saline_aquifer_transition",
+      "description": "Groundwater table depletion linked to secondary salinization of aquifers and land subsidence in the cited environmental review chain.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "g_annual_trend",
+          "from_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var": "salinity_level",
+          "to_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "mechanism": "Progressive groundwater depletion alters hydrogeochemical conditions such that aquifers can become saline and land subsidence is asserted as a linked risk in the review narrative.",
+          "direction": "decrease_causes_increase",
+          "strength": "weak",
+          "conditions": "Review-level causal language; not quantified for Indian districts in this paper",
+          "from_var_value_range": "1-2 m/year decline (headline observation)",
+          "from_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_overdraft",
+            "irrigation_induced_salinity"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "groundwater",
+          "excerpt": "The constantly depleting of the ground-water table has started creating the land to subside resulted in aquifers to become saline..."
+        }
+      ],
+      "edge_ids": [
+        "e2"
+      ],
+      "context_variables": [
+        "irrigation_demand"
+      ]
+    },
+    {
+      "name": "poor_quality_irrigation_water_to_soil_salinity",
+      "description": "Saline or sodic irrigation water and insufficient leaching flux increase root-zone salinity and impair infiltration, culminating in yield penalties documented in cited crop studies.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "salinity_level",
+          "from_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var": "salinity_level",
+          "to_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "mechanism": "Irrigation water salinity / poor groundwater quality increases soil salt loading when leaching is inadequate, elevating soil salinity and osmotic stress.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Especially when downward soil-water flux is insufficient to leach salts from the root zone",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "irrigation_induced_salinity"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "soil",
+          "excerpt": "The physical process underlying salinization is the problem in the downward soil water flux of sufficient magnitude to leach the salts from the root zone..."
+        },
+        {
+          "from_var": "salinity_level",
+          "from_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "mechanism": "Higher soil salinity reduces crop water and nutrient uptake via osmotic effects, reducing grain/straw yields in cited wheat and barley experiments.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Cited experimental irrigation-water salinity / RSC contexts (Dogra et al., 2014; 2017)",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "irrigation_induced_salinity"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "soil",
+          "excerpt": "The application of saline water adversely affected grain and straw yield and nutrient content in both grain and straw of wheat (Dogra et al., 2014)..."
+        }
+      ],
+      "edge_ids": [
+        "e3",
+        "e4"
+      ],
+      "context_variables": [
+        "NEW_water_use_efficiency"
+      ]
+    },
+    {
+      "name": "low_water_use_efficiency_salinity_drivers",
+      "description": "Poor on-farm water-use efficiency is listed among management and infrastructure failures that promote irrigation-induced salinity.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_water_use_efficiency",
+          "from_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var": "salinity_level",
+          "to_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "mechanism": "Low efficiency increases ineffective wetting, poor leaching, and salt redistribution in the root zone in the paper's salinity driver list.",
+          "direction": "decrease_causes_increase",
+          "strength": "weak",
+          "conditions": "Listed alongside canal seepage and drainage inadequacy as co-drivers",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "on_farm_water_management",
+            "irrigation_induced_salinity"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "soil",
+          "excerpt": "Some more problems that led of irrigation-induced salinity includes poor on-farm water use efficiency..."
+        }
+      ],
+      "edge_ids": [
+        "e5"
+      ],
+      "context_variables": [
+        "NEW_canal_seepage_loss"
+      ]
+    },
+    {
+      "name": "canal_seepage_waterlogging_yield_loss",
+      "description": "Excessive canal seepage and poor drainage raise shallow water tables, expanding waterlogged area and reducing cropland productivity according to cited global statistics reproduced in the review.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_canal_seepage_loss",
+          "from_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var": "NEW_waterlogging_area",
+          "to_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "mechanism": "Seepage inflates shallow groundwater recharge beneath commands, contributing to waterlogging where drainage is inadequate.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Canal-irrigated commands with inadequate drainage / poor O&M",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var_value_range": "~10% of irrigated land affected by waterlogging (cited global statistic)",
+          "to_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "canal_conveyance_seepage",
+            "waterlogging_productivity"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Some more problems ... poor construction as well as maintenance of irrigation canals that resulted in excessive seepage losses from canals and inadequate or lack of drainage infrastructure..."
+        },
+        {
+          "from_var": "NEW_waterlogging_area",
+          "from_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "mechanism": "Waterlogged soils restrict aeration and root function, reducing productivity; the paper cites a large productivity penalty in affected cropland.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Waterlogged cropland contexts in cited global statistic",
+          "from_var_value_range": "~10% of irrigated land waterlogged (cited)",
+          "from_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var_value_range": "~20% productivity decline in affected cropland (cited)",
+          "to_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "waterlogging_productivity"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Worldwide, about 10% of all irrigated land suffers from water logging that resulted in productivity fallen about 20% in these area of cropland (Mishra, 2008)."
+        }
+      ],
+      "edge_ids": [
+        "e6",
+        "e7"
+      ],
+      "context_variables": [
+        "irrigation_demand"
+      ]
+    },
+    {
+      "name": "irrigated_intensification_nitrate_leaching",
+      "description": "Fertilizer over-intensification under irrigated cropping increases leaching losses and elevates nitrate in groundwater, with survey ranges cited for India/Africa well populations.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_fertilizer_use_intensity",
+          "from_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var": "NEW_nitrate_groundwater_concentration",
+          "to_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "mechanism": "High N inputs combined with irrigation-driven leaching in light-textured soils move nitrate to groundwater, raising detected nitrate levels in wells.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Irrigated intensive systems on light-textured soils with shallow-rooted crops (paper narrative)",
+          "from_var_value_range": "400% increase in fertilizer overuse over 30 years (cited aggregate claim)",
+          "from_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var_value_range": "20-50% of wells with high nitrate up to 50 mg/l; cases to several hundred mg/l (FAO 1996 as cited)",
+          "to_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "nutrient_leaching_groundwater_quality"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "groundwater",
+          "excerpt": "Crops with high water and N requirements tend to increase the potential risk of nitrate pollution to groundwater (Wick et al., 2012)."
+        }
+      ],
+      "edge_ids": [
+        "e8"
+      ],
+      "context_variables": [
+        "NEW_soil_erosion"
+      ]
+    },
+    {
+      "name": "irrigation_access_productivity_and_rainfed_context",
+      "description": "Heterogeneous irrigation access across Indian states sets rainfed versus irrigated exposure contexts; cited econometric and farm-efficiency studies indicate irrigation raises productivity relative to rainfed systems.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "irrigated_area_fraction",
+          "from_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "mechanism": "Greater irrigation access is associated with higher farm productivity versus no irrigation in cited farm-level production frontier evidence; the paper also documents large rainfed majorities in several states as structural risk context.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Interpretive linkage across cited secondary studies; not a single pooled estimate from this paper",
+          "from_var_value_range": "National Table 1 totals: rainfed 50.57% vs combined irrigation categories 49.43%",
+          "from_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 26,
+            "paper_title": "Irrigation in India: Status and challenges"
+          },
+          "from_cluster_family": "mixed",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "irrigation_access_productivity"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Munir et al. (2002) ... found that ... productivity of farms with any of three types of irrigation system is significantly higher than those agricultural lands where there is no source of irrigation available..."
+        }
+      ],
+      "edge_ids": [
+        "e9"
+      ],
+      "context_variables": [
+        "NEW_soil_erosion"
+      ]
+    }
+  ],
+  "causal_chains": [
+    {
+      "edge_id": "e1",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "mechanism": "Higher irrigation withdrawals and intensive groundwater irrigation increase net extraction, lowering water tables when recharge does not keep pace.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Narrative national synthesis; spatial heterogeneity emphasized elsewhere in the paper",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var_value_range": "1-2 m/year decline in water table (quoted national observation)",
+      "to_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_overdraft"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "It has been observed that in many parts of the country the water table is reducing with the rate of 1-2 m/year."
+    },
+    {
+      "edge_id": "e2",
+      "from_var": "g_annual_trend",
+      "from_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var": "salinity_level",
+      "to_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "mechanism": "Progressive groundwater depletion alters hydrogeochemical conditions such that aquifers can become saline and land subsidence is asserted as a linked risk in the review narrative.",
+      "direction": "decrease_causes_increase",
+      "strength": "weak",
+      "conditions": "Review-level causal language; not quantified for Indian districts in this paper",
+      "from_var_value_range": "1-2 m/year decline (headline observation)",
+      "from_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_overdraft",
+        "irrigation_induced_salinity"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "groundwater",
+      "excerpt": "The constantly depleting of the ground-water table has started creating the land to subside resulted in aquifers to become saline..."
+    },
+    {
+      "edge_id": "e3",
+      "from_var": "salinity_level",
+      "from_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var": "salinity_level",
+      "to_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "mechanism": "Irrigation water salinity / poor groundwater quality increases soil salt loading when leaching is inadequate, elevating soil salinity and osmotic stress.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Especially when downward soil-water flux is insufficient to leach salts from the root zone",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_induced_salinity"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "soil",
+      "excerpt": "The physical process underlying salinization is the problem in the downward soil water flux of sufficient magnitude to leach the salts from the root zone..."
+    },
+    {
+      "edge_id": "e4",
+      "from_var": "salinity_level",
+      "from_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "mechanism": "Higher soil salinity reduces crop water and nutrient uptake via osmotic effects, reducing grain/straw yields in cited wheat and barley experiments.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Cited experimental irrigation-water salinity / RSC contexts (Dogra et al., 2014; 2017)",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_induced_salinity"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "soil",
+      "excerpt": "The application of saline water adversely affected grain and straw yield and nutrient content in both grain and straw of wheat (Dogra et al., 2014)..."
+    },
+    {
+      "edge_id": "e5",
+      "from_var": "NEW_water_use_efficiency",
+      "from_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var": "salinity_level",
+      "to_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "mechanism": "Low efficiency increases ineffective wetting, poor leaching, and salt redistribution in the root zone in the paper's salinity driver list.",
+      "direction": "decrease_causes_increase",
+      "strength": "weak",
+      "conditions": "Listed alongside canal seepage and drainage inadequacy as co-drivers",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "on_farm_water_management",
+        "irrigation_induced_salinity"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "soil",
+      "excerpt": "Some more problems that led of irrigation-induced salinity includes poor on-farm water use efficiency..."
+    },
+    {
+      "edge_id": "e6",
+      "from_var": "NEW_canal_seepage_loss",
+      "from_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var": "NEW_waterlogging_area",
+      "to_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "mechanism": "Seepage inflates shallow groundwater recharge beneath commands, contributing to waterlogging where drainage is inadequate.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Canal-irrigated commands with inadequate drainage / poor O&M",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var_value_range": "~10% of irrigated land affected by waterlogging (cited global statistic)",
+      "to_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "canal_conveyance_seepage",
+        "waterlogging_productivity"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Some more problems ... poor construction as well as maintenance of irrigation canals that resulted in excessive seepage losses from canals and inadequate or lack of drainage infrastructure..."
+    },
+    {
+      "edge_id": "e7",
+      "from_var": "NEW_waterlogging_area",
+      "from_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "mechanism": "Waterlogged soils restrict aeration and root function, reducing productivity; the paper cites a large productivity penalty in affected cropland.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Waterlogged cropland contexts in cited global statistic",
+      "from_var_value_range": "~10% of irrigated land waterlogged (cited)",
+      "from_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var_value_range": "~20% productivity decline in affected cropland (cited)",
+      "to_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "waterlogging_productivity"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Worldwide, about 10% of all irrigated land suffers from water logging that resulted in productivity fallen about 20% in these area of cropland (Mishra, 2008)."
+    },
+    {
+      "edge_id": "e8",
+      "from_var": "NEW_fertilizer_use_intensity",
+      "from_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var": "NEW_nitrate_groundwater_concentration",
+      "to_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "mechanism": "High N inputs combined with irrigation-driven leaching in light-textured soils move nitrate to groundwater, raising detected nitrate levels in wells.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Irrigated intensive systems on light-textured soils with shallow-rooted crops (paper narrative)",
+      "from_var_value_range": "400% increase in fertilizer overuse over 30 years (cited aggregate claim)",
+      "from_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var_value_range": "20-50% of wells with high nitrate up to 50 mg/l; cases to several hundred mg/l (FAO 1996 as cited)",
+      "to_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "nutrient_leaching_groundwater_quality"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "groundwater",
+      "excerpt": "Crops with high water and N requirements tend to increase the potential risk of nitrate pollution to groundwater (Wick et al., 2012)."
+    },
+    {
+      "edge_id": "e9",
+      "from_var": "irrigated_area_fraction",
+      "from_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "mechanism": "Greater irrigation access is associated with higher farm productivity versus no irrigation in cited farm-level production frontier evidence; the paper also documents large rainfed majorities in several states as structural risk context.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Interpretive linkage across cited secondary studies; not a single pooled estimate from this paper",
+      "from_var_value_range": "National Table 1 totals: rainfed 50.57% vs combined irrigation categories 49.43%",
+      "from_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 26,
+        "paper_title": "Irrigation in India: Status and challenges"
+      },
+      "from_cluster_family": "mixed",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_access_productivity"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Munir et al. (2002) ... productivity of farms with any of three types of irrigation system is significantly higher than those agricultural lands where there is no source of irrigation available..."
+    }
+  ],
+  "conditional_thresholds": [
+    {
+      "variable": "g_annual_trend",
+      "threshold": "1-2 m/year water-table decline (quoted)",
+      "condition": "National-scale narrative observation in abstract/introduction",
+      "implication": "Signals unsustainable groundwater-supported irrigation expansion in many regions"
+    },
+    {
+      "variable": "NEW_nitrate_groundwater_concentration",
+      "threshold": "50 mg/L cited as a high-nitrate example in surveys",
+      "condition": "FAO (1996) survey summary as cited for India/Africa wells",
+      "implication": "Elevated drinking-water quality and health-risk concerns under intensive irrigated N management"
+    }
+  ],
+  "key_relationships": [
+    "Canal share of irrigation fell from 40% (1951) to 24% (2012-13) while well/tubewell share rose from 29% to 62% of total irrigated area (Fig. 1; Jeyaseelan 2014 as cited).",
+    "Ultimate irrigation potential revised upward: 113 million ha (1960s assessment) versus present status ~139 million ha, largely from minor groundwater and minor surface-water scheme reassessments (Manivanan 2006 as cited).",
+    "State heterogeneity in plot irrigation status (Table 1): Tamil Nadu high irrigation access versus Karnataka/Bihar/Jharkhand majority rainfed shares.",
+    "Irrigation-induced salinity drivers listed include poor on-farm WUE, canal seepage, and inadequate drainage (author synthesis).",
+    "Cited global statistic: ~10% irrigated land waterlogged with ~20% productivity decline in affected cropland (Mishra 2008 as cited)."
+  ],
+  "alias_resolution_rules": [
+    {
+      "alias_text": "water table is reducing",
+      "canonical_variable_name": "g_annual_trend",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Mapped to groundwater level / depth trend per extraction prompt mandatory mappings."
+    },
+    {
+      "alias_text": "salinization / saline soils",
+      "canonical_variable_name": "salinity_level",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Set medium=soil vs groundwater based on whether the paper refers to soil salt burden or irrigation-water/groundwater quality."
+    },
+    {
+      "alias_text": "waterlogging",
+      "canonical_variable_name": "NEW_waterlogging_area",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Taxonomy expansion includes explicit waterlogged-area construct."
+    },
+    {
+      "alias_text": "seepage losses from canals",
+      "canonical_variable_name": "NEW_canal_seepage_loss",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": null
+    },
+    {
+      "alias_text": "nitrate in groundwater / wells",
+      "canonical_variable_name": "NEW_nitrate_groundwater_concentration",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": null
+    }
+  ],
+  "mapping_notes": "The paper is primarily a narrative review; several numeric claims are cited secondary/global statistics rather than new district/block estimates. Irrigation source-mix shares (canal vs tubewell) are interpretive context for dependence on groundwater irrigation but are not identical to irrigated_area_fraction (cropped-area irrigated share). Verification: mechanism_blocks stressor_scope updated where edges cross cluster_family; cluster_families_covered lists only families present on variables/edges (rainfed risk is discussed textually via irrigated vs rainfed shares but uses mixed cluster on irrigated_area_fraction). Edge e3 (salinity_level -> salinity_level) links groundwater-quality salinity forcing to soil salinity outcome; medium_scope=soil marks the soil-salinity endpoint.",
+  "limitations": "No primary causal identification, limited quantification for India at block/district scale, and heavy reliance on cited syntheses and non-Indian farm studies for some productivity and reliability claims.",
+  "important_variables": [
+    {
+      "variable_name": "g_annual_trend",
+      "significance": "Central headline indicator (1-2 m/year) framing groundwater stress as a national consequence of irrigation-intensive development pathways.",
+      "evidence_strength": "moderate",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "irrigated_area_fraction",
+      "significance": "Table 1 state-level plot irrigation status quantifies heterogeneity between irrigation access and rainfed dominance—critical context for water-scarcity exposure and policy targeting.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "salinity_level",
+      "significance": "Soil and water-quality salinity are treated as core irrigation externalities with direct yield pathways via cited experimental work.",
+      "evidence_strength": "moderate",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_nitrate_groundwater_concentration",
+      "significance": "Groundwater nitrate survey ranges are used to connect irrigated intensification and N management to drinking-water quality risks.",
+      "evidence_strength": "moderate",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_water_use_efficiency",
+      "significance": "Explicitly listed as a salinity driver, aligning irrigation management quality with salt accumulation mechanisms.",
+      "evidence_strength": "weak",
+      "recommendation": "existing_taxonomy"
+    }
+  ],
+  "important_variables_narrative": "The paper’s most decision-relevant quantities for scarcity mechanism discovery are the national groundwater decline headline (supporting groundwater_stress linkages to irrigation intensity), the Songqing et al. irrigation-access table (structuring rainfed versus irrigated exposure across states), and the salinity–yield and waterlogging–productivity narratives that connect irrigation infrastructure and management to agronomic outcomes. Nitrate-leaching discussion adds a groundwater-quality outcome chain under intensive irrigated nutrient management, though many numbers are cited rather than newly estimated within this article."
+}

@@ -1,0 +1,1084 @@
+{
+  "schema_version": "2.0",
+  "paper_title": "Solving groundwater depletion in India while achieving food security",
+  "paper_identity": {
+    "paper_id": 13,
+    "paper_title": "Solving groundwater depletion in India while achieving food security"
+  },
+  "paper_summary": "This paper develops a district-scale hydro-economic optimization model for India's Kharif procurement crops under two scenarios: Irrigation Zero and Irrigation Capped. It shows that food-security and nutrition targets can be met while reducing groundwater stress by shifting crop allocation and procurement geographies away from highly stressed regions. The analysis reports higher national net farm income, lower irrigation water use, and lower energy use compared with current patterns.",
+  "study_region": "India, district scale (586 districts; focus on Kharif season and major procurement states such as Punjab, Haryana, Uttar Pradesh, Andhra Pradesh/Telangana, Karnataka)",
+  "study_period": "Climate variability represented over 1901-2009; economic/crop data around 2013-2018 references",
+  "methodology": "Linear programming optimization maximizing expected net national agricultural revenue under district land, irrigation, production, and nutrition constraints using long-term daily rainfall/temperature-driven yield modeling.",
+  "paper_type": "mechanism",
+  "paper_type_rationale": "The paper explicitly models causal pathways from policy incentives and crop allocation to irrigation demand, groundwater stress, energy use, and farm income via constrained optimization. It is a mechanism study with quantified directional effects, not only policy commentary.",
+  "cluster_families_covered": [
+    "groundwater_stress",
+    "irrigation_challenges",
+    "rainfed_risk",
+    "drought"
+  ],
+  "mechanism_domains_covered": [
+    "policy_incentives",
+    "crop_water_demand",
+    "irrigation_infrastructure",
+    "recharge_dynamics",
+    "adaptation_capacity",
+    "socio_economic_pressure"
+  ],
+  "mapped_variables": [
+    {
+      "taxonomy_name": "g_annual_trend",
+      "canonical_variable_name": "g_annual_trend",
+      "alias_used_in_paper": "groundwater levels are dropping",
+      "definition_source": "merged",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "groundwater depletion/depth trend in stressed procurement states",
+      "description": "Trend in groundwater level decline associated with intensive irrigation pumping.",
+      "unit": "m/year",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "CGWB groundwater depth and related synthesis",
+      "indian_data_source": "same",
+      "threshold_or_range": "Groundwater levels dropping between 1 and 3 m/year in major procurement states; also cited 1-2 m/year depletion in Punjab.",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "recharge_dynamics",
+        "crop_water_demand"
+      ],
+      "paper_context_id": "devineni2022_pds::g_annual_trend::annual",
+      "source_paper": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "excerpt": "Groundwater levels are dropping at rates between 1 and 3 m/year in these states, with concern about reversing 1-2 m/year depletion in Punjab."
+    },
+    {
+      "taxonomy_name": "prec_annual_avg_rain",
+      "canonical_variable_name": "prec_annual_avg_rain",
+      "alias_used_in_paper": "daily rainfall / low rainfall with high variability",
+      "definition_source": "merged",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "district rainfall and climate variability driving water deficits",
+      "description": "Rainfall supply and variability used to estimate crop water deficits and rainfed yields.",
+      "unit": "mm",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "IMD daily rainfall gridded data (1901-2009)",
+      "indian_data_source": "same",
+      "threshold_or_range": "Kharif contributes about 90% of annual rainfall; irrigation renewable-water cap set as 15% of average annual rainfall.",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing",
+        "crop_water_demand"
+      ],
+      "paper_context_id": "devineni2022_pds::prec_annual_avg_rain::annual",
+      "source_paper": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "excerpt": "Rainfall data from 1901 to 2009 and district climate variability were used to estimate crop water deficits and yields."
+    },
+    {
+      "taxonomy_name": "cropping_area_trend",
+      "canonical_variable_name": "cropping_area_trend",
+      "alias_used_in_paper": "spatial crop allocation / crop shift / reduced rice area in procurement regions",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "district fraction of cropped area allocated to 12 Kharif procurement crops",
+      "description": "Reallocation of cropped area across regions and crop types under optimization.",
+      "unit": "% change in net-cropped area",
+      "role": "driver",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Optimization outputs and district crop area data",
+      "indian_data_source": "DACNET",
+      "threshold_or_range": "Rice cultivated area reduced by over 75% in Punjab/Haryana/Indo-Gangetic procurement hotspots.",
+      "indicator_direction": "categorical",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "policy_incentives",
+        "crop_water_demand"
+      ],
+      "paper_context_id": "devineni2022_pds::cropping_area_trend::kharif",
+      "source_paper": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "excerpt": "The cultivated rice area in Punjab, Haryana, and Indo-Gangetic procurement regions is reduced by over 75% under both optimized scenarios."
+    },
+    {
+      "taxonomy_name": "irrigation_demand",
+      "canonical_variable_name": "irrigation_demand",
+      "alias_used_in_paper": "total irrigation water used/saved",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "irrigation volume under current and optimized scenarios",
+      "description": "Total irrigation withdrawal requirement resulting from crop allocation and water-deficit dynamics.",
+      "unit": "Billion m3",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Optimization model water outputs",
+      "indian_data_source": "same",
+      "threshold_or_range": "Current 146 Billion m3; Irrigation Capped 130 Billion m3; Irrigation Zero 0 (saving 146 Billion m3).",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "crop_water_demand",
+        "irrigation_infrastructure"
+      ],
+      "paper_context_id": "devineni2022_pds::irrigation_demand::annual",
+      "source_paper": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "excerpt": "At national level, Irrigation Capped uses 130 Billion m3 versus 146 Billion m3 for current cropping; Irrigation Zero saves 146 Billion m3."
+    },
+    {
+      "taxonomy_name": "NEW_energy_cost_pumping",
+      "canonical_variable_name": "NEW_energy_cost_pumping",
+      "alias_used_in_paper": "energy use for groundwater pumping / electricity subsidy burden",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "GWh pumping use and subsidy-linked opportunity cost",
+      "description": "Energy requirement and cost burden from groundwater pumping for irrigation.",
+      "unit": "GWh and INR",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Model-estimated pumping energy and electricity pricing assumptions",
+      "indian_data_source": "state electricity tariff/subsidy records, same",
+      "threshold_or_range": "Current 26252 GWh; Irrigation Capped 25797 GWh; Irrigation Zero 0 GWh. Punjab energy savings 4366 or 3923 GWh depending on scenario.",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "policy_incentives",
+        "socio_economic_pressure"
+      ],
+      "paper_context_id": "devineni2022_pds::energy_cost_pumping::annual",
+      "source_paper": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "excerpt": "National energy usage is 26252 GWh currently, 25797 GWh under Irrigation Capped, and 0 under Irrigation Zero; electricity subsidies are a major policy burden."
+    },
+    {
+      "taxonomy_name": "NEW_electricity_subsidy_intensity",
+      "canonical_variable_name": "NEW_electricity_subsidy_intensity",
+      "alias_used_in_paper": "subsidized/free electricity for pumping",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "state-provided electricity subsidy linked to groundwater pumping",
+      "description": "Policy incentive intensity that lowers pumping cost and can increase extraction pressure.",
+      "unit": "INR subsidy outlay",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Policy and state budget references",
+      "indian_data_source": "state energy budget reports",
+      "threshold_or_range": "Punjab subsidy outlay example: INR 65 billion (2019-2020).",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "policy_incentives",
+        "socio_economic_pressure"
+      ],
+      "paper_context_id": "devineni2022_pds::electricity_subsidy_intensity::annual",
+      "source_paper": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "excerpt": "State governments offered subsidized/free electricity for groundwater pumping, and Punjab spent INR 65 billion in 2019-2020 on related outlays."
+    },
+    {
+      "taxonomy_name": "NEW_crop_water_requirement",
+      "canonical_variable_name": "NEW_crop_water_requirement",
+      "alias_used_in_paper": "crop water requirement (CWR) and seasonal deficit",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "seasonal crop water deficit and water requirement in Eq. 3-6",
+      "description": "Crop-specific water requirement and deficit governing yield response and irrigation need.",
+      "unit": "mm per season",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Derived from daily rainfall, ET0, crop coefficients, and deficit equations",
+      "indian_data_source": "IMD climate + FAO method, same",
+      "threshold_or_range": "Rainfall utilization fraction alpha = 0.7; irrigation efficiency beta assumed 30% for rice and 75% for other crops.",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "crop_water_demand",
+        "climate_forcing"
+      ],
+      "paper_context_id": "devineni2022_pds::crop_water_requirement::kharif",
+      "source_paper": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "excerpt": "Seasonal crop water deficit was estimated from daily crop demand minus effective rainfall supply, and yield was modeled as a reduction from potential yield based on this deficit."
+    },
+    {
+      "taxonomy_name": "crop_yield_trend",
+      "canonical_variable_name": "crop_yield_trend",
+      "alias_used_in_paper": "district crop yields under irrigation and rainfed scenarios",
+      "definition_source": "merged",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "yield response to seasonal water deficit and irrigation potential",
+      "description": "Crop yield level/variation driven by deficit ratio and irrigation potential in the model.",
+      "unit": "kg/ha",
+      "role": "outcome",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Yield model equation and survey-based yield calibration",
+      "indian_data_source": "DACNET + government crop-yield records",
+      "threshold_or_range": "Illustrative rice yields cited: about 4.5 t/ha in Punjab vs about 1.5 t/ha in some destination states.",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "crop_water_demand",
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "devineni2022_pds::crop_yield_trend::kharif",
+      "source_paper": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "excerpt": "Yield is modeled as potential yield reduced by seasonal deficit relative to crop water requirement; irrigation potential controls how much deficit can be compensated."
+    },
+    {
+      "taxonomy_name": "NEW_water_use_efficiency",
+      "canonical_variable_name": "NEW_water_use_efficiency",
+      "alias_used_in_paper": "irrigation efficiency factor",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "beta irrigation efficiency in pumping requirement equation",
+      "description": "Efficiency of irrigation application affecting required pumped volume for given deficit.",
+      "unit": "fraction",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Model parameter assumptions",
+      "indian_data_source": "same",
+      "threshold_or_range": "beta = 0.30 for rice and beta = 0.75 for other 11 crops.",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "contextual",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_infrastructure",
+        "crop_water_demand"
+      ],
+      "paper_context_id": "devineni2022_pds::water_use_efficiency::kharif",
+      "source_paper": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "excerpt": "The model assumes 30% irrigation efficiency for rice flood irrigation and 75% for other crops."
+    },
+    {
+      "taxonomy_name": "NEW_population_density",
+      "canonical_variable_name": "NEW_population_density",
+      "alias_used_in_paper": "population nutrition requirement",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "district population and national nutritional needs constraints",
+      "description": "Population pressure proxy embedded through food-security and nutrition constraints.",
+      "unit": "population counts",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Census 2001 and FAO nutrition requirement data",
+      "indian_data_source": "Census of India",
+      "threshold_or_range": null,
+      "indicator_direction": "high_means_stressed",
+      "relevance": "contextual",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "socio_economic_pressure"
+      ],
+      "paper_context_id": "devineni2022_pds::population_density::annual",
+      "source_paper": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "excerpt": "The optimization imposes national production and nutrition constraints linked to population-level food and nutrient requirements."
+    }
+  ],
+  "new_variables": [],
+  "mechanism_blocks": [
+    {
+      "name": "subsidized_pumping_depletion_mechanism",
+      "description": "Procurement incentives and subsidized electricity lock crop choices into water-intensive systems, elevating irrigation pumping and accelerating groundwater decline in procurement regions.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_electricity_subsidy_intensity",
+          "from_var_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "mechanism": "Subsidized or free electricity lowers pumping cost, incentivizing higher groundwater-based irrigation and sustaining water-intensive crop choices.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Procurement-favored states with limited canal reach and high groundwater reliance.",
+          "from_var_value_range": "Punjab subsidy example INR 65 billion (2019-2020).",
+          "from_var_value_range_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "to_var_value_range": "Current national irrigation volume around 146 Billion m3 under existing cropping.",
+          "to_var_value_range_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "policy_incentives",
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "State governments offered subsidized/free electricity for pumping groundwater for irrigation, which led to widespread depletion."
+        },
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "mechanism": "Higher groundwater withdrawal for irrigation exceeds recharge in stressed areas, causing persistent annual groundwater decline.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Arid northwestern procurement regions (Punjab/Haryana/IGP) with intensive pumping.",
+          "from_var_value_range": "Current scenario irrigation volume 146 Billion m3 nationally.",
+          "from_var_value_range_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "to_var_value_range": "Groundwater decline around 1-3 m/year in stressed states.",
+          "to_var_value_range_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "recharge_dynamics",
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Groundwater levels are dropping at rates between 1 and 3 m/year in states where irrigation demand is concentrated."
+        },
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "to_var": "NEW_energy_cost_pumping",
+          "to_var_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "mechanism": "Greater irrigation pumping volumes directly raise electricity consumption and subsidy burden for agriculture.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Groundwater-irrigated districts; electricity-priced pumping modeled with depth and efficiency terms.",
+          "from_var_value_range": "Irrigation volume: 146 Billion m3 current; 130 Billion m3 Irrigation Capped; 0 Irrigation Zero.",
+          "from_var_value_range_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "to_var_value_range": "Energy use: 26252 GWh current; 25797 GWh Irrigation Capped; 0 Irrigation Zero.",
+          "to_var_value_range_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "policy_incentives",
+            "irrigation_infrastructure"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Aggregate national energy usage under Irrigation Zero is 0 GWh versus 26252 GWh current, indicating pumping-energy linkage."
+        }
+      ],
+      "edge_ids": [
+        "e1",
+        "e2",
+        "e3"
+      ],
+      "context_variables": [
+        "cropping_area_trend",
+        "NEW_water_use_efficiency"
+      ]
+    },
+    {
+      "name": "climate_deficit_to_yield_and_irrigation_mechanism",
+      "description": "Rainfall variability and ET-driven crop water requirements generate seasonal deficits that reduce rainfed yields and induce irrigation demand under irrigated scenarios.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "prec_annual_avg_rain",
+          "from_var_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "to_var": "NEW_crop_water_requirement",
+          "to_var_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "mechanism": "Lower and more variable rainfall relative to ET0 and crop coefficients increases seasonal deficit-to-requirement pressure.",
+          "direction": "decrease_causes_increase",
+          "strength": "strong",
+          "conditions": "Kharif season; daily rainfall distribution and dry-spell structure matter, not only seasonal total.",
+          "from_var_value_range": "Kharif accounts for about 90% of annual rainfall; effective rainfall fraction alpha = 0.7 in deficit calculation.",
+          "from_var_value_range_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "to_var_value_range": "Deficit and requirement computed via Eq. 3-5; irrigation renewable water cap uses lambda = 0.15 of average annual rainfall.",
+          "to_var_value_range_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "climate_forcing",
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Seasonal crop water deficit is accumulated from daily demand minus effective rainfall and captures adverse dry-period timing."
+        },
+        {
+          "from_var": "NEW_crop_water_requirement",
+          "from_var_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "mechanism": "Higher seasonal deficit relative to requirement lowers yield from potential, especially where irrigation potential is low.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Rainfed or low-irrigation districts; crop-specific sensitivity differs by water requirement.",
+          "from_var_value_range": "Irrigation potential eta controls deficit compensation; eta = 0 in Irrigation Zero.",
+          "from_var_value_range_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "to_var_value_range": "Illustrative rice yield differences about 4.5 t/ha (Punjab) vs about 1.5 t/ha in some shifted regions.",
+          "to_var_value_range_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "crop_water_demand",
+            "adaptation_capacity"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Yield is estimated as potential yield reduced by the ratio of seasonal deficit to crop water requirement."
+        },
+        {
+          "from_var": "NEW_crop_water_requirement",
+          "from_var_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "mechanism": "Where deficits are large, irrigation is used to supply unmet crop water requirement up to district irrigation potential/caps.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Irrigation Capped scenario with district water-supply limits.",
+          "from_var_value_range": "Irrigation efficiency beta values: 0.30 rice, 0.75 others; renewable-water cap lambda = 0.15.",
+          "from_var_value_range_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "to_var_value_range": "Irrigation use 130 Billion m3 in Irrigation Capped scenario.",
+          "to_var_value_range_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "crop_water_demand",
+            "irrigation_infrastructure"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The model computes pumped irrigation from seasonal deficits with crop-specific irrigation efficiencies under district constraints."
+        }
+      ],
+      "edge_ids": [
+        "e4",
+        "e5",
+        "e6"
+      ],
+      "context_variables": [
+        "NEW_water_use_efficiency",
+        "NEW_population_density"
+      ]
+    },
+    {
+      "name": "procurement_restructuring_benefit_mechanism",
+      "description": "Shifting crop allocation and procurement geography away from stressed regions reduces irrigation/energy pressure and can increase national farm income while meeting food and nutrition constraints.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "cropping_area_trend",
+          "from_var_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "mechanism": "Moving rice and other crop area to more climatically suitable geographies lowers water-intensive cultivation in overexploited districts, reducing irrigation requirement.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "Optimization-constrained PDS restructuring with district area and production constraints.",
+          "from_var_value_range": "Rice area reduced >75% in Punjab/Haryana/IGP hotspots.",
+          "from_var_value_range_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "to_var_value_range": "Irrigation reduced from 146 to 130 Billion m3 (Irrigation Capped), or to 0 in Irrigation Zero.",
+          "to_var_value_range_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "policy_incentives",
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Current sourcing regions are reduced significantly under both scenarios, reflecting water-supply imbalance and high subsidized energy use."
+        },
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "mechanism": "Reduced irrigation withdrawals lower groundwater abstraction pressure and support arresting depletion trends.",
+          "direction": "decrease_causes_increase",
+          "strength": "moderate",
+          "conditions": "Compared against current cropping baseline in stressed states.",
+          "from_var_value_range": "Punjab savings under scenarios: 38/34 billion m3 relative to current pattern.",
+          "from_var_value_range_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "to_var_value_range": "Target is to reverse 1-2 m/year depletion in Punjab and arrest depletion in hotspots.",
+          "to_var_value_range_source": {
+            "paper_id": 13,
+            "paper_title": "Solving groundwater depletion in India while achieving food security"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "recharge_dynamics",
+            "policy_incentives"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Water and energy savings in stressed regions are identified as pathways to arrest groundwater depletion while preserving food-security goals."
+        }
+      ],
+      "edge_ids": [
+        "e7",
+        "e8"
+      ],
+      "context_variables": [
+        "NEW_electricity_subsidy_intensity",
+        "prec_annual_avg_rain"
+      ]
+    }
+  ],
+  "causal_chains": [
+    {
+      "edge_id": "e1",
+      "from_var": "NEW_electricity_subsidy_intensity",
+      "from_var_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "mechanism": "Electricity subsidies reduce marginal pumping cost and sustain groundwater-intensive irrigation patterns.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "PDS-favored irrigation regions with high groundwater dependence.",
+      "from_var_value_range": "Punjab subsidy outlay example INR 65 billion.",
+      "from_var_value_range_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "to_var_value_range": "Current national irrigation around 146 Billion m3.",
+      "to_var_value_range_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "policy_incentives",
+        "crop_water_demand"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Subsidized/free electricity for pumping groundwater is identified as a key driver behind irrigation expansion in procurement regions."
+    },
+    {
+      "edge_id": "e2",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "mechanism": "High irrigation withdrawal from aquifers increases net depletion where pumping exceeds sustainable recharge.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Northwestern and Indo-Gangetic procurement hotspots.",
+      "from_var_value_range": "Current irrigation 146 Billion m3; under redesigned allocation 130 Billion m3 (capped).",
+      "from_var_value_range_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "to_var_value_range": "Observed depletion around 1-3 m/year in stressed states.",
+      "to_var_value_range_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "recharge_dynamics",
+        "crop_water_demand"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Groundwater levels are dropping at 1-3 m/year in irrigation-dependent procurement states."
+    },
+    {
+      "edge_id": "e3",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "to_var": "NEW_energy_cost_pumping",
+      "to_var_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "mechanism": "Pumping more irrigation water increases electricity use and associated subsidy burden.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Groundwater pumping with low tariff/subsidized electricity.",
+      "from_var_value_range": "146 Billion m3 current vs 130 Billion m3 capped vs 0 in zero-irrigation scenario.",
+      "from_var_value_range_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "to_var_value_range": "26252 GWh current, 25797 GWh capped, 0 GWh zero-irrigation.",
+      "to_var_value_range_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "policy_incentives",
+        "irrigation_infrastructure"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Energy use for irrigation falls from 26252 GWh currently to 0 GWh under Irrigation Zero."
+    },
+    {
+      "edge_id": "e4",
+      "from_var": "prec_annual_avg_rain",
+      "from_var_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "to_var": "NEW_crop_water_requirement",
+      "to_var_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "mechanism": "Rainfall amount and timing relative to ET demand determine seasonal crop water deficits and required supplemental water.",
+      "direction": "decrease_causes_increase",
+      "strength": "strong",
+      "conditions": "Kharif season; districts with high variability or low rainfall.",
+      "from_var_value_range": "Kharif provides about 90% of annual rainfall.",
+      "from_var_value_range_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "to_var_value_range": "Effective rainfall fraction alpha = 0.7; renewable groundwater cap lambda = 0.15 of average annual rainfall.",
+      "to_var_value_range_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "climate_forcing",
+        "crop_water_demand"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Daily rainfall and ET0 are used to compute seasonal deficit, capturing timing effects of rainfall distribution."
+    },
+    {
+      "edge_id": "e5",
+      "from_var": "NEW_crop_water_requirement",
+      "from_var_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "mechanism": "Larger deficit-to-requirement ratios reduce realized yield from potential yield, especially under low irrigation potential.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Rainfed/low-irrigation districts and high-water-demand crops.",
+      "from_var_value_range": "Eta = 0 in Irrigation Zero; crop-specific irrigation potential in capped scenario.",
+      "from_var_value_range_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "to_var_value_range": "Example rice yield differential: about 4.5 t/ha in Punjab vs about 1.5 t/ha in some shifted states.",
+      "to_var_value_range_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "crop_water_demand",
+        "adaptation_capacity"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Yield is modeled as potential yield minus reduction proportional to seasonal deficit over crop water requirement."
+    },
+    {
+      "edge_id": "e6",
+      "from_var": "NEW_crop_water_requirement",
+      "from_var_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "mechanism": "Unmet crop water requirement is supplied via irrigation pumping up to district caps and irrigation potential.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Irrigation Capped scenario with district irrigation constraint.",
+      "from_var_value_range": "Irrigation efficiency beta values: 0.30 rice, 0.75 others.",
+      "from_var_value_range_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "to_var_value_range": "National irrigation demand around 130 Billion m3 under Irrigation Capped.",
+      "to_var_value_range_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "crop_water_demand",
+        "irrigation_infrastructure"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The pumping term in the objective scales with irrigation potential, deficit, area, and irrigation efficiency."
+    },
+    {
+      "edge_id": "e7",
+      "from_var": "cropping_area_trend",
+      "from_var_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "mechanism": "Reallocating crop area away from water-intensive rice in arid procurement states reduces aggregate irrigation requirement.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "Optimized procurement/cropping pattern under production and nutrition constraints.",
+      "from_var_value_range": "Rice area reduced >75% in key northwestern sourcing regions.",
+      "from_var_value_range_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "to_var_value_range": "146 Billion m3 current vs 130 Billion m3 Irrigation Capped and 0 in Irrigation Zero.",
+      "to_var_value_range_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "policy_incentives",
+        "crop_water_demand"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The optimized crop shift significantly reduces rice in stressed sourcing regions and lowers water use."
+    },
+    {
+      "edge_id": "e8",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "mechanism": "Lower withdrawal pressure under optimized scenarios helps arrest depletion and supports recovery trajectories in stressed aquifers.",
+      "direction": "decrease_causes_increase",
+      "strength": "moderate",
+      "conditions": "Comparison with current pumping in stressed states, especially Punjab.",
+      "from_var_value_range": "Punjab irrigation savings 38 or 34 billion m3 under zero/capped scenarios relative to current.",
+      "from_var_value_range_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "to_var_value_range": "Objective includes reversing around 1-2 m/year depletion in Punjab.",
+      "to_var_value_range_source": {
+        "paper_id": 13,
+        "paper_title": "Solving groundwater depletion in India while achieving food security"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "recharge_dynamics",
+        "policy_incentives"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The analysis frames reduced irrigation and pumping energy as the route to arrest groundwater depletion in current hotspots."
+    }
+  ],
+  "conditional_thresholds": [
+    {
+      "variable": "g_annual_trend",
+      "threshold": "1-3 m/year decline (hotspot states); 1-2 m/year in Punjab context",
+      "condition": "Current procurement-favored, groundwater-irrigated regions",
+      "implication": "Represents severe aquifer stress requiring crop-procurement restructuring and pumping reduction."
+    },
+    {
+      "variable": "irrigation_demand",
+      "threshold": "Current 146 Billion m3; Irrigation Capped 130 Billion m3; Irrigation Zero 0",
+      "condition": "National aggregate under compared cropping scenarios",
+      "implication": "Scenario shift can materially reduce groundwater withdrawals while maintaining food/nutrition constraints."
+    },
+    {
+      "variable": "NEW_crop_water_requirement",
+      "threshold": "Renewable groundwater cap set to 15% of average annual rainfall (lambda = 0.15)",
+      "condition": "District irrigation constraint in optimization",
+      "implication": "Enforces sustainability limit on irrigation withdrawals relative to rainfall recharge proxy."
+    }
+  ],
+  "key_relationships": [
+    "NEW_electricity_subsidy_intensity -> irrigation_demand: subsidy incentives increase pumping demand in procurement hotspots.",
+    "irrigation_demand -> g_annual_trend: high withdrawals align with groundwater declines of about 1-3 m/year in stressed states.",
+    "prec_annual_avg_rain -> NEW_crop_water_requirement: rainfall variability and timing drive seasonal deficit formation.",
+    "NEW_crop_water_requirement -> crop_yield_trend: larger deficit relative to CWR reduces yield from potential.",
+    "cropping_area_trend -> irrigation_demand: reducing rice area (>75% in NW sourcing zones) lowers aggregate irrigation demand.",
+    "irrigation_demand -> NEW_energy_cost_pumping: reduced pumping lowers agricultural electricity use from 26252 GWh toward 25797/0 GWh."
+  ],
+  "alias_resolution_rules": [
+    {
+      "alias_text": "groundwater depletion / dropping groundwater levels",
+      "canonical_variable_name": "g_annual_trend",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Groundwater trend/depth decline mapped to mandated canonical variable."
+    },
+    {
+      "alias_text": "rainfall variability / precipitation",
+      "canonical_variable_name": "prec_annual_avg_rain",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Daily climate forcing summarized under canonical precipitation variable."
+    },
+    {
+      "alias_text": "subsidized electricity for pumping",
+      "canonical_variable_name": "NEW_electricity_subsidy_intensity",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Exists in taxonomy expansion; kept in mapped_variables."
+    },
+    {
+      "alias_text": "irrigation water use / pumping volume",
+      "canonical_variable_name": "irrigation_demand",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Direct match to irrigation demand/withdrawal concept."
+    }
+  ],
+  "mapping_notes": "The paper is optimization-heavy and does not always report observed time-series trends for all variables; several values are scenario outputs. Crop allocation is represented via cropping_area_trend with season set to kharif because the optimization is explicitly Kharif-focused.",
+  "limitations": "Causal claims are model-based under specified constraints and assumptions (e.g., lambda = 0.15 recharge proxy, irrigation efficiency values, suitability rules), not purely empirical causal identification. Scenario feasibility may depend on political economy, supply chains, and transition support not fully represented in the optimization objective.",
+  "important_variables": [
+    {
+      "variable_name": "g_annual_trend",
+      "significance": "Primary sustainability outcome; paper repeatedly centers policy reform on arresting rapid groundwater decline in procurement hotspots.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "irrigation_demand",
+      "significance": "Core mechanism mediator linking crop allocation and subsidy incentives to both groundwater stress and energy burden, with quantified national scenario values.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "cropping_area_trend",
+      "significance": "Main policy lever; >75% rice area reduction in stressed procurement regions drives large water and energy reductions while meeting food constraints.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_electricity_subsidy_intensity",
+      "significance": "Identified as the institutional driver sustaining over-pumping; also central to transition economics via subsidy savings.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_crop_water_requirement",
+      "significance": "Critical biophysical mediator that translates climate variability into deficit, yield, and irrigation outcomes in the optimization model.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    }
+  ],
+  "important_variables_narrative": "The paper's key mechanism starts with policy and crop-allocation incentives that elevate irrigation demand in groundwater-stressed procurement regions. `irrigation_demand` and `g_annual_trend` are the central linked variables, with explicit evidence that reducing pumping pressure is necessary to arrest depletion. `cropping_area_trend` is the principal intervention lever: the modeled spatial crop shift, especially reduced rice concentration in northwestern hotspots, drives substantial reductions in water and energy use. `NEW_electricity_subsidy_intensity` is treated as a structural driver that keeps the unsustainable pumping equilibrium in place, while `NEW_crop_water_requirement` links climate variability to yield and irrigation needs. Together, these variables explain how procurement reform can jointly target groundwater sustainability and food-security outcomes."
+}

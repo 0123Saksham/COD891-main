@@ -1,0 +1,986 @@
+{
+  "schema_version": "2.0",
+  "paper_title": "Drought stress effect, tolerance, and management in wheat – a review",
+  "paper_identity": {
+    "paper_id": 4,
+    "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+  },
+  "paper_summary": "This review synthesizes how drought stress affects wheat through climatic forcing, water deficit physiology, oxidative stress, and reproductive disruption. It reports major yield losses and provides quantitative evidence on reductions in germination, chlorophyll content, kernel weight, and starch accumulation under drought. The paper also outlines tolerance and management pathways through osmotic adjustment, antioxidant defense, molecular breeding, and agronomic water-conservation strategies.",
+  "study_region": "Global wheat systems (with emphasis on arid and semi-arid production environments)",
+  "study_period": "Review synthesis of prior studies (no single fixed study window)",
+  "methodology": "Narrative review integrating published experimental and field evidence on drought effects, tolerance traits, and management practices in wheat.",
+  "paper_type": "review",
+  "paper_type_rationale": "The article compiles and interprets prior literature on mechanisms and interventions rather than presenting one original causal dataset or a single field experiment.",
+  "cluster_families_covered": [
+    "drought",
+    "rainfed_risk",
+    "irrigation_challenges",
+    "mixed"
+  ],
+  "mechanism_domains_covered": [
+    "climate_forcing",
+    "crop_water_demand",
+    "photosynthetic_stress",
+    "oxidative_stress_response",
+    "adaptation_capacity",
+    "genetic_improvement"
+  ],
+  "mapped_variables": [
+    {
+      "taxonomy_name": "prec_annual_avg_rain",
+      "canonical_variable_name": "prec_annual_avg_rain",
+      "alias_used_in_paper": "changing rainfall patterns / decline in precipitation",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "declining precipitation trends",
+      "description": "Rainfall availability and trend as a major climatic driver of drought stress.",
+      "unit": "mm/year",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Review-cited climatological estimates",
+      "indian_data_source": "same",
+      "threshold_or_range": "Annual precipitation decline of 16.09 mm cited.",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "paper_context_id": "wheat_drought_review_2024::prec_annual_avg_rain::annual",
+      "source_paper": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "excerpt": "The earth temperature rises at 0.06 C annually with a decline in precipitation of 16.09 mm."
+    },
+    {
+      "taxonomy_name": "NEW_land_surface_temp_trend",
+      "canonical_variable_name": "NEW_land_surface_temp_trend",
+      "alias_used_in_paper": "rises in atmospheric temperature",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "temperature increase trend",
+      "description": "Rising temperature as a drought-enhancing climatic stressor in wheat systems.",
+      "unit": "C/year",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Review-cited climate trend",
+      "indian_data_source": "same",
+      "threshold_or_range": "Temperature increase of 0.06 C per year cited.",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "paper_context_id": "wheat_drought_review_2024::NEW_land_surface_temp_trend::annual",
+      "source_paper": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "excerpt": "Rises in atmospheric temperature are listed among the major causes of drought stress."
+    },
+    {
+      "taxonomy_name": "et_annual_avg",
+      "canonical_variable_name": "et_annual_avg",
+      "alias_used_in_paper": "evapotranspiration demand and water need",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "water requirement and transpiration demand",
+      "description": "Evaporative demand contributing to water deficit severity in wheat.",
+      "unit": "mm",
+      "role": "mediator",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Review synthesis",
+      "indian_data_source": "same",
+      "threshold_or_range": "Wheat crop water requirement reported as 300-500 mm.",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "crop_water_demand"
+      ],
+      "paper_context_id": "wheat_drought_review_2024::et_annual_avg::annual",
+      "source_paper": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "excerpt": "Wheat crops require 300-500 mm water and drought constrains production in low-water areas."
+    },
+    {
+      "taxonomy_name": "NEW_soil_moisture_index",
+      "canonical_variable_name": "NEW_soil_moisture_index",
+      "alias_used_in_paper": "soil moisture deficit / low water potential",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "water deficit in soil-root environment",
+      "description": "Root-zone moisture status controlling germination, growth, and reproductive success.",
+      "unit": "index or water potential proxy",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Review synthesis",
+      "indian_data_source": "same",
+      "threshold_or_range": null,
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "crop_water_demand"
+      ],
+      "paper_context_id": "wheat_drought_review_2024::NEW_soil_moisture_index::na",
+      "source_paper": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "excerpt": "Soil moisture deficit hinders germination and lowers seedling vigor and establishment."
+    },
+    {
+      "taxonomy_name": "NEW_leaf_area_index",
+      "canonical_variable_name": "NEW_leaf_area_index",
+      "alias_used_in_paper": "leaf area index reduction and early leaf senescence",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "LAI and senescence response",
+      "description": "Canopy structural stress response under drought, including reduced leaf area and earlier senescence.",
+      "unit": "index",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Review-cited physiology studies",
+      "indian_data_source": "same",
+      "threshold_or_range": null,
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "photosynthetic_stress"
+      ],
+      "paper_context_id": "wheat_drought_review_2024::NEW_leaf_area_index::na",
+      "source_paper": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "excerpt": "Drought reduces leaf area index and induces early leaf senescence."
+    },
+    {
+      "taxonomy_name": "NEW_vegetation_health_index",
+      "canonical_variable_name": "NEW_vegetation_health_index",
+      "alias_used_in_paper": "chlorophyll content and photosynthetic efficiency",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "chlorophyll and photochemical efficiency decline",
+      "description": "Vegetation physiological health proxy under drought stress.",
+      "unit": "index",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Review synthesis",
+      "indian_data_source": "same",
+      "threshold_or_range": "Chlorophyll content decreases by about 13-15% under drought.",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "photosynthetic_stress",
+        "oxidative_stress_response"
+      ],
+      "paper_context_id": "wheat_drought_review_2024::NEW_vegetation_health_index::na",
+      "source_paper": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "excerpt": "Chlorophyll content decreases 13-15% under drought stress, reducing photosynthesis."
+    },
+    {
+      "taxonomy_name": "crop_yield_trend",
+      "canonical_variable_name": "crop_yield_trend",
+      "alias_used_in_paper": "yield reduction under drought stress",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "yield loss and yield components decline",
+      "description": "Overall wheat yield response to drought impacts across growth stages.",
+      "unit": "%",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Review-cited experimental evidence",
+      "indian_data_source": "same",
+      "threshold_or_range": "Average wheat yield reduction reported as about 50-60%; losses up to 69% at sensitive stages.",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "crop_water_demand",
+        "photosynthetic_stress"
+      ],
+      "paper_context_id": "wheat_drought_review_2024::crop_yield_trend::na",
+      "source_paper": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "excerpt": "Drought reduces wheat yield by an average of 50-60% and can reach up to 69% at critical stages."
+    },
+    {
+      "taxonomy_name": "NEW_water_use_efficiency",
+      "canonical_variable_name": "NEW_water_use_efficiency",
+      "alias_used_in_paper": "transpiration efficiency and agronomic water-conservation management",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "high transpiration efficiency and management for drought mitigation",
+      "description": "Efficiency of water use in crop physiological performance and management interventions.",
+      "unit": "efficiency index",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Review synthesis",
+      "indian_data_source": "same",
+      "threshold_or_range": null,
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "wheat_drought_review_2024::NEW_water_use_efficiency::na",
+      "source_paper": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "excerpt": "Cultivars with high transpiration efficiency are tolerant to drought stress."
+    },
+    {
+      "taxonomy_name": "NEW_drought_tolerant_variety_adoption",
+      "canonical_variable_name": "NEW_drought_tolerant_variety_adoption",
+      "alias_used_in_paper": "screening genotypes and developing drought-tolerant varieties",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "adoption/development of drought-tolerant cultivars",
+      "description": "Adoption and breeding deployment of drought-tolerant wheat genotypes.",
+      "unit": "adoption share or breeding output proxy",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Review recommendations",
+      "indian_data_source": "same",
+      "threshold_or_range": null,
+      "indicator_direction": "categorical",
+      "relevance": "contextual",
+      "cluster_family": "mixed",
+      "mechanism_domains": [
+        "genetic_improvement",
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "wheat_drought_review_2024::NEW_drought_tolerant_variety_adoption::na",
+      "source_paper": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "excerpt": "Screening, genetic engineering, and transgenic approaches are proposed to develop adaptable drought-tolerant varieties."
+    },
+    {
+      "taxonomy_name": "NEW_crop_water_requirement",
+      "canonical_variable_name": "NEW_crop_water_requirement",
+      "alias_used_in_paper": "wheat water requirement",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "required water for wheat production",
+      "description": "Crop-level water requirement establishing exposure to drought and irrigation constraints.",
+      "unit": "mm",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Review cited estimate",
+      "indian_data_source": "same",
+      "threshold_or_range": "Wheat requires about 300-500 mm water.",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "crop_water_demand"
+      ],
+      "paper_context_id": "wheat_drought_review_2024::NEW_crop_water_requirement::na",
+      "source_paper": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "excerpt": "Wheat crops require 300-500 mm water and are highly vulnerable where irrigation is limited."
+    }
+  ],
+  "new_variables": [],
+  "mechanism_blocks": [
+    {
+      "name": "climate_forcing_to_water_deficit",
+      "description": "Declining precipitation and increasing temperature increase atmospheric water stress and reduce effective root-zone moisture for wheat.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "prec_annual_avg_rain",
+          "from_var_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "to_var": "NEW_soil_moisture_index",
+          "to_var_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "mechanism": "Lower rainfall reduces soil-water availability and delays germination and establishment.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "Rainfed and low-irrigation wheat systems",
+          "from_var_value_range": "Annual precipitation decline of 16.09 mm cited.",
+          "from_var_value_range_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "climate_forcing",
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Changing rainfall patterns are major causes of drought stress and reduced germination performance."
+        },
+        {
+          "from_var": "NEW_land_surface_temp_trend",
+          "from_var_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "to_var": "et_annual_avg",
+          "to_var_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "mechanism": "Higher atmospheric temperature and hot dry winds increase evaporative demand and drought intensity.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Climate change context",
+          "from_var_value_range": "Global annual warming rate cited as 0.06 C.",
+          "from_var_value_range_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "to_var_value_range": "Wheat water requirement 300-500 mm.",
+          "to_var_value_range_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "drought",
+          "mechanism_domains": [
+            "climate_forcing",
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Rises in atmospheric temperature and hot dry winds are major causes of drought stress."
+        }
+      ],
+      "edge_ids": [
+        "e1",
+        "e2"
+      ],
+      "context_variables": [
+        "NEW_crop_water_requirement"
+      ]
+    },
+    {
+      "name": "water_deficit_to_physiological_damage",
+      "description": "Water deficit triggers canopy and physiological dysfunction, reducing photosynthesis and final yield.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_soil_moisture_index",
+          "from_var_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "to_var": "NEW_leaf_area_index",
+          "to_var_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "mechanism": "Lower water potential reduces leaf expansion and accelerates senescence, lowering effective leaf area.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "Vegetative to reproductive stage water stress",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "photosynthetic_stress"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Drought reduces leaf area index and induces early senescence."
+        },
+        {
+          "from_var": "NEW_leaf_area_index",
+          "from_var_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "to_var": "NEW_vegetation_health_index",
+          "to_var_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "mechanism": "Reduced canopy condition lowers chlorophyll content and photochemical efficiency.",
+          "direction": "decrease_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Sustained drought during active growth",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "to_var_value_range": "Chlorophyll decline around 13-15% under drought.",
+          "to_var_value_range_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "photosynthetic_stress",
+            "oxidative_stress_response"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Drought stress reduces chlorophyll content and photochemical efficiency."
+        },
+        {
+          "from_var": "NEW_vegetation_health_index",
+          "from_var_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "mechanism": "Lower photosynthetic function and oxidative damage reduce assimilate supply and yield components.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "Critical stages such as tillering, booting, anthesis, grain filling",
+          "from_var_value_range": "Chlorophyll reduction approximately 13-15%; starch reduction up to 45% under prolonged drought exposure.",
+          "from_var_value_range_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "to_var_value_range": "Yield reduction average 50-60%; up to 69% at sensitive stages.",
+          "to_var_value_range_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "drought",
+          "mechanism_domains": [
+            "photosynthetic_stress",
+            "oxidative_stress_response"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Drought-induced declines in photosynthesis, chlorophyll, and starch accumulation result in strong yield losses."
+        }
+      ],
+      "edge_ids": [
+        "e3",
+        "e4",
+        "e5"
+      ],
+      "context_variables": [
+        "NEW_crop_water_requirement"
+      ]
+    },
+    {
+      "name": "tolerance_and_management_pathway",
+      "description": "Physiological tolerance traits and management interventions improve drought resilience and limit yield losses.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_water_use_efficiency",
+          "from_var_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "to_var": "NEW_vegetation_health_index",
+          "to_var_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "mechanism": "Higher transpiration efficiency and improved water management maintain physiological status under drought.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Drought-prone field conditions with conservation practices",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "adaptation_capacity"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Cultivars with high transpiration efficiency are drought tolerant."
+        },
+        {
+          "from_var": "NEW_drought_tolerant_variety_adoption",
+          "from_var_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "mechanism": "Breeding and adoption of drought-tolerant varieties improves adaptation and stabilizes yield under stress.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Integration of genetic and agronomic management",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "to_var_value_range": "Intended to mitigate major drought losses reported in review.",
+          "to_var_value_range_source": {
+            "paper_id": 4,
+            "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+          },
+          "from_cluster_family": "mixed",
+          "to_cluster_family": "drought",
+          "mechanism_domains": [
+            "genetic_improvement",
+            "adaptation_capacity"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Screening genotypes, transgenic approaches, and adaptive varieties are proposed to overcome drought and increase production."
+        }
+      ],
+      "edge_ids": [
+        "e6",
+        "e7"
+      ],
+      "context_variables": [
+        "NEW_drought_tolerant_variety_adoption",
+        "NEW_water_use_efficiency"
+      ]
+    }
+  ],
+  "causal_chains": [
+    {
+      "edge_id": "e1",
+      "from_var": "prec_annual_avg_rain",
+      "from_var_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "to_var": "NEW_soil_moisture_index",
+      "to_var_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "mechanism": "Lower precipitation decreases available soil water and impairs seed germination and establishment.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "Water-limited and rainfed wheat systems",
+      "from_var_value_range": "Decline in precipitation of 16.09 mm annually cited.",
+      "from_var_value_range_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Changing rainfall patterns are a major cause of drought stress and lower germination performance."
+    },
+    {
+      "edge_id": "e2",
+      "from_var": "NEW_land_surface_temp_trend",
+      "from_var_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "to_var": "et_annual_avg",
+      "to_var_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "mechanism": "Higher temperature raises atmospheric demand and drought pressure, increasing water need.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Global warming context",
+      "from_var_value_range": "Temperature increase rate about 0.06 C annually.",
+      "from_var_value_range_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "to_var_value_range": "Wheat water requirement 300-500 mm.",
+      "to_var_value_range_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing",
+        "crop_water_demand"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Rises in atmospheric temperature and hot dry winds are major causes of drought stress."
+    },
+    {
+      "edge_id": "e3",
+      "from_var": "NEW_soil_moisture_index",
+      "from_var_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "to_var": "NEW_leaf_area_index",
+      "to_var_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "mechanism": "Water deficit reduces cell expansion and increases senescence, lowering leaf area index.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "Vegetative stage drought exposure",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "photosynthetic_stress"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Drought reduces leaf area index and induces early leaf senescence."
+    },
+    {
+      "edge_id": "e4",
+      "from_var": "NEW_leaf_area_index",
+      "from_var_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "to_var": "NEW_vegetation_health_index",
+      "to_var_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "mechanism": "Canopy deterioration reduces chlorophyll and photochemical activity, lowering vegetation health.",
+      "direction": "decrease_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Progressive drought stress",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "to_var_value_range": "Chlorophyll decrease about 13-15%.",
+      "to_var_value_range_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "photosynthetic_stress"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Drought lowers chlorophyll content and photochemical efficiency."
+    },
+    {
+      "edge_id": "e5",
+      "from_var": "NEW_vegetation_health_index",
+      "from_var_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "mechanism": "Declining chlorophyll/photosynthetic performance and oxidative damage reduce grain filling and yield.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "Critical reproductive and grain-filling stages",
+      "from_var_value_range": "Chlorophyll reduction about 13-15%; starch reduction up to 45%.",
+      "from_var_value_range_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "to_var_value_range": "Yield losses average 50-60%; up to 69% at critical stages.",
+      "to_var_value_range_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "drought",
+      "mechanism_domains": [
+        "photosynthetic_stress",
+        "oxidative_stress_response"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Drought reduces photosynthesis and starch accumulation, leading to major yield losses."
+    },
+    {
+      "edge_id": "e6",
+      "from_var": "NEW_water_use_efficiency",
+      "from_var_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "to_var": "NEW_vegetation_health_index",
+      "to_var_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "mechanism": "Higher transpiration efficiency and water-conservation practices support better physiological status under stress.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Drought-prone agronomic management",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Cultivars with high transpiration efficiency are tolerant to drought."
+    },
+    {
+      "edge_id": "e7",
+      "from_var": "NEW_drought_tolerant_variety_adoption",
+      "from_var_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "mechanism": "Genetic and transgenic deployment of drought tolerance traits stabilizes productivity under drought.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Breeding and management integration",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "to_var_value_range": "Intended to reduce major drought yield penalties reported in review.",
+      "to_var_value_range_source": {
+        "paper_id": 4,
+        "paper_title": "Drought stress effect, tolerance, and management in wheat – a review"
+      },
+      "from_cluster_family": "mixed",
+      "to_cluster_family": "drought",
+      "mechanism_domains": [
+        "genetic_improvement",
+        "adaptation_capacity"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Screening, genetic engineering and transgenic approaches are highlighted to develop adaptable drought-tolerant varieties."
+    }
+  ],
+  "conditional_thresholds": [
+    {
+      "variable": "NEW_crop_water_requirement",
+      "threshold": "300-500 mm",
+      "condition": "Typical wheat crop water requirement",
+      "implication": "Water availability below this range increases drought stress risk"
+    },
+    {
+      "variable": "crop_yield_trend",
+      "threshold": "Average reduction 50-60%; up to 69% at critical stages",
+      "condition": "Drought stress at sensitive phenological stages",
+      "implication": "Severe productivity and food-security risk under unmanaged drought"
+    },
+    {
+      "variable": "NEW_vegetation_health_index",
+      "threshold": "Chlorophyll decline about 13-15%",
+      "condition": "Drought stress versus irrigated condition",
+      "implication": "Decline in photosynthesis and yield potential"
+    }
+  ],
+  "key_relationships": [
+    "prec_annual_avg_rain decline and NEW_land_surface_temp_trend increase jointly intensify drought pressure in wheat.",
+    "NEW_soil_moisture_index decline drives reductions in NEW_leaf_area_index and NEW_vegetation_health_index.",
+    "Drought-induced photosynthetic and biochemical stress strongly reduces crop_yield_trend (50-60% average loss).",
+    "NEW_water_use_efficiency and NEW_drought_tolerant_variety_adoption are central mitigation pathways for stabilizing yield.",
+    "The review links oxidative stress (ROS and enzyme responses) to physiological decline and yield damage under drought."
+  ],
+  "alias_resolution_rules": [
+    {
+      "alias_text": "soil moisture deficit / low water potential",
+      "canonical_variable_name": "NEW_soil_moisture_index",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Direct conceptual match to taxonomy expansion."
+    },
+    {
+      "alias_text": "chlorophyll and photosynthesis decline",
+      "canonical_variable_name": "NEW_vegetation_health_index",
+      "resolution_method": "near_synonym_suggestion",
+      "resolution_confidence": "high",
+      "notes": "Used as vegetation physiological health proxy in extraction."
+    },
+    {
+      "alias_text": "transpiration efficiency",
+      "canonical_variable_name": "NEW_water_use_efficiency",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Same efficiency concept under drought management."
+    }
+  ],
+  "mapping_notes": "This is a global review, so many quantitative values are literature-level summary statistics rather than one harmonized experiment. Variables were mapped to canonical drought mechanism constructs and kept measurable where possible.",
+  "limitations": "Evidence is synthesized across heterogeneous studies and geographies; causal edge strength is based on review consensus, not one controlled dataset. Transfer to Indian district/block operations requires local calibration with region-specific data.",
+  "important_variables": [
+    {
+      "variable_name": "crop_yield_trend",
+      "significance": "The paper repeatedly emphasizes large drought-driven yield losses, making yield trend the most policy-relevant outcome variable.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_soil_moisture_index",
+      "significance": "Root-zone moisture deficit is the central physiological trigger linking climate forcing to crop stress responses.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_vegetation_health_index",
+      "significance": "Chlorophyll and photosynthetic declines are key mechanistic indicators of drought damage prior to final yield loss.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_water_use_efficiency",
+      "significance": "Presented as a core tolerance and management lever, including physiological TE-based drought tolerance.",
+      "evidence_strength": "moderate",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_drought_tolerant_variety_adoption",
+      "significance": "Breeding and transgenic deployment are highlighted as long-term solutions for drought resilience and food security.",
+      "evidence_strength": "moderate",
+      "recommendation": "existing_taxonomy"
+    }
+  ],
+  "important_variables_narrative": "The review positions soil-water deficit as the main immediate stress mechanism and documents downstream physiological degradation in chlorophyll, photosynthesis, and starch accumulation. These pathways converge on substantial yield loss, making crop_yield_trend the dominant outcome indicator. Climate forcing remains important, but the paper gives equal weight to management and tolerance pathways, particularly water-use efficiency and genetic improvement. Together, these variables form a practical monitoring and intervention set for drought-risk crop systems."
+}

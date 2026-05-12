@@ -1,0 +1,1764 @@
+{
+  "schema_version": "2.0",
+  "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation",
+  "paper_identity": {
+    "paper_id": 32,
+    "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+  },
+  "paper_summary": "This narrative review synthesizes roughly fifty English-language studies on micro-irrigation, irrigation systems, and groundwater sustainability, with Indian policy context (PMKSY, NMMI, CSS) and national groundwater statistics. It argues micro-irrigation can conserve groundwater by cutting losses and raising water-use efficiency and yields, but poor design, excessive application, agrochemical pathways, and rebound under weak governance can worsen depletion and quality risks.",
+  "study_region": "Global literature with explicit India policy, statistics, and case examples (e.g., Rajasthan, NMMI); authors affiliated Punjab, India",
+  "study_period": "Literature search limited to publications roughly over the prior 15 years from manuscript date; national groundwater statistics cited as of 2022",
+  "methodology": "Systematic-style literature search (SCI, Scopus, Web of Science), deduplication, title/abstract/full-text screening, qualitative synthesis of ~50 papers plus Indian government reports.",
+  "paper_type": "review",
+  "paper_type_rationale": "The article compiles and narrates findings across many prior studies and reports rather than presenting new primary measurements or causal identification from a single dataset.",
+  "cluster_families_covered": [
+    "irrigation_challenges",
+    "groundwater_stress",
+    "drought",
+    "mixed"
+  ],
+  "mechanism_domains_covered": [
+    "agricultural_water_demand",
+    "aquifer_depletion",
+    "best_management_practices",
+    "credit_and_investment_barrier",
+    "deficit_irrigation",
+    "demographic_pressure",
+    "green_revolution_legacy",
+    "groundwater_development",
+    "groundwater_governance",
+    "groundwater_overdraft",
+    "groundwater_quality",
+    "groundwater_recharge",
+    "input_intensification",
+    "irrigation_intensity",
+    "irrigation_return_flow",
+    "jevons_paradox",
+    "land_fragmentation",
+    "leaching",
+    "micro_irrigation_physics",
+    "micro_irrigation_scaling",
+    "overdraft_metrics",
+    "precision_irrigation",
+    "soil_moisture_dynamics",
+    "soil_salinity",
+    "surface_hydrology",
+    "water_balance",
+    "water_scarcity_framing",
+    "water_use_efficiency",
+    "waterlogging",
+    "yield_response"
+  ],
+  "mapped_variables": [
+    {
+      "taxonomy_name": "g_annual_trend",
+      "canonical_variable_name": "g_annual_trend",
+      "alias_used_in_paper": "falling water tables; aquifer depletion",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "groundwater depletion; overextraction exceeding recharge",
+      "description": "Trend or state of groundwater levels / storage under intensive irrigation and extractive pressure.",
+      "unit": "m/year_or_index",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "CGWB / cited national assessments; review synthesis",
+      "indian_data_source": "CGWB Groundwater Assessment / Dynamic Resources",
+      "threshold_or_range": "National narrative: extraction exceeds recharge in many areas; regional GR hotspots cited",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_overdraft",
+        "aquifer_depletion"
+      ],
+      "paper_context_id": "singh2024_eec_microirrigation_gw_review::g_annual_trend::national_review",
+      "source_paper": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "excerpt": "Because extraction rates are excessive and exceed natural recharge rates, groundwater resources are being depleted."
+    },
+    {
+      "taxonomy_name": "recharge_rate",
+      "canonical_variable_name": "recharge_rate",
+      "alias_used_in_paper": "annual recharge of groundwater; extractable resource",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "437.60 BCM recharge; 398.08 BCM extractable; balancing extraction and recharge",
+      "description": "Natural groundwater replenishment rate versus allowable extraction envelope (national figures as cited).",
+      "unit": "BCM/year",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Groundwater Dynamics 2022 as cited",
+      "indian_data_source": "CGWB Dynamic Ground Water Resources of India",
+      "threshold_or_range": "Annual recharge estimated 437.60 BCM; extractable groundwater resource 398.08 BCM (2022 report cited)",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_recharge",
+        "water_balance"
+      ],
+      "paper_context_id": "singh2024_eec_microirrigation_gw_review::recharge_rate::india_2022_cited",
+      "source_paper": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "excerpt": "The overall annual recharge of groundwater was estimated to be 437.60 billion cubic meters... annual extractable ground water resource comes out to be 398.08 billion cubic meters."
+    },
+    {
+      "taxonomy_name": "irrigation_demand",
+      "canonical_variable_name": "irrigation_demand",
+      "alias_used_in_paper": "irrigation water use; excessive irrigation; agricultural water share",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "91% of water for livestock and irrigation; excessive irrigation / application rates",
+      "description": "Volume or intensity of irrigation water applied or required, including over-application under poor management.",
+      "unit": "percent_or_relative",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "National statistics and review discussion",
+      "indian_data_source": "Ministry of Jal Shakti / IWMI-style national water accounts",
+      "threshold_or_range": "Ninety-one percent of the water used in India is used for livestock and irrigation",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_intensity",
+        "agricultural_water_demand"
+      ],
+      "paper_context_id": "singh2024_eec_microirrigation_gw_review::irrigation_demand::national_share",
+      "source_paper": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "excerpt": "Ninety-one percent of the water used in India is used for livestock and irrigation, which accounts for a sizeable amount of water consumption."
+    },
+    {
+      "taxonomy_name": "soge_class_name",
+      "canonical_variable_name": "soge_class_name",
+      "alias_used_in_paper": "percent of groundwater resources drained; development stage",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "60.08 percent of groundwater resources drained (national calculation cited)",
+      "description": "Categorical or indexed stage of groundwater development / overdraft intensity at national scale as cited.",
+      "unit": "percent_developed",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Groundwater Dynamics 2022 cited in introduction",
+      "indian_data_source": "CGWB assessment categories (related)",
+      "threshold_or_range": "An average of 60.08 percent of the ground water resources in the country have been drained, according to calculations.",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_development",
+        "overdraft_metrics"
+      ],
+      "paper_context_id": "singh2024_eec_microirrigation_gw_review::soge_class_name::pct_drained_cited",
+      "source_paper": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "excerpt": "The total yearly extraction of ground water was estimated to be 239.16 billion cubic meters as of 2022. An average of 60.08 percent of the ground water resources in the country have been drained"
+    },
+    {
+      "taxonomy_name": "NEW_water_use_efficiency",
+      "canonical_variable_name": "NEW_water_use_efficiency",
+      "alias_used_in_paper": "water use efficiency; WUE",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "PRD raised WUE 60%; meta-regression on crop WUE; precise control reduces losses",
+      "description": "Efficiency of converting applied irrigation water to crop output or transpiration.",
+      "unit": "index_or_percent_change",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Synthesized empirical studies (Liu et al.; Fan et al.; review text)",
+      "indian_data_source": "same",
+      "threshold_or_range": "PRD plots increased water use efficiency by 60% (cited); wheat/cotton trade-offs with irrigation reductions in meta-regression",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "water_use_efficiency",
+        "best_management_practices"
+      ],
+      "paper_context_id": "singh2024_eec_microirrigation_gw_review::NEW_water_use_efficiency::literature_synthesis",
+      "source_paper": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "excerpt": "PRD-treated plots considerably decreased water consumption and raised water use efficiency by 60%."
+    },
+    {
+      "taxonomy_name": "NEW_micro_irrigation_adoption",
+      "canonical_variable_name": "NEW_micro_irrigation_adoption",
+      "alias_used_in_paper": "micro irrigation penetration; drip and sprinkler adoption",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "~9% of net sown area under micro irrigation in 2020 vs 5.5% in 2015",
+      "description": "Extent of adoption of drip, sprinkler, and related micro-irrigation systems.",
+      "unit": "percent_area",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Department of Agriculture & Farmers Welfare figures as cited",
+      "indian_data_source": "PMKSY-MIS / Agri-stack statistics (typical)",
+      "threshold_or_range": "Penetration rate for the net sown area was almost 9%, up from 5.5% in 2015",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "micro_irrigation_scaling",
+        "technology_diffusion"
+      ],
+      "paper_context_id": "singh2024_eec_microirrigation_gw_review::NEW_micro_irrigation_adoption::india_penetration",
+      "source_paper": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "excerpt": "The Department of Agriculture & Farmers Welfare estimates state that in 2020, the penetration rate for the net sown area was almost 9%, up from 5.5% in 2015."
+    },
+    {
+      "taxonomy_name": "crop_yield_trend",
+      "canonical_variable_name": "crop_yield_trend",
+      "alias_used_in_paper": "crop output; yield improvements",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "20% to 90% yield increases cited across micro-irrigation studies",
+      "description": "Change or level of crop yield associated with irrigation technology and management.",
+      "unit": "percent_change",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Reviewed empirical literature (Assouline et al.; Nagaraj and Anitha; etc.)",
+      "indian_data_source": "Field trial / survey publications cited",
+      "threshold_or_range": "Micro irrigation can raise crop output by 20% to 90% depending on crop variety, soil conditions, and management practices",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "yield_response",
+        "horticultural_and_field_crops"
+      ],
+      "paper_context_id": "singh2024_eec_microirrigation_gw_review::crop_yield_trend::mi_meta_cited",
+      "source_paper": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "excerpt": "Research has shown that... micro irrigation can raise crop output by 20% to 90%"
+    },
+    {
+      "taxonomy_name": "runoff_annual_avg",
+      "canonical_variable_name": "runoff_annual_avg",
+      "alias_used_in_paper": "runoff; surface losses",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "precision irrigation reduces runoff affecting soil moisture (Fishman et al. cited)",
+      "description": "Annual or seasonal surface runoff volume influenced by irrigation method and intensity.",
+      "unit": "mm_or_percent_change",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Fishman et al. (2015) as discussed",
+      "indian_data_source": "Hydrological modeling literature",
+      "threshold_or_range": "Reduces water runoff, which affects soil moisture and the connectivity of root zones",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "surface_hydrology",
+        "precision_irrigation"
+      ],
+      "paper_context_id": "singh2024_eec_microirrigation_gw_review::runoff_annual_avg::fishman_cited",
+      "source_paper": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "excerpt": "Fishman et al. (2015)... show how this reduces water runoff, which affects soil moisture and the connectivity of root zones."
+    },
+    {
+      "taxonomy_name": "NEW_soil_moisture_index",
+      "canonical_variable_name": "NEW_soil_moisture_index",
+      "alias_used_in_paper": "soil moisture; root zone connectivity",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "soil moisture dynamics linked to reduced runoff under precision irrigation",
+      "description": "Soil moisture status or index in the root zone relevant to irrigation method.",
+      "unit": "index",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Fishman et al. (2015) synthesis",
+      "indian_data_source": "Remote sensing soil moisture products (typical district-scale)",
+      "threshold_or_range": "Qualitative link runoff-soil moisture-root zone in cited work",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "mixed",
+      "mechanism_domains": [
+        "soil_moisture_dynamics",
+        "precision_irrigation"
+      ],
+      "paper_context_id": "singh2024_eec_microirrigation_gw_review::NEW_soil_moisture_index::fishman_chain",
+      "source_paper": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "excerpt": "Reduces water runoff, which affects soil moisture and the connectivity of root zones."
+    },
+    {
+      "taxonomy_name": "salinity_level",
+      "canonical_variable_name": "salinity_level",
+      "alias_used_in_paper": "waterlogging; salinity; groundwater contamination",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "ineffective irrigation or drainage; agrochemical contamination of groundwater",
+      "description": "Salinity or contamination level in soil or groundwater from irrigation return flows and chemical inputs.",
+      "unit": "dS/m_or_categorical",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "groundwater",
+      "data_source_in_paper": "Review discussion on return flows and agrochemical pathways",
+      "indian_data_source": "CGWB water quality / CPCB (typical)",
+      "threshold_or_range": "Water logging, salinity... contamination of groundwater resources (review)",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_quality",
+        "irrigation_return_flow"
+      ],
+      "paper_context_id": "singh2024_eec_microirrigation_gw_review::salinity_level::gw_quality_review",
+      "source_paper": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "excerpt": "Water logging, salinity, excessive irrigation return flow, and contamination of groundwater resources can all be results of ineffective irrigation or drainage."
+    },
+    {
+      "taxonomy_name": "salinity_level",
+      "canonical_variable_name": "salinity_level",
+      "alias_used_in_paper": "soil salinity; waterlogging in root zone",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "salinity and waterlogging under poor drainage with irrigation",
+      "description": "Soil salinity / EC elevation linked to irrigation management and drainage.",
+      "unit": "dS/m_or_index",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "soil",
+      "data_source_in_paper": "Review synthesis",
+      "indian_data_source": "Soil survey / Wasteland Atlas (typical)",
+      "threshold_or_range": "Salinized soils drip cotton yield context (Khamees et al. cited)",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "soil_salinity",
+        "waterlogging"
+      ],
+      "paper_context_id": "singh2024_eec_microirrigation_gw_review::salinity_level::soil_review",
+      "source_paper": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "excerpt": "Similar research in areas with salinized soils showed that drip irrigation increases cotton yield"
+    },
+    {
+      "taxonomy_name": "irrigated_area_fraction",
+      "canonical_variable_name": "irrigated_area_fraction",
+      "alias_used_in_paper": "micro irrigation share of net sown / irrigated area",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "9% net sown area under micro irrigation (2020)",
+      "description": "Share of cropped or irrigated area equipped with micro-irrigation.",
+      "unit": "percent",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Fig. 3 / DA&FW estimates as cited",
+      "indian_data_source": "PMKSY MIS area statistics",
+      "threshold_or_range": "9% penetration on net sown area (2020) vs 5.5% (2015)",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "contextual",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "micro_irrigation_scaling"
+      ],
+      "paper_context_id": "singh2024_eec_microirrigation_gw_review::irrigated_area_fraction::mi_penetration",
+      "source_paper": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "excerpt": "In 2020, the penetration rate for the net sown area was almost 9%, up from 5.5% in 2015."
+    },
+    {
+      "taxonomy_name": "cropping_intensity_trend",
+      "canonical_variable_name": "cropping_intensity_trend",
+      "alias_used_in_paper": "intensive irrigation; HYV-based intensification",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "Green Revolution: HYV seeds, intensive irrigation, northwest overexploitation",
+      "description": "Intensity of cropping and associated irrigation demand from high-input systems.",
+      "unit": "index",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Historical review section (Punjab, Haryana, UP)",
+      "indian_data_source": "Agricultural Census / input surveys",
+      "threshold_or_range": "High-yielding crop types, intensive irrigation, and inadequate water management",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "contextual",
+      "cluster_family": "mixed",
+      "mechanism_domains": [
+        "green_revolution_legacy",
+        "input_intensification"
+      ],
+      "paper_context_id": "singh2024_eec_microirrigation_gw_review::cropping_intensity_trend::gr_groundwater",
+      "source_paper": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "excerpt": "The top beneficiary states in India, Punjab, Haryana, and Uttar Pradesh, experienced excessive groundwater extraction due to high-yielding crop types, intensive irrigation"
+    },
+    {
+      "taxonomy_name": "NEW_population_density",
+      "canonical_variable_name": "NEW_population_density",
+      "alias_used_in_paper": "population growth; urbanization",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "population expansion, urbanization reducing per capita water availability",
+      "description": "Demographic pressure on water resources cited in water scarcity framing.",
+      "unit": "m3_per_capita_trajectory",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Ministry of Jal Shakti (2021) per capita trajectory as cited",
+      "indian_data_source": "Census / MoJS reports",
+      "threshold_or_range": "Usable water per capita predicted to drop from 1453 m3 (1951) to 1170 m3 by 2050 (cited trajectory; PDF typo '195247' noted in mapping_notes)",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "contextual",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "water_scarcity_framing",
+        "demographic_pressure"
+      ],
+      "paper_context_id": "singh2024_eec_microirrigation_gw_review::NEW_population_density::per_capita_water",
+      "source_paper": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "excerpt": "By 2050, average usable water supplies are predicted to drop from 195247 m3 to 1170 m3 per capita, from their present level of 1453 m3 per capita in 1951."
+    },
+    {
+      "taxonomy_name": "NEW_land_holding_size",
+      "canonical_variable_name": "NEW_land_holding_size",
+      "alias_used_in_paper": "small-scale farmers; landholdings structure",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "89.4% of farmers' landholdings are small-scale (PIB Delhi, 2022 cited)",
+      "description": "Average or distribution of operational holding size affecting technology adoption economics.",
+      "unit": "ha_or_percent_smallholders",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "PIB Delhi (2022) as cited",
+      "indian_data_source": "Agricultural Census operational holdings",
+      "threshold_or_range": "Small-scale farmers account up 89.4% of farmers' landholdings",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "land_fragmentation",
+        "adoption_barrier"
+      ],
+      "paper_context_id": "singh2024_eec_microirrigation_gw_review::NEW_land_holding_size::smallholder_share",
+      "source_paper": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "excerpt": "Small-scale farmers account up 89.4% of farmers' landholdings, which makes it challenging for them to invest in micro irrigation technology"
+    }
+  ],
+  "new_variables": [],
+  "mechanism_blocks": [
+    {
+      "name": "national_extractive_groundwater_pressure",
+      "description": "Agricultural irrigation dominates national water use and, combined with demographic pressure, strains groundwater storage and development metrics.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "mechanism": "Where groundwater irrigation withdrawals chronically exceed sustainable yields, storage is drawn down and water tables fall.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "India-wide synthesis; irrigation-dependent agriculture",
+          "from_var_value_range": "91% national water use for livestock and irrigation; extraction 239.16 BCM vs extractable 398.08 BCM (cited)",
+          "from_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var_value_range": "Depletion narrative: extraction exceeds recharge in many settings (review)",
+          "to_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_overdraft",
+            "irrigation_intensity"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Because extraction rates are excessive and exceed natural recharge rates, groundwater resources are being depleted."
+        },
+        {
+          "from_var": "NEW_population_density",
+          "from_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "mechanism": "Rising food demand and rural–urban water competition tighten the margin for expanding irrigated production without efficiency gains.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "National water scarcity framing to 2050",
+          "from_var_value_range": "Per capita usable water decline trajectory cited (1453 to 1170 m3 by 2050)",
+          "from_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var_value_range": "91% water to livestock and irrigation contextual coupling",
+          "to_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "water_scarcity_framing",
+            "demographic_pressure"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Improving yield is a critical issue in agriculture in order to feed the country's growing population."
+        },
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var": "soge_class_name",
+          "to_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "mechanism": "Sustained withdrawals above sustainable yields move basins toward higher stages of groundwater development in national accounting.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "National 2022 extraction vs resource envelope cited",
+          "from_var_value_range": "239.16 BCM extraction cited against 398.08 BCM extractable",
+          "from_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var_value_range": "60.08% of resources drained (cited calculation)",
+          "to_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_development",
+            "overdraft_metrics"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The total yearly extraction of ground water was estimated to be 239.16 billion cubic meters as of 2022."
+        }
+      ],
+      "edge_ids": [
+        "e1",
+        "e11",
+        "e14"
+      ],
+      "context_variables": [
+        "recharge_rate",
+        "NEW_population_density"
+      ]
+    },
+    {
+      "name": "microirrigation_efficiency_and_productivity",
+      "description": "Micro-irrigation raises water-use efficiency and yields while enabling deficit strategies that cut seasonal applied water in cited trials.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_micro_irrigation_adoption",
+          "from_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var": "NEW_water_use_efficiency",
+          "to_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "mechanism": "Drip and sprinkler systems target root zones and timing, cutting evaporative and distribution losses versus flood methods.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Well-designed and maintained micro-irrigation",
+          "from_var_value_range": "Penetration 9% NSA (2020) context; qualitative mechanism plus case WUE gains",
+          "from_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var_value_range": "PRD +60% WUE; meta-regression and trials cited for efficiency gains",
+          "to_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "water_use_efficiency",
+            "micro_irrigation_physics"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "By minimizing runoff and evaporation and supplying water directly to the root zone, micro irrigation systems increase the efficiency of water use."
+        },
+        {
+          "from_var": "NEW_water_use_efficiency",
+          "from_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "mechanism": "Higher application efficiency lowers gross irrigation requirement per unit evapotranspiration when schedules match crop demand.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "BMP-aligned scheduling and system maintenance (review emphasis)",
+          "from_var_value_range": "PRD and drip trials showing reduced seasonal water applications (cited ranges in meta-regression)",
+          "from_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var_value_range": "Fan et al. wheat: 31.4% irrigation reduction tied to 14.8% grain loss scenario; cotton 51.4% water reduction",
+          "to_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "best_management_practices",
+            "deficit_irrigation"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The findings indicated that a loss of 14.8% in grain production can lead to a reduction of 31.4% in water usage for wheat"
+        },
+        {
+          "from_var": "NEW_micro_irrigation_adoption",
+          "from_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "mechanism": "Localized water and nutrient delivery reduces water stress and supports biomass accumulation and yield.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Crop- and soil-specific management as reviewed",
+          "from_var_value_range": "20–90% yield increase range cited across studies",
+          "from_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var_value_range": "Same range on yield response (review conclusion)",
+          "to_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "yield_response"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Micro irrigation can raise crop output by 20% to 90% depending on crop variety, soil conditions, and management practices"
+        },
+        {
+          "from_var": "NEW_micro_irrigation_adoption",
+          "from_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var": "runoff_annual_avg",
+          "to_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "mechanism": "Precision application reduces surface losses that would otherwise leave the field as runoff.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Shift from flood to precision irrigation (Fishman et al. narrative)",
+          "from_var_value_range": "MI adoption still limited nationally but directional evidence cited",
+          "from_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var_value_range": "Reduced runoff affecting soil moisture (cited)",
+          "to_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "surface_hydrology",
+            "precision_irrigation"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Fishman et al. (2015), who also show how this reduces water runoff, which affects soil moisture and the connectivity of root zones."
+        },
+        {
+          "from_var": "NEW_micro_irrigation_adoption",
+          "from_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var": "NEW_soil_moisture_index",
+          "to_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "mechanism": "Lower runoff and targeted wetting alter root-zone soil moisture distribution and connectivity.",
+          "direction": "increase_causes_increase",
+          "strength": "weak",
+          "conditions": "Fishman et al. cited linkage",
+          "from_var_value_range": "Adoption as qualitative driver in cited study",
+          "from_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var_value_range": "Soil moisture and root zone connectivity response (qualitative in review)",
+          "to_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "mixed",
+          "mechanism_domains": [
+            "soil_moisture_dynamics"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Reduces water runoff, which affects soil moisture and the connectivity of root zones."
+        }
+      ],
+      "edge_ids": [
+        "e2",
+        "e3",
+        "e6",
+        "e12",
+        "e13"
+      ],
+      "context_variables": [
+        "crop_yield_trend",
+        "runoff_annual_avg"
+      ]
+    },
+    {
+      "name": "recharge_return_flow_and_rebound",
+      "description": "Properly managed systems can enhance recharge via return flows, but efficiency without governance can raise total groundwater demand (Jevons paradox).",
+      "stressor_scope": "mixed",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_micro_irrigation_adoption",
+          "from_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var": "recharge_rate",
+          "to_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "mechanism": "Managed micro-irrigation can raise infiltration and controlled return flows that augment aquifer recharge versus unmanaged flood losses to non-beneficial evaporation.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Proper design, maintenance, and drainage; avoid excessive return-flow salinity",
+          "from_var_value_range": "Adoption scale still low (9% NSA) but positive recharge pathway described",
+          "from_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var_value_range": "National recharge context 437.60 BCM cited alongside sustainable management narrative",
+          "to_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "irrigation_return_flow",
+            "groundwater_recharge"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Irrigation return flow can increase groundwater recharge and replenish depleted aquifers if managed appropriately."
+        },
+        {
+          "from_var": "NEW_micro_irrigation_adoption",
+          "from_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "mechanism": "Jevons-style rebound: efficiency gains can expand irrigated area or pumping when groundwater use is unconstrained, increasing total withdrawals.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Weak groundwater governance (Rajasthan drip example cited)",
+          "from_var_value_range": "MI penetration growing but uneven (9% NSA)",
+          "from_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var_value_range": "Drip use without regulation linked to intensified groundwater extraction (Birkenholtz, 2017 cited)",
+          "to_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "jevons_paradox",
+            "groundwater_governance"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "When there are no regulations controlling the use of groundwater, farmers in the Indian state of Rajasthan opt to employ drip irrigation... potential to exacerbate the issue of excessive groundwater extraction"
+        }
+      ],
+      "edge_ids": [
+        "e4",
+        "e5"
+      ],
+      "context_variables": [
+        "recharge_rate",
+        "g_annual_trend"
+      ]
+    },
+    {
+      "name": "green_revolution_irrigation_intensity",
+      "description": "HYV-based intensification increased irrigation duty and contributed to regional groundwater overdraft in beneficiary states.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "cropping_intensity_trend",
+          "from_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "mechanism": "Green Revolution packages tied HYV seeds to intensive irrigation, raising long-run irrigation duty in favorable agroecologies.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Northwest India beneficiary states narrative",
+          "from_var_value_range": "Intensive irrigation named with HYV adoption",
+          "from_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var_value_range": "Excessive groundwater extraction named outcome pathway",
+          "to_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "from_cluster_family": "mixed",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "green_revolution_legacy",
+            "input_intensification"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Punjab, Haryana, and Uttar Pradesh, experienced excessive groundwater extraction due to high-yielding crop types, intensive irrigation"
+        }
+      ],
+      "edge_ids": [
+        "e10"
+      ],
+      "context_variables": [
+        "g_annual_trend",
+        "soge_class_name"
+      ]
+    },
+    {
+      "name": "smallholder_adoption_constraints",
+      "description": "Dominance of small operational holdings constrains capital-intensive micro-irrigation uptake despite subsidy programs.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_land_holding_size",
+          "from_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var": "NEW_micro_irrigation_adoption",
+          "to_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "mechanism": "High fixed costs per hectare and limited collateral on tiny holdings slow investment in emitters, filters, and pressurized networks.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "India smallholder structure (PIB 2022 statistic cited)",
+          "from_var_value_range": "89.4% holdings classified small-scale in cited statistic",
+          "from_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var_value_range": "MI penetration 9% NSA despite growth from 5.5%",
+          "to_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "land_fragmentation",
+            "credit_and_investment_barrier"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Small-scale farmers account up 89.4% of farmers' landholdings, which makes it challenging for them to invest in micro irrigation technology"
+        }
+      ],
+      "edge_ids": [
+        "e7"
+      ],
+      "context_variables": [
+        "irrigated_area_fraction"
+      ]
+    },
+    {
+      "name": "salinity_waterlogging_and_contamination",
+      "description": "Poor irrigation and drainage management under micro or conventional systems can elevate soil salinity/waterlogging and leach contaminants to groundwater.",
+      "stressor_scope": "mixed",
+      "edge_drafts": [
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var": "salinity_level",
+          "to_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "mechanism": "Excessive or poorly drained irrigation increases deep percolation of salts and agrochemicals into groundwater.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Poor drainage; fertigation and pesticide use with micro-irrigation",
+          "from_var_value_range": "High national irrigation share (91%) contextual demand",
+          "from_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var_value_range": "Contamination and salinity / waterlogging risks described for ineffective systems",
+          "to_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_quality",
+            "leaching"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "groundwater",
+          "excerpt": "The use of pesticides and fertilizers in micro irrigation systems can contaminate groundwater, lowering water quality"
+        },
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var": "salinity_level",
+          "to_var_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "mechanism": "Ineffective surface or micro systems without drainage can raise water tables and root-zone salinity.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Poor drainage design",
+          "from_var_value_range": "Same irrigation demand context",
+          "from_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "to_var_value_range": "Water logging, salinity... results of ineffective irrigation or drainage",
+          "to_var_value_range_source": {
+            "paper_id": 32,
+            "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "waterlogging",
+            "soil_salinity"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "soil",
+          "excerpt": "Water logging, salinity, excessive irrigation return flow... can all be results of ineffective irrigation or drainage."
+        }
+      ],
+      "edge_ids": [
+        "e8",
+        "e9"
+      ],
+      "context_variables": [
+        "salinity_level"
+      ]
+    }
+  ],
+  "causal_chains": [
+    {
+      "edge_id": "e1",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "mechanism": "Where groundwater irrigation withdrawals chronically exceed sustainable yields, storage is drawn down and water tables fall.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "India-wide synthesis; irrigation-dependent agriculture",
+      "from_var_value_range": "91% national water use for livestock and irrigation; extraction 239.16 BCM vs extractable 398.08 BCM (cited)",
+      "from_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var_value_range": "Depletion narrative: extraction exceeds recharge in many settings (review)",
+      "to_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_overdraft",
+        "irrigation_intensity"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Because extraction rates are excessive and exceed natural recharge rates, groundwater resources are being depleted."
+    },
+    {
+      "edge_id": "e2",
+      "from_var": "NEW_micro_irrigation_adoption",
+      "from_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var": "NEW_water_use_efficiency",
+      "to_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "mechanism": "Drip and sprinkler systems target root zones and timing, cutting evaporative and distribution losses versus flood methods.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Well-designed and maintained micro-irrigation",
+      "from_var_value_range": "Penetration 9% NSA (2020) context; qualitative mechanism plus case WUE gains",
+      "from_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var_value_range": "PRD +60% WUE; meta-regression and trials cited for efficiency gains",
+      "to_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "water_use_efficiency",
+        "micro_irrigation_physics"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "By minimizing runoff and evaporation and supplying water directly to the root zone, micro irrigation systems increase the efficiency of water use."
+    },
+    {
+      "edge_id": "e3",
+      "from_var": "NEW_water_use_efficiency",
+      "from_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "mechanism": "Higher application efficiency lowers gross irrigation requirement per unit evapotranspiration when schedules match crop demand.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "BMP-aligned scheduling and system maintenance (review emphasis)",
+      "from_var_value_range": "PRD and drip trials showing reduced seasonal water applications (cited ranges in meta-regression)",
+      "from_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var_value_range": "Fan et al. wheat: 31.4% irrigation reduction tied to 14.8% grain loss scenario; cotton 51.4% water reduction",
+      "to_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "best_management_practices",
+        "deficit_irrigation"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The findings indicated that a loss of 14.8% in grain production can lead to a reduction of 31.4% in water usage for wheat"
+    },
+    {
+      "edge_id": "e4",
+      "from_var": "NEW_micro_irrigation_adoption",
+      "from_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var": "recharge_rate",
+      "to_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "mechanism": "Managed micro-irrigation can raise infiltration and controlled return flows that augment aquifer recharge versus unmanaged flood losses to non-beneficial evaporation.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Proper design, maintenance, and drainage; avoid excessive return-flow salinity",
+      "from_var_value_range": "Adoption scale still low (9% NSA) but positive recharge pathway described",
+      "from_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var_value_range": "National recharge context 437.60 BCM cited alongside sustainable management narrative",
+      "to_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "irrigation_return_flow",
+        "groundwater_recharge"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Irrigation return flow can increase groundwater recharge and replenish depleted aquifers if managed appropriately."
+    },
+    {
+      "edge_id": "e5",
+      "from_var": "NEW_micro_irrigation_adoption",
+      "from_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "mechanism": "Jevons-style rebound: efficiency gains can expand irrigated area or pumping when groundwater use is unconstrained, increasing total withdrawals.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Weak groundwater governance (Rajasthan drip example cited)",
+      "from_var_value_range": "MI penetration growing but uneven (9% NSA)",
+      "from_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var_value_range": "Drip use without regulation linked to intensified groundwater extraction (Birkenholtz, 2017 cited)",
+      "to_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "jevons_paradox",
+        "groundwater_governance"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "When there are no regulations controlling the use of groundwater, farmers in the Indian state of Rajasthan opt to employ drip irrigation... potential to exacerbate the issue of excessive groundwater extraction"
+    },
+    {
+      "edge_id": "e6",
+      "from_var": "NEW_micro_irrigation_adoption",
+      "from_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "mechanism": "Localized water and nutrient delivery reduces water stress and supports biomass accumulation and yield.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Crop- and soil-specific management as reviewed",
+      "from_var_value_range": "20–90% yield increase range cited across studies",
+      "from_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var_value_range": "Same range on yield response (review conclusion)",
+      "to_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "yield_response"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Micro irrigation can raise crop output by 20% to 90% depending on crop variety, soil conditions, and management practices"
+    },
+    {
+      "edge_id": "e7",
+      "from_var": "NEW_land_holding_size",
+      "from_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var": "NEW_micro_irrigation_adoption",
+      "to_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "mechanism": "High fixed costs per hectare and limited collateral on tiny holdings slow investment in emitters, filters, and pressurized networks.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "India smallholder structure (PIB 2022 statistic cited)",
+      "from_var_value_range": "89.4% holdings classified small-scale in cited statistic",
+      "from_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var_value_range": "MI penetration 9% NSA despite growth from 5.5%",
+      "to_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "land_fragmentation",
+        "credit_and_investment_barrier"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Small-scale farmers account up 89.4% of farmers' landholdings, which makes it challenging for them to invest in micro irrigation technology"
+    },
+    {
+      "edge_id": "e8",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var": "salinity_level",
+      "to_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "mechanism": "Excessive or poorly drained irrigation increases deep percolation of salts and agrochemicals into groundwater.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Poor drainage; fertigation and pesticide use with micro-irrigation",
+      "from_var_value_range": "High national irrigation share (91%) contextual demand",
+      "from_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var_value_range": "Contamination and salinity / waterlogging risks described for ineffective systems",
+      "to_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_quality",
+        "leaching"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "groundwater",
+      "excerpt": "The use of pesticides and fertilizers in micro irrigation systems can contaminate groundwater, lowering water quality"
+    },
+    {
+      "edge_id": "e9",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var": "salinity_level",
+      "to_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "mechanism": "Ineffective surface or micro systems without drainage can raise water tables and root-zone salinity.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Poor drainage design",
+      "from_var_value_range": "Same irrigation demand context",
+      "from_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var_value_range": "Water logging, salinity... results of ineffective irrigation or drainage",
+      "to_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "waterlogging",
+        "soil_salinity"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "soil",
+      "excerpt": "Water logging, salinity, excessive irrigation return flow... can all be results of ineffective irrigation or drainage."
+    },
+    {
+      "edge_id": "e10",
+      "from_var": "cropping_intensity_trend",
+      "from_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "mechanism": "Green Revolution packages tied HYV seeds to intensive irrigation, raising long-run irrigation duty in favorable agroecologies.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Northwest India beneficiary states narrative",
+      "from_var_value_range": "Intensive irrigation named with HYV adoption",
+      "from_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var_value_range": "Excessive groundwater extraction named outcome pathway",
+      "to_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "from_cluster_family": "mixed",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "green_revolution_legacy",
+        "input_intensification"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Punjab, Haryana, and Uttar Pradesh, experienced excessive groundwater extraction due to high-yielding crop types, intensive irrigation"
+    },
+    {
+      "edge_id": "e11",
+      "from_var": "NEW_population_density",
+      "from_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "mechanism": "Rising food demand and rural–urban water competition tighten the margin for expanding irrigated production without efficiency gains.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "National water scarcity framing to 2050",
+      "from_var_value_range": "Per capita usable water decline trajectory cited (1453 to 1170 m3 by 2050)",
+      "from_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var_value_range": "91% water to livestock and irrigation contextual coupling",
+      "to_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "water_scarcity_framing",
+        "demographic_pressure"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Improving yield is a critical issue in agriculture in order to feed the country's growing population."
+    },
+    {
+      "edge_id": "e12",
+      "from_var": "NEW_micro_irrigation_adoption",
+      "from_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var": "runoff_annual_avg",
+      "to_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "mechanism": "Precision application reduces surface losses that would otherwise leave the field as runoff.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Shift from flood to precision irrigation (Fishman et al. narrative)",
+      "from_var_value_range": "MI adoption still limited nationally but directional evidence cited",
+      "from_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var_value_range": "Reduced runoff affecting soil moisture (cited)",
+      "to_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "surface_hydrology",
+        "precision_irrigation"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Fishman et al. (2015), who also show how this reduces water runoff, which affects soil moisture and the connectivity of root zones."
+    },
+    {
+      "edge_id": "e13",
+      "from_var": "NEW_micro_irrigation_adoption",
+      "from_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var": "NEW_soil_moisture_index",
+      "to_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "mechanism": "Lower runoff and targeted wetting alter root-zone soil moisture distribution and connectivity.",
+      "direction": "increase_causes_increase",
+      "strength": "weak",
+      "conditions": "Fishman et al. cited linkage",
+      "from_var_value_range": "Adoption as qualitative driver in cited study",
+      "from_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var_value_range": "Soil moisture and root zone connectivity response (qualitative in review)",
+      "to_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "mixed",
+      "mechanism_domains": [
+        "soil_moisture_dynamics"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Reduces water runoff, which affects soil moisture and the connectivity of root zones."
+    },
+    {
+      "edge_id": "e14",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var": "soge_class_name",
+      "to_var_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "mechanism": "Sustained withdrawals above sustainable yields move basins toward higher stages of groundwater development in national accounting.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "National 2022 extraction vs resource envelope cited",
+      "from_var_value_range": "239.16 BCM extraction cited against 398.08 BCM extractable",
+      "from_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "to_var_value_range": "60.08% of resources drained (cited calculation)",
+      "to_var_value_range_source": {
+        "paper_id": 32,
+        "paper_title": "Analyzing the Challenges and Solutions of Sustainable Groundwater Management using Micro-irrigation"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_development",
+        "overdraft_metrics"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The total yearly extraction of ground water was estimated to be 239.16 billion cubic meters as of 2022."
+    }
+  ],
+  "conditional_thresholds": [
+    {
+      "variable": "NEW_micro_irrigation_adoption",
+      "threshold": "~9% of net sown area (2020) vs 5.5% (2015)",
+      "condition": "India national penetration statistic as cited",
+      "implication": "Large untapped area for efficiency gains but adoption still far below comparator countries named in text"
+    },
+    {
+      "variable": "recharge_rate",
+      "threshold": "437.60 BCM annual recharge; 398.08 BCM extractable; 239.16 BCM annual extraction (2022)",
+      "condition": "National groundwater resource accounting as cited from Groundwater Dynamics 2022",
+      "implication": "Headroom exists in aggregate extractable resource but regional overdraft and 60.08% drained metric signal sustainability risk"
+    },
+    {
+      "variable": "crop_yield_trend",
+      "threshold": "20% to 90% yield increase range cited for micro irrigation depending on crop, soil, management",
+      "condition": "Synthesized empirical literature in review",
+      "implication": "Water productivity and output can rise under MI, supporting food security goals if water governance matches"
+    }
+  ],
+  "key_relationships": [
+    "National irrigation and livestock share of water use ≈91% (cited) frames irrigation_demand as dominant lever on groundwater_stress.",
+    "Cited 2022 groundwater accounts: extraction 239.16 BCM vs extractable 398.08 BCM; 60.08% resources drained — links irrigation_demand to soge_class_name / g_annual_trend narratives.",
+    "Review cites +60% water use efficiency under PRD (Liu et al.) and large seasonal irrigation reductions in Fan et al. meta-regression for wheat and cotton.",
+    "Birkenholtz (2017) Rajasthan drip example ties NEW_micro_irrigation_adoption to intensified irrigation_demand when groundwater governance is absent (rebound / Jevons framing)."
+  ],
+  "alias_resolution_rules": [
+    {
+      "alias_text": "drip and sprinkler / micro irrigation / MIS",
+      "canonical_variable_name": "NEW_micro_irrigation_adoption",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Technology adoption and areal penetration"
+    },
+    {
+      "alias_text": "water use efficiency / WUE / PRD efficiency gain",
+      "canonical_variable_name": "NEW_water_use_efficiency",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": null
+    },
+    {
+      "alias_text": "groundwater depletion / falling water tables",
+      "canonical_variable_name": "g_annual_trend",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": null
+    },
+    {
+      "alias_text": "annual recharge / extractable groundwater resource",
+      "canonical_variable_name": "recharge_rate",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "medium",
+      "notes": "National recharge and safe yield framing"
+    },
+    {
+      "alias_text": "60.08 percent drained",
+      "canonical_variable_name": "soge_class_name",
+      "resolution_method": "near_synonym_suggestion",
+      "resolution_confidence": "medium",
+      "notes": "Mapped to extraction-stage / development intensity proxy"
+    },
+    {
+      "alias_text": "contamination / salinity / water logging",
+      "canonical_variable_name": "salinity_level",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Separate instances for soil vs groundwater medium"
+    }
+  ],
+  "mapping_notes": "Per capita water availability quote mixes digits in PDF ('195247 m3'); ranges/thresholds follow reviewable national statistics and cited study magnitudes. soge_class_name used as categorical proxy for national 'percent drained' statistic rather than a named CGWB block category.",
+  "limitations": "Review-level edges aggregate heterogeneous site contexts; several links are qualitative syntheses rather than district-level identified causal parameters; international case studies (Spain, China, Egypt, US) are mixed with India evidence.",
+  "important_variables": [
+    {
+      "variable_name": "irrigation_demand",
+      "significance": "Dominant share of national water use (91% cited) and central to both depletion and MI efficiency narratives.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_micro_irrigation_adoption",
+      "significance": "Core technology lever for WUE, recharge-friendly return flows, yield gains, and rebound risk depending on governance.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_water_use_efficiency",
+      "significance": "Primary mechanism through which MI is argued to reduce seasonal applied water in cited quantitative studies.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "g_annual_trend",
+      "significance": "Outcome axis for sustainability: national overdraft story and regional Green Revolution legacy.",
+      "evidence_strength": "moderate",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "recharge_rate",
+      "significance": "Anchors the water-balance framing (recharge vs extraction numbers cited from 2022 report).",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    }
+  ],
+  "important_variables_narrative": "The review positions irrigation_demand—especially groundwater-based irrigation—as the main stressor on aquifers, using national extraction and drained-resource statistics alongside the Green Revolution legacy in northwest India. NEW_micro_irrigation_adoption and NEW_water_use_efficiency are treated as the primary levers to cut losses and align applications with crop needs, with meta-regression and trial magnitudes on seasonal water savings and yield responses. However, the same adoption variable interacts with governance: the Rajasthan example flags rebound-style intensification when regulations are weak, while salinity_level captures quality risks from return flows and agrochemical pathways. For district work, national aggregates here should be downscaled with CGWB/WRIS block indicators rather than applied literally."
+}

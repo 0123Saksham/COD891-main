@@ -1,0 +1,1100 @@
+{
+  "schema_version": "2.0",
+  "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators",
+  "paper_identity": {
+    "paper_id": 1,
+    "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+  },
+  "paper_summary": "This paper reconstructs the 2012 flash drought in the continental United States using SPEI3 and compares drought impacts between rainfed and irrigated croplands using LAI, GPP, and GOSIF. It finds that precipitation deficits and elevated temperature intensified drought conditions, while irrigated systems showed smaller moderate/strong negative anomalies than rainfed systems. The study identifies irrigation as a key adaptation pathway that buffers drought-induced ecological stress.",
+  "study_region": "Continental United States (rainfed and irrigated croplands)",
+  "study_period": "2001-2019 baseline; focal drought year 2012 with June-September growing-season analysis",
+  "methodology": "Remote sensing time-series analysis, SPEI3 construction from precipitation and PET, standardized anomaly (SAveg) classification, and pixel-wise partial correlation with significance testing (p < 0.05).",
+  "paper_type": "mechanism",
+  "paper_type_rationale": "The paper explicitly traces causal pathways from climate forcing (precipitation and temperature) to drought state (SPEI3) and then to ecological outcomes (LAI, GPP, GOSIF), while testing irrigation's buffering role. Its core contribution is explanatory mechanism analysis rather than policy design.",
+  "cluster_families_covered": [
+    "drought",
+    "rainfed_risk",
+    "irrigation_challenges"
+  ],
+  "mechanism_domains_covered": [
+    "climate_forcing",
+    "drought_indexing",
+    "vegetation_response",
+    "photosynthetic_stress",
+    "irrigation_buffering",
+    "adaptation_capacity"
+  ],
+  "mapped_variables": [
+    {
+      "taxonomy_name": "prec_annual_avg_rain",
+      "canonical_variable_name": "prec_annual_avg_rain",
+      "alias_used_in_paper": "precipitation",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "monthly precipitation and cumulative precipitation reduction",
+      "description": "Rainfall supply driving moisture availability and drought development.",
+      "unit": "mm",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "ERA5 monthly precipitation",
+      "indian_data_source": "same",
+      "threshold_or_range": "Multi-year monthly mean 66.37 mm; 2012 annual precipitation decreased by 13.15%; June-September cumulative precipitation reduced by about 51.50 mm.",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing",
+        "drought_indexing"
+      ],
+      "paper_context_id": "chen2025_usflashdrought::precipitation::annual",
+      "source_paper": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "excerpt": "The multi-year mean monthly precipitation was 66.37 mm and experienced a decrease of 13.15% in 2012; cumulative precipitation reduced by about 51.50 mm from June to September."
+    },
+    {
+      "taxonomy_name": "NEW_land_surface_temp_trend",
+      "canonical_variable_name": "NEW_land_surface_temp_trend",
+      "alias_used_in_paper": "air temperature",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "temperature anomalies versus multi-year mean",
+      "description": "Temperature forcing that compounds drought by increasing atmospheric demand.",
+      "unit": "degree_C",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "ERA5 monthly temperature",
+      "indian_data_source": "same",
+      "threshold_or_range": "From January to August 2012, temperatures were above multi-year mean.",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "paper_context_id": "chen2025_usflashdrought::temperature::annual",
+      "source_paper": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "excerpt": "From January to August of 2012, temperatures were obviously higher than the multi-year mean."
+    },
+    {
+      "taxonomy_name": "NEW_moisture_index",
+      "canonical_variable_name": "NEW_moisture_index",
+      "alias_used_in_paper": "SPEI3",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "3-month Standardized Precipitation Evapotranspiration Index",
+      "description": "Standardized climatic moisture-deficit index used for drought onset and severity classification.",
+      "unit": "index",
+      "role": "mediator",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Derived from precipitation minus PET and standardized over 2001-2019 baseline",
+      "indian_data_source": "same",
+      "threshold_or_range": "Drought onset at SPEI3 < -0.5; mild -0.99 to -0.50; moderate -1.49 to -1.00; severe -1.99 to -1.50; extreme < -2.00.",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "drought_indexing",
+        "climate_forcing"
+      ],
+      "paper_context_id": "chen2025_usflashdrought::spei3::annual",
+      "source_paper": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "excerpt": "The onset of drought was detected when SPEI3 fell below -0.5, with severity classes from mild to extreme based on lower index values."
+    },
+    {
+      "taxonomy_name": "drought_weeks_trend",
+      "canonical_variable_name": "drought_weeks_trend",
+      "alias_used_in_paper": "mild drought progression",
+      "definition_source": "merged",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "mild drought class dynamics in 2012",
+      "description": "Temporal evolution of drought exposure, mapped to drought trend proxy.",
+      "unit": "percent_area_over_time",
+      "role": "mediator",
+      "season": "annual",
+      "severity": "mild",
+      "medium": "not_applicable",
+      "data_source_in_paper": "SPEI3 class maps and area percentages",
+      "indian_data_source": "same",
+      "threshold_or_range": "Mild class defined as -0.99 to -0.50 SPEI3.",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "drought_indexing"
+      ],
+      "paper_context_id": "chen2025_usflashdrought::drought_class::mild",
+      "source_paper": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "excerpt": "The paper classifies drought severity levels using SPEI3, including a mild class from -0.99 to -0.50."
+    },
+    {
+      "taxonomy_name": "drought_weeks_trend",
+      "canonical_variable_name": "drought_weeks_trend",
+      "alias_used_in_paper": "moderate drought progression",
+      "definition_source": "merged",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "moderate drought class dynamics in 2012",
+      "description": "Temporal evolution of moderate drought exposure mapped to drought trend proxy.",
+      "unit": "percent_area_over_time",
+      "role": "mediator",
+      "season": "annual",
+      "severity": "moderate",
+      "medium": "not_applicable",
+      "data_source_in_paper": "SPEI3 class maps and area percentages",
+      "indian_data_source": "same",
+      "threshold_or_range": "Moderate class defined as -1.49 to -1.00 SPEI3.",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "drought_indexing"
+      ],
+      "paper_context_id": "chen2025_usflashdrought::drought_class::moderate",
+      "source_paper": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "excerpt": "The paper classifies drought severity levels using SPEI3, including a moderate class from -1.49 to -1.00."
+    },
+    {
+      "taxonomy_name": "drought_weeks_trend",
+      "canonical_variable_name": "drought_weeks_trend",
+      "alias_used_in_paper": "severe/extreme drought progression",
+      "definition_source": "merged",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "severe and extreme drought area expansion",
+      "description": "Escalation and persistence of severe drought conditions through the season.",
+      "unit": "percent_area_over_time",
+      "role": "mediator",
+      "season": "annual",
+      "severity": "severe",
+      "medium": "not_applicable",
+      "data_source_in_paper": "SPEI3 class maps and area percentages",
+      "indian_data_source": "same",
+      "threshold_or_range": "Severe class -1.99 to -1.50; extreme < -2.00; extreme drought area rose from 9.49% (June) to 20.46% (September).",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "drought_indexing"
+      ],
+      "paper_context_id": "chen2025_usflashdrought::drought_class::severe",
+      "source_paper": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "excerpt": "Extreme drought intensified after June and peaked in September at about 20.46% of area."
+    },
+    {
+      "taxonomy_name": "NEW_leaf_area_index",
+      "canonical_variable_name": "NEW_leaf_area_index",
+      "alias_used_in_paper": "LAI",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "leaf area index and LAI anomalies",
+      "description": "Canopy structural indicator used to detect drought stress timing and intensity.",
+      "unit": "index",
+      "role": "outcome",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "GLASS LAI v6",
+      "indian_data_source": "same",
+      "threshold_or_range": "Rainfed LAI dropped below multi-year average near DOY 161; irrigated at about DOY 169; cumulative June-September decline 3.64 (rainfed) vs 2.85 (irrigated).",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "vegetation_response"
+      ],
+      "paper_context_id": "chen2025_usflashdrought::lai::annual",
+      "source_paper": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "excerpt": "LAI captured drought-induced suppression earlier and showed larger cumulative decline in rainfed cropland than in irrigated cropland."
+    },
+    {
+      "taxonomy_name": "NEW_gross_primary_productivity",
+      "canonical_variable_name": "NEW_gross_primary_productivity",
+      "alias_used_in_paper": "BESS GPP",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "gross primary productivity",
+      "description": "Photosynthetic carbon uptake indicator capturing drought-related productivity suppression.",
+      "unit": "g C m^-2",
+      "role": "outcome",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "BESS v2.0 GPP",
+      "indian_data_source": "same",
+      "threshold_or_range": "Cumulative June-September decline about 12.92 g C m^-2 (rainfed) and 12.78 g C m^-2 (irrigated).",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "photosynthetic_stress",
+        "vegetation_response"
+      ],
+      "paper_context_id": "chen2025_usflashdrought::gpp::annual",
+      "source_paper": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "excerpt": "GPP declined in both systems during drought, with pronounced negative anomalies through the growing season."
+    },
+    {
+      "taxonomy_name": "NEW_solar_induced_fluorescence",
+      "canonical_variable_name": "NEW_solar_induced_fluorescence",
+      "alias_used_in_paper": "GOSIF",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "solar-induced chlorophyll fluorescence",
+      "description": "Physiological stress proxy for photosynthetic response under drought.",
+      "unit": "W m^-2 um^-1 sr^-1",
+      "role": "outcome",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "GOSIF product",
+      "indian_data_source": "same",
+      "threshold_or_range": "Cumulative June-September decline about 0.55 W m^-2 um^-1 sr^-1 (rainfed) and 0.42 W m^-2 um^-1 sr^-1 (irrigated).",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "photosynthetic_stress"
+      ],
+      "paper_context_id": "chen2025_usflashdrought::gosif::annual",
+      "source_paper": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "excerpt": "GOSIF showed increasing negative anomalies through the season, with stronger decline in rainfed fields."
+    },
+    {
+      "taxonomy_name": "NEW_irrigation_water_supply_reliability",
+      "canonical_variable_name": "NEW_irrigation_water_supply_reliability",
+      "alias_used_in_paper": "irrigation mitigation effect",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": "irrigated_area_fraction",
+      "paper_terminology": "irrigation alleviates drought effects",
+      "description": "Reliability of irrigation support that buffers crop stress under meteorological drought.",
+      "unit": "index_or_proxy",
+      "role": "mediator",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Inferred from irrigated-vs-rainfed anomaly comparisons",
+      "indian_data_source": "same",
+      "threshold_or_range": "With irrigation, part of moderate/strong anomalies shifted to mild anomalies; irrigated share of cropland 24.41%.",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "contextual",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_buffering",
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "chen2025_usflashdrought::irrigation_buffer::annual",
+      "source_paper": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "excerpt": "With human-induced irrigation, part of moderate and strong negative anomalies converted to mild, thereby alleviating drought effects on croplands."
+    },
+    {
+      "taxonomy_name": "irrigated_area_fraction",
+      "canonical_variable_name": "irrigated_area_fraction",
+      "alias_used_in_paper": "rainfed and irrigated cropland fractions",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "rainfed 75.59% and irrigated 24.41% cropland area",
+      "description": "Cropland irrigation share that modulates drought exposure at landscape scale.",
+      "unit": "%",
+      "role": "context",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Landsat-derived Global Rainfed and Irrigated-Cropland Product",
+      "indian_data_source": "same",
+      "threshold_or_range": "Rainfed 75.59%; irrigated 24.41%.",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "contextual",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_buffering"
+      ],
+      "paper_context_id": "chen2025_usflashdrought::irrigated_fraction::annual",
+      "source_paper": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "excerpt": "Rainfed cropland made up 75.59% and irrigated cropland 24.41% of total cropland area."
+    }
+  ],
+  "new_variables": [],
+  "mechanism_blocks": [
+    {
+      "name": "climate_forcing_to_drought_intensification",
+      "description": "Precipitation deficits and elevated temperature jointly reduce climatic moisture balance and intensify drought status during the 2012 event.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "prec_annual_avg_rain",
+          "from_var_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "to_var": "NEW_moisture_index",
+          "to_var_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "mechanism": "Reduced precipitation lowers the water-balance term used in SPEI3 (P - PET), driving SPEI3 downward toward drought conditions.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "2012 growing season in the continental U.S.",
+          "from_var_value_range": "2012 precipitation decreased by 13.15%; June-September cumulative reduction about 51.50 mm",
+          "from_var_value_range_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "to_var_value_range": "Drought onset threshold SPEI3 < -0.5",
+          "to_var_value_range_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "drought",
+          "mechanism_domains": [
+            "climate_forcing",
+            "drought_indexing"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The amount of precipitation declined sharply, and SPEI3 was used to identify drought onset when it fell below -0.5."
+        },
+        {
+          "from_var": "NEW_land_surface_temp_trend",
+          "from_var_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "to_var": "NEW_moisture_index",
+          "to_var_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "mechanism": "Higher temperatures increase atmospheric demand and contribute to lower SPEI3 values in combination with low rainfall.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "January-August warming and summer drought period in 2012",
+          "from_var_value_range": "Temperatures above multi-year mean from January to August 2012",
+          "from_var_value_range_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "to_var_value_range": "SPEI3 remained notably below multi-year mean in 2012",
+          "to_var_value_range_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "drought",
+          "mechanism_domains": [
+            "climate_forcing"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The study reports above-normal temperatures in 2012 and links elevated temperature with scarce rainfall as a primary drought driver."
+        },
+        {
+          "from_var": "NEW_moisture_index",
+          "from_var_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "to_var": "drought_weeks_trend",
+          "to_var_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "mechanism": "As SPEI3 declines across severity thresholds, drought area and severity classes escalate through the season.",
+          "direction": "decrease_causes_increase",
+          "strength": "strong",
+          "conditions": "June-September 2012 drought progression",
+          "from_var_value_range": "Mild -0.99 to -0.50; Moderate -1.49 to -1.00; Severe -1.99 to -1.50; Extreme < -2.00",
+          "from_var_value_range_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "to_var_value_range": "Extreme drought area increased from 9.49% in June to 20.46% in September",
+          "to_var_value_range_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "drought",
+          "mechanism_domains": [
+            "drought_indexing"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "annual",
+          "severity_scope": "severe",
+          "medium_scope": "not_applicable",
+          "excerpt": "The area dominated by extreme drought increased sharply after June and peaked in September at about 20.46%."
+        }
+      ],
+      "edge_ids": [
+        "e1",
+        "e2",
+        "e3"
+      ],
+      "context_variables": [
+        "irrigated_area_fraction"
+      ]
+    },
+    {
+      "name": "drought_to_ecological_stress",
+      "description": "Escalating drought intensity suppresses structural and physiological crop indicators, with larger stress expression in rainfed systems.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "drought_weeks_trend",
+          "from_var_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "to_var": "NEW_leaf_area_index",
+          "to_var_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "mechanism": "More severe and persistent drought reduces canopy growth, creating stronger negative LAI anomalies.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Growing season drought, especially June-September 2012",
+          "from_var_value_range": "Extreme drought area reached about 20.46% in September",
+          "from_var_value_range_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "to_var_value_range": "Cumulative LAI decline: rainfed 3.64 vs irrigated 2.85; rainfed anomaly onset around DOY 161",
+          "to_var_value_range_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "vegetation_response"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "severe",
+          "medium_scope": "not_applicable",
+          "excerpt": "Negative LAI anomalies increased throughout the season and rainfed cropland had larger cumulative reductions."
+        },
+        {
+          "from_var": "drought_weeks_trend",
+          "from_var_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "to_var": "NEW_gross_primary_productivity",
+          "to_var_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "mechanism": "Drought stress lowers photosynthetic carbon assimilation, producing negative GPP anomalies.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Flash drought period in 2012",
+          "from_var_value_range": "Eight-month drought event with summer intensification",
+          "from_var_value_range_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "to_var_value_range": "Cumulative GPP decline: rainfed 12.92 g C m^-2 vs irrigated 12.78 g C m^-2",
+          "to_var_value_range_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "photosynthetic_stress"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "severe",
+          "medium_scope": "not_applicable",
+          "excerpt": "GPP declined under drought in both cropland types and showed persistent negative anomalies through June-September."
+        },
+        {
+          "from_var": "drought_weeks_trend",
+          "from_var_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "to_var": "NEW_solar_induced_fluorescence",
+          "to_var_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "mechanism": "Increasing drought severity suppresses fluorescence-linked photosynthetic function and enlarges negative GOSIF anomalies.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "June-September drought period",
+          "from_var_value_range": "Extreme drought share increased from June to September",
+          "from_var_value_range_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "to_var_value_range": "Cumulative GOSIF decline: rainfed 0.55 vs irrigated 0.42 W m^-2 um^-1 sr^-1",
+          "to_var_value_range_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "photosynthetic_stress"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "severe",
+          "medium_scope": "not_applicable",
+          "excerpt": "GOSIF negative anomalies increased during the growing season and were stronger in rainfed croplands."
+        }
+      ],
+      "edge_ids": [
+        "e4",
+        "e5",
+        "e6"
+      ],
+      "context_variables": [
+        "prec_annual_avg_rain",
+        "NEW_land_surface_temp_trend"
+      ]
+    },
+    {
+      "name": "irrigation_buffering_mechanism",
+      "description": "Irrigation availability shifts drought stress from severe/moderate anomalies toward milder anomalies, reducing ecological damage.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_irrigation_water_supply_reliability",
+          "from_var_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "to_var": "NEW_leaf_area_index",
+          "to_var_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "mechanism": "Higher irrigation support reduces effective water stress, limiting canopy decline under the same meteorological drought.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Irrigated croplands relative to rainfed during 2012 drought",
+          "from_var_value_range": "Irrigated cropland share 24.41%; moderate/strong anomalies partially converted to mild under irrigation",
+          "from_var_value_range_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "to_var_value_range": "Cumulative LAI decline smaller in irrigated cropland (2.85) than rainfed (3.64)",
+          "to_var_value_range_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "irrigation_buffering",
+            "adaptation_capacity"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Irrigation alleviated drought effects and reduced stronger anomaly classes in croplands."
+        },
+        {
+          "from_var": "NEW_irrigation_water_supply_reliability",
+          "from_var_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "to_var": "NEW_solar_induced_fluorescence",
+          "to_var_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "mechanism": "Reliable irrigation helps maintain physiological activity, reducing severe fluorescence anomalies.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "July-September when drought stress intensified",
+          "from_var_value_range": "Strong anomaly percentages were consistently lower in irrigated than rainfed fields",
+          "from_var_value_range_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "to_var_value_range": "Cumulative GOSIF decline smaller in irrigated cropland (0.42) than rainfed (0.55)",
+          "to_var_value_range_source": {
+            "paper_id": 1,
+            "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "irrigation_buffering"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The proportion of stronger negative anomalies was lower in irrigated fields, indicating irrigation buffering."
+        }
+      ],
+      "edge_ids": [
+        "e7",
+        "e8"
+      ],
+      "context_variables": [
+        "irrigated_area_fraction"
+      ]
+    }
+  ],
+  "causal_chains": [
+    {
+      "edge_id": "e1",
+      "from_var": "prec_annual_avg_rain",
+      "from_var_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "to_var": "NEW_moisture_index",
+      "to_var_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "mechanism": "Lower precipitation decreases climatic water balance and drives SPEI3 toward drought values.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "2012 drought buildup and growing season",
+      "from_var_value_range": "2012 precipitation decreased by 13.15%; June-September cumulative reduction about 51.50 mm",
+      "from_var_value_range_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "to_var_value_range": "SPEI3 drought onset threshold < -0.5",
+      "to_var_value_range_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing",
+        "drought_indexing"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Precipitation declined sharply and SPEI3 dropped below drought thresholds."
+    },
+    {
+      "edge_id": "e2",
+      "from_var": "NEW_land_surface_temp_trend",
+      "from_var_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "to_var": "NEW_moisture_index",
+      "to_var_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "mechanism": "Higher temperatures intensify atmospheric water demand and contribute to declining SPEI3 under rainfall deficit.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Above-normal temperatures during Jan-Aug 2012",
+      "from_var_value_range": "Temperature above multi-year average for most of early 2012",
+      "from_var_value_range_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "to_var_value_range": "SPEI3 notably lower than multi-year mean in 2012",
+      "to_var_value_range_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The study identifies elevated temperature and scarce rainfall as primary drivers of the drought."
+    },
+    {
+      "edge_id": "e3",
+      "from_var": "NEW_moisture_index",
+      "from_var_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "to_var": "drought_weeks_trend",
+      "to_var_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "mechanism": "Progressively lower SPEI3 values shift drought classes toward severe/extreme states and increase affected area.",
+      "direction": "decrease_causes_increase",
+      "strength": "strong",
+      "conditions": "June-September 2012 drought intensification",
+      "from_var_value_range": "Severity thresholds: mild -0.99 to -0.50; moderate -1.49 to -1.00; severe -1.99 to -1.50; extreme < -2.00",
+      "from_var_value_range_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "to_var_value_range": "Extreme drought area increased from 9.49% (June) to 20.46% (September)",
+      "to_var_value_range_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "drought",
+      "mechanism_domains": [
+        "drought_indexing"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "annual",
+      "severity_scope": "severe",
+      "medium_scope": "not_applicable",
+      "excerpt": "The area dominated by extreme drought increased sharply after June and peaked in September."
+    },
+    {
+      "edge_id": "e4",
+      "from_var": "drought_weeks_trend",
+      "from_var_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "to_var": "NEW_leaf_area_index",
+      "to_var_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "mechanism": "Higher drought severity suppresses canopy growth and increases negative LAI anomalies, especially in rainfed fields.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Growing season under flash drought",
+      "from_var_value_range": "Extreme drought area reached 20.46% by September",
+      "from_var_value_range_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "to_var_value_range": "LAI decline: 3.64 (rainfed) vs 2.85 (irrigated); rainfed below baseline near DOY 161",
+      "to_var_value_range_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "vegetation_response"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "severe",
+      "medium_scope": "not_applicable",
+      "excerpt": "Negative LAI anomalies increased through the season and were larger in rainfed cropland."
+    },
+    {
+      "edge_id": "e5",
+      "from_var": "drought_weeks_trend",
+      "from_var_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "to_var": "NEW_gross_primary_productivity",
+      "to_var_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "mechanism": "Drought reduces photosynthetic activity and carbon fixation, resulting in lower GPP.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "June-September drought evolution",
+      "from_var_value_range": "Persistent drought through 8 months with peak severity in late season",
+      "from_var_value_range_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "to_var_value_range": "GPP decline: 12.92 g C m^-2 (rainfed) vs 12.78 g C m^-2 (irrigated)",
+      "to_var_value_range_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "photosynthetic_stress"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "severe",
+      "medium_scope": "not_applicable",
+      "excerpt": "GPP exhibited negative anomalies and cumulative decline under the 2012 drought."
+    },
+    {
+      "edge_id": "e6",
+      "from_var": "drought_weeks_trend",
+      "from_var_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "to_var": "NEW_solar_induced_fluorescence",
+      "to_var_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "mechanism": "Increasing drought severity suppresses chlorophyll fluorescence signal and enlarges negative GOSIF anomalies.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Drought intensification across June-September",
+      "from_var_value_range": "Extreme drought area share increased month by month after June",
+      "from_var_value_range_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "to_var_value_range": "GOSIF decline: 0.55 (rainfed) vs 0.42 (irrigated) W m^-2 um^-1 sr^-1",
+      "to_var_value_range_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "photosynthetic_stress"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "severe",
+      "medium_scope": "not_applicable",
+      "excerpt": "GOSIF negative anomalies increased through the drought period and were lower in irrigated than rainfed fields."
+    },
+    {
+      "edge_id": "e7",
+      "from_var": "NEW_irrigation_water_supply_reliability",
+      "from_var_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "to_var": "NEW_leaf_area_index",
+      "to_var_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "mechanism": "More reliable irrigation shifts stress classes from moderate/strong to mild and limits canopy suppression.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Irrigated versus rainfed comparison in 2012",
+      "from_var_value_range": "Irrigated cropland share 24.41%; conversion of some moderate/strong anomalies to mild",
+      "from_var_value_range_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "to_var_value_range": "Lower cumulative LAI decline in irrigated cropland (2.85) compared with rainfed (3.64)",
+      "to_var_value_range_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "irrigation_buffering",
+        "adaptation_capacity"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Irrigation alleviated drought effects and reduced severe anomaly expression in croplands."
+    },
+    {
+      "edge_id": "e8",
+      "from_var": "NEW_irrigation_water_supply_reliability",
+      "from_var_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "to_var": "NEW_solar_induced_fluorescence",
+      "to_var_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "mechanism": "Irrigation buffering preserves physiological functioning and reduces severe negative fluorescence anomalies.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Peak drought months with strong anomaly divergence between systems",
+      "from_var_value_range": "Irrigated fields had lower strong-anomaly percentages than rainfed fields for ecological indicators",
+      "from_var_value_range_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "to_var_value_range": "Smaller cumulative GOSIF decline under irrigation (0.42 vs 0.55)",
+      "to_var_value_range_source": {
+        "paper_id": 1,
+        "paper_title": "Drought-induced stress on rainfed and irrigated agriculture: Insights from multi-source satellite-derived ecological indicators"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "irrigation_buffering"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Compared to rainfed cropland, irrigated cropland showed lower strong negative anomaly fractions and smaller GOSIF loss."
+    }
+  ],
+  "conditional_thresholds": [
+    {
+      "variable": "NEW_moisture_index",
+      "threshold": "SPEI3 < -0.5",
+      "condition": "Monthly drought-onset detection",
+      "implication": "Below this threshold indicates drought initiation."
+    },
+    {
+      "variable": "NEW_moisture_index",
+      "threshold": "Mild -0.99 to -0.50; Moderate -1.49 to -1.00; Severe -1.99 to -1.50; Extreme < -2.00",
+      "condition": "SPEI3 severity classification",
+      "implication": "Progressively lower classes represent greater drought stress and larger stressed area."
+    },
+    {
+      "variable": "NEW_leaf_area_index",
+      "threshold": "SAveg <= -2 strong negative; -2 < SAveg < -1 moderate negative; -1 <= SAveg <= 1 no anomaly",
+      "condition": "Drought-induced vegetation stress categorization",
+      "implication": "More negative standardized anomalies indicate stronger crop stress."
+    }
+  ],
+  "key_relationships": [
+    "prec_annual_avg_rain decrease and NEW_land_surface_temp_trend increase jointly lowered NEW_moisture_index (SPEI3) during 2012.",
+    "NEW_moisture_index severity progression corresponded to expansion of extreme drought area from 9.49% (June) to 20.46% (September).",
+    "drought_weeks_trend increase caused stronger negative outcomes in NEW_leaf_area_index, NEW_gross_primary_productivity, and NEW_solar_induced_fluorescence.",
+    "NEW_leaf_area_index captured drought suppression earlier than NEW_gross_primary_productivity and NEW_solar_induced_fluorescence in rainfed fields (DOY 161 vs DOY 177).",
+    "NEW_irrigation_water_supply_reliability buffered drought impacts by reducing moderate/strong anomaly shares relative to rainfed systems."
+  ],
+  "alias_resolution_rules": [
+    {
+      "alias_text": "SPEI3",
+      "canonical_variable_name": "NEW_moisture_index",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "SPEI3 is a moisture-deficit drought index equivalent to climatic moisture index construct."
+    },
+    {
+      "alias_text": "LAI",
+      "canonical_variable_name": "NEW_leaf_area_index",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Direct canonical match in taxonomy expansion."
+    },
+    {
+      "alias_text": "BESS GPP",
+      "canonical_variable_name": "NEW_gross_primary_productivity",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Direct canonical match in taxonomy expansion."
+    },
+    {
+      "alias_text": "GOSIF",
+      "canonical_variable_name": "NEW_solar_induced_fluorescence",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Direct canonical match in taxonomy expansion."
+    },
+    {
+      "alias_text": "irrigation alleviates drought effect",
+      "canonical_variable_name": "NEW_irrigation_water_supply_reliability",
+      "resolution_method": "near_synonym_suggestion",
+      "resolution_confidence": "medium",
+      "notes": "Paper infers buffering via comparative anomalies rather than explicit reliability index."
+    }
+  ],
+  "mapping_notes": "All extracted variables map to the full existing taxonomy (base plus taxonomy expansion), including NEW_* canonical entries in mapped_variables. No truly unseen variable required new_variables. drought_weeks_trend is used as the closest canonical parent for severity progression reported in monthly SPEI classes.",
+  "limitations": "The study is conducted in the continental U.S., so direct transfer to Indian district/block settings requires climate, crop calendar, and irrigation context adaptation. The paper emphasizes remote-sensing ecological responses rather than direct district-level yield regressions. Authors also note ERA5 resolution and omission of explicit soil moisture in SPEI as limitations.",
+  "important_variables": [
+    {
+      "variable_name": "NEW_moisture_index",
+      "significance": "Central state variable for drought onset and severity classification that links climate forcing to ecological stress outcomes.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_leaf_area_index",
+      "significance": "Most sensitive and earliest drought response indicator in this study, making it a primary detector of agricultural stress.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_irrigation_water_supply_reliability",
+      "significance": "Represents the core adaptation mechanism; irrigation consistently reduces moderate/strong stress anomalies.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "prec_annual_avg_rain",
+      "significance": "Primary exogenous climate driver of moisture deficit and drought intensification in the paper's mechanism chain.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "drought_weeks_trend",
+      "significance": "Captures severity progression that directly explains increasing ecological anomaly intensity across the growing season.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    }
+  ],
+  "important_variables_narrative": "The mechanism in this paper centers on NEW_moisture_index (SPEI3), which translates precipitation and temperature forcing into quantified drought severity states. Among ecological outcomes, NEW_leaf_area_index is most critical because it detects stress earlier and with clear separation between rainfed and irrigated systems. drought_weeks_trend (severity progression) explains why anomaly magnitude worsens through the season, especially under extreme drought expansion. prec_annual_avg_rain is the dominant exogenous trigger, while NEW_irrigation_water_supply_reliability is the key moderating variable that buffers drought impacts and reduces severe anomaly expression."
+}

@@ -1,0 +1,945 @@
+{
+  "schema_version": "2.0",
+  "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover",
+  "paper_identity": {
+    "paper_id": 12,
+    "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+  },
+  "paper_summary": "This paper analyzes seasonal groundwater storage variability in India from 2002 to 2022 using GRACE-GLDAS, ERA5 precipitation, and MODIS LULCC data. It finds nationwide seasonal groundwater declines, strongest in northwest and central-northeast India, alongside major cropland and urban expansion. The study reports mostly negative correlations between groundwater and cropland/urban area in northern regions, indicating extraction and land-cover pressures that exceed recharge.",
+  "study_region": "India (five homogeneous rainfall regions: Northwest, Northeast, Central Northeast, West Central, Peninsular)",
+  "study_period": "2002-2022 (groundwater series up to 2023 for anomaly construction)",
+  "methodology": "Regional trend analysis with linear regression slopes and p-values, plus seasonal correlation analysis between groundwater storage anomalies, precipitation, cropland area, and urban area.",
+  "paper_type": "mechanism",
+  "paper_type_rationale": "The paper quantifies directional links from seasonal precipitation and LULCC to groundwater storage variability using trend and correlation evidence across regions and seasons. Its contribution is causal-mechanism oriented rather than policy-design or purely descriptive review.",
+  "cluster_families_covered": [
+    "groundwater_stress",
+    "drought",
+    "irrigation_challenges",
+    "rainfed_risk"
+  ],
+  "mechanism_domains_covered": [
+    "climate_forcing",
+    "recharge_dynamics",
+    "land_use_transition",
+    "irrigation_demand",
+    "urbanization_pressure",
+    "food_security_link"
+  ],
+  "mapped_variables": [
+    {
+      "taxonomy_name": "g_annual_trend",
+      "canonical_variable_name": "g_annual_trend",
+      "alias_used_in_paper": "groundwater storage anomalies / groundwater levels",
+      "definition_source": "merged",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "seasonal groundwater decline and groundwater storage variability",
+      "description": "Trend in groundwater storage/level decline derived from GRACE and GLDAS components.",
+      "unit": "mm/year",
+      "role": "outcome",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "GRACE CSR RL06 mascon and GLDAS (SM, SWE, SW) derived groundwater anomaly",
+      "indian_data_source": "CGWB well network (proxy), same for study-specific source",
+      "threshold_or_range": "All-India seasonal decline: summer -6.52 mm/year, winter -5.46 mm/year; Northwest summer pre-monsoon -19.83 mm/year and winter -19.58 mm/year (p < 0.001).",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "recharge_dynamics",
+        "irrigation_demand"
+      ],
+      "paper_context_id": "cao2025_india_gw::g_annual_trend::annual",
+      "source_paper": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "excerpt": "Across the country, there were significant declines (p < 0.001) in groundwater during every season, especially in summer (-6.52 mm/year). In the northwest region, summer pre-monsoon (-19.83 mm/year) and winter (-19.58 mm/year) declines were about three times higher than the national average."
+    },
+    {
+      "taxonomy_name": "prec_annual_avg_rain",
+      "canonical_variable_name": "prec_annual_avg_rain",
+      "alias_used_in_paper": "seasonal precipitation",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "regional precipitation trend and seasonal rainfall amount",
+      "description": "Seasonal precipitation variability influencing recharge potential.",
+      "unit": "mm/decade",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "ERA5 monthly precipitation",
+      "indian_data_source": "IMD gridded rainfall (analogous public source), same",
+      "threshold_or_range": "Northeast monsoon trend -76.48 mm/decade and summer trend -40.65 mm/decade; all-India multi-year average precipitation 1206.6 mm.",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing",
+        "recharge_dynamics"
+      ],
+      "paper_context_id": "cao2025_india_gw::prec_annual_avg_rain::annual",
+      "source_paper": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "excerpt": "The northeast region experienced a significant decline during summer and monsoon seasons, with monsoon precipitation decreasing by -76.48 mm/decade and summer precipitation by -40.65 mm/decade."
+    },
+    {
+      "taxonomy_name": "cropping_area_trend",
+      "canonical_variable_name": "cropping_area_trend",
+      "alias_used_in_paper": "cropland expansion",
+      "definition_source": "merged",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "cropland area trends and expansion rates",
+      "description": "Trend in cropland area indicating agricultural intensification and irrigation demand pressure.",
+      "unit": "km2/year",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "MODIS MCD12C1 land cover trend analysis",
+      "indian_data_source": "MoA land-use statistics / remote sensing products, same",
+      "threshold_or_range": "All-India cropland expansion 5073.61 km2/year (p < 0.0001); Northwest 3667.42 km2/year (p < 0.0001).",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "land_use_transition",
+        "irrigation_demand"
+      ],
+      "paper_context_id": "cao2025_india_gw::cropping_area_trend::annual",
+      "source_paper": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "excerpt": "At the national scale, croplands displayed the largest expansion (5073.61 km2/year, p < 0.0001), with the northwest showing the highest increase (3667.42 km2/year, p < 0.0001)."
+    },
+    {
+      "taxonomy_name": "NEW_urban_area_fraction",
+      "canonical_variable_name": "NEW_urban_area_fraction",
+      "alias_used_in_paper": "urban area expansion / urban development",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "urban land growth and urbanization",
+      "description": "Urban expansion proxy linked to impervious cover and recharge suppression.",
+      "unit": "km2/year",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "MODIS MCD12C1 urban area trends",
+      "indian_data_source": "Census/remote-sensing urban extent, same",
+      "threshold_or_range": "All-India urban trend 108.81 km2/year (p < 0.01); national urban growth about 5% over study period.",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "urbanization_pressure",
+        "land_use_transition"
+      ],
+      "paper_context_id": "cao2025_india_gw::urban_area_fraction::annual",
+      "source_paper": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "excerpt": "Urban areas generally expanded nearly everywhere, and negative links between urban growth and groundwater levels were observed, consistent with recharge restriction by impervious surfaces."
+    },
+    {
+      "taxonomy_name": "NEW_surface_water_availability",
+      "canonical_variable_name": "NEW_surface_water_availability",
+      "alias_used_in_paper": "surface freshwater availability during weak monsoon",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "surface freshwater supplies supplemented by groundwater",
+      "description": "Surface water availability context that shifts pressure onto groundwater in weak rainfall periods.",
+      "unit": "qualitative_context",
+      "role": "context",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Paper discussion and policy section",
+      "indian_data_source": "same",
+      "threshold_or_range": null,
+      "indicator_direction": "low_means_stressed",
+      "relevance": "contextual",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing",
+        "irrigation_demand"
+      ],
+      "paper_context_id": "cao2025_india_gw::surface_water_availability::annual",
+      "source_paper": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "excerpt": "During periods of weak monsoon or drought, groundwater serves as a critical supplement to surface freshwater supplies."
+    },
+    {
+      "taxonomy_name": "crop_yield_trend",
+      "canonical_variable_name": "crop_yield_trend",
+      "alias_used_in_paper": "reduced yields of wheat, rice, and maize",
+      "definition_source": "merged",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "diminished crop yields due to groundwater depletion",
+      "description": "Yield change outcome linked to groundwater stress in agriculture.",
+      "unit": "trend_unspecified",
+      "role": "outcome",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Literature synthesis in introduction/conclusion",
+      "indian_data_source": "DES/MoA crop statistics",
+      "threshold_or_range": null,
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "food_security_link",
+        "irrigation_demand"
+      ],
+      "paper_context_id": "cao2025_india_gw::crop_yield_trend::annual",
+      "source_paper": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "excerpt": "The ongoing groundwater depletion has led to significant reductions in agricultural productivity and diminished yields of critical staple crops such as wheat, rice, and maize."
+    },
+    {
+      "taxonomy_name": "cropping_intensity_trend",
+      "canonical_variable_name": "cropping_intensity_trend",
+      "alias_used_in_paper": "reducing cropping intensity",
+      "definition_source": "paper",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "cropping intensity reduction under depletion",
+      "description": "Intensity of multiple cropping affected by groundwater availability.",
+      "unit": "trend_unspecified",
+      "role": "outcome",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Conclusion statement",
+      "indian_data_source": "MoA land-use statistics",
+      "threshold_or_range": null,
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "food_security_link",
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "cao2025_india_gw::cropping_intensity_trend::annual",
+      "source_paper": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "excerpt": "The ongoing depletion of groundwater threatens food security by lowering crop yields and reducing cropping intensity."
+    },
+    {
+      "taxonomy_name": "NEW_land_surface_temp_trend",
+      "canonical_variable_name": "NEW_land_surface_temp_trend",
+      "alias_used_in_paper": "rising temperatures",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "rising temperatures affecting rainfall patterns and land cover",
+      "description": "Temperature stressor affecting hydroclimate and groundwater depletion risk.",
+      "unit": "trend_unspecified",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Discussion citing observed climate influence",
+      "indian_data_source": "same",
+      "threshold_or_range": null,
+      "indicator_direction": "high_means_stressed",
+      "relevance": "contextual",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "paper_context_id": "cao2025_india_gw::land_surface_temp_trend::annual",
+      "source_paper": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "excerpt": "Rising temperatures have become another key factor, affecting rainfall patterns and driving changes in land cover, thereby heightening the risk of groundwater depletion."
+    }
+  ],
+  "new_variables": [],
+  "mechanism_blocks": [
+    {
+      "name": "seasonal_recharge_deficit_mechanism",
+      "description": "Seasonal precipitation variability alters recharge opportunity, but in high-abstraction regions extraction exceeds recharge, producing persistent groundwater decline.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "prec_annual_avg_rain",
+          "from_var_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "mechanism": "Lower seasonal precipitation reduces recharge pulses and increases dependence on groundwater abstraction, which worsens storage decline when withdrawal remains high.",
+          "direction": "decrease_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Strongest in arid northwest and regions where pumping exceeds recharge; regional sign differences exist.",
+          "from_var_value_range": "Northeast monsoon trend -76.48 mm/decade; summer trend -40.65 mm/decade.",
+          "from_var_value_range_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "to_var_value_range": "All-India summer groundwater trend -6.52 mm/year; Northwest summer pre-monsoon -19.83 mm/year.",
+          "to_var_value_range_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "climate_forcing",
+            "recharge_dynamics"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Groundwater storage showed negative correlations with total precipitation in every season at all-India scale, suggesting extraction regularly surpasses natural recharge."
+        },
+        {
+          "from_var": "NEW_surface_water_availability",
+          "from_var_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "mechanism": "When surface freshwater supply is constrained during weak monsoon or drought periods, users substitute toward groundwater, accelerating depletion.",
+          "direction": "decrease_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Weak monsoon years and drought episodes.",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "to_var_value_range": "National winter decline -5.46 mm/year and summer decline -6.52 mm/year.",
+          "to_var_value_range_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "climate_forcing",
+            "irrigation_demand"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "During periods of weak monsoon or drought, groundwater serves as a critical supplement to surface freshwater supplies."
+        }
+      ],
+      "edge_ids": [
+        "e1",
+        "e2"
+      ],
+      "context_variables": [
+        "NEW_land_surface_temp_trend",
+        "prec_annual_avg_rain"
+      ]
+    },
+    {
+      "name": "land_use_and_abstraction_pressure_mechanism",
+      "description": "Cropland and urban expansion increase groundwater demand and reduce effective recharge via imperviousness, driving long-term depletion.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "cropping_area_trend",
+          "from_var_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "mechanism": "Expansion of cropland in water-limited regions raises irrigation withdrawals, increasing net groundwater extraction and deepening declines.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Particularly in northern and northwestern regions with intensive groundwater irrigation.",
+          "from_var_value_range": "All-India +5073.61 km2/year cropland; Northwest +3667.42 km2/year.",
+          "from_var_value_range_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "to_var_value_range": "Cropland-groundwater correlations: all-India -0.71 (winter/summer), northwest -0.73 to -0.75.",
+          "to_var_value_range_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "land_use_transition",
+            "irrigation_demand"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Negative correlations between groundwater and cropland were found in all seasons at all-India scale, and were strongly negative in the northwest."
+        },
+        {
+          "from_var": "NEW_urban_area_fraction",
+          "from_var_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "mechanism": "Urban expansion increases impervious cover, reducing infiltration and recharge while demand grows, resulting in falling groundwater levels.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Most evident in northern regions and major metropolitan areas.",
+          "from_var_value_range": "All-India urban trend +108.81 km2/year (p < 0.01).",
+          "from_var_value_range_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "to_var_value_range": "Urban-groundwater correlations include all-India -0.81 (winter), -0.76 (summer), -0.79 (post-monsoon); northwest up to -0.85.",
+          "to_var_value_range_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "urbanization_pressure",
+            "recharge_dynamics"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Negative correlations between groundwater levels and urban areas were found in all seasons, and impervious surfaces were linked to restricted recharge."
+        }
+      ],
+      "edge_ids": [
+        "e3",
+        "e4"
+      ],
+      "context_variables": [
+        "cropping_area_trend",
+        "NEW_urban_area_fraction"
+      ]
+    },
+    {
+      "name": "groundwater_to_agricultural_risk_mechanism",
+      "description": "Sustained groundwater decline propagates into agricultural productivity and food-security risks via reduced water availability and lower cropping intensity.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "g_annual_trend",
+          "from_var_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "mechanism": "Declining groundwater reduces irrigation reliability for staple crops, lowering productivity and causing yield reductions.",
+          "direction": "decrease_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Areas with high dependence on groundwater irrigation.",
+          "from_var_value_range": "Summer trend -6.52 mm/year nationally; northwest much steeper declines.",
+          "from_var_value_range_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "food_security_link",
+            "irrigation_demand"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The ongoing groundwater depletion has led to diminished yields of critical staple crops such as wheat, rice, and maize."
+        },
+        {
+          "from_var": "g_annual_trend",
+          "from_var_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "to_var": "cropping_intensity_trend",
+          "to_var_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "mechanism": "As groundwater availability declines, farmers reduce multiple-cropping intensity to match constrained irrigation supply.",
+          "direction": "decrease_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Long-term depletion zones with high agricultural dependence.",
+          "from_var_value_range": "National groundwater declines across all seasons; northwest up to -19.83 mm/year summer.",
+          "from_var_value_range_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "food_security_link",
+            "adaptation_capacity"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The ongoing depletion of groundwater threatens food security by lowering crop yields and reducing cropping intensity."
+        },
+        {
+          "from_var": "NEW_land_surface_temp_trend",
+          "from_var_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "mechanism": "Rising temperature alters rainfall and land-cover dynamics, indirectly elevating groundwater depletion risk through hydroclimatic stress.",
+          "direction": "increase_causes_decrease",
+          "strength": "weak",
+          "conditions": "Long-term climate variability context; discussed as supplementary factor.",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "to_var_value_range": "General seasonal declines across India; strongest in northern plains.",
+          "to_var_value_range_source": {
+            "paper_id": 12,
+            "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "climate_forcing",
+            "recharge_dynamics"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Rising temperatures have become another key factor, affecting rainfall patterns and driving changes in land cover, thereby heightening groundwater depletion risk."
+        }
+      ],
+      "edge_ids": [
+        "e5",
+        "e6",
+        "e7"
+      ],
+      "context_variables": [
+        "cropping_intensity_trend",
+        "crop_yield_trend"
+      ]
+    }
+  ],
+  "causal_chains": [
+    {
+      "edge_id": "e1",
+      "from_var": "prec_annual_avg_rain",
+      "from_var_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "mechanism": "Lower seasonal rainfall weakens recharge; where abstraction remains high, groundwater storage continues to decline despite precipitation variability.",
+      "direction": "decrease_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Most evident in northwest and northern regions under heavy abstraction.",
+      "from_var_value_range": "Northeast monsoon -76.48 mm/decade; summer -40.65 mm/decade.",
+      "from_var_value_range_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "to_var_value_range": "All-India summer -6.52 mm/year; northwest summer pre-monsoon -19.83 mm/year.",
+      "to_var_value_range_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "climate_forcing",
+        "recharge_dynamics"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "At the national level, groundwater storage showed negative correlations with total precipitation in every season, suggesting extraction regularly surpasses natural recharge."
+    },
+    {
+      "edge_id": "e2",
+      "from_var": "NEW_surface_water_availability",
+      "from_var_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "mechanism": "Weak monsoon and drought conditions reduce usable surface water, forcing substitution toward groundwater and accelerating storage decline.",
+      "direction": "decrease_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Drought and weak monsoon periods.",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "to_var_value_range": "National seasonal declines: summer -6.52 mm/year, winter -5.46 mm/year.",
+      "to_var_value_range_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "climate_forcing",
+        "irrigation_demand"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "During periods of weak monsoon or drought, groundwater serves as a critical supplement to surface freshwater supplies."
+    },
+    {
+      "edge_id": "e3",
+      "from_var": "cropping_area_trend",
+      "from_var_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "mechanism": "Cropland expansion increases irrigation demand and withdrawals, increasing groundwater stress where recharge is limited.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Northern and northwestern irrigated agriculture zones.",
+      "from_var_value_range": "All-India cropland trend +5073.61 km2/year; northwest +3667.42 km2/year.",
+      "from_var_value_range_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "to_var_value_range": "Cropland-groundwater correlation range includes about -0.75 in northwest and -0.71 nationally (winter/summer).",
+      "to_var_value_range_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "land_use_transition",
+        "irrigation_demand"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Negative relationships between groundwater and cropland were observed in all seasons at all-India scale, and remained strongly negative in northwest India."
+    },
+    {
+      "edge_id": "e4",
+      "from_var": "NEW_urban_area_fraction",
+      "from_var_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "mechanism": "Urbanization expands impervious surfaces, diminishing infiltration and effective recharge while demand grows, thereby lowering groundwater levels.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Urbanizing regions, especially Delhi/Mumbai analogs and northern India.",
+      "from_var_value_range": "Urban trend +108.81 km2/year nationally (p < 0.01).",
+      "from_var_value_range_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "to_var_value_range": "Urban-groundwater correlations: all-India -0.81 to -0.71 across seasons; northwest down to -0.85.",
+      "to_var_value_range_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "urbanization_pressure",
+        "recharge_dynamics"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Negative links between urban growth and groundwater levels were highlighted, with impervious surface expansion restricting recharge."
+    },
+    {
+      "edge_id": "e5",
+      "from_var": "g_annual_trend",
+      "from_var_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "mechanism": "Groundwater decline reduces irrigation reliability and available crop water, contributing to lower staple crop yields.",
+      "direction": "decrease_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Groundwater-dependent agricultural regions.",
+      "from_var_value_range": "National seasonal decline magnitude includes -6.52 mm/year in summer.",
+      "from_var_value_range_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "food_security_link",
+        "irrigation_demand"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Groundwater depletion has led to diminished yields of critical staple crops such as wheat, rice, and maize."
+    },
+    {
+      "edge_id": "e6",
+      "from_var": "g_annual_trend",
+      "from_var_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "to_var": "cropping_intensity_trend",
+      "to_var_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "mechanism": "Persistent depletion constrains irrigation across seasons and can reduce cropping intensity over time.",
+      "direction": "decrease_causes_decrease",
+      "strength": "moderate",
+      "conditions": "High-depletion regions with strong groundwater dependence.",
+      "from_var_value_range": "Northwest seasonal declines up to -19.83 mm/year in summer pre-monsoon.",
+      "from_var_value_range_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "food_security_link",
+        "adaptation_capacity"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The paper warns that groundwater depletion threatens food security by reducing cropping intensity."
+    },
+    {
+      "edge_id": "e7",
+      "from_var": "NEW_land_surface_temp_trend",
+      "from_var_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "mechanism": "Rising temperature modifies hydroclimate and land cover interactions, increasing depletion risk through altered rainfall and demand patterns.",
+      "direction": "increase_causes_decrease",
+      "strength": "weak",
+      "conditions": "Long-term climate-change context.",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "to_var_value_range": "Substantial declines in northern plains and northeastern areas reported in conclusions.",
+      "to_var_value_range_source": {
+        "paper_id": 12,
+        "paper_title": "Groundwater depletion in India: the influence of seasonal precipitation and land use land cover"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "climate_forcing",
+        "recharge_dynamics"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Rising temperatures were identified as another key factor heightening groundwater depletion risk by altering rainfall and land cover."
+    }
+  ],
+  "conditional_thresholds": [
+    {
+      "variable": "g_annual_trend",
+      "threshold": "-19.83 mm/year (summer pre-monsoon, northwest)",
+      "condition": "Northwest India high-abstraction context",
+      "implication": "Indicates extreme seasonal groundwater stress relative to national decline rates."
+    },
+    {
+      "variable": "prec_annual_avg_rain",
+      "threshold": "-76.48 mm/decade (northeast monsoon trend)",
+      "condition": "Northeast region monsoon season (2002-2022)",
+      "implication": "Strong rainfall decline linked to recharge vulnerability and groundwater stress propagation."
+    },
+    {
+      "variable": "NEW_urban_area_fraction",
+      "threshold": "groundwater-urban correlation about -0.65 to -0.85 in northern India",
+      "condition": "Northern regions with rapid urban expansion",
+      "implication": "Urban growth acts as a strong stressor by limiting infiltration and recharge."
+    }
+  ],
+  "key_relationships": [
+    "prec_annual_avg_rain -> g_annual_trend: all-India seasonal correlations are negative (-0.34 post-monsoon, -0.19 monsoon/summer, -0.03 winter), indicating recharge cannot offset extraction pressure.",
+    "cropping_area_trend -> g_annual_trend: strong negative associations in high-abstraction regions (northwest about -0.73 to -0.75 across seasons).",
+    "NEW_urban_area_fraction -> g_annual_trend: strongly negative urban-groundwater correlations (all-India winter -0.81; northwest winter -0.85).",
+    "g_annual_trend -> crop_yield_trend: groundwater decline is linked to reduced yields of wheat, rice, and maize.",
+    "g_annual_trend -> cropping_intensity_trend: depletion threatens food security through lower cropping intensity."
+  ],
+  "alias_resolution_rules": [
+    {
+      "alias_text": "groundwater levels / groundwater storage anomalies",
+      "canonical_variable_name": "g_annual_trend",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Prompt mandates mapping groundwater trend/depth trend to g_annual_trend."
+    },
+    {
+      "alias_text": "seasonal rainfall / precipitation variability",
+      "canonical_variable_name": "prec_annual_avg_rain",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Seasonal context preserved in edge scope while canonical variable remains annual rainfall name."
+    },
+    {
+      "alias_text": "cropland expansion",
+      "canonical_variable_name": "cropping_area_trend",
+      "resolution_method": "near_synonym_suggestion",
+      "resolution_confidence": "high",
+      "notes": "Paper reports annual area trend, not explicit season-wise cropped area."
+    },
+    {
+      "alias_text": "urban development / urban growth",
+      "canonical_variable_name": "NEW_urban_area_fraction",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Already present in taxonomy expansion; therefore mapped_variables, not new_variables."
+    }
+  ],
+  "mapping_notes": "The paper does not report direct annual recharge-rate values; recharge is inferred through rainfall-groundwater relationships and discussion of extraction exceeding recharge. Groundwater variable is treated as storage/level trend and mapped to g_annual_trend per instruction.",
+  "limitations": "Findings rely on satellite/reanalysis products (GRACE, MODIS, ERA5, GLDAS) with spatial-resolution and classification uncertainties, and correlation analysis does not prove causality. Broad regional analysis may miss local irrigation/recharge interventions and aquifer heterogeneity; Kashmir and Arunachal Pradesh were excluded.",
+  "important_variables": [
+    {
+      "variable_name": "g_annual_trend",
+      "significance": "Central outcome variable with statistically significant declines across all seasons and strongest losses in northwest India, making it the core stress detection signal.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "prec_annual_avg_rain",
+      "significance": "Seasonal precipitation trend and correlation patterns explain major regional recharge differences and are repeatedly used as primary climatic driver.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "cropping_area_trend",
+      "significance": "Large and significant cropland expansion is tied to groundwater decline, especially in northwest India where irrigation dependence is high.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_urban_area_fraction",
+      "significance": "Urban growth shows strong negative correlations with groundwater and captures impervious-surface recharge suppression.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "crop_yield_trend",
+      "significance": "Used by the paper to connect groundwater depletion with food-security consequences through reduced staple yields.",
+      "evidence_strength": "moderate",
+      "recommendation": "existing_taxonomy"
+    }
+  ],
+  "important_variables_narrative": "The paper positions g_annual_trend as the primary stress indicator, with significant multi-season declines and extreme losses in northwest India. prec_annual_avg_rain is the key climatic driver used to explain recharge variability and regional hydroclimatic divergence. Anthropogenic pressure variables, especially cropping_area_trend and NEW_urban_area_fraction, are strongly associated with depletion and are emphasized as decisive controls beyond rainfall alone. Together, these variables form a mechanism in which climate variability and land-use intensification jointly deepen groundwater stress. The resulting depletion then propagates to agricultural risk through reduced crop yields and cropping intensity."
+}

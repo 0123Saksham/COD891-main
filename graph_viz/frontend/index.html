@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Causal Stress Atlas — India Agricultural Water Stress</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Single THREE instance shared with 3d-force-graph via importmap -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module">
+      import * as THREE from "three";
+      import ForceGraph3D from "https://cdn.jsdelivr.net/npm/3d-force-graph@1.80.0/+esm";
+      window.THREE = THREE;
+      window.ForceGraph3D = ForceGraph3D;
+      window.dispatchEvent(new Event("libs-ready"));
+    </script>
+  </head>
+  <body>
+    <!-- Background gradient layer -->
+    <div class="bg-radial"></div>
+
+    <!-- Loading overlay -->
+    <div id="loader" class="loader">
+      <div class="loader-inner">
+        <div class="spinner"></div>
+        <div class="loader-text">Loading causal graph…</div>
+      </div>
+    </div>
+
+    <!-- Left sidebar -->
+    <aside id="sidebar" class="sidebar glass">
+      <div class="brand">
+        <div class="brand-mark"></div>
+        <div class="brand-text">
+          <div class="brand-title">Causal Stress Atlas</div>
+          <div class="brand-sub">India · Agricultural Water Stress</div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-value" id="stat-nodes">—</div>
+          <div class="stat-label">variables</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="stat-edges">—</div>
+          <div class="stat-label">mechanisms</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="stat-cross">—</div>
+          <div class="stat-label">cross-stressor</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <label class="section-label">Search</label>
+        <input
+          id="search"
+          class="input"
+          type="search"
+          placeholder="e.g. groundwater, irrigation…"
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </div>
+
+      <div class="section">
+        <label class="section-label">Color by</label>
+        <div class="seg" id="color-by">
+          <button class="seg-btn active" data-mode="role">Role</button>
+          <button class="seg-btn" data-mode="cluster_family">Cluster</button>
+        </div>
+      </div>
+
+      <div class="section">
+        <label class="switch">
+          <input type="checkbox" id="cross-only" />
+          <span class="slider"></span>
+          <span class="switch-label">Only cross-stressor edges</span>
+        </label>
+      </div>
+
+      <div class="section row">
+        <button class="btn ghost" id="reset-view">Reset view</button>
+        <button class="btn" id="highlight-all">Pulse all</button>
+      </div>
+
+      <div class="section">
+        <div class="section-label" id="legend-title">Legend · role</div>
+        <div class="legend" id="legend"></div>
+      </div>
+
+      <div class="footer">
+        <span>53 variables · 75 mechanisms · 10 papers</span>
+      </div>
+    </aside>
+
+    <!-- Top-right info button -->
+    <button id="info-btn" class="info-btn glass" aria-label="About">i</button>
+
+    <!-- Graph canvas -->
+    <main id="graph"></main>
+
+    <!-- Hover tooltip -->
+    <div id="tooltip" class="tooltip"></div>
+
+    <!-- Right detail drawer -->
+    <aside id="drawer" class="drawer glass">
+      <button class="drawer-close" id="drawer-close" aria-label="Close">×</button>
+      <div id="drawer-content"></div>
+    </aside>
+
+    <!-- About modal -->
+    <div id="modal" class="modal-backdrop hidden">
+      <div class="modal glass">
+        <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+        <h2>About this atlas</h2>
+        <p>
+          A causal knowledge graph of agricultural water-stress in India,
+          consolidated from 10 research papers. Each
+          <strong>node</strong> is a measurable variable; each directed
+          <strong>edge</strong> is a causal mechanism documented in the
+          literature.
+        </p>
+        <h3>How to read it</h3>
+        <ul>
+          <li>
+            <strong>Drag</strong> nodes in 3D · <strong>scroll</strong> to zoom ·
+            <strong>right-drag</strong> to pan.
+          </li>
+          <li>
+            <strong>Click</strong> a node to open its dossier and trace its full
+            causal chain (upstream → bright gold, downstream → mint).
+          </li>
+          <li>
+            <strong>Click an edge</strong> to inspect the mechanism, conditions
+            and supporting papers.
+          </li>
+          <li>
+            <strong>Click empty space</strong> to clear the highlight.
+          </li>
+        </ul>
+        <h3>Encoding</h3>
+        <ul>
+          <li>Node <em>color</em>: role or cluster family (toggle in sidebar).</li>
+          <li>Node <em>size</em>: paper count + degree.</li>
+          <li>Edge <em>thickness</em>: causal strength (strong / moderate / weak).</li>
+          <li>Edge <em>hue</em>: direction (positive · negative · categorical).</li>
+          <li>
+            <span class="cross-chip">cross-stressor</span> edges link different
+            stress clusters and glow gold.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

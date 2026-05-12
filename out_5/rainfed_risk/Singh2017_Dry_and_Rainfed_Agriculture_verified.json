@@ -1,0 +1,3397 @@
+{
+  "schema_version": "2.0",
+  "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community",
+  "paper_identity": {
+    "paper_id": 42,
+    "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+  },
+  "paper_summary": "A narrative review of dry and rainfed farming in India that contrasts dryland (<750 mm rainfall) with rainfed (>750 mm) systems, surveys soil and water management constraints (rainfall variability, deep dry spells, soil moisture below permanent wilting point, falling water tables, soil organic carbon depletion in the rice-wheat IGP system, residue burning, wind/water erosion), and prescribes physical, biological and agronomic conservation measures (rainwater harvesting, conservation tillage, crop diversification, watershed development) to sustain productivity in dry/rainfed regions covering ~69.5% of Indian net sown area.",
+  "study_region": "India - whole country with focused discussion of the Indo-Gangetic Plains (IGP), Haryana, Punjab, western Uttar Pradesh, and dryland tracts in Rajasthan, Madhya Pradesh, Maharashtra, Andhra Pradesh and Karnataka",
+  "study_period": "Review article published in 2017; cites historical data from 1973 onward, including Rodell et al. (2009) GRACE-derived groundwater loss estimates",
+  "methodology": "Narrative literature review synthesising prior empirical and policy studies on Indian dry/rainfed agriculture and soil-water conservation",
+  "paper_type": "review",
+  "paper_type_rationale": "The paper synthesises and integrates prior literature on dry/rainfed agriculture characteristics and soil-water conservation strategies; it does not present new primary data, statistical models, or original empirical analysis - meeting the definition of a review.",
+  "cluster_families_covered": [
+    "rainfed_risk",
+    "drought",
+    "groundwater_stress",
+    "irrigation_challenges",
+    "mixed"
+  ],
+  "mechanism_domains_covered": [
+    "climate_forcing",
+    "soil_moisture_dynamics",
+    "groundwater_depletion",
+    "irrigation_infrastructure",
+    "land_use_transition",
+    "soil_health",
+    "adaptation_capacity",
+    "policy_incentives",
+    "socio_economic_pressure"
+  ],
+  "mapped_variables": [
+    {
+      "taxonomy_name": "prec_annual_avg_rain",
+      "canonical_variable_name": "prec_annual_avg_rain",
+      "alias_used_in_paper": "rainfall / annual rainfall / monsoon rainfall",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "rainfall amount and distribution",
+      "description": "Annual rainfall is the cardinal driver distinguishing dryland (<750 mm) from rainfed (>750 mm) systems and a primary determinant of crop water availability under monsoon-dependent farming.",
+      "unit": "mm/year",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Cited descriptive statistics on Indian rainfall regimes",
+      "indian_data_source": "IMD gridded rainfall and station network",
+      "threshold_or_range": "Dryland: <750 mm; Rainfed: >750 mm; SW monsoon contributes ~75% of rainfall in dry-land areas",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "paper_context_id": "singh2017::prec_annual_avg_rain::annual",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Rainfall (mm) <750 (Dryland) >750 (Rainfed) ... South West Monsoon brings approximately 75% of rainfall in dry land areas."
+    },
+    {
+      "taxonomy_name": "drysp_4w_trend",
+      "canonical_variable_name": "drysp_4w_trend",
+      "alias_used_in_paper": "dry spell / break period / prolonged dry spells",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "dry spell defined as <15 mm rainfall in consecutive weeks",
+      "description": "Within-season dry spell of two or more weeks with <15 mm of rainfall - a key definition driving crop failure on rainfed land.",
+      "unit": "weeks/year or events/year",
+      "role": "driver",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Definition cited in characteristics section",
+      "indian_data_source": "IMD daily rainfall series",
+      "threshold_or_range": "Dry spell threshold: <15 mm rainfall in consecutive weeks; prolonged dry spells during the crop growth period are a major reason for rainfed crop failure",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "paper_context_id": "singh2017::drysp_4w_trend::kharif",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "A break period of less than 15 mm rainfall in consecutive weeks is known as dry spell ... Prolonged dry spells during the crop growth period."
+    },
+    {
+      "taxonomy_name": "drought_freq",
+      "canonical_variable_name": "drought_freq",
+      "alias_used_in_paper": "drought / climatic hazard / extensive climatic hazards like drought",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "drought as climatic hazard in dry/rainfed regions",
+      "description": "Frequency of drought events in the dry/rainfed tracts; treated as one of the main extensive climatic hazards alongside floods.",
+      "unit": "events/decade",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative on climatic hazards in dry tracts",
+      "indian_data_source": "IMD drought atlases; DAC/DES drought declarations",
+      "threshold_or_range": null,
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "paper_context_id": "singh2017::drought_freq::annual",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Occurrence of extensive climatic hazards like drought, flood etc."
+    },
+    {
+      "taxonomy_name": "g_annual_trend",
+      "canonical_variable_name": "g_annual_trend",
+      "alias_used_in_paper": "falling water-tables / deepening of ground water / depth to water table",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "falling water tables and deepening groundwater",
+      "description": "Trend in groundwater depth at block/district level in the IGP rice-wheat tract; the paper reports water tables have nearly doubled in depth since 1973.",
+      "unit": "m/year (or relative depth multiplier)",
+      "role": "outcome",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative on intensive cultivation and centrifuge-to-submersible pump shift",
+      "indian_data_source": "CGWB observation well network",
+      "threshold_or_range": "Ground-water levels deepened almost double since 1973 in IGP rice-wheat areas",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion"
+      ],
+      "paper_context_id": "singh2017::g_annual_trend::annual",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Intensive cultivation leads very high load on ground water which, resulted in deepening of almost double since 1973."
+    },
+    {
+      "taxonomy_name": "well_depth",
+      "canonical_variable_name": "well_depth",
+      "alias_used_in_paper": "submersibles / centrifuge pumps / pump deepening",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "increasing number of submersibles as centrifuge pumps no longer effective",
+      "description": "Operational well/bore-well depth at the farm level. Switch from centrifuge to submersible pumps signals deepening of operational depth as water tables fall.",
+      "unit": "m",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative on pump technology shift",
+      "indian_data_source": "Minor irrigation census; CGWB well inventory",
+      "threshold_or_range": "Centrifuge pumps no longer effective in IGP - replaced by submersibles",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion",
+        "irrigation_infrastructure"
+      ],
+      "paper_context_id": "singh2017::well_depth::na",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "This is the result of an increasing number of submersibles, as the centrifuge pumps are no longer effective in pumping water."
+    },
+    {
+      "taxonomy_name": "soge_class_name",
+      "canonical_variable_name": "soge_class_name",
+      "alias_used_in_paper": "over-exploitation of ground-water",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "over-exploitation category of groundwater extraction",
+      "description": "Stage of groundwater extraction at block/district level (Safe / Semi-Critical / Critical / Over-Exploited). The paper identifies the NW plains (Punjab, Haryana, western UP) as over-exploited under intensive rice-wheat cultivation.",
+      "unit": "categorical",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Cited Rodell et al. 2009 narrative",
+      "indian_data_source": "CGWB Groundwater Resource Assessment (GEC norms)",
+      "threshold_or_range": "NW plains (Punjab, Haryana, western UP) classified as over-exploited",
+      "indicator_direction": "categorical",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion"
+      ],
+      "paper_context_id": "singh2017::soge_class_name::na",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "The excess demand for water is being met through over-exploitation of ground-water, leading to falling water-tables."
+    },
+    {
+      "taxonomy_name": "recharge_rate",
+      "canonical_variable_name": "recharge_rate",
+      "alias_used_in_paper": "infiltration / replenishment of groundwater",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "groundwater recharge through infiltration and conservation measures",
+      "description": "Aquifer recharge rate at block scale. The paper notes that conservation measures (water harvesting, contour bunding, terracing, conservation tillage) raise infiltration and recharge whereas intensive rice-wheat cropping erodes net replenishment.",
+      "unit": "mm/year",
+      "role": "mediator",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative on infiltration and runoff control",
+      "indian_data_source": "CGWB GEC norms; SWAT/VIC water-balance modelling",
+      "threshold_or_range": null,
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion",
+        "soil_moisture_dynamics"
+      ],
+      "paper_context_id": "singh2017::recharge_rate::annual",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Moisture conservation practices helps in increase infiltration and reduce water losses and runoff ... contour bunding, in-situ and ex-situ moisture harvesting ... harnessed in a big way."
+    },
+    {
+      "taxonomy_name": "irrigated_area_fraction",
+      "canonical_variable_name": "irrigated_area_fraction",
+      "alias_used_in_paper": "area under rice-wheat cropping system irrigated",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "share of rice-wheat area that is irrigated",
+      "description": "Fraction of cropped area under irrigation. The paper reports near-total irrigation coverage of the rice-wheat system in Haryana.",
+      "unit": "%",
+      "role": "context",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative on Haryana rice-wheat",
+      "indian_data_source": "Minor Irrigation Census; ICRISAT district database",
+      "threshold_or_range": "About 95-98% of the area under rice-wheat in Haryana is irrigated",
+      "indicator_direction": "categorical",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_infrastructure"
+      ],
+      "paper_context_id": "singh2017::irrigated_area_fraction::annual",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "About 95%-98% of the area under rice-wheat cropping system in Haryana is irrigated."
+    },
+    {
+      "taxonomy_name": "irrigation_demand",
+      "canonical_variable_name": "irrigation_demand",
+      "alias_used_in_paper": "water requirement of flooded rice / actual water applied",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "water requirement and actual application for flooded rice",
+      "description": "Irrigation water demand at the field/block level. Flooded rice in Haryana on light-textured IGP soils receives water far above stated requirement (~1600 mm), driving over-extraction.",
+      "unit": "mm/year",
+      "role": "driver",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative on Haryana paddy water use",
+      "indian_data_source": "ICAR-IIWM crop-water requirement; state irrigation department",
+      "threshold_or_range": "Flooded rice requires ~1600 mm in Haryana; actual application is much higher, especially on light-textured IGP soils",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "crop_water_demand",
+        "groundwater_depletion"
+      ],
+      "paper_context_id": "singh2017::irrigation_demand::kharif",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "In Haryana, large quantity of water (1600 mm) is required to grow flooded rice. However, the actual amount of water applied by farmers is much higher than the requirement."
+    },
+    {
+      "taxonomy_name": "double_crop_trend",
+      "canonical_variable_name": "double_crop_trend",
+      "alias_used_in_paper": "rice-wheat cropping system / double cropping",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "rice-wheat double cropping in IGP",
+      "description": "Trend in double-cropped (two seasons on the same plot) area, dominated by rice-wheat in the IGP. Five decades of intensive double cropping is identified as the principal driver of groundwater depletion and SOC loss in the IGP.",
+      "unit": "ha/year or %/year",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative on rice-wheat IGP system",
+      "indian_data_source": "MoA Land Use Statistics; ICRISAT district database",
+      "threshold_or_range": "Five decades of rice-wheat cropping in IGP; rice-wheat produces 25% of total crop residues in India",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "land_use_transition",
+        "crop_water_demand"
+      ],
+      "paper_context_id": "singh2017::double_crop_trend::na",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Thus, five decades of rice-wheat cropping system has caused considerable depletion of water resources in this IGP region."
+    },
+    {
+      "taxonomy_name": "crop_yield_trend",
+      "canonical_variable_name": "crop_yield_trend",
+      "alias_used_in_paper": "low crop productivity / very low crop yield / declining trend of productivity",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "crop productivity in dry/rainfed areas",
+      "description": "Trend in crop yields in dry/rainfed regions. Paper highlights very low yields and declining trends due to multi-nutritional deficiencies, soil degradation, moisture stress, and low fertilizer use.",
+      "unit": "kg/ha/year or %/year",
+      "role": "outcome",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative on rainfed productivity",
+      "indian_data_source": "DES Agricultural Statistics; MoA crop yield series",
+      "threshold_or_range": "Drylands: 80% of coarse cereals, 50% of maize, 65% of chickpea/pigeonpea, 81% of groundnut, 88% of soybean, ~50% of cotton output - but with extremely low productivity per ha",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "livelihood_shocks",
+        "soil_health"
+      ],
+      "paper_context_id": "singh2017::crop_yield_trend::annual",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Existence of its large size and extremely low productivity levels, a unit rise in productivity in these regions is likely to have the great impact on national aggregate crop productivity."
+    },
+    {
+      "taxonomy_name": "runoff_annual_avg",
+      "canonical_variable_name": "runoff_annual_avg",
+      "alias_used_in_paper": "surface runoff / increased runoff",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "surface runoff under poor cover and ill-distributed rains",
+      "description": "Annual average surface runoff. Paper highlights that ill-distributed rains, undulated topography, and poor cover translate rainfall into runoff rather than infiltration.",
+      "unit": "mm/year",
+      "role": "mediator",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative on conservation measures reducing runoff",
+      "indian_data_source": "SWAT/VIC water-balance models; ICAR-CRIDA runoff plots",
+      "threshold_or_range": null,
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_moisture_dynamics",
+        "soil_health"
+      ],
+      "paper_context_id": "singh2017::runoff_annual_avg::annual",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Moisture conservation practices helps in increase infiltration and reduce water losses and runoff."
+    },
+    {
+      "taxonomy_name": "et_annual_avg",
+      "canonical_variable_name": "et_annual_avg",
+      "alias_used_in_paper": "evapo-transpiration / potential evaporation",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "evapo-transpiration demand under high temperature, wind and low humidity",
+      "description": "Annual average evapotranspiration; paper discusses ET demand as a function of temperature, wind velocity, and humidity, and as a determinant of water availability period.",
+      "unit": "mm/year",
+      "role": "mediator",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative on PET vs rainfall balance",
+      "indian_data_source": "MODIS/SSEBop ET; IMD potential evaporation network",
+      "threshold_or_range": "ET accelerates when wind velocity > 18 km/hr, max temperature > 41 deg C in late April-early May",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing",
+        "soil_moisture_dynamics"
+      ],
+      "paper_context_id": "singh2017::et_annual_avg::annual",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Wind velocity more than 18 km/hr leads to higher evapo-transpiration. Evaporation demands are also accelerated with high temperature and low humidity."
+    },
+    {
+      "taxonomy_name": "deforestation",
+      "canonical_variable_name": "deforestation",
+      "alias_used_in_paper": "deforestation / low vegetative cover",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "deforestation as cause of soil and water degradation",
+      "description": "Forest-cover loss rate. Paper lists deforestation alongside population pressure as a cause of soil erosion and runoff.",
+      "unit": "ha/year or %/year",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative on natural-resource degradation",
+      "indian_data_source": "Forest Survey of India (FSI); Hansen global forest data",
+      "threshold_or_range": null,
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "land_use_transition",
+        "soil_health"
+      ],
+      "paper_context_id": "singh2017::deforestation::na",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Major concerns for the deteriorating natural resources are linked to deforestation, landslides, large-scale downstream flooding, increasing poverty and malnutrition."
+    },
+    {
+      "taxonomy_name": "NEW_soil_organic_carbon",
+      "canonical_variable_name": "NEW_soil_organic_carbon",
+      "alias_used_in_paper": "soil organic carbon (SOC) / soil organic matter",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "Soil Organic Carbon (SOC) stock and concentration",
+      "description": "Soil organic carbon stock - paper identifies depletion of SOC under continuous rice-wheat mono-cropping in IGP, residue burning, and soil erosion. Critical for water-holding capacity, fertility, and climate-change buffering.",
+      "unit": "% or t/ha",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "soil",
+      "data_source_in_paper": "Cited Singh et al., Bhattacharyya et al., Damene et al., Mengistu et al.",
+      "indian_data_source": "ICAR soil-carbon database; NBSS&LUP soil profiles",
+      "threshold_or_range": null,
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_health",
+        "land_use_transition"
+      ],
+      "paper_context_id": "singh2017::NEW_soil_organic_carbon::soil",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Continuous mono-cropping system in the IGP consistently depleted soil organic carbon (SOC) ... Reduction in soil organic carbon (SOC) concentration and water holding capacity was also reported."
+    },
+    {
+      "taxonomy_name": "NEW_soil_erosion",
+      "canonical_variable_name": "NEW_soil_erosion",
+      "alias_used_in_paper": "wind erosion / water erosion / soil erosion / land degradation",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "wind and water erosion in dry and rainfed regions",
+      "description": "Soil erosion rate (wind + water) at block/district level. Paper notes wind erosion is very active in Rajasthan; water erosion is the dominant constraint in rainfed regions.",
+      "unit": "t/ha/year",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "soil",
+      "data_source_in_paper": "Narrative + cited Bhattacharyya et al., Dey",
+      "indian_data_source": "ICAR-CSWCRTI; FSI/state agriculture department erosion-class maps",
+      "threshold_or_range": null,
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_health",
+        "climate_forcing"
+      ],
+      "paper_context_id": "singh2017::NEW_soil_erosion::soil",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Wind erosion is very active in dry region of Rajasthan ... loss of nutrient, suspension of fine particles and their deposition on railway tracks, roads, residential and commercial establishments."
+    },
+    {
+      "taxonomy_name": "NEW_soil_moisture_index",
+      "canonical_variable_name": "NEW_soil_moisture_index",
+      "alias_used_in_paper": "soil moisture / moisture stress / soil moisture below permanent wilting point",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "soil moisture status relative to permanent wilting point (PWP, 15 bar)",
+      "description": "Root-zone soil moisture status. The paper makes the explicit threshold claim that when soil moisture stays below the 15-bar PWP throughout the season, crops fail in dryland systems.",
+      "unit": "bar or volumetric %",
+      "role": "mediator",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Edaphic and climatic variability section",
+      "indian_data_source": "ICAR / IMHM SMOS/SMAP downscaled soil moisture; ICAR-CRIDA moisture probes",
+      "threshold_or_range": "Soil moisture below 15 bar (PWP) ultimately results in failure of crops in dryland agriculture",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_moisture_dynamics",
+        "climate_forcing"
+      ],
+      "paper_context_id": "singh2017::NEW_soil_moisture_index::kharif",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "The soil moisture is always below the moisture at 15 bar (Permanent Wilting Point) which ultimately results in failure of crops in dry land agriculture."
+    },
+    {
+      "taxonomy_name": "NEW_water_holding_capacity",
+      "canonical_variable_name": "NEW_water_holding_capacity",
+      "alias_used_in_paper": "water holding capacity / moisture retention capacity",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "soil water/moisture retention capacity",
+      "description": "Soil water-holding capacity controlling moisture persistence between rainfall events. Paper links low SOC to low WHC, and identifies low moisture retention as a primary cause of rainfed crop failure.",
+      "unit": "mm or %",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "soil",
+      "data_source_in_paper": "Narrative on soil characteristics",
+      "indian_data_source": "ICAR / NBSS&LUP soil profile database",
+      "threshold_or_range": "Low moisture retention capacity of soils is among the major causes of rainfed crop failure",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_moisture_dynamics",
+        "soil_health"
+      ],
+      "paper_context_id": "singh2017::NEW_water_holding_capacity::soil",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Reduction in soil organic carbon (SOC) concentration and water holding capacity was also reported ... Low moisture retention capacity of soils."
+    },
+    {
+      "taxonomy_name": "NEW_land_surface_temp_trend",
+      "canonical_variable_name": "NEW_land_surface_temp_trend",
+      "alias_used_in_paper": "high temperature / maximum temperature exceeds 41 deg C",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "summer maximum and winter minimum temperatures in dry tracts",
+      "description": "Trend / level of near-surface temperature affecting evaporative demand and crop water stress.",
+      "unit": "deg C",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Climate variability section",
+      "indian_data_source": "IMD gridded temperature; MODIS LST",
+      "threshold_or_range": "Maximum temperature > 41 deg C in late April-early May; minimum 14-15 deg C in dry/rainfed areas",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "paper_context_id": "singh2017::NEW_land_surface_temp_trend::annual",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Maximum temperature exceeds 410 C during late April and early May and minimum temperature is about 14 to 150C generally prevails in the dry and rainfed areas."
+    },
+    {
+      "taxonomy_name": "NEW_wind_velocity",
+      "canonical_variable_name": "NEW_wind_velocity",
+      "alias_used_in_paper": "high wind velocity / wind velocity > 18 km/hr",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "wind velocity as a driver of ET and erosion",
+      "description": "Near-surface wind speed influencing evapotranspiration and wind erosion in dry tracts.",
+      "unit": "km/hr",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Climate variability section",
+      "indian_data_source": "IMD wind station data; ERA5 reanalysis",
+      "threshold_or_range": "Wind velocity > 18 km/hr accelerates ET; high wind velocity is a hallmark of dry tracts in Punjab, Haryana, Rajasthan, MP, Maharashtra, AP, Karnataka",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing",
+        "soil_health"
+      ],
+      "paper_context_id": "singh2017::NEW_wind_velocity::annual",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Wind velocity more than 18 km/hr leads to higher evapo-transpiration ... characterized by scanty, ill-distributed and highly erosive rains, undulated topography, high wind velocity."
+    },
+    {
+      "taxonomy_name": "NEW_crop_residue_burning",
+      "canonical_variable_name": "NEW_crop_residue_burning",
+      "alias_used_in_paper": "burning of rice straw / residue burning",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "rice straw and stubble burning as residue management",
+      "description": "Share of crop residues burned post-harvest. The paper links residue burning to soil microbial loss, toxic emissions, and SOC depletion in IGP rice-wheat areas.",
+      "unit": "% of residues / Mt/year",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative + cited Singh et al., Sarkar et al.",
+      "indian_data_source": "MoEFCC residue-burning estimates; CPCB / FIRMS satellite fire detections",
+      "threshold_or_range": "Rice-wheat produces 25% of total crop residues in India; the bulk are burned or rarely incorporated",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_health",
+        "land_use_transition"
+      ],
+      "paper_context_id": "singh2017::NEW_crop_residue_burning::na",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Burning of rice straw causes excessive heat which kills beneficial micro and macro organisms and toxic gaseous emission threaten the health of both humans and ecosystems."
+    },
+    {
+      "taxonomy_name": "NEW_rainwater_harvesting_coverage",
+      "canonical_variable_name": "NEW_rainwater_harvesting_coverage",
+      "alias_used_in_paper": "rainwater harvesting / water harvesting / contour bunding / in-situ and ex-situ moisture harvesting / watershed development",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "rainwater harvesting and watershed conservation programmes",
+      "description": "Coverage of watershed-based rainwater harvesting interventions (contour bunding, check dams, terraces, in-situ/ex-situ moisture harvesting). Paper highlights these as the central remedial strategy for dry/rainfed regions.",
+      "unit": "% of area treated or ha covered",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Remedial measures section",
+      "indian_data_source": "MoRD watershed development programme MIS; PMKSY-WDC progress reports",
+      "threshold_or_range": null,
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "soil_moisture_dynamics",
+        "policy_incentives"
+      ],
+      "paper_context_id": "singh2017::NEW_rainwater_harvesting_coverage::na",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Soil and water conservation methods like rainwater harvesting, contour bunding, in-situ and ex-situ moisture harvesting, crop rotation, crop cover management, mulching, flood water management and improved agronomic practices, are being harnessed in a big way all over the country."
+    },
+    {
+      "taxonomy_name": "NEW_fertilizer_use_intensity",
+      "canonical_variable_name": "NEW_fertilizer_use_intensity",
+      "alias_used_in_paper": "fertilizer consumption in rainfed areas",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "share of total fertilizer consumption in rainfed areas",
+      "description": "Fertilizer use intensity in rainfed regions; paper notes rainfed regions consume only ~25% of total Indian fertilizer use, contributing to low rainfed productivity.",
+      "unit": "kg/ha or % of national consumption",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative on rainfed inputs",
+      "indian_data_source": "FAI / Department of Fertilizers consumption data",
+      "threshold_or_range": "Rainfed regions consume hardly 25% of total fertilizer consumption of India",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_health",
+        "policy_incentives"
+      ],
+      "paper_context_id": "singh2017::NEW_fertilizer_use_intensity::na",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Such vast areas as of now consume hardly 25% of total fertilizer consumption of the country. Due to lack of management, crop productivity is very low."
+    },
+    {
+      "taxonomy_name": "NEW_gw_storage_anomaly",
+      "canonical_variable_name": "NEW_gw_storage_anomaly",
+      "alias_used_in_paper": "satellite-based estimates of groundwater depletion / km^3 lost from aquifers",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "groundwater volume lost from NW plains aquifers",
+      "description": "Net groundwater storage anomaly (typically GRACE-derived) for the NW plains aquifer system; a quantitative synoptic measure of cumulative depletion.",
+      "unit": "km^3/year (water-equivalent)",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Cites Rodell, Velicigna, Famiglietti (2009) Nature paper",
+      "indian_data_source": "GRACE/GRACE-FO TWS anomaly products",
+      "threshold_or_range": "13-17 km^3/year permanently lost from aquifers in NW plains (Punjab, Haryana, western UP)",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion"
+      ],
+      "paper_context_id": "singh2017::NEW_gw_storage_anomaly::na",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "NASA reported that 13-17 km3 of ground-water is lost permanently every year from the aquifers in the northwestern plains of the Punjab, Haryana, and western Uttar Pradesh."
+    },
+    {
+      "taxonomy_name": "NEW_population_density",
+      "canonical_variable_name": "NEW_population_density",
+      "alias_used_in_paper": "population pressure / population increase",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "population pressure on land and water resources",
+      "description": "Population density / growth pressure driving water demand and land-use intensification in rainfed regions.",
+      "unit": "persons/km^2",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative on resource degradation",
+      "indian_data_source": "Census of India; SECC",
+      "threshold_or_range": null,
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "socio_economic_pressure",
+        "land_use_transition"
+      ],
+      "paper_context_id": "singh2017::NEW_population_density::na",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Due to population pressure on agricultural lands, the poverty factor is concentrated mainly in rainfed regions ... due to the population increase, soil erosion, deforestation, low vegetative cover."
+    }
+  ],
+  "new_variables": [
+    {
+      "variable_name": "NEW_conservation_tillage_adoption",
+      "canonical_variable_name": "NEW_conservation_tillage_adoption",
+      "alias_used_in_paper": "conservation tillage / no-tillage / zero tillage",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "why_new": "Adoption share of conservation/zero tillage is not in the existing taxonomy but is the central agronomic-biological intervention prescribed by the review for soil-water conservation in rainfed and rice-wheat areas.",
+      "description": "Share of cropped area under conservation tillage / zero tillage. Defined operationally as tillage that retains 30% or greater crop residues on the soil surface; reduces soil erosion, raises infiltration and supports SOC build-up.",
+      "unit": "% of area or share of farms",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Definition cited from SSSA glossary; narrative on rice-wheat zero-till",
+      "indian_data_source": "ICAR-IIWM and CIMMYT-CSISA conservation tillage adoption surveys; PMKSY/RKVY conservation agriculture data",
+      "threshold_or_range": "Conservation tillage defined as retaining 30% or greater crop residues on the surface; zero tillage practiced in rice-wheat for green-house gas reduction and timely wheat sowing",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "soil_health"
+      ],
+      "paper_context_id": "singh2017::NEW_conservation_tillage_adoption::na",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Conservation tillage is a recent approach with the objective of reduces loss of soil with combination of 30% or greater crop residues on the surface ... The no-tillage (zero tillage) be practiced in rice-wheat cropping system."
+    },
+    {
+      "variable_name": "NEW_groundwater_irrigation_share",
+      "canonical_variable_name": "NEW_groundwater_irrigation_share",
+      "alias_used_in_paper": "ground-water contribution to irrigation / 60-65% of total irrigation requirement",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "why_new": "Share of total irrigation drawn from groundwater (vs. canal/surface) is structurally distinct from irrigated_area_fraction (which is share of cropped area irrigated) and from soge_class_name (which is an extraction-stage category). Useful as an exposure variable for groundwater-stress propagation.",
+      "description": "Fraction of total irrigation requirement met by groundwater extraction (rest by canals / surface water). Paper reports 60-65% from groundwater, 35-40% from canals in the IGP rice-wheat tract.",
+      "unit": "% of irrigation supply",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "groundwater",
+      "data_source_in_paper": "Narrative on Haryana / IGP irrigation source split",
+      "indian_data_source": "Minor Irrigation Census; state irrigation department records",
+      "threshold_or_range": "Ground-water contributes 60-65% of total irrigation requirement; canals 35-40%",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion",
+        "irrigation_infrastructure"
+      ],
+      "paper_context_id": "singh2017::NEW_groundwater_irrigation_share::groundwater",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "Ground-water contributes 60%-65% of the total irrigation requirement; while the remaining 35%-40% is met through canals."
+    },
+    {
+      "variable_name": "NEW_crop_diversification_index",
+      "canonical_variable_name": "NEW_crop_diversification_index",
+      "alias_used_in_paper": "crop diversification / crop rotation / mixed cropping / pearl millet, sorghum, pulses",
+      "definition_source": "paper",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "why_new": "Crop diversification (different crops, not just different varieties of one crop) is a distinct construct from NEW_varietal_diversification_index (variety-level) in the existing taxonomy expansion.",
+      "description": "Index of crop diversification at the household / block - share of area under non-rice/non-wheat hardy crops (pearl millet, sorghum, pulses, oilseeds, horticulture) as an ex-ante adaptation that reduces vulnerability to rainfall variability.",
+      "unit": "1-HHI index or % share",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative on cropping pattern change and government strategy",
+      "indian_data_source": "MoA Land Use Statistics; ICRISAT district database",
+      "threshold_or_range": null,
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "policy_incentives"
+      ],
+      "paper_context_id": "singh2017::NEW_crop_diversification_index::na",
+      "source_paper": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "excerpt": "To reduce vulnerability to rains, Farming is risky in rainfed and dry areas so grew crops such as pearl millet, sorghum and pulses. These crops are less affected by variations in rainfall ... Government has prepared a strategy ... encourage farmers growing paddy under well irrigation to go for alternative crops."
+    }
+  ],
+  "mechanism_blocks": [
+    {
+      "name": "rainfall_climate_to_moisture_stress_mechanism",
+      "description": "In dryland and rainfed tracts, rainfall amount and within-season distribution combine with high temperature, wind velocity and low humidity to drive evapotranspiration demand and soil moisture deficits. When root-zone soil moisture stays below the 15-bar permanent wilting point, dryland crops fail.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "prec_annual_avg_rain",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "NEW_soil_moisture_index",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Annual rainfall is the primary supply term in the soil-water balance; under <750 mm dryland conditions with ill-distributed monsoon, soil moisture cannot be replenished above PWP for sustained crop growth.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "Dryland (<750 mm) and rainfed tracts of Punjab, Haryana, Rajasthan, MP, Maharashtra, AP, Karnataka",
+          "from_var_value_range": "Dryland <750 mm; Rainfed >750 mm; SW monsoon ~75% of dry-land rainfall",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": "Soil moisture below 15 bar (PWP) results in failure of crops in dryland agriculture",
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "climate_forcing",
+            "soil_moisture_dynamics"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "These tracts are characterized by scanty, ill-distributed and highly erosive rains ... The soil moisture is always below the moisture at 15 bar (Permanent Wilting Point) which ultimately results in failure of crops in dry land agriculture."
+        },
+        {
+          "from_var": "drysp_4w_trend",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "NEW_soil_moisture_index",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Within-season dry spells defined as <15 mm rainfall in consecutive weeks deplete root-zone soil moisture even when seasonal totals are adequate, producing moisture stress at critical phenological stages.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Kharif crop growth window in dry/rainfed tracts",
+          "from_var_value_range": "Dry spell threshold: <15 mm rainfall in consecutive weeks",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": "Soil moisture below 15-bar PWP under prolonged dry spells",
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "climate_forcing",
+            "soil_moisture_dynamics"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "A break period of less than 15 mm rainfall in consecutive weeks is known as dry spell ... Prolonged dry spells during the crop growth period."
+        },
+        {
+          "from_var": "NEW_land_surface_temp_trend",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "et_annual_avg",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Higher near-surface temperature raises the saturation vapour deficit and energy available for evaporation, increasing potential evapotranspiration in the dry tracts.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Late April-early May summer peak in dry tracts",
+          "from_var_value_range": "Maximum temperature > 41 deg C in late April-early May; minimum 14-15 deg C",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "drought",
+          "mechanism_domains": [
+            "climate_forcing"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Evaporation demands are also accelerated with high temperature and low humidity. Maximum temperature exceeds 41 deg C during late April and early May."
+        },
+        {
+          "from_var": "NEW_wind_velocity",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "et_annual_avg",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "High wind velocity increases boundary-layer turbulence and aerodynamic transport of water vapour from leaf and soil surfaces, raising evapotranspiration.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Open dryland canopies with low surface roughness",
+          "from_var_value_range": "Wind velocity > 18 km/hr accelerates ET",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "drought",
+          "mechanism_domains": [
+            "climate_forcing"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Wind velocity more than 18 km/hr leads to higher evapo-transpiration."
+        },
+        {
+          "from_var": "et_annual_avg",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "NEW_soil_moisture_index",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "When potential evapotranspiration exceeds rainfall supply, soil moisture is drawn down faster than it is replenished; under dry-tract regimes the rainfall-PET balance is negative for much of the year.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Periods when PET exceeds rainfall in dry/rainfed tracts",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": "Soil moisture below 15-bar PWP causes crop failure",
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "climate_forcing",
+            "soil_moisture_dynamics"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Water availability depends on rainfall and potential evaporation. Rainfall exceeds potential evapo-transpiration period provides congenial weather for active crop growth."
+        },
+        {
+          "from_var": "NEW_soil_moisture_index",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Persistent soil moisture below the permanent wilting point precludes water uptake by roots, causing partial or complete crop failure in dryland agriculture.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "Dryland with shallow soils and limited moisture buffer",
+          "from_var_value_range": "Soil moisture < 15 bar (PWP)",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": "Drylands account for 80% of coarse cereals, 50% of maize, 65% of chickpea/pigeonpea, 81% of groundnut, 88% of soybean, and ~50% of cotton output - but at extremely low productivity per ha",
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "soil_moisture_dynamics",
+            "livelihood_shocks"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The prolonged moisture stress may can result in partial or complete failure of the crops ... ultimately results in failure of crops in dry land agriculture."
+        }
+      ],
+      "edge_ids": [
+        "e1",
+        "e2",
+        "e3",
+        "e4",
+        "e5",
+        "e6"
+      ],
+      "context_variables": [
+        "NEW_water_holding_capacity",
+        "NEW_rainwater_harvesting_coverage",
+        "NEW_conservation_tillage_adoption"
+      ]
+    },
+    {
+      "name": "groundwater_overexploitation_mechanism",
+      "description": "Five decades of intensive rice-wheat double cropping in the Indo-Gangetic Plains creates an irrigation demand that far exceeds rainfall + canal supply; the gap is met through groundwater extraction (60-65% of irrigation share), pulling water tables down, raising operational well depth, classifying NW plain blocks as over-exploited, and producing a 13-17 km3/year storage anomaly per GRACE/Rodell estimates.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "double_crop_trend",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Continuous rice-wheat double cropping locks in a water-intensive crop calendar; flooded rice alone requires ~1600 mm in Haryana, and over-application on light-textured IGP soils inflates effective demand.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Indo-Gangetic Plains; Haryana light-textured soils",
+          "from_var_value_range": "Five decades of rice-wheat in IGP; 25% of total Indian crop residues are produced by rice-wheat",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": "1600 mm required for flooded rice in Haryana; actual application much higher",
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "land_use_transition",
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "In Haryana, large quantity of water (1600 mm) is required to grow flooded rice. However, the actual amount of water applied by farmers is much higher than the requirement."
+        },
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Excess irrigation demand met by sustained groundwater pumping draws aquifer storage faster than recharge; integrated over decades this produces a strong negative trend in water-table depth.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "IGP rice-wheat with limited canal availability and weak recharge regulation",
+          "from_var_value_range": "Excess demand met through over-exploitation of groundwater",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": "Ground-water levels deepened almost double since 1973",
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_depletion",
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The excess demand for water is being met through over-exploitation of ground-water, leading to falling water-tables. Thus, five decades of rice-wheat cropping system has caused considerable depletion of water resources in this IGP region."
+        },
+        {
+          "from_var": "NEW_groundwater_irrigation_share",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "A high reliance on groundwater (vs. canals) for irrigation translates demand directly into aquifer drawdown rather than surface diversions; ~60-65% groundwater dependence in the IGP amplifies the rate of water-table decline.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "IGP rice-wheat tract; Haryana / Punjab / western UP",
+          "from_var_value_range": "Ground-water provides 60-65% of total irrigation requirement; canals 35-40%",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": "Ground-water levels deepened almost double since 1973",
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_depletion",
+            "irrigation_infrastructure"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "groundwater",
+          "excerpt": "Ground-water contributes 60%-65% of the total irrigation requirement; while the remaining 35%-40% is met through canals."
+        },
+        {
+          "from_var": "g_annual_trend",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "well_depth",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Falling water tables push farmers to deepen tube-wells and switch from centrifuge to submersible pumps to chase the receding aquifer.",
+          "direction": "decrease_causes_increase",
+          "strength": "strong",
+          "conditions": "Operational tube/bore-well farms in IGP",
+          "from_var_value_range": "Ground-water levels deepened almost double since 1973",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": "Centrifuge pumps no longer effective in IGP - replaced by submersibles",
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_depletion",
+            "irrigation_infrastructure"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "This is the result of an increasing number of submersibles, as the centrifuge pumps are no longer effective in pumping water."
+        },
+        {
+          "from_var": "g_annual_trend",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "soge_class_name",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Sustained negative trend in groundwater level pushes the block / district above the GEC extraction-rate threshold, yielding the over-exploited categorical class for NW plain units.",
+          "direction": "decrease_causes_increase",
+          "strength": "strong",
+          "conditions": "NW plains: Punjab, Haryana, western UP",
+          "from_var_value_range": "Ground-water levels deepened almost double since 1973",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": "NW plains classified as over-exploited",
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_depletion"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The excess demand for water is being met through over-exploitation of ground-water, leading to falling water-tables."
+        },
+        {
+          "from_var": "g_annual_trend",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "NEW_gw_storage_anomaly",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Persistent regional decline in water table integrates over the aquifer area to produce a large negative groundwater storage anomaly, captured synoptically by GRACE in the Rodell et al. NW-plain estimate.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "NW plains aquifer system: Punjab, Haryana, western UP",
+          "from_var_value_range": "Almost-double deepening since 1973",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": "13-17 km^3/year permanently lost from NW-plain aquifers (Rodell et al., 2009)",
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_depletion"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "NASA reported that 13-17 km3 of ground-water is lost permanently every year from the aquifers in the northwestern plains of the Punjab, Haryana, and western Uttar Pradesh."
+        },
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "recharge_rate",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Excess irrigation withdrawal in continuously cropped IGP soils drains storage faster than monsoonal recharge can replenish it, eroding the net recharge balance over time.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "IGP rice-wheat with high effective irrigation withdrawal",
+          "from_var_value_range": "1600 mm rice water requirement; actual application much higher",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_depletion",
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Five decades of rice-wheat cropping system has caused considerable depletion of water resources in this IGP region."
+        }
+      ],
+      "edge_ids": [
+        "e7",
+        "e8",
+        "e9",
+        "e10",
+        "e11",
+        "e12",
+        "e13"
+      ],
+      "context_variables": [
+        "irrigated_area_fraction",
+        "NEW_groundwater_irrigation_share"
+      ]
+    },
+    {
+      "name": "soil_degradation_mechanism",
+      "description": "Population pressure, deforestation, mono-cropping, residue burning, wind and water erosion together deplete soil organic carbon and water-holding capacity, which feeds back to lower soil moisture buffering and higher rainfed crop failure risk.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "double_crop_trend",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "NEW_soil_organic_carbon",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Continuous rice-wheat mono-cropping mines essential nutrients and depletes SOC stocks because crop removal exceeds residue / amendment additions over decades.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "IGP rice-wheat tract",
+          "from_var_value_range": "Five decades of continuous rice-wheat in IGP",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "soil_health",
+            "land_use_transition"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "soil",
+          "excerpt": "Continuous mono-cropping system in the IGP consistently depleted soil organic carbon (SOC)."
+        },
+        {
+          "from_var": "NEW_crop_residue_burning",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "NEW_soil_organic_carbon",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Burning rice-wheat residues volatilises carbon and destroys soil micro/macro biota that mediate carbon stabilisation, lowering SOC inputs and accelerating loss.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "IGP rice-wheat post-harvest window",
+          "from_var_value_range": "Rice-wheat produces 25% of total Indian crop residues, mostly burned",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "soil_health"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "soil",
+          "excerpt": "Burning of rice straw causes excessive heat which kills beneficial micro and macro organisms and toxic gaseous emission threaten the health of both humans and ecosystems."
+        },
+        {
+          "from_var": "NEW_soil_erosion",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "NEW_soil_organic_carbon",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Wind and water erosion preferentially strip the carbon-rich topsoil and the fine particle fraction, depleting SOC stocks and aggregate stability.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Dry tracts of Rajasthan (wind), undulated rainfed tracts (water)",
+          "from_var_value_range": "Wind erosion very active in dry region of Rajasthan; water erosion is the dominant constraint of rainfed farming",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "soil_health"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "soil",
+          "excerpt": "Lower organic carbon (SOC) loss containing soils sustain less biotic flora and fauna in these areas accelerating wind and water (erosion)."
+        },
+        {
+          "from_var": "NEW_soil_organic_carbon",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "NEW_water_holding_capacity",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "SOC contributes to soil aggregation and pore-size distribution that determines water-holding capacity; loss of SOC concentration directly reduces the soil's ability to retain plant-available water.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "All soil orders, especially light-textured IGP soils",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "soil_health",
+            "soil_moisture_dynamics"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "soil",
+          "excerpt": "Reduction in soil organic carbon (SOC) concentration and water holding capacity was also reported."
+        },
+        {
+          "from_var": "NEW_water_holding_capacity",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "NEW_soil_moisture_index",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Soils with low water-holding capacity drain quickly between rainfall events, so the same rainfall regime produces lower realised root-zone soil moisture, accelerating the descent toward PWP under dry spells.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "Light-textured / shallow rainfed soils",
+          "from_var_value_range": "Low moisture retention capacity of soils flagged as a primary cause of rainfed crop failure",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": "Soil moisture stays below 15-bar PWP",
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "soil_moisture_dynamics",
+            "soil_health"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Low moisture retention capacity of soils ... soil moisture is always below the moisture at 15 bar (Permanent Wilting Point)."
+        },
+        {
+          "from_var": "deforestation",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "NEW_soil_erosion",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Removal of forest cover exposes the soil surface to direct raindrop impact and surface runoff, raising water erosion; loss of vegetation roots reduces soil binding and aggregate stability.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Watersheds with steep slopes and ill-distributed erosive rainfall",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "land_use_transition",
+            "soil_health"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "soil",
+          "excerpt": "the blind use of natural resource, faulty management and population pressure were the major causes of increased runoff and soil degradation."
+        },
+        {
+          "from_var": "NEW_wind_velocity",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "NEW_soil_erosion",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "High wind velocity directly causes wind erosion of dry, poorly-aggregated topsoils, suspending fine particles that deposit on infrastructure and degrade fertility in the source area.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Arid Rajasthan tracts; bare-fallow periods",
+          "from_var_value_range": "Wind velocity > 18 km/hr; Rajasthan flagged as wind-erosion hotspot",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "climate_forcing",
+            "soil_health"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "soil",
+          "excerpt": "Wind erosion is very active in dry region of Rajasthan ... loss of nutrient, suspension of fine particles."
+        },
+        {
+          "from_var": "NEW_population_density",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "deforestation",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Population pressure on agricultural lands drives encroachment of forests for cropland, fuelwood and grazing, increasing forest-cover loss and indirect pressure on soil/water resources.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Rainfed regions with high rural population density and weak forest governance",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "socio_economic_pressure",
+            "land_use_transition"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Due to population pressure on agricultural lands, the poverty factor is concentrated mainly in rainfed regions."
+        },
+        {
+          "from_var": "runoff_annual_avg",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "NEW_soil_erosion",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Concentrated surface runoff transports detached sediment downslope, scouring the topsoil and producing rill / gully erosion in undulated rainfed tracts.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Undulated rainfed slopes with low cover and erosive rainfall",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "soil_health",
+            "soil_moisture_dynamics"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "soil",
+          "excerpt": "increased runoff and soil degradation."
+        }
+      ],
+      "edge_ids": [
+        "e14",
+        "e15",
+        "e16",
+        "e17",
+        "e18",
+        "e19",
+        "e20",
+        "e21",
+        "e22"
+      ],
+      "context_variables": [
+        "NEW_population_density",
+        "NEW_conservation_tillage_adoption",
+        "NEW_rainwater_harvesting_coverage"
+      ]
+    },
+    {
+      "name": "conservation_intervention_mechanism",
+      "description": "Soil and water conservation interventions - rainwater harvesting / watershed development, conservation (zero) tillage with residue retention, and crop diversification - act as a counter-mechanism that boosts infiltration and recharge, lowers runoff and erosion, conserves soil moisture and SOC, and ultimately stabilises rainfed crop yields.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_rainwater_harvesting_coverage",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "recharge_rate",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Contour bunds, check dams, terraces, and in-situ / ex-situ moisture harvesting slow runoff and increase infiltration, raising the net recharge rate to shallow aquifers in rainfed watersheds.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Watershed-treated rainfed micro-catchments",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "adaptation_capacity",
+            "groundwater_depletion"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Moisture conservation practices helps in increase infiltration and reduce water losses and runoff."
+        },
+        {
+          "from_var": "NEW_rainwater_harvesting_coverage",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "runoff_annual_avg",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Physical structures (contour ditches, planting pits, terraces, grassed waterways) slow surface flow and reduce runoff volume and velocity.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Mechanical-method watershed treatment",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "adaptation_capacity",
+            "soil_moisture_dynamics"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "physical structures such as contours ditches, planting pits, check dams, dams, earth bund walls, terraces and grassed waterways for water and soil conservation ... to reduce the volume and velocity of surface runoff and increasing the rates of water infiltration into the soil."
+        },
+        {
+          "from_var": "NEW_conservation_tillage_adoption",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "NEW_soil_organic_carbon",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Conservation / zero tillage retains crop residues on the soil surface (>=30%), reducing oxidative loss of SOC and supplying steady carbon inputs to the soil profile.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Rice-wheat cropping system; semi-arid Alfisols",
+          "from_var_value_range": "Conservation tillage retains >=30% residues",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "adaptation_capacity",
+            "soil_health"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "soil",
+          "excerpt": "Conservation tillage is a recent approach with the objective of reduces loss of soil with combination of 30% or greater crop residues on the surface."
+        },
+        {
+          "from_var": "NEW_conservation_tillage_adoption",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "NEW_soil_erosion",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Tillage methods that maintain ridges and furrows, surface clods, and crop residue cover dampen wind and water erosion energy.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Sandy / dry tracts where tillage exposes loose soil",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "adaptation_capacity",
+            "soil_health"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "soil",
+          "excerpt": "Tillage methods that provide control of soil erosion by wind include ridges and furrows, roughen clods on the soil surface."
+        },
+        {
+          "from_var": "NEW_crop_diversification_index",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Switching from water-intensive paddy to hardy crops (pearl millet, sorghum, pulses) and integrating horticulture, dairy and poultry reduces yield variance under rainfall variability and stabilises overall household productivity.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Government-supported diversification programme; rainfed and well-irrigated paddy areas",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "adaptation_capacity",
+            "policy_incentives"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "To reduce vulnerability to rains, Farming is risky in rainfed and dry areas so grew crops such as pearl millet, sorghum and pulses. These crops are less affected by variations in rainfall."
+        },
+        {
+          "from_var": "recharge_rate",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Higher net recharge replenishes the aquifer, slowing or reversing the negative trend in groundwater level; conservation interventions that lift recharge therefore close the loop on the groundwater-overexploitation mechanism in the IGP.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Watershed-treated rainfed catchments and IGP zones where structures, residue retention and tillage interventions are operational",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": "Ground-water levels deepened almost double since 1973 in the absence of effective recharge management",
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "adaptation_capacity",
+            "groundwater_depletion"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Moisture conservation practices helps in increase infiltration and reduce water losses and runoff, Runoff collection and its effective utilization for crops at moisture stress periods."
+        }
+      ],
+      "edge_ids": [
+        "e23",
+        "e24",
+        "e25",
+        "e26",
+        "e27",
+        "e29"
+      ],
+      "context_variables": [
+        "NEW_rainwater_harvesting_coverage",
+        "NEW_conservation_tillage_adoption",
+        "NEW_crop_diversification_index"
+      ]
+    },
+    {
+      "name": "input_constraint_to_yield_mechanism",
+      "description": "Beyond climate and soil, low fertilizer use intensity in dry/rainfed regions caps achievable productivity even when moisture and management are adequate.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_fertilizer_use_intensity",
+          "from_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "mechanism": "Low fertilizer application in rainfed regions (~25% of national consumption on ~70% of net sown area) caps nutrient supply and depresses realised yields below biophysical potential.",
+          "direction": "decrease_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Rainfed and dry tracts with limited credit and input access",
+          "from_var_value_range": "Rainfed regions consume hardly 25% of total fertilizer consumption of India",
+          "from_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "to_var_value_range": "Drylands: 80% of coarse cereals output but very low yield per ha",
+          "to_var_value_range_source": {
+            "paper_id": 42,
+            "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "soil_health",
+            "policy_incentives"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Such vast areas as of now consume hardly 25% of total fertilizer consumption of the country. Due to lack of management, crop productivity is very low."
+        }
+      ],
+      "edge_ids": [
+        "e28"
+      ],
+      "context_variables": [
+        "NEW_fertilizer_use_intensity"
+      ]
+    }
+  ],
+  "causal_chains": [
+    {
+      "edge_id": "e1",
+      "from_var": "prec_annual_avg_rain",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "NEW_soil_moisture_index",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Annual rainfall is the primary supply term in the soil-water balance; under <750 mm dryland conditions with ill-distributed monsoon, soil moisture cannot be replenished above PWP for sustained crop growth.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "Dryland (<750 mm) and rainfed tracts of Punjab, Haryana, Rajasthan, MP, Maharashtra, AP, Karnataka",
+      "from_var_value_range": "Dryland <750 mm; Rainfed >750 mm; SW monsoon ~75% of dry-land rainfall",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": "Soil moisture below 15 bar (PWP) results in failure of crops in dryland agriculture",
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "climate_forcing",
+        "soil_moisture_dynamics"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "These tracts are characterized by scanty, ill-distributed and highly erosive rains ... The soil moisture is always below the moisture at 15 bar (Permanent Wilting Point) which ultimately results in failure of crops in dry land agriculture."
+    },
+    {
+      "edge_id": "e2",
+      "from_var": "drysp_4w_trend",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "NEW_soil_moisture_index",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Within-season dry spells defined as <15 mm rainfall in consecutive weeks deplete root-zone soil moisture even when seasonal totals are adequate, producing moisture stress at critical phenological stages.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Kharif crop growth window in dry/rainfed tracts",
+      "from_var_value_range": "Dry spell threshold: <15 mm rainfall in consecutive weeks",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": "Soil moisture below 15-bar PWP under prolonged dry spells",
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "climate_forcing",
+        "soil_moisture_dynamics"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "A break period of less than 15 mm rainfall in consecutive weeks is known as dry spell ... Prolonged dry spells during the crop growth period."
+    },
+    {
+      "edge_id": "e3",
+      "from_var": "NEW_land_surface_temp_trend",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "et_annual_avg",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Higher near-surface temperature raises the saturation vapour deficit and energy available for evaporation, increasing potential evapotranspiration in the dry tracts.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Late April-early May summer peak in dry tracts",
+      "from_var_value_range": "Maximum temperature > 41 deg C in late April-early May; minimum 14-15 deg C",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Evaporation demands are also accelerated with high temperature and low humidity. Maximum temperature exceeds 41 deg C during late April and early May."
+    },
+    {
+      "edge_id": "e4",
+      "from_var": "NEW_wind_velocity",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "et_annual_avg",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "High wind velocity increases boundary-layer turbulence and aerodynamic transport of water vapour from leaf and soil surfaces, raising evapotranspiration.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Open dryland canopies with low surface roughness",
+      "from_var_value_range": "Wind velocity > 18 km/hr accelerates ET",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Wind velocity more than 18 km/hr leads to higher evapo-transpiration."
+    },
+    {
+      "edge_id": "e5",
+      "from_var": "et_annual_avg",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "NEW_soil_moisture_index",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "When potential evapotranspiration exceeds rainfall supply, soil moisture is drawn down faster than it is replenished; under dry-tract regimes the rainfall-PET balance is negative for much of the year.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Periods when PET exceeds rainfall in dry/rainfed tracts",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": "Soil moisture below 15-bar PWP causes crop failure",
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "climate_forcing",
+        "soil_moisture_dynamics"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Water availability depends on rainfall and potential evaporation. Rainfall exceeds potential evapo-transpiration period provides congenial weather for active crop growth."
+    },
+    {
+      "edge_id": "e6",
+      "from_var": "NEW_soil_moisture_index",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Persistent soil moisture below the permanent wilting point precludes water uptake by roots, causing partial or complete crop failure in dryland agriculture.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "Dryland with shallow soils and limited moisture buffer",
+      "from_var_value_range": "Soil moisture < 15 bar (PWP)",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": "Drylands account for 80% of coarse cereals, 50% of maize, 65% of chickpea/pigeonpea, 81% of groundnut, 88% of soybean, and ~50% of cotton output - but at extremely low productivity per ha",
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_moisture_dynamics",
+        "livelihood_shocks"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The prolonged moisture stress may can result in partial or complete failure of the crops ... ultimately results in failure of crops in dry land agriculture."
+    },
+    {
+      "edge_id": "e7",
+      "from_var": "double_crop_trend",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Continuous rice-wheat double cropping locks in a water-intensive crop calendar; flooded rice alone requires ~1600 mm in Haryana, and over-application on light-textured IGP soils inflates effective demand.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Indo-Gangetic Plains; Haryana light-textured soils",
+      "from_var_value_range": "Five decades of rice-wheat in IGP; 25% of total Indian crop residues are produced by rice-wheat",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": "1600 mm required for flooded rice in Haryana; actual application much higher",
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "land_use_transition",
+        "crop_water_demand"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "In Haryana, large quantity of water (1600 mm) is required to grow flooded rice. However, the actual amount of water applied by farmers is much higher than the requirement."
+    },
+    {
+      "edge_id": "e8",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Excess irrigation demand met by sustained groundwater pumping draws aquifer storage faster than recharge; integrated over decades this produces a strong negative trend in water-table depth.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "IGP rice-wheat with limited canal availability and weak recharge regulation",
+      "from_var_value_range": "Excess demand met through over-exploitation of groundwater",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": "Ground-water levels deepened almost double since 1973",
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion",
+        "crop_water_demand"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The excess demand for water is being met through over-exploitation of ground-water, leading to falling water-tables. Thus, five decades of rice-wheat cropping system has caused considerable depletion of water resources in this IGP region."
+    },
+    {
+      "edge_id": "e9",
+      "from_var": "NEW_groundwater_irrigation_share",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "A high reliance on groundwater (vs. canals) for irrigation translates demand directly into aquifer drawdown rather than surface diversions; ~60-65% groundwater dependence in the IGP amplifies the rate of water-table decline.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "IGP rice-wheat tract; Haryana / Punjab / western UP",
+      "from_var_value_range": "Ground-water provides 60-65% of total irrigation requirement; canals 35-40%",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": "Ground-water levels deepened almost double since 1973",
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion",
+        "irrigation_infrastructure"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "groundwater",
+      "excerpt": "Ground-water contributes 60%-65% of the total irrigation requirement; while the remaining 35%-40% is met through canals."
+    },
+    {
+      "edge_id": "e10",
+      "from_var": "g_annual_trend",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "well_depth",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Falling water tables push farmers to deepen tube-wells and switch from centrifuge to submersible pumps to chase the receding aquifer.",
+      "direction": "decrease_causes_increase",
+      "strength": "strong",
+      "conditions": "Operational tube/bore-well farms in IGP",
+      "from_var_value_range": "Ground-water levels deepened almost double since 1973",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": "Centrifuge pumps no longer effective in IGP - replaced by submersibles",
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion",
+        "irrigation_infrastructure"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "This is the result of an increasing number of submersibles, as the centrifuge pumps are no longer effective in pumping water."
+    },
+    {
+      "edge_id": "e11",
+      "from_var": "g_annual_trend",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "soge_class_name",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Sustained negative trend in groundwater level pushes the block / district above the GEC extraction-rate threshold, yielding the over-exploited categorical class for NW plain units.",
+      "direction": "decrease_causes_increase",
+      "strength": "strong",
+      "conditions": "NW plains: Punjab, Haryana, western UP",
+      "from_var_value_range": "Ground-water levels deepened almost double since 1973",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": "NW plains classified as over-exploited",
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The excess demand for water is being met through over-exploitation of ground-water, leading to falling water-tables."
+    },
+    {
+      "edge_id": "e12",
+      "from_var": "g_annual_trend",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "NEW_gw_storage_anomaly",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Persistent regional decline in water table integrates over the aquifer area to produce a large negative groundwater storage anomaly, captured synoptically by GRACE in the Rodell et al. NW-plain estimate.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "NW plains aquifer system: Punjab, Haryana, western UP",
+      "from_var_value_range": "Almost-double deepening since 1973",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": "13-17 km^3/year permanently lost from NW-plain aquifers (Rodell et al., 2009)",
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "NASA reported that 13-17 km3 of ground-water is lost permanently every year from the aquifers in the northwestern plains of the Punjab, Haryana, and western Uttar Pradesh."
+    },
+    {
+      "edge_id": "e13",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "recharge_rate",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Excess irrigation withdrawal in continuously cropped IGP soils drains storage faster than monsoonal recharge can replenish it, eroding the net recharge balance over time.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "IGP rice-wheat with high effective irrigation withdrawal",
+      "from_var_value_range": "1600 mm rice water requirement; actual application much higher",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion",
+        "crop_water_demand"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Five decades of rice-wheat cropping system has caused considerable depletion of water resources in this IGP region."
+    },
+    {
+      "edge_id": "e14",
+      "from_var": "double_crop_trend",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "NEW_soil_organic_carbon",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Continuous rice-wheat mono-cropping mines essential nutrients and depletes SOC stocks because crop removal exceeds residue / amendment additions over decades.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "IGP rice-wheat tract",
+      "from_var_value_range": "Five decades of continuous rice-wheat in IGP",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_health",
+        "land_use_transition"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "soil",
+      "excerpt": "Continuous mono-cropping system in the IGP consistently depleted soil organic carbon (SOC)."
+    },
+    {
+      "edge_id": "e15",
+      "from_var": "NEW_crop_residue_burning",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "NEW_soil_organic_carbon",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Burning rice-wheat residues volatilises carbon and destroys soil micro/macro biota that mediate carbon stabilisation, lowering SOC inputs and accelerating loss.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "IGP rice-wheat post-harvest window",
+      "from_var_value_range": "Rice-wheat produces 25% of total Indian crop residues, mostly burned",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_health"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "soil",
+      "excerpt": "Burning of rice straw causes excessive heat which kills beneficial micro and macro organisms and toxic gaseous emission threaten the health of both humans and ecosystems."
+    },
+    {
+      "edge_id": "e16",
+      "from_var": "NEW_soil_erosion",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "NEW_soil_organic_carbon",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Wind and water erosion preferentially strip the carbon-rich topsoil and the fine particle fraction, depleting SOC stocks and aggregate stability.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Dry tracts of Rajasthan (wind), undulated rainfed tracts (water)",
+      "from_var_value_range": "Wind erosion very active in dry region of Rajasthan; water erosion is the dominant constraint of rainfed farming",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_health"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "soil",
+      "excerpt": "Lower organic carbon (SOC) loss containing soils sustain less biotic flora and fauna in these areas accelerating wind and water (erosion)."
+    },
+    {
+      "edge_id": "e17",
+      "from_var": "NEW_soil_organic_carbon",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "NEW_water_holding_capacity",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "SOC contributes to soil aggregation and pore-size distribution that determines water-holding capacity; loss of SOC concentration directly reduces the soil's ability to retain plant-available water.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "All soil orders, especially light-textured IGP soils",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_health",
+        "soil_moisture_dynamics"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "soil",
+      "excerpt": "Reduction in soil organic carbon (SOC) concentration and water holding capacity was also reported."
+    },
+    {
+      "edge_id": "e18",
+      "from_var": "NEW_water_holding_capacity",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "NEW_soil_moisture_index",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Soils with low water-holding capacity drain quickly between rainfall events, so the same rainfall regime produces lower realised root-zone soil moisture, accelerating the descent toward PWP under dry spells.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "Light-textured / shallow rainfed soils",
+      "from_var_value_range": "Low moisture retention capacity of soils flagged as a primary cause of rainfed crop failure",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": "Soil moisture stays below 15-bar PWP",
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_moisture_dynamics",
+        "soil_health"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Low moisture retention capacity of soils ... soil moisture is always below the moisture at 15 bar (Permanent Wilting Point)."
+    },
+    {
+      "edge_id": "e19",
+      "from_var": "deforestation",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "NEW_soil_erosion",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Removal of forest cover exposes the soil surface to direct raindrop impact and surface runoff, raising water erosion; loss of vegetation roots reduces soil binding and aggregate stability.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Watersheds with steep slopes and ill-distributed erosive rainfall",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "land_use_transition",
+        "soil_health"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "soil",
+      "excerpt": "the blind use of natural resource, faulty management and population pressure were the major causes of increased runoff and soil degradation."
+    },
+    {
+      "edge_id": "e20",
+      "from_var": "NEW_wind_velocity",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "NEW_soil_erosion",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "High wind velocity directly causes wind erosion of dry, poorly-aggregated topsoils, suspending fine particles that deposit on infrastructure and degrade fertility in the source area.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Arid Rajasthan tracts; bare-fallow periods",
+      "from_var_value_range": "Wind velocity > 18 km/hr; Rajasthan flagged as wind-erosion hotspot",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "climate_forcing",
+        "soil_health"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "soil",
+      "excerpt": "Wind erosion is very active in dry region of Rajasthan ... loss of nutrient, suspension of fine particles."
+    },
+    {
+      "edge_id": "e21",
+      "from_var": "NEW_population_density",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "deforestation",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Population pressure on agricultural lands drives encroachment of forests for cropland, fuelwood and grazing, increasing forest-cover loss and indirect pressure on soil/water resources.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Rainfed regions with high rural population density and weak forest governance",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "socio_economic_pressure",
+        "land_use_transition"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Due to population pressure on agricultural lands, the poverty factor is concentrated mainly in rainfed regions."
+    },
+    {
+      "edge_id": "e22",
+      "from_var": "runoff_annual_avg",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "NEW_soil_erosion",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Concentrated surface runoff transports detached sediment downslope, scouring the topsoil and producing rill / gully erosion in undulated rainfed tracts.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Undulated rainfed slopes with low cover and erosive rainfall",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_health",
+        "soil_moisture_dynamics"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "soil",
+      "excerpt": "increased runoff and soil degradation."
+    },
+    {
+      "edge_id": "e23",
+      "from_var": "NEW_rainwater_harvesting_coverage",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "recharge_rate",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Contour bunds, check dams, terraces, and in-situ / ex-situ moisture harvesting slow runoff and increase infiltration, raising the net recharge rate to shallow aquifers in rainfed watersheds.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Watershed-treated rainfed micro-catchments",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "groundwater_depletion"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Moisture conservation practices helps in increase infiltration and reduce water losses and runoff."
+    },
+    {
+      "edge_id": "e24",
+      "from_var": "NEW_rainwater_harvesting_coverage",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "runoff_annual_avg",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Physical structures (contour ditches, planting pits, terraces, grassed waterways) slow surface flow and reduce runoff volume and velocity.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Mechanical-method watershed treatment",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "soil_moisture_dynamics"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "physical structures such as contours ditches, planting pits, check dams, dams, earth bund walls, terraces and grassed waterways for water and soil conservation ... to reduce the volume and velocity of surface runoff and increasing the rates of water infiltration into the soil."
+    },
+    {
+      "edge_id": "e25",
+      "from_var": "NEW_conservation_tillage_adoption",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "NEW_soil_organic_carbon",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Conservation / zero tillage retains crop residues on the soil surface (>=30%), reducing oxidative loss of SOC and supplying steady carbon inputs to the soil profile.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Rice-wheat cropping system; semi-arid Alfisols",
+      "from_var_value_range": "Conservation tillage retains >=30% residues",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "soil_health"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "soil",
+      "excerpt": "Conservation tillage is a recent approach with the objective of reduces loss of soil with combination of 30% or greater crop residues on the surface."
+    },
+    {
+      "edge_id": "e26",
+      "from_var": "NEW_conservation_tillage_adoption",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "NEW_soil_erosion",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Tillage methods that maintain ridges and furrows, surface clods, and crop residue cover dampen wind and water erosion energy.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Sandy / dry tracts where tillage exposes loose soil",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "soil_health"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "soil",
+      "excerpt": "Tillage methods that provide control of soil erosion by wind include ridges and furrows, roughen clods on the soil surface."
+    },
+    {
+      "edge_id": "e27",
+      "from_var": "NEW_crop_diversification_index",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Switching from water-intensive paddy to hardy crops (pearl millet, sorghum, pulses) and integrating horticulture, dairy and poultry reduces yield variance under rainfall variability and stabilises overall household productivity.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Government-supported diversification programme; rainfed and well-irrigated paddy areas",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "policy_incentives"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "To reduce vulnerability to rains, Farming is risky in rainfed and dry areas so grew crops such as pearl millet, sorghum and pulses. These crops are less affected by variations in rainfall."
+    },
+    {
+      "edge_id": "e28",
+      "from_var": "NEW_fertilizer_use_intensity",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Low fertilizer application in rainfed regions (~25% of national consumption on ~70% of net sown area) caps nutrient supply and depresses realised yields below biophysical potential.",
+      "direction": "decrease_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Rainfed and dry tracts with limited credit and input access",
+      "from_var_value_range": "Rainfed regions consume hardly 25% of total fertilizer consumption of India",
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": "Drylands: 80% of coarse cereals output but very low yield per ha",
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_health",
+        "policy_incentives"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Such vast areas as of now consume hardly 25% of total fertilizer consumption of the country. Due to lack of management, crop productivity is very low."
+    },
+    {
+      "edge_id": "e29",
+      "from_var": "recharge_rate",
+      "from_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "mechanism": "Higher net recharge replenishes the aquifer, slowing or reversing the negative trend in groundwater level; conservation interventions that lift recharge therefore close the loop on the groundwater-overexploitation mechanism in the IGP.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Watershed-treated rainfed catchments and IGP zones where structures, residue retention and tillage interventions are operational",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "to_var_value_range": "Ground-water levels deepened almost double since 1973 in the absence of effective recharge management",
+      "to_var_value_range_source": {
+        "paper_id": 42,
+        "paper_title": "Dry and Rainfed Agriculture- Characteristics and Issues to Enhance the Prosperity of Indian Farming Community"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "groundwater_depletion"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Moisture conservation practices helps in increase infiltration and reduce water losses and runoff, Runoff collection and its effective utilization for crops at moisture stress periods."
+    }
+  ],
+  "conditional_thresholds": [
+    {
+      "variable": "prec_annual_avg_rain",
+      "threshold": "<750 mm = dryland; >750 mm = rainfed",
+      "condition": "Indian agro-climatic classification used in the paper",
+      "implication": "Below 750 mm, moisture stress dominates and crops fail without conservation interventions; above 750 mm, water erosion replaces moisture deficit as the leading constraint."
+    },
+    {
+      "variable": "drysp_4w_trend",
+      "threshold": "<15 mm rainfall in consecutive weeks",
+      "condition": "Within-season dry spell during kharif crop growth",
+      "implication": "Once a dry spell exceeds this threshold, soil moisture is likely to drop toward PWP and trigger yield loss in dryland crops."
+    },
+    {
+      "variable": "NEW_soil_moisture_index",
+      "threshold": "Soil moisture < 15 bar (Permanent Wilting Point)",
+      "condition": "Dryland tracts with low water-holding-capacity soils",
+      "implication": "Below PWP, root water uptake stops and crops fail partially or completely."
+    },
+    {
+      "variable": "NEW_wind_velocity",
+      "threshold": "Wind velocity > 18 km/hr",
+      "condition": "Open-canopy dryland kharif and bare-fallow phases",
+      "implication": "Above this threshold, evapotranspiration is amplified and wind erosion is mobilised in dry regions like Rajasthan."
+    },
+    {
+      "variable": "NEW_land_surface_temp_trend",
+      "threshold": "Maximum temperature > 41 deg C in late April-early May",
+      "condition": "Pre-monsoon dry-tract summer",
+      "implication": "Pushes ET and soil-moisture drawdown toward critical PWP threshold and stresses standing rabi crops."
+    },
+    {
+      "variable": "irrigation_demand",
+      "threshold": "1600 mm water requirement for flooded rice; actual application is much higher",
+      "condition": "Haryana paddy on light-textured IGP soils",
+      "implication": "Each unit of rice-wheat area places very high pressure on groundwater extraction; cropping-pattern shift is necessary to relieve aquifer stress."
+    },
+    {
+      "variable": "NEW_groundwater_irrigation_share",
+      "threshold": "Groundwater contributes 60-65% of total irrigation; canals 35-40%",
+      "condition": "IGP rice-wheat tract",
+      "implication": "When groundwater share exceeds canal contribution, irrigation expansion translates almost one-to-one into aquifer depletion."
+    },
+    {
+      "variable": "NEW_gw_storage_anomaly",
+      "threshold": "13-17 km^3/year permanent loss in NW plains aquifers",
+      "condition": "Cumulative GRACE-derived signal over Punjab + Haryana + western UP",
+      "implication": "A persistent signal of unsustainable extraction with major implications for long-run rural water security."
+    },
+    {
+      "variable": "NEW_conservation_tillage_adoption",
+      "threshold": ">=30% crop residues retained on the soil surface",
+      "condition": "Definitional threshold for conservation tillage from SSSA glossary",
+      "implication": "Below this residue threshold, tillage is not classed as 'conservation'; above it, soil erosion drops sharply and SOC build-up becomes feasible."
+    },
+    {
+      "variable": "double_crop_trend",
+      "threshold": "Five decades of continuous rice-wheat double cropping in IGP",
+      "condition": "Punjab, Haryana, western UP",
+      "implication": "Long-term continuous rice-wheat is identified as the principal driver of NW-plain groundwater depletion and SOC loss."
+    }
+  ],
+  "key_relationships": [
+    "Dryland (<750 mm) and rainfed (>750 mm) tracts together cover 69.5% of Indian net sown area, contributing 42% of total foodgrain and 80% of coarse-grain / pulse production.",
+    "Drylands account for 80% of coarse cereals, 50% of maize, 65% of chickpea/pigeonpea, 81% of groundnut, 88% of soybean, and ~50% of cotton output.",
+    "Five decades of intensive rice-wheat double cropping in the IGP have caused considerable groundwater depletion - with ground-water levels deepening almost double since 1973.",
+    "GRACE / NASA-Rodell estimate: 13-17 km^3/year permanently lost from NW plain aquifers (Punjab, Haryana, western UP).",
+    "Groundwater contributes 60-65% of total irrigation requirement in the IGP; canals contribute 35-40%; flooded rice in Haryana requires ~1600 mm with actual application much higher.",
+    "Soil moisture below the 15-bar permanent wilting point causes crop failure in dryland systems; <15 mm rainfall in consecutive weeks defines a dry spell that drives soil moisture below PWP.",
+    "Wind velocity > 18 km/hr accelerates evapotranspiration and is a major driver of wind erosion in dryland Rajasthan; maximum temperature > 41 deg C in late April-early May further amplifies ET demand.",
+    "Continuous IGP rice-wheat depletes SOC; rice-wheat produces 25% of total Indian crop residues, mostly burned; SOC loss reduces water-holding capacity, reinforcing rainfed crop failure risk.",
+    "Conservation tillage with >=30% residue retention, watershed-based rainwater harvesting, and crop diversification (pearl millet / sorghum / pulses) are the central counter-mechanisms recommended by the review.",
+    "Rainfed regions consume only ~25% of total Indian fertilizer use, contributing to very low rainfed productivity per ha despite large output share."
+  ],
+  "alias_resolution_rules": [
+    {
+      "alias_text": "rainfall / annual rainfall / monsoon rainfall",
+      "canonical_variable_name": "prec_annual_avg_rain",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Direct mapping; paper provides 750 mm classification threshold and 75% SW-monsoon share."
+    },
+    {
+      "alias_text": "dry spell / break period",
+      "canonical_variable_name": "drysp_4w_trend",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Paper supplies the operational definition (<15 mm in consecutive weeks)."
+    },
+    {
+      "alias_text": "falling water tables / deepening of ground water",
+      "canonical_variable_name": "g_annual_trend",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Direct mapping; paper reports near-doubling of operational depth since 1973."
+    },
+    {
+      "alias_text": "submersibles / centrifuge pumps no longer effective",
+      "canonical_variable_name": "well_depth",
+      "resolution_method": "near_synonym_suggestion",
+      "resolution_confidence": "high",
+      "notes": "Pump-technology shift used as proxy for operational well depth."
+    },
+    {
+      "alias_text": "over-exploitation of ground-water",
+      "canonical_variable_name": "soge_class_name",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Direct mapping to GEC over-exploited categorical class for NW plains."
+    },
+    {
+      "alias_text": "soil moisture below 15 bar (PWP)",
+      "canonical_variable_name": "NEW_soil_moisture_index",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Maps to taxonomy-expansion canonical name; threshold preserved in threshold_or_range."
+    },
+    {
+      "alias_text": "soil organic carbon / SOC",
+      "canonical_variable_name": "NEW_soil_organic_carbon",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Direct mapping to taxonomy-expansion canonical name."
+    },
+    {
+      "alias_text": "wind erosion / water erosion",
+      "canonical_variable_name": "NEW_soil_erosion",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Both wind and water erosion subsumed under the same canonical concept; medium = soil."
+    },
+    {
+      "alias_text": "rainwater harvesting / water harvesting / contour bunding / watershed development",
+      "canonical_variable_name": "NEW_rainwater_harvesting_coverage",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Maps to taxonomy-expansion canonical name."
+    },
+    {
+      "alias_text": "ground-water contributes 60-65% of total irrigation requirement",
+      "canonical_variable_name": "NEW_groundwater_irrigation_share",
+      "resolution_method": "near_synonym_suggestion",
+      "resolution_confidence": "medium",
+      "notes": "New variable - distinct from irrigated_area_fraction (% of cropped area irrigated) and from soge_class_name (extraction-stage category)."
+    },
+    {
+      "alias_text": "conservation tillage / no-tillage / zero tillage",
+      "canonical_variable_name": "NEW_conservation_tillage_adoption",
+      "resolution_method": "near_synonym_suggestion",
+      "resolution_confidence": "high",
+      "notes": "New variable; distinct from existing taxonomy entries."
+    },
+    {
+      "alias_text": "crop diversification / pearl millet / sorghum / pulses",
+      "canonical_variable_name": "NEW_crop_diversification_index",
+      "resolution_method": "near_synonym_suggestion",
+      "resolution_confidence": "medium",
+      "notes": "Distinct from taxonomy-expansion NEW_varietal_diversification_index (variety-level)."
+    }
+  ],
+  "mapping_notes": "Most concepts in the review map cleanly to existing base or taxonomy-expansion variables (g_annual_trend, well_depth, soge_class_name, NEW_soil_organic_carbon, NEW_soil_erosion, NEW_soil_moisture_index, NEW_water_holding_capacity, NEW_rainwater_harvesting_coverage, NEW_crop_residue_burning, NEW_population_density, NEW_land_surface_temp_trend, NEW_wind_velocity, NEW_gw_storage_anomaly, NEW_fertilizer_use_intensity). Three concepts required new variables: NEW_groundwater_irrigation_share (share of irrigation drawn from groundwater - distinct from irrigated_area_fraction and soge_class_name), NEW_conservation_tillage_adoption (zero-till / conservation tillage with >=30% residue retention - distinct from existing taxonomy), and NEW_crop_diversification_index (crop-level diversification, distinct from variety-level NEW_varietal_diversification_index already in taxonomy expansion).",
+  "limitations": "The paper is a narrative review and does not present primary empirical data, statistical tests, or numerical district/block-level estimates beyond a few cited figures (Rodell et al. NASA estimate of 13-17 km^3/year, Haryana paddy water requirement of 1600 mm, dryland output shares, dry-spell threshold of <15 mm in consecutive weeks, PWP at 15 bar). Many of the causal relationships are stated narratively rather than quantified, so most edges have moderate-to-strong qualitative strength but limited numeric value ranges. Region-specific evidence is concentrated in the Indo-Gangetic Plains (Haryana, Punjab, western UP) and Rajasthan; transferability to other Indian dryland states is asserted but not demonstrated.",
+  "important_variables": [
+    {
+      "variable_name": "prec_annual_avg_rain",
+      "significance": "Primary driver in the paper's classification of dryland (<750 mm) vs rainfed (>750 mm) systems and the dominant supply term in the dryland soil-water balance.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "drysp_4w_trend",
+      "significance": "Paper supplies the explicit operational definition (<15 mm in consecutive weeks) and identifies prolonged dry spells as a leading cause of rainfed crop failure.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_soil_moisture_index",
+      "significance": "Anchored by an explicit threshold (15-bar PWP) above which dryland crops fail; the central mediating variable in the climate-to-yield mechanism.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "g_annual_trend",
+      "significance": "Falling IGP water tables (almost-double depth since 1973) is the central groundwater outcome variable in the review.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_gw_storage_anomaly",
+      "significance": "Quantitative GRACE signal (13-17 km^3/year) that anchors the NW-plain depletion narrative.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "double_crop_trend",
+      "significance": "Identified by the paper as the structural land-use driver of the entire IGP groundwater-and-soil-degradation story (five decades of rice-wheat).",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "irrigation_demand",
+      "significance": "Quantified at 1600 mm for flooded rice in Haryana with actual application much higher; bridges land-use to groundwater depletion.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_soil_organic_carbon",
+      "significance": "Central soil-health mediator linking IGP rice-wheat, residue burning and erosion to declining water-holding capacity and rainfed crop failure.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_water_holding_capacity",
+      "significance": "Connects soil health and climatic moisture stress; flagged by the paper as a primary cause of rainfed crop failure.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_rainwater_harvesting_coverage",
+      "significance": "Central remedial intervention prescribed by the review to lift recharge and lower runoff in dry/rainfed regions.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_conservation_tillage_adoption",
+      "significance": "Operationally defined (>=30% residue retention) and prescribed for IGP rice-wheat; functions both for SOC build-up and erosion control.",
+      "evidence_strength": "moderate",
+      "recommendation": "candidate_for_taxonomy"
+    },
+    {
+      "variable_name": "NEW_groundwater_irrigation_share",
+      "significance": "Quantified at 60-65% in the IGP; structurally explains why irrigation expansion translates almost one-to-one into aquifer depletion in NW plains.",
+      "evidence_strength": "moderate",
+      "recommendation": "candidate_for_taxonomy"
+    }
+  ],
+  "important_variables_narrative": "The review's mechanism story has three legs that converge on rainfed crop failure. (i) The climate leg - prec_annual_avg_rain, drysp_4w_trend, NEW_land_surface_temp_trend, NEW_wind_velocity, et_annual_avg - drives NEW_soil_moisture_index toward the explicit 15-bar PWP threshold and crop failure (crop_yield_trend). (ii) The IGP irrigation leg - double_crop_trend, irrigation_demand (~1600 mm rice), NEW_groundwater_irrigation_share (60-65%), g_annual_trend (~doubled depth since 1973), well_depth, soge_class_name (over-exploited NW plains), NEW_gw_storage_anomaly (13-17 km3/yr) - shows how five decades of rice-wheat have produced one of the world's worst groundwater stresses. (iii) The soil leg - double_crop_trend, NEW_crop_residue_burning, NEW_soil_erosion, deforestation, NEW_population_density, runoff_annual_avg - depletes NEW_soil_organic_carbon and NEW_water_holding_capacity, which cycles back into worse moisture stress in rainfed plots. The review then identifies NEW_rainwater_harvesting_coverage, NEW_conservation_tillage_adoption (>=30% residue retention) and NEW_crop_diversification_index as the core counter-mechanisms - the levers that simultaneously raise recharge_rate, lower runoff and erosion, and stabilise rainfed yields. NEW_fertilizer_use_intensity caps the upside of all of these because rainfed regions still receive only ~25% of national fertilizer despite holding ~70% of net sown area."
+}

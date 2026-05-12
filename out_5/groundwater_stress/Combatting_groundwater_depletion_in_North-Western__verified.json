@@ -1,0 +1,1223 @@
+{
+  "schema_version": "2.0",
+  "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches",
+  "paper_identity": {
+    "paper_id": 15,
+    "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+  },
+  "paper_summary": "This systematic review synthesizes evidence on groundwater depletion drivers and mitigation pathways in northwestern India, especially Punjab, Haryana, and Rajasthan. It documents that groundwater extraction exceeds recharge in these states and links this to water-intensive cropping systems and electricity subsidies. The paper evaluates agronomic and policy interventions, finding that many practices improve water-use efficiency, while water harvesting and integrated governance are most promising for aquifer-level sustainability.",
+  "study_region": "India with focus on northwestern states (Punjab, Haryana, Rajasthan, and Delhi)",
+  "study_period": "Review horizon primarily 2005-2025 with supporting historical evidence and 2022 groundwater status snapshots",
+  "methodology": "Systematic review using PRISMA across Google Scholar, Web of Science, and Scopus; synthesis of peer-reviewed studies and Indian government groundwater/agriculture reports.",
+  "paper_type": "review",
+  "paper_type_rationale": "The paper synthesizes findings from existing studies and government reports rather than producing new causal estimates from a single empirical dataset. Its contribution is comparative evidence integration across interventions, outcomes, and policy contexts.",
+  "cluster_families_covered": [
+    "groundwater_stress",
+    "irrigation_challenges",
+    "drought",
+    "rainfed_risk"
+  ],
+  "mechanism_domains_covered": [
+    "policy_incentives",
+    "crop_water_demand",
+    "recharge_dynamics",
+    "irrigation_infrastructure",
+    "adaptation_capacity",
+    "socio_economic_pressure"
+  ],
+  "mapped_variables": [
+    {
+      "taxonomy_name": "g_annual_trend",
+      "canonical_variable_name": "g_annual_trend",
+      "alias_used_in_paper": "groundwater depletion rate / water table decline",
+      "definition_source": "merged",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "groundwater level decline in northwestern India",
+      "description": "Annual trend of groundwater decline driven by extraction-recharge imbalance.",
+      "unit": "cm/year",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "CGWB compilations and cited studies (e.g., Rodell et al., Baweja et al.)",
+      "indian_data_source": "same",
+      "threshold_or_range": "Around 4.0 +/- 1.0 cm/year decline (2000-2008) in Rajasthan/Haryana/Punjab/Delhi; about 41.6 cm/year long-term decline in Punjab in one cited analysis.",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "recharge_dynamics",
+        "socio_economic_pressure"
+      ],
+      "paper_context_id": "kaur2026_nw_review::g_annual_trend::na",
+      "source_paper": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "excerpt": "Groundwater depletion rates around 4.0 +/- 1.0 cm/year were reported for Rajasthan, Haryana, Punjab, and Delhi, with continued severe decline in northwestern states."
+    },
+    {
+      "taxonomy_name": "recharge_rate",
+      "canonical_variable_name": "recharge_rate",
+      "alias_used_in_paper": "annual groundwater recharge",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "national recharge and extractable recharge components",
+      "description": "Groundwater replenishment volume and composition across monsoon/non-monsoon sources.",
+      "unit": "bcm/year",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "National compilation on groundwater resources in India (2022/2023)",
+      "indian_data_source": "same",
+      "threshold_or_range": "Total annual recharge 437.60 bcm; extractable 398.08 bcm; monsoon rainfall contribution 241.35 bcm (55.15%).",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "recharge_dynamics",
+        "climate_forcing"
+      ],
+      "paper_context_id": "kaur2026_nw_review::recharge_rate::na",
+      "source_paper": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "excerpt": "In 2022, total annual groundwater recharge was 437.60 bcm, with monsoon rainfall contributing the largest share."
+    },
+    {
+      "taxonomy_name": "prec_annual_avg_rain",
+      "canonical_variable_name": "prec_annual_avg_rain",
+      "alias_used_in_paper": "rainfall variability / monsoon rainfall",
+      "definition_source": "merged",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "temporal rainfall variation and monsoon dependence",
+      "description": "Rainfall amount and variability controlling recharge and water deficits.",
+      "unit": "mm",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Agricultural statistics and reviewed studies",
+      "indian_data_source": "same",
+      "threshold_or_range": "Temporal variation example (2021-22): winter 58.7 mm, pre-monsoon 130.6 mm, southwest monsoon 874.6 mm, post-monsoon 177.8 mm.",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing",
+        "recharge_dynamics"
+      ],
+      "paper_context_id": "kaur2026_nw_review::precipitation::annual",
+      "source_paper": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "excerpt": "Monsoon rainfall is the dominant recharge source, while climate-driven rainfall shifts and higher evapotranspiration weaken replenishment."
+    },
+    {
+      "taxonomy_name": "cropping_area_trend",
+      "canonical_variable_name": "cropping_area_trend",
+      "alias_used_in_paper": "acreage concentration under water-guzzling crops",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "shift toward water-intensive crop patterns (notably paddy-wheat)",
+      "description": "Change in crop area composition toward high-water-demand crops in stressed regions.",
+      "unit": "trend/percentage share",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Review synthesis from policy and agronomic studies",
+      "indian_data_source": "same",
+      "threshold_or_range": "Rice procurement alone linked to at least 50% of observed groundwater decline over 34 years in cited evidence.",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "crop_water_demand",
+        "policy_incentives"
+      ],
+      "paper_context_id": "kaur2026_nw_review::cropping_area_trend::annual",
+      "source_paper": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "excerpt": "Concentration of acreage under water-intensive crops in northwestern states is identified as a central depletion driver."
+    },
+    {
+      "taxonomy_name": "NEW_electricity_subsidy_intensity",
+      "canonical_variable_name": "NEW_electricity_subsidy_intensity",
+      "alias_used_in_paper": "free/subsidized electricity for agriculture",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "power subsidy incentives affecting pumping behavior",
+      "description": "Policy subsidy intensity that reduces marginal pumping cost and increases extraction incentives.",
+      "unit": "USD/ha or fiscal outlay",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Cited policy-economics studies in review",
+      "indian_data_source": "same",
+      "threshold_or_range": "Haryana rice surplus-irrigation power subsidy about $158.26/ha; total subsidy burden about $0.11 billion in FY2014-15 for extra irrigation.",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "policy_incentives",
+        "socio_economic_pressure"
+      ],
+      "paper_context_id": "kaur2026_nw_review::electricity_subsidy::na",
+      "source_paper": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "excerpt": "Free or subsidized electricity encourages excessive pumping and over-irrigation, worsening groundwater decline and imposing fiscal strain."
+    },
+    {
+      "taxonomy_name": "irrigation_demand",
+      "canonical_variable_name": "irrigation_demand",
+      "alias_used_in_paper": "groundwater extraction for irrigation / irrigation water use",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "extraction volume and extraction stage",
+      "description": "Irrigation withdrawal demand from groundwater systems.",
+      "unit": "bcm/year or % stage",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "CGWB/national groundwater compilations and reviewed studies",
+      "indian_data_source": "same",
+      "threshold_or_range": "India extracted 239.16 bcm in 2022 (stage 60.08%); extraction stages in 2022: Punjab 165.99%, Haryana 134.14%, Rajasthan 151.07%.",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "crop_water_demand",
+        "recharge_dynamics"
+      ],
+      "paper_context_id": "kaur2026_nw_review::irrigation_demand::na",
+      "source_paper": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "excerpt": "In 2022, extraction was 239.16 bcm nationally; Punjab, Haryana and Rajasthan remained above 100% extraction stage."
+    },
+    {
+      "taxonomy_name": "NEW_water_use_efficiency",
+      "canonical_variable_name": "NEW_water_use_efficiency",
+      "alias_used_in_paper": "water use efficiency / irrigation water productivity",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "WUE improvements under RCT, DSR, SRI, AWD, LLL, MIS",
+      "description": "Efficiency of converting applied water into crop output.",
+      "unit": "kg/m3 or percent change",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Synthesized from multiple intervention studies",
+      "indian_data_source": "same",
+      "threshold_or_range": "Examples: AWD increases IWUE by about 59%; layered DSR+medium-duration hybrid+AWD raises water productivity by 21% and reduces irrigation by 18%.",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "crop_water_demand"
+      ],
+      "paper_context_id": "kaur2026_nw_review::water_use_efficiency::na",
+      "source_paper": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "excerpt": "Many technologies improve WUE substantially, though aquifer-level outcomes depend on adoption and rebound effects."
+    },
+    {
+      "taxonomy_name": "NEW_water_holding_capacity",
+      "canonical_variable_name": "NEW_water_holding_capacity",
+      "alias_used_in_paper": "moisture conservation / mulching / zero tillage soil-water retention",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "soil moisture retention effects from tillage and residue practices",
+      "description": "Soil physical capacity to retain moisture influencing irrigation requirement.",
+      "unit": "relative index/percent effects",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "soil",
+      "data_source_in_paper": "Review synthesis of conservation practices",
+      "indian_data_source": "same",
+      "threshold_or_range": "Ridge-furrow mulching raised wheat WUE by 20.11% and yield by 18% in cited evidence.",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "crop_water_demand"
+      ],
+      "paper_context_id": "kaur2026_nw_review::water_holding_capacity::soil",
+      "source_paper": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "excerpt": "Mulching and conservation tillage improve moisture retention and water-use outcomes in water-stressed systems."
+    },
+    {
+      "taxonomy_name": "NEW_rainwater_harvesting_coverage",
+      "canonical_variable_name": "NEW_rainwater_harvesting_coverage",
+      "alias_used_in_paper": "water harvesting structures / rainwater harvesting",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "on-farm reservoirs and recharge structures",
+      "description": "Coverage/intensity of recharge-oriented harvesting interventions.",
+      "unit": "share of recharge contribution",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Case studies synthesized in review",
+      "indian_data_source": "same",
+      "threshold_or_range": "In Jamka micro-shed, total recharge 390.29 ha-m, of which 38.53% was contributed by water harvesting structures.",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "recharge_dynamics",
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "kaur2026_nw_review::rainwater_harvesting::na",
+      "source_paper": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "excerpt": "Water harvesting structures provided sizable recharge contribution and are highlighted as one of the most effective long-term options."
+    },
+    {
+      "taxonomy_name": "crop_yield_trend",
+      "canonical_variable_name": "crop_yield_trend",
+      "alias_used_in_paper": "yield effects under water-saving practices",
+      "definition_source": "merged",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "yield maintenance/increase under interventions",
+      "description": "Yield response under mitigation and adaptation technologies.",
+      "unit": "% change or t/ha",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Synthesis of intervention studies",
+      "indian_data_source": "same",
+      "threshold_or_range": "Examples include SRI productivity gains up to 46% in some settings; DSR often 2-6% lower initially; LLL increased rice/wheat/sugarcane yield by 6.6%, 5.4%, 10.9% in one study.",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "crop_water_demand"
+      ],
+      "paper_context_id": "kaur2026_nw_review::crop_yield_trend::na",
+      "source_paper": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "excerpt": "Most water-saving technologies maintained or increased yields, though some methods (e.g., certain DSR or deficit settings) can reduce yields."
+    },
+    {
+      "taxonomy_name": "cropping_intensity_trend",
+      "canonical_variable_name": "cropping_intensity_trend",
+      "alias_used_in_paper": "cropping intensity reduction under depletion",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "national/regional reduction in cropping intensity from groundwater decline",
+      "description": "Change in annual cropping intensity as water stress intensifies.",
+      "unit": "% change",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Cited national-scale analyses in review",
+      "indian_data_source": "same",
+      "threshold_or_range": "Estimated reduction around 20% nationally and up to 68% in severely depleted regions.",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "socio_economic_pressure",
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "kaur2026_nw_review::cropping_intensity::na",
+      "source_paper": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "excerpt": "Groundwater decline may reduce cropping intensity by about 20% nationally and by up to 68% in severely depleted regions."
+    },
+    {
+      "taxonomy_name": "salinity_level",
+      "canonical_variable_name": "salinity_level",
+      "alias_used_in_paper": "groundwater salinity contamination",
+      "definition_source": "merged",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "poor groundwater quality due to salinity",
+      "description": "Groundwater salinity burden associated with degraded aquifer quality.",
+      "unit": "share of affected aquifers",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "groundwater",
+      "data_source_in_paper": "Cited basin-scale quality studies",
+      "indian_data_source": "same",
+      "threshold_or_range": "About 60% of aquifers in the cited Indo-Gangetic assessment had poor quality due to salinity and arsenic contamination.",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "water_quality",
+        "recharge_dynamics"
+      ],
+      "paper_context_id": "kaur2026_nw_review::salinity::groundwater",
+      "source_paper": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "excerpt": "A cited assessment reported widespread aquifer quality deterioration including salinity contamination."
+    }
+  ],
+  "new_variables": [],
+  "mechanism_blocks": [
+    {
+      "name": "policy_incentive_overextraction_mechanism",
+      "description": "Subsidies and procurement incentives increase cultivation of water-intensive crops and pumping, driving extraction beyond recharge and accelerating aquifer decline.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_electricity_subsidy_intensity",
+          "from_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "mechanism": "Cheap or free electricity reduces pumping cost, encouraging over-irrigation and raising groundwater withdrawal demand.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Strongest where paddy/wheat procurement and subsidy support are concentrated.",
+          "from_var_value_range": "Haryana surplus-irrigation subsidy estimated about $158.26/ha; extra-irrigation subsidy outlay about $0.11 billion.",
+          "from_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var_value_range": "State extraction stage in 2022: Punjab 165.99%, Rajasthan 151.07%, Haryana 134.14%.",
+          "to_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "policy_incentives",
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Subsidized electricity incentivizes inefficient irrigation and contributes to excessive extraction."
+        },
+        {
+          "from_var": "cropping_area_trend",
+          "from_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "mechanism": "Greater area under water-intensive crops raises irrigation requirements and groundwater withdrawals.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Rice concentration in NW procurement regions with assured market/pricing support.",
+          "from_var_value_range": "Rice procurement linked to at least 50% of observed decline over 34 years in cited evidence.",
+          "from_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var_value_range": "National extraction 239.16 bcm in 2022.",
+          "to_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "crop_water_demand",
+            "policy_incentives"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Water-guzzling crop concentration is identified as a key reason extraction exceeds recharge in NW states."
+        },
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "mechanism": "When withdrawals exceed renewable recharge, groundwater levels decline and overexploited blocks expand.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "States with extraction stage above 100% and persistent paddy-wheat dependence.",
+          "from_var_value_range": "Extraction stage: Punjab 165.99%, Rajasthan 151.07%, Haryana 134.14% (2022).",
+          "from_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var_value_range": "Decline around 4.0 +/- 1.0 cm/year in NW states in cited period; overexploited blocks around 76% Punjab, 72% Rajasthan, 61% Haryana in 2022.",
+          "to_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "recharge_dynamics",
+            "socio_economic_pressure"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Punjab, Haryana and Rajasthan extract more than annual recharge, producing persistent aquifer decline."
+        }
+      ],
+      "edge_ids": [
+        "e1",
+        "e2",
+        "e3"
+      ],
+      "context_variables": [
+        "prec_annual_avg_rain",
+        "recharge_rate"
+      ]
+    },
+    {
+      "name": "climate_recharge_balance_mechanism",
+      "description": "Rainfall variability and higher evapotranspiration modify recharge pathways and can worsen depletion under high abstraction regimes.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "prec_annual_avg_rain",
+          "from_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var": "recharge_rate",
+          "to_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "mechanism": "Monsoon precipitation drives most annual recharge; shifts in rainfall timing/amount alter replenishment volumes.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Monsoon-dominated recharge systems across India.",
+          "from_var_value_range": "Southwest monsoon rainfall example 874.6 mm in 2021-22 table.",
+          "from_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var_value_range": "Monsoon rainfall contributed 241.35 bcm (55.15%) of annual recharge in 2022.",
+          "to_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "climate_forcing",
+            "recharge_dynamics"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Monsoon rainfall is the largest recharge component and therefore central to groundwater replenishment."
+        },
+        {
+          "from_var": "recharge_rate",
+          "from_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "mechanism": "Lower effective recharge relative to extraction deepens annual groundwater decline and negative water balance.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "Overexploited NW states where annual utilization exceeds recharge.",
+          "from_var_value_range": "Negative water balance values: Punjab -11.05 bcm, Rajasthan -4.39 bcm, Haryana -2.08 bcm.",
+          "from_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var_value_range": "Persistent decline and overexploitation shares (Punjab about 76%, Rajasthan about 72%, Haryana about 61% blocks in 2022).",
+          "to_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "recharge_dynamics",
+            "socio_economic_pressure"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "NW states have extraction far exceeding recharge, producing persistent negative balances."
+        }
+      ],
+      "edge_ids": [
+        "e4",
+        "e5"
+      ],
+      "context_variables": [
+        "irrigation_demand",
+        "NEW_rainwater_harvesting_coverage"
+      ]
+    },
+    {
+      "name": "water_saving_technology_with_rebound_mechanism",
+      "description": "Water-saving practices improve field-level efficiency and often maintain yield, but aquifer benefits depend on recharge effects and rebound from expanded irrigated area.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_water_use_efficiency",
+          "from_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "mechanism": "Higher field-level efficiency can reduce applied irrigation per unit output, but total withdrawal may rebound if irrigated area expands.",
+          "direction": "decrease_causes_decrease",
+          "strength": "moderate",
+          "conditions": "No expansion of irrigated area and stable crop choices; otherwise rebound may offset savings.",
+          "from_var_value_range": "Examples include AWD water-use reduction 26-52% and LLL irrigation saving up to 21%.",
+          "from_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var_value_range": "Micro-irrigation can cut potential extraction substantially but about half of savings may be offset by area expansion in cited evidence.",
+          "to_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "adaptation_capacity",
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Efficiency gains are real, but expansion and recharge effects can dilute aquifer-level benefits."
+        },
+        {
+          "from_var": "NEW_rainwater_harvesting_coverage",
+          "from_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var": "recharge_rate",
+          "to_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "mechanism": "Harvesting and storage structures increase local infiltration/recharge contributions and augment groundwater replenishment.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Implemented at sufficient density and linked with watershed-scale management.",
+          "from_var_value_range": "Jamka microshed: 38.53% of observed recharge attributed to water-harvesting structures.",
+          "from_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var_value_range": "Natural recharge estimated about 11-16% of annual rainfall in cited study.",
+          "to_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "recharge_dynamics",
+            "adaptation_capacity"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Water harvesting is identified as a high-impact option because it can reduce withdrawals and increase recharge."
+        },
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var": "cropping_intensity_trend",
+          "to_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "mechanism": "As depletion deepens and pumping constraints rise, cropping intensity declines, especially in severe-stress zones.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Chronic depletion regions and smallholder-constrained systems.",
+          "from_var_value_range": "Extraction stages above 100% in major NW states (2022).",
+          "from_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var_value_range": "Cropping intensity reduction estimated around 20% nationally and up to 68% in severe depletion regions.",
+          "to_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "socio_economic_pressure",
+            "adaptation_capacity"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Groundwater decline has major implications for cropping intensity, with severe regional reductions in highly depleted areas."
+        },
+        {
+          "from_var": "NEW_water_use_efficiency",
+          "from_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "mechanism": "Efficiency-enhancing practices typically sustain or improve yields by reducing non-productive losses and improving timing of irrigation.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Management quality, local soils, and technology suitability determine yield response.",
+          "from_var_value_range": "LLL improved WUE and reduced energy use; SRI and layered practices reported substantial WUE gains.",
+          "from_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "to_var_value_range": "Yield effects vary from slight reduction (e.g., some DSR contexts) to notable increase (e.g., SRI about +46% in cited case).",
+          "to_var_value_range_source": {
+            "paper_id": 15,
+            "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "adaptation_capacity",
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Most reviewed technologies improved or maintained yields while reducing water use, with context-specific exceptions."
+        }
+      ],
+      "edge_ids": [
+        "e6",
+        "e7",
+        "e8",
+        "e9"
+      ],
+      "context_variables": [
+        "NEW_water_holding_capacity",
+        "salinity_level"
+      ]
+    }
+  ],
+  "causal_chains": [
+    {
+      "edge_id": "e1",
+      "from_var": "NEW_electricity_subsidy_intensity",
+      "from_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "mechanism": "Subsidized energy lowers pumping cost and encourages higher groundwater extraction for irrigation.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Most visible in paddy-intensive, procurement-supported states.",
+      "from_var_value_range": "Haryana subsidy burden includes about $158.26/ha for surplus irrigation and about $0.11 billion state subsidy for extra irrigation.",
+      "from_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var_value_range": "Extraction stage in 2022: Punjab 165.99%, Rajasthan 151.07%, Haryana 134.14%.",
+      "to_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "policy_incentives",
+        "crop_water_demand"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Energy subsidies are repeatedly identified as incentives for excessive groundwater pumping."
+    },
+    {
+      "edge_id": "e2",
+      "from_var": "cropping_area_trend",
+      "from_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "mechanism": "Expansion or persistence of water-intensive crop area increases irrigation demand per region.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Assured market/procurement and MSP incentives for paddy/wheat systems.",
+      "from_var_value_range": "Rice procurement linked to at least 50% of observed groundwater decline over 34 years in cited evidence.",
+      "from_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var_value_range": "India extraction 239.16 bcm in 2022.",
+      "to_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "crop_water_demand",
+        "policy_incentives"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Water-guzzling crop concentration is highlighted as a central extraction driver."
+    },
+    {
+      "edge_id": "e3",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "mechanism": "Over-withdrawal relative to recharge causes persistent groundwater decline and high overexploitation rates.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "States where extraction stage is above 100%.",
+      "from_var_value_range": "Extraction stages >100% in Punjab, Rajasthan, Haryana (2022).",
+      "from_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var_value_range": "About 4.0 +/- 1.0 cm/year decline (2000-2008) in NW states in cited analysis.",
+      "to_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "recharge_dynamics",
+        "socio_economic_pressure"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Extraction exceeding recharge leads to ongoing aquifer depletion in NW India."
+    },
+    {
+      "edge_id": "e4",
+      "from_var": "prec_annual_avg_rain",
+      "from_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var": "recharge_rate",
+      "to_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "mechanism": "Higher effective rainfall, especially monsoon rainfall, increases recharge contributions to aquifers.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Monsoon season and favorable infiltration conditions.",
+      "from_var_value_range": "Southwest monsoon rainfall example 874.6 mm.",
+      "from_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var_value_range": "Monsoon rainfall recharge 241.35 bcm (55.15% of total recharge).",
+      "to_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "climate_forcing",
+        "recharge_dynamics"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Recharge in India remains critically monsoon-dependent."
+    },
+    {
+      "edge_id": "e5",
+      "from_var": "recharge_rate",
+      "from_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "mechanism": "Lower recharge relative to withdrawals increases negative water balance and accelerates decline.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "Northwestern states under heavy irrigation extraction.",
+      "from_var_value_range": "Negative balances: Punjab -11.05 bcm, Rajasthan -4.39 bcm, Haryana -2.08 bcm.",
+      "from_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var_value_range": "Overexploited blocks in 2022: Punjab about 76%, Rajasthan about 72%, Haryana about 61%, Delhi about 44%.",
+      "to_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "recharge_dynamics",
+        "socio_economic_pressure"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "States with recharge deficits continue to show severe overexploitation."
+    },
+    {
+      "edge_id": "e6",
+      "from_var": "NEW_water_use_efficiency",
+      "from_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "mechanism": "Improved efficiency can lower applied irrigation per hectare, though total demand can rebound through area expansion.",
+      "direction": "decrease_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Rebound effects controlled and adoption paired with governance constraints.",
+      "from_var_value_range": "AWD reduced irrigation water 26-52%; LLL saved about 21% irrigation in one cited study.",
+      "from_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var_value_range": "Micro-irrigation savings partly offset (about half) by expanded irrigated area in cited evidence.",
+      "to_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "crop_water_demand"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The review cautions that efficiency gains do not automatically produce aquifer relief."
+    },
+    {
+      "edge_id": "e7",
+      "from_var": "NEW_rainwater_harvesting_coverage",
+      "from_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var": "recharge_rate",
+      "to_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "mechanism": "Rainwater harvesting and reservoir structures enhance recharge and can reverse local decline trends.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Adequate structure density and maintenance in watershed/urban systems.",
+      "from_var_value_range": "Water harvesting contribution about 38.53% of total recharge in cited micro-shed case.",
+      "from_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var_value_range": "Natural recharge estimated 11-16% of annual rainfall in cited context.",
+      "to_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "recharge_dynamics",
+        "adaptation_capacity"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Water harvesting is highlighted as the most effective dual-benefit strategy among reviewed options."
+    },
+    {
+      "edge_id": "e8",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var": "cropping_intensity_trend",
+      "to_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "mechanism": "Chronic extraction pressure and declining groundwater availability constrain multi-cropping intensity over time.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Severe depletion regions and smallholder resource constraints.",
+      "from_var_value_range": "Extraction stage above 100% in key NW states.",
+      "from_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var_value_range": "Cropping intensity may decline by about 20% nationally and up to 68% in severe regions.",
+      "to_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "socio_economic_pressure",
+        "adaptation_capacity"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Depletion-linked irrigation constraints are associated with large cropping-intensity losses."
+    },
+    {
+      "edge_id": "e9",
+      "from_var": "NEW_water_use_efficiency",
+      "from_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "mechanism": "Efficiency and better water management can maintain or raise yield while reducing applied water, though outcomes vary by practice and site.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Technology match to local soils/climate and proper agronomic management.",
+      "from_var_value_range": "SRI reported about 23% water saving and up to 46% productivity increase in cited setting.",
+      "from_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "to_var_value_range": "DSR often shows initial 2-6% grain-yield reduction in some contexts; LLL increased crop yields (rice/wheat/sugarcane) in cited cases.",
+      "to_var_value_range_source": {
+        "paper_id": 15,
+        "paper_title": "Combatting groundwater depletion in North-Western India: Obstacles, consequences, and water-saving agronomic approaches"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "crop_water_demand"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Most reviewed interventions improve water productivity and often sustain yields, with context-dependent trade-offs."
+    }
+  ],
+  "conditional_thresholds": [
+    {
+      "variable": "irrigation_demand",
+      "threshold": "Extraction stage >100% (Punjab 165.99%, Rajasthan 151.07%, Haryana 134.14%)",
+      "condition": "2022 state-level groundwater status",
+      "implication": "Indicates unsustainable withdrawal relative to recharge and persistent aquifer stress."
+    },
+    {
+      "variable": "recharge_rate",
+      "threshold": "Negative state water balances: Punjab -11.05 bcm, Rajasthan -4.39 bcm, Haryana -2.08 bcm",
+      "condition": "Annual recharge-extraction comparison in NW states",
+      "implication": "Signals chronic recharge deficit and continued groundwater decline risk."
+    },
+    {
+      "variable": "g_annual_trend",
+      "threshold": "Around 4.0 +/- 1.0 cm/year depletion rate in NW states (cited period)",
+      "condition": "High abstraction and climate pressure context",
+      "implication": "Represents severe long-term depletion requiring combined policy and agronomic response."
+    }
+  ],
+  "key_relationships": [
+    "NEW_electricity_subsidy_intensity -> irrigation_demand: subsidy incentives drive over-pumping and over-irrigation.",
+    "cropping_area_trend -> irrigation_demand: concentration of water-intensive crops increases groundwater withdrawal pressure.",
+    "irrigation_demand -> g_annual_trend: extraction beyond recharge causes continued water-table decline and overexploited blocks.",
+    "prec_annual_avg_rain -> recharge_rate: monsoon rainfall dominates recharge and determines replenishment potential.",
+    "NEW_rainwater_harvesting_coverage -> recharge_rate: harvesting structures increase recharge contributions and can support recovery.",
+    "irrigation_demand -> cropping_intensity_trend: severe depletion reduces cropping intensity, especially in high-stress regions."
+  ],
+  "alias_resolution_rules": [
+    {
+      "alias_text": "groundwater depletion rate / water table decline",
+      "canonical_variable_name": "g_annual_trend",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Mapped per mandatory groundwater trend mapping rule."
+    },
+    {
+      "alias_text": "groundwater extraction stage / groundwater withdrawal",
+      "canonical_variable_name": "irrigation_demand",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Paper reports extraction quantities/stage directly relevant to irrigation withdrawal demand."
+    },
+    {
+      "alias_text": "free/subsidized electricity for pumping",
+      "canonical_variable_name": "NEW_electricity_subsidy_intensity",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Present in taxonomy expansion; therefore kept in mapped_variables."
+    },
+    {
+      "alias_text": "water harvesting structures / rainwater harvesting",
+      "canonical_variable_name": "NEW_rainwater_harvesting_coverage",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Mapped to expansion taxonomy as intervention coverage variable."
+    }
+  ],
+  "mapping_notes": "Because this is a review, several variables are synthesized from cited studies with mixed units and contexts rather than one harmonized dataset. Values are reported as paper-cited ranges/examples. Parent qualifiers were applied conservatively, with season only on season-supporting parent variables.",
+  "limitations": "Evidence is heterogeneous across locations, periods, and methods; many effect sizes are context-dependent and not directly comparable. Several interventions improve field-level efficiency but may not guarantee aquifer recovery due to rebound, reduced return flows, or governance gaps.",
+  "important_variables": [
+    {
+      "variable_name": "irrigation_demand",
+      "significance": "It is the central mediator linking policy incentives and crop choices to extraction-stage exceedance and aquifer decline, with explicit national/state quantitative evidence.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "g_annual_trend",
+      "significance": "Primary stress outcome used to characterize severity in NW India, including documented depletion rates and overexploited block shares.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_electricity_subsidy_intensity",
+      "significance": "Highlighted as a structural policy driver of over-pumping and subsidy burden, making it critical for causal diagnosis and policy design.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "recharge_rate",
+      "significance": "Recharge-extraction imbalance is the key hydrologic condition underlying depletion, quantified by recharge components and negative state balances.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_rainwater_harvesting_coverage",
+      "significance": "Among reviewed interventions, it most directly contributes to recharge while reducing dependence on pumping, making it the strongest long-term aquifer lever.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    }
+  ],
+  "important_variables_narrative": "The paper frames groundwater depletion as a recharge-withdrawal imbalance amplified by policy and cropping incentives, making `irrigation_demand` and `g_annual_trend` the central explanatory pair. `NEW_electricity_subsidy_intensity` emerges as the strongest institutional driver because it lowers pumping cost and sustains over-extraction behavior. `recharge_rate` is equally fundamental, since depletion severity is explained by persistent negative balances and monsoon-dependent replenishment limits. While many technologies improve efficiency, the review identifies `NEW_rainwater_harvesting_coverage` as especially important because it can improve both demand and recharge outcomes. Together, these variables describe why aquifer stress persists and which levers are most credible for sustainable mitigation in northwestern India."
+}

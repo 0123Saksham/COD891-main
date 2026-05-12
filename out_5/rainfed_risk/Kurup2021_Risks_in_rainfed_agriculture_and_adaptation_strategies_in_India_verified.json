@@ -1,0 +1,3527 @@
+{
+  "schema_version": "2.0",
+  "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates",
+  "paper_identity": {
+    "paper_id": 18830,
+    "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+  },
+  "paper_summary": "A primary household survey of 207 cotton-growing farmers in Jalgaon and Yavatmal districts of Maharashtra (2015) profiles farmer-perceived risks (weather, inputs, services, credit, information, output price) and the ex-ante and ex-post adaptation strategies they use. Composite ex-ante and ex-post adaptation indices (0-1) are constructed and regressed (beta regression) on socio-economic covariates: caste, tenancy, operational holding, share of irrigated area, distance to market, KCC ownership, association membership, value of land owned, and risk attitude (PCA). Drought, late monsoon, untimely rainfall, groundwater unreliability, high input prices, pesticide pressure on Bt cotton, and high cotton price volatility coupled with weak MSP/insurance institutions emerge as the dominant risks shaping rainfed adaptation behaviour.",
+  "study_region": "Maharashtra, India - Jalgaon district (Khandesh region; tehsils Jamner, Parola) and Yavatmal district (Vidarbha region; tehsils Ghatanji, Kelapur); 24 villages; 207 cotton farmers analysed",
+  "study_period": "Primary survey conducted July-September 2015; references to cotton sector trends 1978-79 to 2016",
+  "methodology": "Multi-stage random household survey with face-to-face Likert-scale questionnaires and FGDs; descriptive statistics on perceived risk and adoption shares; composite ex-ante (11 strategies) and ex-post (50 strategies) adaptation indices (0-1); beta regression (logit link) for index covariates with marginal effects",
+  "paper_type": "case_study",
+  "paper_type_rationale": "Empirical case study using primary survey data and beta regression of an adaptation index on socio-economic covariates in two cotton districts of Maharashtra; it descriptively profiles risks and statistically tests covariates rather than building a fully specified end-to-end mechanism model.",
+  "cluster_families_covered": [
+    "rainfed_risk",
+    "drought",
+    "groundwater_stress",
+    "irrigation_challenges",
+    "mixed"
+  ],
+  "mechanism_domains_covered": [
+    "adaptation_capacity",
+    "climate_forcing",
+    "groundwater_depletion",
+    "input_supply_risk",
+    "irrigation_infrastructure",
+    "livelihood_shocks",
+    "output_price_risk",
+    "policy_incentives",
+    "socio_economic_pressure"
+  ],
+  "mapped_variables": [
+    {
+      "taxonomy_name": "prec_annual_avg_rain",
+      "canonical_variable_name": "prec_annual_avg_rain",
+      "alias_used_in_paper": "rainfall / monsoon rainfall / late onset of monsoon / untimely rainfall",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "rainfall variability and monsoon behaviour",
+      "description": "Rainfall amount and timing - the dominant exogenous driver of rainfed cotton farming risk in the study area; deficits and untimely distribution force replanting and irrigation pumping.",
+      "unit": "mm/year (and timing)",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Farmer-reported risk perception (Likert) on rainfall-related events",
+      "indian_data_source": "IMD gridded rainfall and gauge stations",
+      "threshold_or_range": "90.9% of farmers cite late onset of monsoon and 81.7% cite untimely rainfall as risk",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "paper_context_id": "kurup2021::prec_annual_avg_rain::annual",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "The most significant weather variables that affect agriculture are rainfall and temperature. ... Late-onset of monsoon and untimely rainfall emerged as 2nd and 3rd important risks."
+    },
+    {
+      "taxonomy_name": "drought_freq",
+      "canonical_variable_name": "drought_freq",
+      "alias_used_in_paper": "drought / low rainfall / drought years",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "drought as the riskiest weather component",
+      "description": "Frequency of drought events affecting the rainfed cotton districts; the single most cited weather risk and a trigger for ex-post replanting, deepening of wells, and water purchase.",
+      "unit": "events/decade or share of farmers reporting",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Farmer-reported (Likert)",
+      "indian_data_source": "IMD/DES drought declarations; SPI/SPEI from IMD rainfall",
+      "threshold_or_range": "91.3% of surveyed farmers agreed drought is the top weather risk",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "paper_context_id": "kurup2021::drought_freq::annual",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Drought has emerged as the riskiest weather component in farming (91.3 per cent of them agreed on it)."
+    },
+    {
+      "taxonomy_name": "drysp_4w_trend",
+      "canonical_variable_name": "drysp_4w_trend",
+      "alias_used_in_paper": "late onset of monsoon / dry spell / delayed monsoon",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "late onset / delayed monsoon and consequent dry spells",
+      "description": "Within-season dry spells / delayed monsoon proxy. Forces farmers to replant with short-duration hybrids and adopt gap filling.",
+      "unit": "events/year or weeks/year",
+      "role": "driver",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Farmer-reported risk perception",
+      "indian_data_source": "IMD daily rainfall series",
+      "threshold_or_range": "Late monsoon flagged by 90.9% of farmers; ex-post replanting with short-duration varieties by 57% of farmers after drought / low rainfall",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "paper_context_id": "kurup2021::drysp_4w_trend::kharif",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Late-onset of monsoon and untimely rainfall emerged as 2nd and 3rd important risks ... against low rainfall or drought, some of the strategies included replanting with short duration crops and attempt to gap filling, adopted by almost 58% of farmers."
+    },
+    {
+      "taxonomy_name": "g_annual_trend",
+      "canonical_variable_name": "g_annual_trend",
+      "alias_used_in_paper": "deepening of water tables",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "water table deepening, failure of groundwater structures during drought",
+      "description": "Trend in groundwater depth-to-water-table at block level; deepening of water tables impinges on extraction and forces well deepening / new bore-wells.",
+      "unit": "m/year (decline)",
+      "role": "mediator",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Farmer-reported well failure narrative",
+      "indian_data_source": "CGWB observation well network",
+      "threshold_or_range": "77% of farmers report unreliable supply of groundwater; 'Digging/deepening well' adopted by 25% of farmers ex-post",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion"
+      ],
+      "paper_context_id": "kurup2021::g_annual_trend::annual",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Poor quality of electricity supply and deepening of water tables severely impinged extraction of groundwater, as most of the groundwater structures and motors failed during the drought years."
+    },
+    {
+      "taxonomy_name": "well_depth",
+      "canonical_variable_name": "well_depth",
+      "alias_used_in_paper": "tube wells / dug wells / bore wells / digging-deepening of wells",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "depth of operational tube-wells / bore-wells",
+      "description": "Operational well/bore-well depth; deepens as water tables decline. Failure of bore wells and pump installation cost are reported as significant farmer-level risks.",
+      "unit": "m",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Farmer-reported risk perception on irrigation",
+      "indian_data_source": "Minor irrigation census; CGWB well inventories",
+      "threshold_or_range": "57% of farmers report failure of bore wells; 73% report high cost of installing pumps; ex-post 'digging/deepening well' adopted by 25% of farmers",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion",
+        "irrigation_infrastructure"
+      ],
+      "paper_context_id": "kurup2021::well_depth::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Wells (dug wells and tube wells) constitute the major irrigation water source in the region. ... in many cases, these irrigation structures have failed."
+    },
+    {
+      "taxonomy_name": "irrigated_area_fraction",
+      "canonical_variable_name": "irrigated_area_fraction",
+      "alias_used_in_paper": "share of area irrigated out of operational holding",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "share of irrigated area",
+      "description": "Share of operational holding under irrigation. Significant positive covariate of the ex-ante adaptation index.",
+      "unit": "% of operational holding",
+      "role": "context",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Household survey",
+      "indian_data_source": "Minor Irrigation Census; ICRISAT district database",
+      "threshold_or_range": "Mean 43% of operational holding irrigated (n=207); beta-regression coefficient on ex-ante adaptation index = 0.002 (p<0.05)",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_infrastructure",
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "kurup2021::irrigated_area_fraction::annual",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Share of area irrigated out of operational holding (%) 43 ... the share of irrigated area improved the farmers ex-ante adaptation."
+    },
+    {
+      "taxonomy_name": "cropping_intensity_trend",
+      "canonical_variable_name": "cropping_intensity_trend",
+      "alias_used_in_paper": "cropping intensity",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "cropping intensity (gross / net cropped area)",
+      "description": "Cropping intensity at the household; included as a regression covariate but not statistically significant for either adaptation index in this sample.",
+      "unit": "% (gross/net x 100)",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Household survey",
+      "indian_data_source": "Agricultural Statistics / DES",
+      "threshold_or_range": "Mean 112.9% (SD 48.3) at household level; regression coefficients ~ -0.001 (n.s.) for both indices",
+      "indicator_direction": "categorical",
+      "relevance": "contextual",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "kurup2021::cropping_intensity_trend::annual",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Cropping intensity (%) 112.9 48.3"
+    },
+    {
+      "taxonomy_name": "crop_yield_trend",
+      "canonical_variable_name": "crop_yield_trend",
+      "alias_used_in_paper": "crop failure / cotton output instability",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "yield risk / crop failure due to drought, low rainfall, pest infestation",
+      "description": "Cotton yield outcomes affected by weather risk, pest/disease pressure, and irrigation reliability. Paper does not estimate a yield trend statistically but treats yield risk as the main income-loss channel.",
+      "unit": "kg/ha or qualitative loss",
+      "role": "outcome",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative on crop failure and replanting",
+      "indian_data_source": "DES crop yield series; Agricultural Statistics at a Glance",
+      "threshold_or_range": "Cost of cultivation share of labour rose from 33% (1978-79) to 44% (2009-10); cotton commands the highest pesticide-treated area share in India",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "livelihood_shocks",
+        "climate_forcing"
+      ],
+      "paper_context_id": "kurup2021::crop_yield_trend::kharif",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "With the emergence of a farming system that largely depend on industry-based inputs, the cost of cultivation in rainfed region has grown at a faster rate compared to value of output."
+    },
+    {
+      "taxonomy_name": "irrigation_demand",
+      "canonical_variable_name": "irrigation_demand",
+      "alias_used_in_paper": "purchase irrigation water / pumping during drought years",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "irrigation water requirement and water purchasing",
+      "description": "Irrigation water demand at farm level; rises during drought years (compensatory pumping) and feeds groundwater extraction pressure.",
+      "unit": "mm/year or m^3/year",
+      "role": "mediator",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative on ex-post adaptation - purchase irrigation water",
+      "indian_data_source": "CGWB GEC irrigation draft estimates",
+      "threshold_or_range": "Ex-post: 22% of farmers purchase irrigation water; 'A contract for purchasing irrigation before every crop season' as ex-ante by 78% of farmers",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion",
+        "crop_water_demand"
+      ],
+      "paper_context_id": "kurup2021::irrigation_demand::annual",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Groundwater has emerged as a major source of irrigation, and large-scale extraction of water without efforts to recharge impinges sustainability of the very system."
+    },
+    {
+      "taxonomy_name": "NEW_land_surface_temp_trend",
+      "canonical_variable_name": "NEW_land_surface_temp_trend",
+      "alias_used_in_paper": "high variation in temperature",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "high variation in temperature / heat",
+      "description": "Air temperature variability flagged as a weather risk by farmers; affects crop water demand and yield variability.",
+      "unit": "deg C or anomaly",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Farmer-reported risk perception",
+      "indian_data_source": "IMD temperature gridded data",
+      "threshold_or_range": "69.1% of farmers cite high temperature variation as a weather risk",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "paper_context_id": "kurup2021::NEW_land_surface_temp_trend::annual",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "High variation in temperature 69.1 ... Hailstorm 68.1 ... per cent of farmers."
+    },
+    {
+      "taxonomy_name": "NEW_irrigation_water_supply_reliability",
+      "canonical_variable_name": "NEW_irrigation_water_supply_reliability",
+      "alias_used_in_paper": "non-availability of adequate water for irrigation / unreliable supply of groundwater",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "lack of adequate irrigation water and unreliable groundwater supply",
+      "description": "Reliability of irrigation water supply at farm level; central irrigation-side risk - both bore-well failure and surface supply gaps drive ex-post coping.",
+      "unit": "% reliable / categorical",
+      "role": "mediator",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Farmer-reported (Likert)",
+      "indian_data_source": "Minor irrigation census; state irrigation department reliability indicators",
+      "threshold_or_range": "77% report non-availability of adequate water for irrigation; 77% report unreliable supply of groundwater; 83% report poor electricity supply",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_infrastructure",
+        "groundwater_depletion"
+      ],
+      "paper_context_id": "kurup2021::NEW_irrigation_water_supply_reliability::annual",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Non availability of adequate water for irrigation 77 ... Unreliable supply of groundwater 77."
+    },
+    {
+      "taxonomy_name": "NEW_energy_cost_pumping",
+      "canonical_variable_name": "NEW_energy_cost_pumping",
+      "alias_used_in_paper": "poor electricity supply / high costs for installing pumps",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "energy access and pumping cost burden",
+      "description": "Cost / reliability of energy for groundwater pumping. Poor electricity supply is reported as a critical irrigation risk.",
+      "unit": "INR/year or hours of supply",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Farmer-reported (Likert)",
+      "indian_data_source": "State electricity utilities; agricultural-feeder supply data",
+      "threshold_or_range": "83% of farmers report poor electricity supply; 73% report high cost of installing pumps",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_infrastructure",
+        "policy_incentives"
+      ],
+      "paper_context_id": "kurup2021::NEW_energy_cost_pumping::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Poor electricity supply ... High costs for installing pumps ... per cent farmers agreeing high."
+    },
+    {
+      "taxonomy_name": "NEW_micro_irrigation_adoption",
+      "canonical_variable_name": "NEW_micro_irrigation_adoption",
+      "alias_used_in_paper": "drip irrigation system / micro-irrigation",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "drip and sprinkler micro-irrigation adoption",
+      "description": "Share of farmers who installed drip / sprinkler micro-irrigation systems as an ex-ante water-saving adaptation; remains limited due to capital cost.",
+      "unit": "% of farmers / % of area",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Survey of ex-ante adaptation strategies",
+      "indian_data_source": "PMKSY-MI / state horticulture department adoption registers",
+      "threshold_or_range": "Installation of micro-irrigation reported by 44% of farmers as ex-ante strategy (Figure 6)",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "irrigation_infrastructure"
+      ],
+      "paper_context_id": "kurup2021::NEW_micro_irrigation_adoption::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Some farmers have installed micro-irrigation (mostly drip irrigation system) as well, to reduce water wastage and improve irrigation efficiency. However, micro-irrigation is not adopted widely."
+    },
+    {
+      "taxonomy_name": "NEW_drought_tolerant_variety_adoption",
+      "canonical_variable_name": "NEW_drought_tolerant_variety_adoption",
+      "alias_used_in_paper": "usage of drought-tolerant varieties / replant with drought-resistant varieties",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "drought-tolerant cultivar adoption (ex-ante and ex-post)",
+      "description": "Adoption of drought-tolerant cotton varieties as ex-ante risk reduction and ex-post replanting strategy.",
+      "unit": "% of farmers",
+      "role": "context",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Survey of adaptation strategies",
+      "indian_data_source": "ICAR-CICR / state seed certification; state agriculture department adoption surveys",
+      "threshold_or_range": "44% adopt drought-tolerant varieties ex-ante (Figure 6); 37% replant with drought-resistant varieties ex-post (Figure 7)",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "kurup2021::NEW_drought_tolerant_variety_adoption::kharif",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Adoption of biotic and abiotic stress-tolerant varieties had remained an important adaptation strategy."
+    },
+    {
+      "taxonomy_name": "NEW_intercropping_adoption",
+      "canonical_variable_name": "NEW_intercropping_adoption",
+      "alias_used_in_paper": "intercropping (cotton + tur/red gram)",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "intercropping with red gram",
+      "description": "Adoption of intercropping (mainly cotton + red gram) as ex-ante diversification against drought.",
+      "unit": "% of farmers",
+      "role": "context",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Survey of ex-ante adaptation",
+      "indian_data_source": "Agricultural Statistics; ICAR-CRIDA cropping system surveys",
+      "threshold_or_range": "37% of farmers practise intercropping ex-ante (aggregate score 2.6)",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "kurup2021::NEW_intercropping_adoption::kharif",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Intercropping in cotton was carried out by more than one third of farmers, with an aggregate score of 2.6, mainly by using tur (red gram). Red gram, being hardy, could withstand drought."
+    },
+    {
+      "taxonomy_name": "NEW_varietal_diversification_index",
+      "canonical_variable_name": "NEW_varietal_diversification_index",
+      "alias_used_in_paper": "varietal diversification / number of cotton varieties",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "varietal diversification (mean varieties per farm)",
+      "description": "Number / diversification of cotton varieties used by a farmer as an ex-ante risk reduction strategy.",
+      "unit": "varieties per farm or 1-HHI",
+      "role": "context",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Survey of ex-ante adaptation",
+      "indian_data_source": "State seed sales registers; ICAR-CICR variety adoption surveys",
+      "threshold_or_range": "Mean 2.2 varieties cultivated per farm; explicit varietal diversification reported by 10% of farmers (Figure 6)",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "kurup2021::NEW_varietal_diversification_index::kharif",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Varietal diversification in cotton was widely practised with the mean number of varieties used as 2.2 per farm."
+    },
+    {
+      "taxonomy_name": "NEW_crop_insurance_adoption",
+      "canonical_variable_name": "NEW_crop_insurance_adoption",
+      "alias_used_in_paper": "crop insurance",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "crop insurance uptake among cotton farmers",
+      "description": "Share of farmers covered under crop insurance; institutional risk-transfer mechanism perceived as ineffective due to delayed claims and weak local capacity.",
+      "unit": "% of farmers",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Survey of ex-ante adaptation",
+      "indian_data_source": "PMFBY / state agriculture insurance company records",
+      "threshold_or_range": "Approximately one third (~33%) of farmers insure their crops",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "policy_incentives",
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "kurup2021::NEW_crop_insurance_adoption::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Only about one third farmers insured their crops. The major hindrances were lack of implementation capabilities ... inadequacy to cover up losses and delays in claims payment."
+    },
+    {
+      "taxonomy_name": "NEW_institutional_credit_access",
+      "canonical_variable_name": "NEW_institutional_credit_access",
+      "alias_used_in_paper": "Kisan Credit Card (KCC) ownership / institutional credit",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "KCC ownership and access to institutional credit",
+      "description": "Indicator of formal credit access via Kisan Credit Card; included as a regression covariate in the ex-post adaptation index model.",
+      "unit": "binary (0/1) / share of farmers",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Household survey",
+      "indian_data_source": "NABARD / RBI agricultural credit data; KCC issuance records",
+      "threshold_or_range": "39.6% of farmers own a KCC; ex-post regression coefficient = -0.107 (p<0.10) - paper attributes counterintuitive sign to reliance on non-institutional credit for emergencies",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "policy_incentives",
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "kurup2021::NEW_institutional_credit_access::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Share of farmers owning KCC (%) 39.6 ... KCC ownership and membership in farmer association had negatively influenced the ex-post adaptation index."
+    },
+    {
+      "taxonomy_name": "NEW_farmer_organization_membership",
+      "canonical_variable_name": "NEW_farmer_organization_membership",
+      "alias_used_in_paper": "membership in farmer associations / cooperatives",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "membership in various farmer organisations",
+      "description": "Membership in farmer cooperatives / associations; significant negative covariate of the ex-post adaptation index in this sample.",
+      "unit": "binary / share of farmers",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Household survey",
+      "indian_data_source": "FPO / cooperative registries; NABARD FPO database",
+      "threshold_or_range": "38.2% of farmers report membership; ex-post regression coefficient = -0.109 (p<0.10)",
+      "indicator_direction": "categorical",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "kurup2021::NEW_farmer_organization_membership::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Membership of farmers in various organisations provides accessibility of the farmers to various risk adaptation strategies."
+    },
+    {
+      "taxonomy_name": "NEW_non_farm_income_availability",
+      "canonical_variable_name": "NEW_non_farm_income_availability",
+      "alias_used_in_paper": "off-farm jobs / migration / family members in jobs",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "off-farm income, migration and other adaptation",
+      "description": "Off-farm employment and migration as ex-post coping strategies under farm income shocks.",
+      "unit": "% of farmers",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Survey of ex-post strategies",
+      "indian_data_source": "NSSO PLFS / Census migration data",
+      "threshold_or_range": "Approximately 14% of farmers have additional family members joining the labour market; migration to other places by 32% of farmers",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "livelihood_shocks",
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "kurup2021::NEW_non_farm_income_availability::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "In extreme situations, family members of the affected families migrate to other cities, in search of manual jobs."
+    },
+    {
+      "taxonomy_name": "NEW_land_holding_size",
+      "canonical_variable_name": "NEW_land_holding_size",
+      "alias_used_in_paper": "operational holding (acres)",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "size of operational holding",
+      "description": "Operational landholding size in acres; significant negative covariate of the ex-ante adaptation index.",
+      "unit": "acres",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Household survey",
+      "indian_data_source": "Agriculture Census of India",
+      "threshold_or_range": "Mean 6.7 acres (SD 5.9); ex-ante regression coefficient = -0.027 (p<0.10)",
+      "indicator_direction": "categorical",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "kurup2021::NEW_land_holding_size::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "The average size of operational holding was 6.7 acres."
+    },
+    {
+      "taxonomy_name": "NEW_fertilizer_use_intensity",
+      "canonical_variable_name": "NEW_fertilizer_use_intensity",
+      "alias_used_in_paper": "fertilizer price / shortage of urea and phosphatic fertilizers",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "fertilizer access, price and shortage",
+      "description": "Fertilizer-side input pressure: high prices and shortages of urea and phosphatic fertilizers contribute to cost of cultivation risk.",
+      "unit": "INR/ha or kg/ha",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Farmer-reported (Likert)",
+      "indian_data_source": "FAI / Department of Fertilizers consumption data",
+      "threshold_or_range": "About 89% of farmers report high fertilizer price; ~78% report shortage of urea / phosphatic fertilizers",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "input_supply_risk"
+      ],
+      "paper_context_id": "kurup2021::NEW_fertilizer_use_intensity::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Major problems concerning fertilizers were high price (with scores of 4.43), expressed by close to 90 % farmers. Shortage of urea and phosphatic fertilizers was reported by almost 78% of farmers."
+    },
+    {
+      "taxonomy_name": "NEW_livestock_mortality",
+      "canonical_variable_name": "NEW_livestock_mortality",
+      "alias_used_in_paper": "selling milch animals / sell bullocks / livestock liquidation",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "livestock liquidation as self-insurance",
+      "description": "Use of livestock as a buffer asset that is liquidated under farm distress; serves as proxy for livestock-based ex-post coping in rainfed cotton households.",
+      "unit": "% of households selling livestock",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Survey of ex-post self-insurance",
+      "indian_data_source": "Livestock Census; NSSO Situation Assessment Survey",
+      "threshold_or_range": "Sell milch animals by 32% farmers; sell bullocks by 25% farmers; mortgage jewellery by 45% (related self-insurance)",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "livelihood_shocks"
+      ],
+      "paper_context_id": "kurup2021::NEW_livestock_mortality::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "FarmersÆ short duration self-insurance strategies revolve around liquidating assets, including jewellery, livestock and land."
+    }
+  ],
+  "new_variables": [
+    {
+      "variable_name": "NEW_ex_ante_adaptation_index",
+      "canonical_variable_name": "NEW_ex_ante_adaptation_index",
+      "alias_used_in_paper": "Composite ex-ante adaptation index",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "why_new": "A composite household-level adaptation capacity index (0-1) is not present in the existing taxonomy and is the central dependent variable of the paper.",
+      "description": "Composite index over 11 ex-ante adaptation strategies (irrigation investment, intercropping, varietal/crop diversification, drought-tolerant varieties, share-cropping, etc.) computed as the farmer's total Likert score divided by the maximum possible score; bounded in (0,1). Modelled via beta regression.",
+      "unit": "index in (0,1)",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Primary household survey (Likert 1-5) over 11 ex-ante strategies",
+      "indian_data_source": "Construct from household-level surveys (e.g., NSSO Situation Assessment Survey or state-level adaptation surveys)",
+      "threshold_or_range": "Quartiles in sample: low 0-0.55 (29.95%), medium 0.56-0.75 (45.41%), high 0.76-1 (24.64%); Shapiro-Wilk W=0.993, p=0.545 (normal)",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "kurup2021::NEW_ex_ante_adaptation_index::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "The index for ex-ante adaptation encompasses the scores given for 11 adaptation strategies practised by the farmers surveyed ... ranges between 0 and 1."
+    },
+    {
+      "variable_name": "NEW_ex_post_adaptation_index",
+      "canonical_variable_name": "NEW_ex_post_adaptation_index",
+      "alias_used_in_paper": "Composite ex-post adaptation index",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "why_new": "Distinct composite index over post-shock coping strategies that does not exist in the current taxonomy.",
+      "description": "Composite index over 50 ex-post adaptation strategies (replanting, water purchase, asset/livestock liquidation, migration, expenditure cuts, market-oriented strategies, community/credit measures), computed as total Likert score / max possible score; bounded in (0,1).",
+      "unit": "index in (0,1)",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Primary household survey (Likert 1-5) over 50 ex-post strategies",
+      "indian_data_source": "Construct from household-level surveys",
+      "threshold_or_range": "Quartiles in sample: low 0-0.40 (25.12%), medium 0.41-0.56 (52.17%), high 0.57-1 (22.71%); Shapiro-Wilk W=0.984, Z=2.105, p=0.017 (non-normal)",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "livelihood_shocks"
+      ],
+      "paper_context_id": "kurup2021::NEW_ex_post_adaptation_index::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "the ex-post includes the scores of 50 strategies ... 1/50 for ex-post index."
+    },
+    {
+      "variable_name": "NEW_caste_disadvantage",
+      "canonical_variable_name": "NEW_caste_disadvantage",
+      "alias_used_in_paper": "caste of the farmer / SC-ST status",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "why_new": "Social-group disadvantage indicator (SC/ST share or binary) is not in the existing taxonomy but is the strongest correlate of adaptation capacity in this paper.",
+      "description": "Binary / share indicator of farmer belonging to Scheduled Caste / Scheduled Tribe; proxies social-structural barriers to information, credit, and adaptation resources.",
+      "unit": "binary (0/1) at household; share at block",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Household survey",
+      "indian_data_source": "Census of India SC/ST population shares; SECC household data",
+      "threshold_or_range": "Sample share SC/ST = 15.5%; ex-ante coefficient = 0.197 (p<0.05) and ex-post coefficient = 0.223 (p<0.01) for non-SC/ST dummy",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "socio_economic_pressure",
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "kurup2021::NEW_caste_disadvantage::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Farmers belonging to Scheduled Caste (SC) and Schedule Tribe (ST) are known to be of less privileged in terms of accessibility to technologies and resources."
+    },
+    {
+      "variable_name": "NEW_market_access_distance",
+      "canonical_variable_name": "NEW_market_access_distance",
+      "alias_used_in_paper": "distance to the nearest market",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "why_new": "Distance-to-market is not in existing taxonomy; it is a continuous institutional-endowment covariate driving the ex-post adaptation index.",
+      "description": "Road distance from household to nearest agricultural market (mandi).",
+      "unit": "km",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Household survey",
+      "indian_data_source": "AGMARKNET market location data; PMGSY road network distances",
+      "threshold_or_range": "Sample mean 8.5 km (SD 5.6); ex-post coefficient = -0.010 (p<0.10)",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "kurup2021::NEW_market_access_distance::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Distance to market is major institutional endowment variable. As the farmer become nearer to the market, the higher the chance that she adopts risk adaptation measures."
+    },
+    {
+      "variable_name": "NEW_tenancy_share",
+      "canonical_variable_name": "NEW_tenancy_share",
+      "alias_used_in_paper": "tenancy status / leased-in land",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "why_new": "Tenant / leased-in indicator is not in the existing taxonomy; significantly reduces ex-ante adaptation in this paper.",
+      "description": "Indicator of farmer leasing in land for cultivation, capturing tenure insecurity that depresses long-horizon (ex-ante) investments in adaptation.",
+      "unit": "binary / share of farmers",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Household survey",
+      "indian_data_source": "Agriculture Census of India tenure tables; NSSO Situation Assessment Survey",
+      "threshold_or_range": "51.7% of farmers leased in land; ex-ante coefficient = -0.134 (p<0.05)",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "socio_economic_pressure"
+      ],
+      "paper_context_id": "kurup2021::NEW_tenancy_share::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "About 51% of farmers leased in lands for cultivation purpose ... the tenancy and operational holdings affected the ex-ante adaptation negatively and significantly."
+    },
+    {
+      "variable_name": "NEW_owned_land_value",
+      "canonical_variable_name": "NEW_owned_land_value",
+      "alias_used_in_paper": "value of land owned",
+      "definition_source": "paper",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": "NEW_land_holding_size",
+      "why_new": "Asset value of owned land (INR) is distinct from physical landholding size and is a separate significant covariate of ex-post adaptation.",
+      "description": "Monetary value of land owned by the household; proxies wealth/collateralisable asset base for ex-post coping.",
+      "unit": "INR",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Household survey",
+      "indian_data_source": "NSSO All-India Debt and Investment Survey; revenue department land valuation",
+      "threshold_or_range": "Sample mean Rs 317,225 (SD 284,277); ex-post coefficient = 0.001 (p<0.05)",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "socio_economic_pressure"
+      ],
+      "paper_context_id": "kurup2021::NEW_owned_land_value::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "the value of land owned influenced it positively."
+    },
+    {
+      "variable_name": "NEW_farmer_risk_perception_index",
+      "canonical_variable_name": "NEW_farmer_risk_perception_index",
+      "alias_used_in_paper": "Risk attitude (PCA Score)",
+      "definition_source": "paper",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "why_new": "PCA-based risk-attitude score derived from 7 Likert statements on risk; not present in current taxonomy.",
+      "description": "Principal-component score capturing farmer risk attitude; higher score = more risk-averse. Significant negative covariate of the ex-ante adaptation index.",
+      "unit": "PCA score (continuous)",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "PCA over 7 Likert statements on risk",
+      "indian_data_source": "Construct from household survey instruments",
+      "threshold_or_range": "Ex-ante coefficient = -0.044 (p<0.10); ex-post coefficient = 0.019 (n.s.)",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "socio_economic_pressure"
+      ],
+      "paper_context_id": "kurup2021::NEW_farmer_risk_perception_index::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Risk attitude was another variable that significantly affected the ex-ante adaptation indicating that the risk averse nature of the farmers affected their adaptation in the opposite direction."
+    },
+    {
+      "variable_name": "NEW_pesticide_use_intensity",
+      "canonical_variable_name": "NEW_pesticide_use_intensity",
+      "alias_used_in_paper": "pesticide use in cotton / sucking pest complex / increase pesticide use",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "why_new": "Pesticide use intensity is not present in the current taxonomy and is a central input-side risk in rainfed Bt cotton.",
+      "description": "Intensity of pesticide application on cotton (active ingredient kg/ha or expenditure share). Cotton commands the highest share of pesticide-treated area in India and ex-post pesticide application is the most common pest-response strategy.",
+      "unit": "kg a.i./ha or INR/ha",
+      "role": "mediator",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Subhash et al. cited; survey of pest-response strategies",
+      "indian_data_source": "FICCI / Department of Agriculture pesticide consumption series",
+      "threshold_or_range": "78% of farmers increase pesticide use as ex-post response to pest infestation; cotton has the highest proportion of area treated with pesticides in India",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "input_supply_risk",
+        "livelihood_shocks"
+      ],
+      "paper_context_id": "kurup2021::NEW_pesticide_use_intensity::kharif",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "use of excessive pesticides in cotton is a serious problem, which not only increase costs but also invite new pest complex."
+    },
+    {
+      "variable_name": "NEW_output_price_volatility",
+      "canonical_variable_name": "NEW_output_price_volatility",
+      "alias_used_in_paper": "high price variability for cotton / price discrimination",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "why_new": "Output-price volatility (commodity price risk) is a central farm-income risk and not in current taxonomy.",
+      "description": "Volatility of cotton output prices realised by farmers; coupled with limited public procurement and poor MSP operation produces a major income shock.",
+      "unit": "% standard deviation or coefficient of variation",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Farmer-reported (Likert)",
+      "indian_data_source": "AGMARKNET cotton mandi prices; CCI procurement data",
+      "threshold_or_range": "91% of farmers report high price volatility for cotton; 80-81% report unavailability of MSP / public procurement",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "output_price_risk",
+        "policy_incentives"
+      ],
+      "paper_context_id": "kurup2021::NEW_output_price_volatility::annual",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "The farmers faced high price volatility, expressed by more than 90% of farmers. Non-operation of MSP system, discrimination in price realisation and lack of public procurement were identified as the major risk sources."
+    },
+    {
+      "variable_name": "NEW_msp_coverage_gap",
+      "canonical_variable_name": "NEW_msp_coverage_gap",
+      "alias_used_in_paper": "MSP not available / non-operation of MSP / public procurement gap",
+      "definition_source": "paper",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "why_new": "An institutional-policy variable on MSP/procurement coverage is missing from existing taxonomy and is highlighted as a key cotton-price-risk driver.",
+      "description": "Gap in actual operation of MSP and government procurement for cotton at the mandi serving the farmer; binary or share. Drives exposure to output-price volatility.",
+      "unit": "binary / share of farmers without effective MSP",
+      "role": "context",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Farmer-reported (Likert) on MSP and procurement",
+      "indian_data_source": "DES Agricultural Statistics; CCI procurement coverage; SAS NSSO MSP awareness data",
+      "threshold_or_range": "76% of farmers report MSP not available; 81% report public procurement not available",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "policy_incentives",
+        "output_price_risk"
+      ],
+      "paper_context_id": "kurup2021::NEW_msp_coverage_gap::annual",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "MSP is not available 76 ... Public procurement is not available 81 ... Non-operation of MSP system, discrimination in price realisation and lack of public procurement were identified as the major risk sources."
+    },
+    {
+      "variable_name": "NEW_input_supply_quality_index",
+      "canonical_variable_name": "NEW_input_supply_quality_index",
+      "alias_used_in_paper": "spurious seeds / lack of quality of fertilizers / lack of quality in pesticide",
+      "definition_source": "paper",
+      "canonicalization_confidence": "low",
+      "candidate_merge_target": null,
+      "why_new": "Composite input-quality risk (seeds + fertilizer + pesticide) is not represented in existing taxonomy; observed as central input-side risk.",
+      "description": "Composite indicator of quality and timely availability of seeds, fertilizers and pesticides faced by farmers.",
+      "unit": "index (0-1) or share of farmers reporting deficit",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Farmer-reported (Likert) input-side risk",
+      "indian_data_source": "State seed certification; FAI quality control; CIB pesticide quality data",
+      "threshold_or_range": "Spurious seeds reported by 72% of farmers; lack of quality of fertilizers by 78%; lack of quality in pesticides by 72%",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "input_supply_risk"
+      ],
+      "paper_context_id": "kurup2021::NEW_input_supply_quality_index::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "High price of seeds, poor seed quality and lack of availability of desired seeds at the appropriate time were the most important risk factors."
+    },
+    {
+      "variable_name": "NEW_agricultural_labour_availability",
+      "canonical_variable_name": "NEW_agricultural_labour_availability",
+      "alias_used_in_paper": "non-availability of farm labour / high wage rate / labour scarcity",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "why_new": "Seasonal availability and wage of agricultural labour is not in the existing taxonomy, but is a central rainfed-cotton risk in this paper (cotton picking is labour-intensive).",
+      "description": "Availability of agricultural labour at peak operations (especially cotton picking) and prevailing wage pressure; tightened by MGNREGA-driven outside options for rural workers.",
+      "unit": "days/ha or share of farmers reporting scarcity",
+      "role": "driver",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Farmer-reported (Likert) on labour availability and wage",
+      "indian_data_source": "NSSO PLFS rural wage data; state agricultural department labour reports",
+      "threshold_or_range": "78% of farmers report non-availability of farm labour on time; 79% report high wage rate; cost-of-cultivation labour share rose from 33% (1978-79) to 44% (2009-10) for cotton",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "input_supply_risk",
+        "socio_economic_pressure",
+        "policy_incentives"
+      ],
+      "paper_context_id": "kurup2021::NEW_agricultural_labour_availability::kharif",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Higher wage rate and lack of availability of the farm labour was reported by 79% and 78% farmers respectively ... operation under Mahatma Gandhi National Rural Employment Guarantee (Act) (MGNREGA) programme, that squeezes labour availability during peak agricultural seasons."
+    },
+    {
+      "variable_name": "NEW_extension_information_access",
+      "canonical_variable_name": "NEW_extension_information_access",
+      "alias_used_in_paper": "reliable climate / crop / price information from public or private agencies",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "why_new": "Farm-information / extension reliability is treated as a distinct risk source in the paper (whole sub-section), and is not captured by any existing taxonomy variable.",
+      "description": "Reliability of farm advisory and extension information available to farmers (climate, pest, crop, market price). Lack of trustworthy information depresses ex-ante adaptation by limiting farmers' ability to use weather forecasts, pest information, and price intelligence.",
+      "unit": "share of farmers with reliable access / index 0-1",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Farmer-reported (Likert) on multiple information sources",
+      "indian_data_source": "ICAR-KVK extension reach surveys; AGMARKNET; mKisan / state agriculture department information services",
+      "threshold_or_range": "15-46% of farmers report unreliable climate / crop / price information from public or private agencies; only 31-39% of Indian farmers are aware of MSP per NSSO SAS 2013",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "policy_incentives",
+        "input_supply_risk"
+      ],
+      "paper_context_id": "kurup2021::NEW_extension_information_access::na",
+      "source_paper": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "excerpt": "Bereft of access to reliable farm information system, a 'hidden hunger' for extension services is quite perceptible ... The private extension services in India is reluctant to work in rainfed areas."
+    }
+  ],
+  "mechanism_blocks": [
+    {
+      "name": "weather_to_crop_outcome_mechanism",
+      "description": "Rainfall variability, drought, dry spells and high temperature variation reduce cotton yields directly via crop water stress. Farmers respond ex-post by replanting with short-duration / drought-resistant hybrids and gap-filling, transmitting the shock to area planted and yield outcomes.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "prec_annual_avg_rain",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "drought_freq",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Deficient or untimely monsoon rainfall is the proximate trigger of drought events at block level in the rainfed cotton belt of Maharashtra.",
+          "direction": "decrease_causes_increase",
+          "strength": "strong",
+          "conditions": "Rainfed kharif cotton in Vidarbha / Khandesh agro-climatic zones",
+          "from_var_value_range": "Late onset of monsoon flagged by 90.9% of farmers; untimely rainfall by 81.7%",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "Drought cited as top weather risk by 91.3% of farmers",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "drought",
+          "mechanism_domains": [
+            "climate_forcing"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Drought has emerged as the riskiest weather component in farming (91.3 per cent of them agreed on it). Late-onset of monsoon and untimely rainfall emerged as 2nd and 3rd important risks."
+        },
+        {
+          "from_var": "drought_freq",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Drought events directly reduce cotton yields via root-zone soil moisture stress in rainfed plots, as evidenced by widespread ex-post replanting with short-duration / drought-resistant varieties after low-rainfall years.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Rainfed cotton, no supplemental irrigation",
+          "from_var_value_range": "91.3% farmers report drought as top risk",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "57% of farmers replant with short-duration hybrids; 37% replant with drought-resistant varieties as ex-post coping",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "climate_forcing",
+            "livelihood_shocks"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "against low rainfall or drought, some of the strategies included replanting with short duration crops and attempt to gap filling, adopted by almost 58% of farmers."
+        },
+        {
+          "from_var": "drysp_4w_trend",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Within-season dry spells disrupt cotton establishment and boll formation, creating yield gaps that drive replanting and reduced expected output.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Kharif rainfed cotton, especially during sowing / flowering windows",
+          "from_var_value_range": "Late monsoon flagged by 90.9% of farmers; untimely rainfall by 81.7%",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "climate_forcing"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Late-onset of monsoon and untimely rainfall emerged as 2nd and 3rd important risks."
+        },
+        {
+          "from_var": "NEW_land_surface_temp_trend",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "High temperature variation increases evapotranspiration demand and heat stress on cotton, contributing to yield variability over and above rainfall risk.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Sensitive cotton phenology stages",
+          "from_var_value_range": "69.1% farmers cite high temperature variation as a weather risk",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "climate_forcing"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The most significant weather variables that affect agriculture are rainfall and temperature ... High variation in temperature 69.1 per cent."
+        }
+      ],
+      "edge_ids": [
+        "e1",
+        "e2",
+        "e3",
+        "e4"
+      ],
+      "context_variables": [
+        "NEW_drought_tolerant_variety_adoption",
+        "NEW_intercropping_adoption",
+        "NEW_varietal_diversification_index"
+      ]
+    },
+    {
+      "name": "groundwater_extraction_failure_mechanism",
+      "description": "Drought-driven compensatory pumping increases irrigation extraction, deepens water tables, raises well/pump-failure incidence and pumping costs, and ultimately reduces irrigation reliability available to cotton - reinforcing yield risk.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "drought_freq",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Drought years induce compensatory irrigation pumping and water purchase by farmers to protect standing cotton, raising effective irrigation withdrawal.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Bore-well-equipped fraction of holdings; drought year",
+          "from_var_value_range": "91.3% of farmers cite drought as top risk",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "Ex-post: 22% of farmers purchase irrigation water; 78% pre-contract irrigation purchase as ex-ante strategy",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "climate_forcing",
+            "groundwater_depletion"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Groundwater has emerged as a major source of irrigation, and large-scale extraction of water without efforts to recharge impinges sustainability of the very system."
+        },
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Sustained large-scale extraction without recharge lowers the regional water table, generating a negative groundwater-level trend at block scale.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Hard-rock / semi-arid aquifer of Maharashtra cotton belt",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "77% of farmers report unreliable groundwater supply (proxy for declining tables)",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_depletion"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "large-scale extraction of water without efforts to recharge impinges sustainability of the very system."
+        },
+        {
+          "from_var": "g_annual_trend",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "well_depth",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Falling water tables force farmers to deepen existing wells or drill new bore-wells to chase the receding aquifer, raising operational well depth.",
+          "direction": "decrease_causes_increase",
+          "strength": "strong",
+          "conditions": "Operational tube/bore-well farms",
+          "from_var_value_range": "Deepening of water tables reported during drought years",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "25% of farmers ex-post adopt 'digging/deepening well'; 57% report failure of bore wells",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_depletion",
+            "irrigation_infrastructure"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Poor quality of electricity supply and deepening of water tables severely impinged extraction of groundwater, as most of the groundwater structures and motors failed during the drought years."
+        },
+        {
+          "from_var": "g_annual_trend",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "NEW_irrigation_water_supply_reliability",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "As the water table drops, bore wells fail intermittently and groundwater supply becomes unreliable for irrigation timing on cotton.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "Drought year + poor electricity supply",
+          "from_var_value_range": "Deepening of water tables during drought years",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "77% of farmers report unreliable groundwater supply; 77% report inadequate water for irrigation",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "groundwater_depletion",
+            "irrigation_infrastructure"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Poor quality of electricity supply and deepening of water tables severely impinged extraction of groundwater."
+        },
+        {
+          "from_var": "g_annual_trend",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "NEW_energy_cost_pumping",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Deeper water tables require larger / costlier pump installations and more energy per unit of water, raising the energy cost burden for groundwater pumping.",
+          "direction": "decrease_causes_increase",
+          "strength": "moderate",
+          "conditions": "Bore-well-irrigated households",
+          "from_var_value_range": "Deepening of water tables during drought years",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "73% of farmers report high cost of installing pumps; 83% report poor electricity supply",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "groundwater_depletion",
+            "irrigation_infrastructure"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "High costs for installing pumps."
+        },
+        {
+          "from_var": "NEW_irrigation_water_supply_reliability",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Unreliable irrigation water supply prevents critical-stage irrigation in cotton, lowering realised yields and feeding back into income shocks.",
+          "direction": "decrease_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Bore-well-irrigated cotton plots, drought / low-rainfall year",
+          "from_var_value_range": "77% of farmers report inadequate water for irrigation",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "irrigation_infrastructure",
+            "livelihood_shocks"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The issue of lack of irrigation water is pervasive warranting focused intervention towards water conservation, efficient usage and shifting cropping pattern."
+        }
+      ],
+      "edge_ids": [
+        "e5",
+        "e6",
+        "e7",
+        "e8",
+        "e9",
+        "e10"
+      ],
+      "context_variables": [
+        "NEW_micro_irrigation_adoption",
+        "NEW_energy_cost_pumping"
+      ]
+    },
+    {
+      "name": "socioeconomic_correlates_of_adaptation_mechanism",
+      "description": "Beta-regression evidence on what shapes a farmer's ex-ante and ex-post adaptation indices: caste, tenancy, holding size, share of irrigated area, market distance, KCC ownership, association membership, owned-land value, and risk attitude all enter as significant covariates with paper-reported coefficients.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_caste_disadvantage",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "NEW_ex_ante_adaptation_index",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "SC/ST farmers face structural barriers to information, credit and resources, lowering long-horizon (ex-ante) adaptation investments. Beta regression with non-SC/ST dummy is positive (caste disadvantage is therefore negative).",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Rainfed cotton households in Maharashtra",
+          "from_var_value_range": "15.5% of sample is SC/ST",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "Coefficient on non-SC/ST dummy = 0.197 (p<0.05); marginal value 0.045",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "socio_economic_pressure",
+            "adaptation_capacity"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The caste of the farmers emerged as the most significant correlate of adaptation."
+        },
+        {
+          "from_var": "NEW_tenancy_share",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "NEW_ex_ante_adaptation_index",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Tenancy reduces long-horizon investments (irrigation, micro-irrigation, varietal diversification) because returns may not accrue to the tenant; ex-ante adaptation index falls.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Insecure tenancy contracts; cotton-growing households",
+          "from_var_value_range": "51.7% of sample leased in land",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "Tenancy dummy coefficient = -0.134 (p<0.05); marginal value -0.031",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "adaptation_capacity",
+            "socio_economic_pressure"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "the tenancy and operational holdings affected the ex-ante adaptation negatively and significantly."
+        },
+        {
+          "from_var": "NEW_land_holding_size",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "NEW_ex_ante_adaptation_index",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "In this rainfed cotton sample, larger operational holdings have lower per-farm intensity of ex-ante strategy adoption (capital constraints to deploy strategies across larger areas).",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Rainfed cotton sample",
+          "from_var_value_range": "Mean operational holding 6.7 acres (SD 5.9)",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "Coefficient = -0.027 (p<0.10); marginal value -0.006",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "adaptation_capacity"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "the tenancy and operational holdings affected the ex-ante adaptation negatively and significantly."
+        },
+        {
+          "from_var": "irrigated_area_fraction",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "NEW_ex_ante_adaptation_index",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "A larger share of irrigated area enables and complements ex-ante adaptation strategies (e.g., drip systems, irrigation contracts, drought-tolerant varieties), raising the ex-ante index.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Rainfed cotton households with partial irrigation",
+          "from_var_value_range": "Mean share of irrigated area 43% of operational holding",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "Coefficient = 0.002 (p<0.05); marginal value ~0",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "adaptation_capacity",
+            "irrigation_infrastructure"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "the share of irrigated area improved the farmers ex-ante adaptation."
+        },
+        {
+          "from_var": "NEW_farmer_risk_perception_index",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "NEW_ex_ante_adaptation_index",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "More risk-averse farmers (higher PCA score) under-invest in ex-ante adaptation strategies that have uncertain payoffs, reducing their ex-ante index.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Cotton households facing capital constraints",
+          "from_var_value_range": "PCA score variable (continuous)",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "Coefficient = -0.044 (p<0.10); marginal value -0.010",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "adaptation_capacity",
+            "socio_economic_pressure"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Risk attitude was another variable that significantly affected the ex-ante adaptation indicating that the risk averse nature of the farmers affected their adaptation in the opposite direction."
+        },
+        {
+          "from_var": "NEW_caste_disadvantage",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "NEW_ex_post_adaptation_index",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "SC/ST farmers also have constrained ex-post coping (limited assets, weaker community/credit networks), so caste disadvantage lowers the ex-post adaptation index too.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Rainfed cotton households in study tehsils",
+          "from_var_value_range": "15.5% of sample is SC/ST",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "Non-SC/ST dummy coefficient = 0.223 (p<0.01); marginal value 0.055",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "socio_economic_pressure",
+            "adaptation_capacity"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "in the case of ex-post adaptation also the farmers belonging to categories other that scheduled caste/tribe showed better adaptation."
+        },
+        {
+          "from_var": "NEW_market_access_distance",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "NEW_ex_post_adaptation_index",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Farmers further from markets face higher transaction costs to deploy ex-post coping (selling produce, buying inputs, accessing services), lowering their ex-post adaptation index.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Rainfed cotton households",
+          "from_var_value_range": "Mean 8.5 km (SD 5.6)",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "Coefficient = -0.010 (p<0.10); marginal value -0.002",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "adaptation_capacity"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "while distance to the nearest market negatively influenced the ex-post adaptation."
+        },
+        {
+          "from_var": "NEW_owned_land_value",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "NEW_ex_post_adaptation_index",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Owned-land wealth provides collateral and a buffer for ex-post coping (mortgaging, distress sales, selling jewellery / livestock backed by stable land assets), raising the ex-post index.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Rainfed cotton households",
+          "from_var_value_range": "Mean Rs 317,225 (SD 284,277)",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "Coefficient = 0.001 (p<0.05); marginal value ~0",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "adaptation_capacity",
+            "socio_economic_pressure"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "the value of land owned influenced it positively."
+        },
+        {
+          "from_var": "NEW_institutional_credit_access",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "NEW_ex_post_adaptation_index",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "In this sample, KCC owners show LOWER ex-post adaptation index because the formal credit they access is not used for emergency coping; farmers depend more on non-institutional sources for immediate post-shock needs.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Rainfed cotton districts where KCC coverage is shallow and slow",
+          "from_var_value_range": "39.6% of sample owns KCC",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "KCC dummy coefficient = -0.107 (p<0.10); marginal value -0.027",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "policy_incentives",
+            "adaptation_capacity"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "KCC ownership and membership in farmer association had negatively influenced the ex-post adaptation index. The coverage of KCC in the area was very poor during the survey period."
+        },
+        {
+          "from_var": "NEW_farmer_organization_membership",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "NEW_ex_post_adaptation_index",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "In this sample, association membership shows a negative coefficient on ex-post coping, plausibly because effective post-shock coping is dominated by household-level liquidation and informal credit rather than association channels.",
+          "direction": "increase_causes_decrease",
+          "strength": "weak",
+          "conditions": "Rainfed cotton districts with weak association support during distress",
+          "from_var_value_range": "38.2% of sample report membership",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "Coefficient = -0.109 (p<0.10); marginal value -0.027",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "adaptation_capacity"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "KCC ownership and membership in farmer association had negatively influenced the ex-post adaptation index."
+        }
+      ],
+      "edge_ids": [
+        "e11",
+        "e12",
+        "e13",
+        "e14",
+        "e15",
+        "e16",
+        "e17",
+        "e18",
+        "e19",
+        "e20"
+      ],
+      "context_variables": [
+        "NEW_caste_disadvantage",
+        "NEW_tenancy_share",
+        "NEW_land_holding_size",
+        "NEW_owned_land_value",
+        "irrigated_area_fraction",
+        "NEW_farmer_risk_perception_index"
+      ]
+    },
+    {
+      "name": "input_pesticide_pressure_mechanism",
+      "description": "Bt cotton's sucking pest complex and weak input quality push farmers toward higher pesticide use intensity and high fertilizer expenditure, raising cost of cultivation and pressing yields and net income.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_input_supply_quality_index",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "NEW_pesticide_use_intensity",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Poor seed and pesticide quality (spurious products, lack of pest information) push farmers to over-apply pesticides as a defensive response, raising pesticide use intensity in cotton.",
+          "direction": "decrease_causes_increase",
+          "strength": "moderate",
+          "conditions": "Bt cotton with sucking pest complex",
+          "from_var_value_range": "Spurious seeds (72%); lack of pesticide quality (72%); inadequate pest information (76%)",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "Ex-post: 78% of farmers increase pesticide use after pest infestation",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "input_supply_risk"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "use of excessive pesticides in cotton is a serious problem, which not only increase costs but also invite new pest complex."
+        },
+        {
+          "from_var": "NEW_pesticide_use_intensity",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Excessive pesticide use raises cost of cultivation and can invite resistant pest complexes, eroding net cotton yield outcomes despite higher input intensity.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Bt cotton; persistent sucking pest complex",
+          "from_var_value_range": "Cotton has the highest proportion of area treated with pesticides in India",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "input_supply_risk",
+            "livelihood_shocks"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "field survey indicated emergence of sucking pest complex as a serious problem in cotton, which has led to increase in expenditure on pesticide."
+        },
+        {
+          "from_var": "NEW_fertilizer_use_intensity",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "High fertilizer prices and shortages of urea / phosphatic fertilizers force sub-optimal application or skipping of doses; ex-post farmers also reduce fertilizer applications under low-rainfall years, suppressing yields.",
+          "direction": "decrease_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Drought / low-rainfall year; capital-constrained households",
+          "from_var_value_range": "Ex-post: 21% of farmers reduce fertilizer application; ~89% report high fertilizer price",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "input_supply_risk",
+            "livelihood_shocks"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Reduction in the quantity of fertilizer, replanting with hardy crops and purchasing irrigation water were some temporary measures practised."
+        }
+      ],
+      "edge_ids": [
+        "e21",
+        "e22",
+        "e23"
+      ],
+      "context_variables": [
+        "NEW_input_supply_quality_index",
+        "NEW_fertilizer_use_intensity",
+        "NEW_pesticide_use_intensity"
+      ]
+    },
+    {
+      "name": "institutional_gaps_to_price_and_self_insurance_mechanism",
+      "description": "Weak operation of MSP and limited crop insurance push farmers into output-price exposure and self-insurance through livestock/asset liquidation, off-farm work and migration - the dominant ex-post channels of risk transmission to household welfare.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_msp_coverage_gap",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "NEW_output_price_volatility",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Non-operation of MSP / public procurement removes a price floor, exposing farmers to global cotton price swings and amplifying realised price volatility at farm gate.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Cotton market in absence of effective CCI procurement",
+          "from_var_value_range": "76% farmers report MSP not available; 81% report public procurement not available",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "91% farmers report high cotton price variability",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "policy_incentives",
+            "output_price_risk"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Non-operation of MSP system, discrimination in price realisation and lack of public procurement were identified as the major risk sources."
+        },
+        {
+          "from_var": "NEW_output_price_volatility",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "NEW_livestock_mortality",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Persistent output-price shocks force farmers into ex-post self-insurance by liquidating buffer assets - selling milch animals, bullocks and small ruminants - to smooth consumption.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Capital-constrained cotton households post-shock",
+          "from_var_value_range": "91% farmers report high cotton price variability",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "32% farmers sell milch animals; 25% sell bullocks; 30-37% sell small ruminants / old cattle",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "livelihood_shocks",
+            "output_price_risk"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "FarmersÆ short duration self-insurance strategies revolve around liquidating assets, including jewellery, livestock and land."
+        },
+        {
+          "from_var": "NEW_crop_insurance_adoption",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "NEW_non_farm_income_availability",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Low effective crop insurance adoption (limited awareness, delayed claims, low payout) leaves households uncovered under shocks, pushing more family members into off-farm jobs and migration.",
+          "direction": "decrease_causes_increase",
+          "strength": "moderate",
+          "conditions": "Drought year + weak insurance institutional capacity",
+          "from_var_value_range": "Only ~33% farmers insured their crops",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "14% report family members joining the labour market; 32% report migration",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "policy_incentives",
+            "livelihood_shocks",
+            "adaptation_capacity"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Only about one third farmers insured their crops. The major hindrances were lack of implementation capabilities ... inadequacy to cover up losses and delays in claims payment."
+        }
+      ],
+      "edge_ids": [
+        "e24",
+        "e25",
+        "e26"
+      ],
+      "context_variables": [
+        "NEW_msp_coverage_gap",
+        "NEW_crop_insurance_adoption"
+      ]
+    },
+    {
+      "name": "labour_and_information_constraints_mechanism",
+      "description": "Two structural input-side constraints in rainfed cotton: peak-season agricultural labour scarcity (squeezing cotton picking and raising wages) and weak farm-information / extension reliability (suppressing ex-ante adaptation choices). Together they erode realised yields and cap the adaptation capacity of farmers.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_agricultural_labour_availability",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Cotton is highly labour-intensive (especially during picking); labour scarcity at the peak operation window leads to delayed picking, quality deterioration, and effective yield loss. MGNREGA-driven competition for rural labour amplifies the constraint.",
+          "direction": "decrease_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Cotton picking window; rainfed Vidarbha / Khandesh tehsils",
+          "from_var_value_range": "78% of farmers report non-availability of farm labour on time; 79% report high wage rate",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "Cost-of-cultivation labour share rose from 33% (1978-79) to 44% (2009-10) for cotton",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "input_supply_risk",
+            "livelihood_shocks",
+            "policy_incentives"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Cotton is a major labour-intensive crop, especially during cotton picking ... Higher wage rate and lack of availability of the farm labour was reported by 79% and 78% farmers respectively."
+        },
+        {
+          "from_var": "NEW_extension_information_access",
+          "from_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var": "NEW_ex_ante_adaptation_index",
+          "to_var_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "mechanism": "Reliable advisory information (weather forecasts, pest information, price intelligence) is a precondition for informed ex-ante decisions like variety choice, irrigation contracting, and intercropping; weak public/private extension in rainfed areas suppresses ex-ante adaptation.",
+          "direction": "decrease_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Rainfed cotton districts with weak KVK / private extension reach",
+          "from_var_value_range": "15-46% of farmers report unreliable climate / crop / price information from public or private agencies",
+          "from_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "to_var_value_range": "Sample mean ex-ante index implied by quartile distribution: ~30% of farmers in low quartile (0-0.55)",
+          "to_var_value_range_source": {
+            "paper_id": 18830,
+            "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "adaptation_capacity",
+            "policy_incentives"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Bereft of access to reliable farm information system, a 'hidden hunger' for extension services is quite perceptible."
+        }
+      ],
+      "edge_ids": [
+        "e27",
+        "e28"
+      ],
+      "context_variables": [
+        "NEW_agricultural_labour_availability",
+        "NEW_extension_information_access"
+      ]
+    }
+  ],
+  "causal_chains": [
+    {
+      "edge_id": "e1",
+      "from_var": "prec_annual_avg_rain",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "drought_freq",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Deficient or untimely monsoon rainfall is the proximate trigger of drought events at block level in the rainfed cotton belt of Maharashtra.",
+      "direction": "decrease_causes_increase",
+      "strength": "strong",
+      "conditions": "Rainfed kharif cotton in Vidarbha / Khandesh agro-climatic zones",
+      "from_var_value_range": "Late onset of monsoon flagged by 90.9% of farmers; untimely rainfall by 81.7%",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "Drought cited as top weather risk by 91.3% of farmers",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Drought has emerged as the riskiest weather component in farming (91.3 per cent of them agreed on it). Late-onset of monsoon and untimely rainfall emerged as 2nd and 3rd important risks."
+    },
+    {
+      "edge_id": "e2",
+      "from_var": "drought_freq",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Drought events directly reduce cotton yields via root-zone soil moisture stress in rainfed plots, as evidenced by widespread ex-post replanting with short-duration / drought-resistant varieties after low-rainfall years.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Rainfed cotton, no supplemental irrigation",
+      "from_var_value_range": "91.3% farmers report drought as top risk",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "57% replant with short-duration hybrids; 37% replant with drought-resistant varieties as ex-post coping",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "climate_forcing",
+        "livelihood_shocks"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "against low rainfall or drought, some of the strategies included replanting with short duration crops and attempt to gap filling, adopted by almost 58% of farmers."
+    },
+    {
+      "edge_id": "e3",
+      "from_var": "drysp_4w_trend",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Within-season dry spells disrupt cotton establishment and boll formation, creating yield gaps that drive replanting and reduced expected output.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Kharif rainfed cotton, especially during sowing / flowering windows",
+      "from_var_value_range": "Late monsoon flagged by 90.9% of farmers; untimely rainfall by 81.7%",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Late-onset of monsoon and untimely rainfall emerged as 2nd and 3rd important risks."
+    },
+    {
+      "edge_id": "e4",
+      "from_var": "NEW_land_surface_temp_trend",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "High temperature variation increases evapotranspiration demand and heat stress on cotton, contributing to yield variability over and above rainfall risk.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Sensitive cotton phenology stages",
+      "from_var_value_range": "69.1% farmers cite high temperature variation as a weather risk",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The most significant weather variables that affect agriculture are rainfall and temperature ... High variation in temperature 69.1 per cent."
+    },
+    {
+      "edge_id": "e5",
+      "from_var": "drought_freq",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Drought years induce compensatory irrigation pumping and water purchase by farmers to protect standing cotton, raising effective irrigation withdrawal.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Bore-well-equipped fraction of holdings; drought year",
+      "from_var_value_range": "91.3% of farmers cite drought as top risk",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "Ex-post: 22% of farmers purchase irrigation water; 78% pre-contract irrigation purchase as ex-ante strategy",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "climate_forcing",
+        "groundwater_depletion"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Groundwater has emerged as a major source of irrigation, and large-scale extraction of water without efforts to recharge impinges sustainability of the very system."
+    },
+    {
+      "edge_id": "e6",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Sustained large-scale extraction without recharge lowers the regional water table, generating a negative groundwater-level trend at block scale.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Hard-rock / semi-arid aquifer of Maharashtra cotton belt",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "77% of farmers report unreliable groundwater supply (proxy for declining tables)",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "large-scale extraction of water without efforts to recharge impinges sustainability of the very system."
+    },
+    {
+      "edge_id": "e7",
+      "from_var": "g_annual_trend",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "well_depth",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Falling water tables force farmers to deepen existing wells or drill new bore-wells to chase the receding aquifer, raising operational well depth.",
+      "direction": "decrease_causes_increase",
+      "strength": "strong",
+      "conditions": "Operational tube/bore-well farms",
+      "from_var_value_range": "Deepening of water tables reported during drought years",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "25% of farmers ex-post adopt 'digging/deepening well'; 57% report failure of bore wells",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion",
+        "irrigation_infrastructure"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Poor quality of electricity supply and deepening of water tables severely impinged extraction of groundwater, as most of the groundwater structures and motors failed during the drought years."
+    },
+    {
+      "edge_id": "e8",
+      "from_var": "g_annual_trend",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "NEW_irrigation_water_supply_reliability",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "As the water table drops, bore wells fail intermittently and groundwater supply becomes unreliable for irrigation timing on cotton.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "Drought year + poor electricity supply",
+      "from_var_value_range": "Deepening of water tables during drought years",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "77% of farmers report unreliable groundwater supply; 77% report inadequate water for irrigation",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "groundwater_depletion",
+        "irrigation_infrastructure"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Poor quality of electricity supply and deepening of water tables severely impinged extraction of groundwater."
+    },
+    {
+      "edge_id": "e9",
+      "from_var": "g_annual_trend",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "NEW_energy_cost_pumping",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Deeper water tables require larger / costlier pump installations and more energy per unit of water, raising the energy cost burden for groundwater pumping.",
+      "direction": "decrease_causes_increase",
+      "strength": "moderate",
+      "conditions": "Bore-well-irrigated households",
+      "from_var_value_range": "Deepening of water tables during drought years",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "73% of farmers report high cost of installing pumps; 83% report poor electricity supply",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "groundwater_depletion",
+        "irrigation_infrastructure"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "High costs for installing pumps."
+    },
+    {
+      "edge_id": "e10",
+      "from_var": "NEW_irrigation_water_supply_reliability",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Unreliable irrigation water supply prevents critical-stage irrigation in cotton, lowering realised yields and feeding back into income shocks.",
+      "direction": "decrease_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Bore-well-irrigated cotton plots, drought / low-rainfall year",
+      "from_var_value_range": "77% of farmers report inadequate water for irrigation",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "irrigation_infrastructure",
+        "livelihood_shocks"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The issue of lack of irrigation water is pervasive warranting focused intervention towards water conservation, efficient usage and shifting cropping pattern."
+    },
+    {
+      "edge_id": "e11",
+      "from_var": "NEW_caste_disadvantage",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "NEW_ex_ante_adaptation_index",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "SC/ST farmers face structural barriers to information, credit and resources, lowering long-horizon (ex-ante) adaptation investments. Beta regression with non-SC/ST dummy is positive (caste disadvantage is therefore negative).",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Rainfed cotton households in Maharashtra",
+      "from_var_value_range": "15.5% of sample is SC/ST",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "Coefficient on non-SC/ST dummy = 0.197 (p<0.05); marginal value 0.045",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "socio_economic_pressure",
+        "adaptation_capacity"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The caste of the farmers emerged as the most significant correlate of adaptation."
+    },
+    {
+      "edge_id": "e12",
+      "from_var": "NEW_tenancy_share",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "NEW_ex_ante_adaptation_index",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Tenancy reduces long-horizon investments (irrigation, micro-irrigation, varietal diversification) because returns may not accrue to the tenant; ex-ante adaptation index falls.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Insecure tenancy contracts; cotton-growing households",
+      "from_var_value_range": "51.7% of sample leased in land",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "Tenancy dummy coefficient = -0.134 (p<0.05); marginal value -0.031",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "socio_economic_pressure"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "the tenancy and operational holdings affected the ex-ante adaptation negatively and significantly."
+    },
+    {
+      "edge_id": "e13",
+      "from_var": "NEW_land_holding_size",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "NEW_ex_ante_adaptation_index",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "In this rainfed cotton sample, larger operational holdings have lower per-farm intensity of ex-ante strategy adoption (capital constraints to deploy strategies across larger areas).",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Rainfed cotton sample",
+      "from_var_value_range": "Mean operational holding 6.7 acres (SD 5.9)",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "Coefficient = -0.027 (p<0.10); marginal value -0.006",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "the tenancy and operational holdings affected the ex-ante adaptation negatively and significantly."
+    },
+    {
+      "edge_id": "e14",
+      "from_var": "irrigated_area_fraction",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "NEW_ex_ante_adaptation_index",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "A larger share of irrigated area enables and complements ex-ante adaptation strategies (e.g., drip systems, irrigation contracts, drought-tolerant varieties), raising the ex-ante index.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Rainfed cotton households with partial irrigation",
+      "from_var_value_range": "Mean share of irrigated area 43% of operational holding",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "Coefficient = 0.002 (p<0.05); marginal value ~0",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "irrigation_infrastructure"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "the share of irrigated area improved the farmers ex-ante adaptation."
+    },
+    {
+      "edge_id": "e15",
+      "from_var": "NEW_farmer_risk_perception_index",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "NEW_ex_ante_adaptation_index",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "More risk-averse farmers (higher PCA score) under-invest in ex-ante adaptation strategies that have uncertain payoffs, reducing their ex-ante index.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Cotton households facing capital constraints",
+      "from_var_value_range": "PCA score variable (continuous)",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "Coefficient = -0.044 (p<0.10); marginal value -0.010",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "socio_economic_pressure"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Risk attitude was another variable that significantly affected the ex-ante adaptation indicating that the risk averse nature of the farmers affected their adaptation in the opposite direction."
+    },
+    {
+      "edge_id": "e16",
+      "from_var": "NEW_caste_disadvantage",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "NEW_ex_post_adaptation_index",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "SC/ST farmers also have constrained ex-post coping (limited assets, weaker community/credit networks), so caste disadvantage lowers the ex-post adaptation index too.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Rainfed cotton households in study tehsils",
+      "from_var_value_range": "15.5% of sample is SC/ST",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "Non-SC/ST dummy coefficient = 0.223 (p<0.01); marginal value 0.055",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "socio_economic_pressure",
+        "adaptation_capacity"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "in the case of ex-post adaptation also the farmers belonging to categories other that scheduled caste/tribe showed better adaptation."
+    },
+    {
+      "edge_id": "e17",
+      "from_var": "NEW_market_access_distance",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "NEW_ex_post_adaptation_index",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Farmers further from markets face higher transaction costs to deploy ex-post coping (selling produce, buying inputs, accessing services), lowering their ex-post adaptation index.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Rainfed cotton households",
+      "from_var_value_range": "Mean 8.5 km (SD 5.6)",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "Coefficient = -0.010 (p<0.10); marginal value -0.002",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "while distance to the nearest market negatively influenced the ex-post adaptation."
+    },
+    {
+      "edge_id": "e18",
+      "from_var": "NEW_owned_land_value",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "NEW_ex_post_adaptation_index",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Owned-land wealth provides collateral and a buffer for ex-post coping (mortgaging, distress sales, selling jewellery / livestock backed by stable land assets), raising the ex-post index.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Rainfed cotton households",
+      "from_var_value_range": "Mean Rs 317,225 (SD 284,277)",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "Coefficient = 0.001 (p<0.05); marginal value ~0",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "socio_economic_pressure"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "the value of land owned influenced it positively."
+    },
+    {
+      "edge_id": "e19",
+      "from_var": "NEW_institutional_credit_access",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "NEW_ex_post_adaptation_index",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "In this sample, KCC owners show LOWER ex-post adaptation index because the formal credit they access is not used for emergency coping; farmers depend more on non-institutional sources for immediate post-shock needs.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Rainfed cotton districts where KCC coverage is shallow and slow",
+      "from_var_value_range": "39.6% of sample owns KCC",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "KCC dummy coefficient = -0.107 (p<0.10); marginal value -0.027",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "policy_incentives",
+        "adaptation_capacity"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "KCC ownership and membership in farmer association had negatively influenced the ex-post adaptation index. The coverage of KCC in the area was very poor during the survey period."
+    },
+    {
+      "edge_id": "e20",
+      "from_var": "NEW_farmer_organization_membership",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "NEW_ex_post_adaptation_index",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "In this sample, association membership shows a negative coefficient on ex-post coping, plausibly because effective post-shock coping is dominated by household-level liquidation and informal credit rather than association channels.",
+      "direction": "increase_causes_decrease",
+      "strength": "weak",
+      "conditions": "Rainfed cotton districts with weak association support during distress",
+      "from_var_value_range": "38.2% of sample report membership",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "Coefficient = -0.109 (p<0.10); marginal value -0.027",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "KCC ownership and membership in farmer association had negatively influenced the ex-post adaptation index."
+    },
+    {
+      "edge_id": "e21",
+      "from_var": "NEW_input_supply_quality_index",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "NEW_pesticide_use_intensity",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Poor seed and pesticide quality (spurious products, lack of pest information) push farmers to over-apply pesticides as a defensive response, raising pesticide use intensity in cotton.",
+      "direction": "decrease_causes_increase",
+      "strength": "moderate",
+      "conditions": "Bt cotton with sucking pest complex",
+      "from_var_value_range": "Spurious seeds (72%); lack of pesticide quality (72%); inadequate pest information (76%)",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "Ex-post: 78% of farmers increase pesticide use after pest infestation",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "input_supply_risk"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "use of excessive pesticides in cotton is a serious problem, which not only increase costs but also invite new pest complex."
+    },
+    {
+      "edge_id": "e22",
+      "from_var": "NEW_pesticide_use_intensity",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Excessive pesticide use raises cost of cultivation and can invite resistant pest complexes, eroding net cotton yield outcomes despite higher input intensity.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Bt cotton; persistent sucking pest complex",
+      "from_var_value_range": "Cotton has the highest proportion of area treated with pesticides in India",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "input_supply_risk",
+        "livelihood_shocks"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "field survey indicated emergence of sucking pest complex as a serious problem in cotton, which has led to increase in expenditure on pesticide."
+    },
+    {
+      "edge_id": "e23",
+      "from_var": "NEW_fertilizer_use_intensity",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "High fertilizer prices and shortages of urea / phosphatic fertilizers force sub-optimal application or skipping of doses; ex-post farmers also reduce fertilizer applications under low-rainfall years, suppressing yields.",
+      "direction": "decrease_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Drought / low-rainfall year; capital-constrained households",
+      "from_var_value_range": "Ex-post: 21% of farmers reduce fertilizer application; ~89% report high fertilizer price",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "input_supply_risk",
+        "livelihood_shocks"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Reduction in the quantity of fertilizer, replanting with hardy crops and purchasing irrigation water were some temporary measures practised."
+    },
+    {
+      "edge_id": "e24",
+      "from_var": "NEW_msp_coverage_gap",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "NEW_output_price_volatility",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Non-operation of MSP / public procurement removes a price floor, exposing farmers to global cotton price swings and amplifying realised price volatility at farm gate.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Cotton market in absence of effective CCI procurement",
+      "from_var_value_range": "76% farmers report MSP not available; 81% report public procurement not available",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "91% farmers report high cotton price variability",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "policy_incentives",
+        "output_price_risk"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Non-operation of MSP system, discrimination in price realisation and lack of public procurement were identified as the major risk sources."
+    },
+    {
+      "edge_id": "e25",
+      "from_var": "NEW_output_price_volatility",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "NEW_livestock_mortality",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Persistent output-price shocks force farmers into ex-post self-insurance by liquidating buffer assets - selling milch animals, bullocks and small ruminants - to smooth consumption.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Capital-constrained cotton households post-shock",
+      "from_var_value_range": "91% farmers report high cotton price variability",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "32% farmers sell milch animals; 25% sell bullocks; 30-37% sell small ruminants / old cattle",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "livelihood_shocks",
+        "output_price_risk"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "FarmersÆ short duration self-insurance strategies revolve around liquidating assets, including jewellery, livestock and land."
+    },
+    {
+      "edge_id": "e26",
+      "from_var": "NEW_crop_insurance_adoption",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "NEW_non_farm_income_availability",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Low effective crop insurance adoption (limited awareness, delayed claims, low payout) leaves households uncovered under shocks, pushing more family members into off-farm jobs and migration.",
+      "direction": "decrease_causes_increase",
+      "strength": "moderate",
+      "conditions": "Drought year + weak insurance institutional capacity",
+      "from_var_value_range": "Only ~33% farmers insured their crops",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "14% report family members joining the labour market; 32% report migration",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "policy_incentives",
+        "livelihood_shocks",
+        "adaptation_capacity"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Only about one third farmers insured their crops. The major hindrances were lack of implementation capabilities ... inadequacy to cover up losses and delays in claims payment."
+    },
+    {
+      "edge_id": "e27",
+      "from_var": "NEW_agricultural_labour_availability",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Cotton is highly labour-intensive (especially during picking); labour scarcity at the peak operation window leads to delayed picking, quality deterioration, and effective yield loss. MGNREGA-driven competition for rural labour amplifies the constraint.",
+      "direction": "decrease_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Cotton picking window; rainfed Vidarbha / Khandesh tehsils",
+      "from_var_value_range": "78% of farmers report non-availability of farm labour on time; 79% report high wage rate",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "Cost-of-cultivation labour share rose from 33% (1978-79) to 44% (2009-10) for cotton",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "input_supply_risk",
+        "livelihood_shocks",
+        "policy_incentives"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Cotton is a major labour-intensive crop, especially during cotton picking ... Higher wage rate and lack of availability of the farm labour was reported by 79% and 78% farmers respectively."
+    },
+    {
+      "edge_id": "e28",
+      "from_var": "NEW_extension_information_access",
+      "from_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var": "NEW_ex_ante_adaptation_index",
+      "to_var_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "mechanism": "Reliable advisory information (weather forecasts, pest information, price intelligence) is a precondition for informed ex-ante decisions like variety choice, irrigation contracting, and intercropping; weak public/private extension in rainfed areas suppresses ex-ante adaptation.",
+      "direction": "decrease_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Rainfed cotton districts with weak KVK / private extension reach",
+      "from_var_value_range": "15-46% of farmers report unreliable climate / crop / price information from public or private agencies",
+      "from_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "to_var_value_range": "Sample mean ex-ante index implied by quartile distribution: ~30% of farmers in low quartile (0-0.55)",
+      "to_var_value_range_source": {
+        "paper_id": 18830,
+        "paper_title": "Risks in rainfed agriculture and adaptation strategies in India: Profile and socio-economic correlates"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "policy_incentives"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Bereft of access to reliable farm information system, a 'hidden hunger' for extension services is quite perceptible."
+    }
+  ],
+  "conditional_thresholds": [
+    {
+      "variable": "drought_freq",
+      "threshold": "91.3% of cotton farmers report drought as the top weather risk",
+      "condition": "Rainfed cotton, Vidarbha and Khandesh regions of Maharashtra",
+      "implication": "Sustained drought exposure is the dominant rainfed-risk channel and the entry point for ex-post replanting and water-purchase strategies."
+    },
+    {
+      "variable": "irrigated_area_fraction",
+      "threshold": "Mean 43% of operational holding irrigated; ex-ante adaptation index coefficient +0.002 (p<0.05)",
+      "condition": "Cotton households mixing rainfed and irrigated plots",
+      "implication": "Households with a higher irrigated share are systematically better positioned to adopt ex-ante adaptation; below ~43% the ex-ante index is suppressed."
+    },
+    {
+      "variable": "NEW_caste_disadvantage",
+      "threshold": "SC/ST share 15.5% of sample; ex-ante coef 0.197** (p<0.05); ex-post coef 0.223*** (p<0.01) for non-SC/ST dummy",
+      "condition": "Two cotton districts of Maharashtra (Jalgaon, Yavatmal)",
+      "implication": "Caste disadvantage is the strongest single correlate of low adaptation capacity in both ex-ante and ex-post dimensions, indicating equity-focused targeting is critical."
+    },
+    {
+      "variable": "NEW_tenancy_share",
+      "threshold": "51.7% of farmers leased in land; ex-ante coef -0.134** (p<0.05)",
+      "condition": "Insecure tenancy contracts on cotton plots",
+      "implication": "Tenancy reform / longer leases are needed to enable durable ex-ante adaptation investments."
+    },
+    {
+      "variable": "NEW_ex_ante_adaptation_index",
+      "threshold": "Quartile cutoffs: low 0-0.55 (29.95%); medium 0.56-0.75 (45.41%); high 0.76-1 (24.64%)",
+      "condition": "Sample of 207 cotton farmers in Maharashtra (2015)",
+      "implication": "About 30% of cotton households fall in the low ex-ante adaptation quartile and would benefit most from targeted policy support."
+    },
+    {
+      "variable": "NEW_ex_post_adaptation_index",
+      "threshold": "Quartile cutoffs: low 0-0.40 (25.12%); medium 0.41-0.56 (52.17%); high 0.57-1 (22.71%)",
+      "condition": "Sample of 207 cotton farmers in Maharashtra (2015)",
+      "implication": "Ex-post coping is more right-skewed (non-normal); a quarter of farmers have very limited post-shock coping capacity."
+    },
+    {
+      "variable": "NEW_output_price_volatility",
+      "threshold": "91% of farmers report high cotton price variability",
+      "condition": "Cotton mandis with limited or no operational MSP / CCI procurement",
+      "implication": "Output-price risk is the dominant market-side rainfed risk in cotton and central to farm-income volatility."
+    },
+    {
+      "variable": "well_depth",
+      "threshold": "57% report bore-well failure; 73% report high pump installation cost; 25% deepen wells ex-post",
+      "condition": "Drought year combined with poor electricity supply",
+      "implication": "Well failure and deepening costs are an immediate financial shock that compounds drought risk and motivates exit from groundwater-dependent farming."
+    }
+  ],
+  "key_relationships": [
+    "Beta regression: caste of farmer (non-SC/ST dummy) significantly raises both indices: ex-ante coef = 0.197 (p<0.05, marginal 0.045) and ex-post coef = 0.223 (p<0.01, marginal 0.055).",
+    "Tenancy negatively affects ex-ante adaptation: coef = -0.134 (p<0.05, marginal -0.031).",
+    "Operational holding negatively affects ex-ante adaptation: coef = -0.027 (p<0.10, marginal -0.006).",
+    "Share of irrigated area positively affects ex-ante adaptation: coef = 0.002 (p<0.05).",
+    "Risk attitude (PCA score, more risk-averse) negatively affects ex-ante adaptation: coef = -0.044 (p<0.10, marginal -0.010).",
+    "Distance to nearest market negatively affects ex-post adaptation: coef = -0.010 (p<0.10, marginal -0.002).",
+    "Value of land owned positively affects ex-post adaptation: coef = 0.001 (p<0.05).",
+    "KCC ownership negatively affects ex-post adaptation: coef = -0.107 (p<0.10, marginal -0.027).",
+    "Membership in farmer associations negatively affects ex-post adaptation: coef = -0.109 (p<0.10, marginal -0.027).",
+    "Drought is the most cited weather risk (91.3%), followed by late monsoon (90.9%) and untimely rainfall (81.7%); 77% report unreliable groundwater supply, 91% report high cotton price volatility, and 76% report non-operation of MSP."
+  ],
+  "alias_resolution_rules": [
+    {
+      "alias_text": "drought / low rainfall / drought years",
+      "canonical_variable_name": "drought_freq",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Paper does not report SPI/SPEI; uses farmer-reported share. Maps to drought_freq as best taxonomy fit."
+    },
+    {
+      "alias_text": "late onset of monsoon / untimely rainfall / dry spell",
+      "canonical_variable_name": "drysp_4w_trend",
+      "resolution_method": "near_synonym_suggestion",
+      "resolution_confidence": "medium",
+      "notes": "Mapped to dry-spell trend as closest taxonomy concept; paper provides shares of farmers reporting these as risk."
+    },
+    {
+      "alias_text": "deepening of water tables / unreliable supply of groundwater",
+      "canonical_variable_name": "g_annual_trend",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Direct mapping to g_annual_trend with negative trend; reliability becomes a separate downstream NEW_irrigation_water_supply_reliability variable."
+    },
+    {
+      "alias_text": "Kisan Credit Card (KCC) ownership",
+      "canonical_variable_name": "NEW_institutional_credit_access",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Direct mapping to taxonomy-expansion variable."
+    },
+    {
+      "alias_text": "drought-tolerant varieties / replant with drought-resistant varieties",
+      "canonical_variable_name": "NEW_drought_tolerant_variety_adoption",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Direct mapping; serves both ex-ante and ex-post strategies."
+    },
+    {
+      "alias_text": "intercropping (cotton + tur)",
+      "canonical_variable_name": "NEW_intercropping_adoption",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Direct mapping to expansion taxonomy."
+    },
+    {
+      "alias_text": "MSP not available / public procurement not available",
+      "canonical_variable_name": "NEW_msp_coverage_gap",
+      "resolution_method": "near_synonym_suggestion",
+      "resolution_confidence": "medium",
+      "notes": "No existing taxonomy entry for MSP coverage; new candidate variable proposed for taxonomy."
+    },
+    {
+      "alias_text": "Risk attitude (PCA score)",
+      "canonical_variable_name": "NEW_farmer_risk_perception_index",
+      "resolution_method": "near_synonym_suggestion",
+      "resolution_confidence": "medium",
+      "notes": "PCA-derived risk attitude not in existing taxonomy."
+    }
+  ],
+  "mapping_notes": "The paper's core analytical objects are two composite indices (ex-ante and ex-post) and their socio-economic covariates from a beta regression. Most covariates (caste, tenancy, distance to market, KCC, association membership, owned-land value, risk-attitude PCA) do not have direct base-taxonomy parents and are kept as new variables aligned with the existing taxonomy-expansion namespace where possible (NEW_institutional_credit_access, NEW_farmer_organization_membership, NEW_land_holding_size, etc.). Drought / late-monsoon / temperature-variation risks are mapped to closest base-taxonomy parents (drought_freq, drysp_4w_trend, NEW_land_surface_temp_trend). Cotton-specific variables (output-price volatility, MSP coverage gap, pesticide use intensity, input-supply quality) are introduced as new variables since they are central to rainfed cotton risk but not in current taxonomy.",
+  "limitations": "Findings are based on a 2015 cross-section of 207 cotton farmers in two Maharashtra districts (Jalgaon, Yavatmal) and may not generalize to other rainfed crops or regions. Variables are largely Likert-derived farmer-reported scores rather than directly measured biophysical / economic quantities, so transferability to remote-sensing- or census-based district indicators requires alignment of definitions. Coefficients for KCC and association membership show counterintuitive signs reflecting weak local KCC delivery rather than universal causal impact - these should be interpreted as study-specific. The paper does not report rainfall, groundwater depth, or yield measurements directly; biophysical variables are inferred from descriptive narrative.",
+  "important_variables": [
+    {
+      "variable_name": "NEW_caste_disadvantage",
+      "significance": "Single most significant covariate of both ex-ante and ex-post adaptation indices in beta regression: non-SC/ST dummy raises ex-ante by 0.197 (p<0.05) and ex-post by 0.223 (p<0.01).",
+      "evidence_strength": "strong",
+      "recommendation": "candidate_for_taxonomy"
+    },
+    {
+      "variable_name": "NEW_ex_ante_adaptation_index",
+      "significance": "The paper's primary outcome variable; constructed bounded composite of 11 ex-ante strategies and modelled directly; ~30% of farmers fall in the low quartile.",
+      "evidence_strength": "strong",
+      "recommendation": "candidate_for_taxonomy"
+    },
+    {
+      "variable_name": "NEW_ex_post_adaptation_index",
+      "significance": "The paper's second primary outcome variable; bounded composite of 50 ex-post strategies with non-normal distribution; ~25% of farmers in the low quartile.",
+      "evidence_strength": "strong",
+      "recommendation": "candidate_for_taxonomy"
+    },
+    {
+      "variable_name": "NEW_tenancy_share",
+      "significance": "Significantly suppresses ex-ante adaptation (coef -0.134, p<0.05) - the strongest negative single covariate after caste.",
+      "evidence_strength": "strong",
+      "recommendation": "candidate_for_taxonomy"
+    },
+    {
+      "variable_name": "irrigated_area_fraction",
+      "significance": "Significant positive covariate of ex-ante adaptation (coef 0.002, p<0.05) and a clear cross-stressor link from irrigation_challenges to rainfed_risk adaptation.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "drought_freq",
+      "significance": "Top weather risk (91.3% farmers); central trigger of ex-post replanting, water purchase, and groundwater extraction in the system.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "g_annual_trend",
+      "significance": "Drought-driven groundwater table decline directly links to bore-well failure, irrigation unreliability, and pumping cost - the cross-stressor backbone of the paper's water-side risk story.",
+      "evidence_strength": "moderate",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_output_price_volatility",
+      "significance": "91% of farmers report high cotton price variability; coupled with weak MSP operation it is the dominant market-side rainfed risk in cotton.",
+      "evidence_strength": "strong",
+      "recommendation": "candidate_for_taxonomy"
+    },
+    {
+      "variable_name": "NEW_msp_coverage_gap",
+      "significance": "Institutional driver of price exposure (76-81% report MSP / public procurement absent); a tractable policy lever for rainfed cotton risk.",
+      "evidence_strength": "moderate",
+      "recommendation": "candidate_for_taxonomy"
+    },
+    {
+      "variable_name": "NEW_farmer_risk_perception_index",
+      "significance": "PCA-based risk attitude is significantly negative on ex-ante adaptation (coef -0.044, p<0.10), highlighting behavioural barriers to ex-ante investment.",
+      "evidence_strength": "moderate",
+      "recommendation": "candidate_for_taxonomy"
+    }
+  ],
+  "important_variables_narrative": "The paper's mechanism story has four pillars. (i) On the biophysical side, drought_freq (91.3% farmer agreement), late-monsoon dry spells and high temperature variation are the dominant rainfall-side drivers of cotton yield risk, transmitted through compensatory groundwater pumping (irrigation_demand -> g_annual_trend -> well_depth / NEW_irrigation_water_supply_reliability / NEW_energy_cost_pumping). (ii) On the institutional / market side, NEW_msp_coverage_gap and weak NEW_crop_insurance_adoption push exposure into NEW_output_price_volatility and into self-insurance via NEW_livestock_mortality and NEW_non_farm_income_availability. (iii) On the input side, NEW_agricultural_labour_availability (cotton picking) and NEW_extension_information_access (advisory reliability) are central structural constraints for rainfed cotton beyond seed/fertilizer/pesticide quality. (iv) On the social / household side, the beta-regression results identify NEW_caste_disadvantage, NEW_tenancy_share, NEW_land_holding_size, irrigated_area_fraction, NEW_owned_land_value, NEW_market_access_distance and NEW_farmer_risk_perception_index as the most explanatory correlates of the two adaptation indices, with caste emerging as the single strongest determinant of both ex-ante and ex-post coping capacity. Together these pillars provide a tractable cross-stressor map - drought -> groundwater -> irrigation_challenges -> rainfed_risk - while also identifying clear socio-economic levers (tenancy, caste-based targeting, market access, insurance/MSP coverage, labour-friendly mechanisation, and rainfed-area extension)."
+}

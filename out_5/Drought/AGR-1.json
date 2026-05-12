@@ -1,0 +1,1460 @@
+{
+  "schema_version": "2.0",
+  "paper_title": "Drought in India: Its impact and mitigation strategies – A review",
+  "paper_identity": {
+    "paper_id": 2,
+    "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+  },
+  "paper_summary": "This review synthesizes drought definitions, historical drought impacts, and mitigation strategies for India with emphasis on agricultural drought. It links deficient and erratic monsoon rainfall, dry spells, and high evapotranspiration to soil moisture stress, crop losses, and water-system stress. The paper highlights groundwater depletion under compensatory pumping and recommends watershed and water-use-efficiency-centered adaptation.",
+  "study_region": "India (national review; includes drought-prone regions and multi-state examples)",
+  "study_period": "Historical synthesis up to 2013; key drought examples include 1987, 2002, and 2009",
+  "methodology": "Review article synthesizing published statistics, institutional reports, and agronomic drought-management evidence",
+  "paper_type": "review",
+  "paper_type_rationale": "The paper aggregates prior evidence, definitions, and policy/practice recommendations instead of presenting a new single empirical causal model.",
+  "cluster_families_covered": [
+    "drought",
+    "rainfed_risk",
+    "groundwater_stress",
+    "irrigation_challenges",
+    "mixed"
+  ],
+  "mechanism_domains_covered": [
+    "climate_forcing",
+    "soil_moisture_dynamics",
+    "surface_water_availability",
+    "groundwater_depletion",
+    "crop_water_demand",
+    "adaptation_capacity",
+    "recharge_dynamics",
+    "water_quality",
+    "remote_sensing_monitoring",
+    "livelihood_shocks",
+    "energy_use"
+  ],
+  "mapped_variables": [
+    {
+      "taxonomy_name": "prec_annual_avg_rain",
+      "canonical_variable_name": "prec_annual_avg_rain",
+      "alias_used_in_paper": "annual average rainfall / monsoon rainfall / precipitation deficit",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "rainfall and monsoon deficit",
+      "description": "Annual and monsoon rainfall deficits that trigger meteorological and agricultural drought.",
+      "unit": "mm/year or % of normal",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "IMD and cited secondary sources",
+      "indian_data_source": "same",
+      "threshold_or_range": "Agricultural drought framed when rainfall is less than 50-75% of normal S-W monsoon; meteorological drought when precipitation deficit exceeds 25%; severe when deficit exceeds 50%.",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "paper_context_id": "agr1_2014::prec_annual_avg_rain::annual",
+      "source_paper": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "excerpt": "Drought is taken to have occurred over an area where the annual average rainfall is less than 50-75% of the normal south-west monsoon rains."
+    },
+    {
+      "taxonomy_name": "drysp_4w_trend",
+      "canonical_variable_name": "drysp_4w_trend",
+      "alias_used_in_paper": "long gaps between two heavy and effective rains",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "long dry spells during rainy season",
+      "description": "Within-season dry-spell tendency during monsoon affecting soil moisture and crop establishment.",
+      "unit": "events/year or weeks/year",
+      "role": "driver",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Monsoon behavior narrative",
+      "indian_data_source": "IMD daily rainfall series",
+      "threshold_or_range": null,
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "paper_context_id": "agr1_2014::drysp_4w_trend::kharif",
+      "source_paper": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "excerpt": "Long gaps between two heavy and effective rains during rainy season are the general phenomenon of agricultural drought in India."
+    },
+    {
+      "taxonomy_name": "et_annual_avg",
+      "canonical_variable_name": "et_annual_avg",
+      "alias_used_in_paper": "evapotranspiration / PET / water need",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "evapo-transpiration and PET",
+      "description": "Evaporative demand component of moisture stress and moisture index formulation.",
+      "unit": "mm/year",
+      "role": "mediator",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative and moisture-index formulation",
+      "indian_data_source": "same",
+      "threshold_or_range": "Negative rainfall-ET balance cited in drought-prone districts.",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing",
+        "soil_moisture_dynamics"
+      ],
+      "paper_context_id": "agr1_2014::et_annual_avg::annual",
+      "source_paper": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "excerpt": "There is often negative balance between annual rainfall and ET rate."
+    },
+    {
+      "taxonomy_name": "NEW_moisture_index",
+      "canonical_variable_name": "NEW_moisture_index",
+      "alias_used_in_paper": "Moisture Index = (P-PET)/PET x 100",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "Moisture Index classes for arid to per-humid zones",
+      "description": "Composite dryness index from precipitation and PET used to classify drought-prone climatic zones.",
+      "unit": "index",
+      "role": "mediator",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Thornthwaite and Mather formulation",
+      "indian_data_source": "same",
+      "threshold_or_range": "Arid < -66.7; Semi-arid -66.7 to -33.3; Dry sub-humid -33.2 to 0.",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing",
+        "soil_moisture_dynamics"
+      ],
+      "paper_context_id": "agr1_2014::NEW_moisture_index::annual",
+      "source_paper": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "excerpt": "Moisture index is computed using annual precipitation (P) and annual water need (PET)... Moisture Index = (P-PET)/PET x 100."
+    },
+    {
+      "taxonomy_name": "NEW_soil_moisture_index",
+      "canonical_variable_name": "NEW_soil_moisture_index",
+      "alias_used_in_paper": "deficiency of soil moisture in crop root zone",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "root-zone soil moisture status",
+      "description": "Root-zone moisture condition mediating rainfall and ET effects on crop stress.",
+      "unit": "index or mm",
+      "role": "mediator",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Agricultural drought definition",
+      "indian_data_source": "same",
+      "threshold_or_range": null,
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_moisture_dynamics"
+      ],
+      "paper_context_id": "agr1_2014::NEW_soil_moisture_index::kharif",
+      "source_paper": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "excerpt": "To the agriculturist it is the deficiency of soil moisture in the crop root zone to support crop growth and productivity."
+    },
+    {
+      "taxonomy_name": "surface_water_area_avg",
+      "canonical_variable_name": "surface_water_area_avg",
+      "alias_used_in_paper": "drying of reservoirs/rivers and depletion of surface water",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "surface water-bodies availability",
+      "description": "Availability of surface water storage that contracts during drought years.",
+      "unit": "area/storage",
+      "role": "outcome",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Impact discussion",
+      "indian_data_source": "same",
+      "threshold_or_range": null,
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "surface_water_availability"
+      ],
+      "paper_context_id": "agr1_2014::surface_water_area_avg::annual",
+      "source_paper": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "excerpt": "The availability of water in surface water-bodies reduces significantly during the drought year."
+    },
+    {
+      "taxonomy_name": "irrigation_demand",
+      "canonical_variable_name": "irrigation_demand",
+      "alias_used_in_paper": "life-saving irrigation / water demand of crop",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "supplemental irrigation demand",
+      "description": "Additional irrigation need under deficient rainfall and surface-water depletion.",
+      "unit": "mm/season or m3",
+      "role": "mediator",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Mitigation and impact narrative",
+      "indian_data_source": "same",
+      "threshold_or_range": null,
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "crop_water_demand"
+      ],
+      "paper_context_id": "agr1_2014::irrigation_demand::kharif",
+      "source_paper": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "excerpt": "Groundwater could not meet the water demands of crop, animal and human beings for a longer period."
+    },
+    {
+      "taxonomy_name": "g_annual_trend",
+      "canonical_variable_name": "g_annual_trend",
+      "alias_used_in_paper": "groundwater table decline / depleted groundwater",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "groundwater depletion",
+      "description": "Declining groundwater trend under drought-period over-extraction.",
+      "unit": "m/year",
+      "role": "outcome",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Impact synthesis",
+      "indian_data_source": "CGWB",
+      "threshold_or_range": null,
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion"
+      ],
+      "paper_context_id": "agr1_2014::g_annual_trend::annual",
+      "source_paper": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "excerpt": "Excessive withdrawal of groundwater to save crops under drought condition has depleted groundwater in North-western India and other parts."
+    },
+    {
+      "taxonomy_name": "well_depth",
+      "canonical_variable_name": "well_depth",
+      "alias_used_in_paper": "shallower wells dry up",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "well failure/deeper access needed",
+      "description": "Operational well depth stress when shallow wells dry with falling water table.",
+      "unit": "m",
+      "role": "outcome",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Impact narrative",
+      "indian_data_source": "same",
+      "threshold_or_range": null,
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion"
+      ],
+      "paper_context_id": "agr1_2014::well_depth::annual",
+      "source_paper": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "excerpt": "The groundwater table declines and the wells, especially shallower ones, dry up."
+    },
+    {
+      "taxonomy_name": "salinity_level",
+      "canonical_variable_name": "salinity_level",
+      "alias_used_in_paper": "increase in salts and toxic elements in groundwater",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "salts, arsenic, fluoride, nitrate concentration",
+      "description": "Drought-associated concentration of dissolved salts and contaminants in groundwater.",
+      "unit": "mg/L or dS/m",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "groundwater",
+      "data_source_in_paper": "NAAS/Gautam references in review",
+      "indian_data_source": "same",
+      "threshold_or_range": null,
+      "indicator_direction": "high_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "water_quality"
+      ],
+      "paper_context_id": "agr1_2014::salinity_level::groundwater",
+      "source_paper": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "excerpt": "Sometimes, the concentrations of salts and toxic elements such as arsenic, fluoride and nitrate also increase in the groundwater."
+    },
+    {
+      "taxonomy_name": "crop_yield_trend",
+      "canonical_variable_name": "crop_yield_trend",
+      "alias_used_in_paper": "foodgrain production decline / crop yield reduction",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "foodgrain decline in drought years",
+      "description": "Drought-linked decline in foodgrain output and crop yields.",
+      "unit": "% or million tonnes",
+      "role": "outcome",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "NAAS and Economic Survey references",
+      "indian_data_source": "same",
+      "threshold_or_range": "Steepest fall 38.66 million tonnes in 2002-03; kharif production cited 5-7% lower; 2009 foodgrain production around 7% lower than previous year.",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "crop_water_demand"
+      ],
+      "paper_context_id": "agr1_2014::crop_yield_trend::kharif",
+      "source_paper": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "excerpt": "The drought of 2002 registered the steepest fall of 38.7 million tonnes in foodgrains production."
+    },
+    {
+      "taxonomy_name": "NEW_water_use_efficiency",
+      "canonical_variable_name": "NEW_water_use_efficiency",
+      "alias_used_in_paper": "water-use efficiency (WUE)",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "WUE improvement",
+      "description": "Efficiency of converting scarce water into crop output; key drought-mitigation variable.",
+      "unit": "% improvement",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Mitigation strategy synthesis",
+      "indian_data_source": "same",
+      "threshold_or_range": "10% increase in WUE can yield about 50 million tonnes additional foodgrains.",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "crop_water_demand"
+      ],
+      "paper_context_id": "agr1_2014::NEW_water_use_efficiency::annual",
+      "source_paper": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "excerpt": "By 10% increase in WUE, country can gain about 50 million tonnes of additional foodgrains."
+    },
+    {
+      "taxonomy_name": "NEW_rainwater_harvesting_coverage",
+      "canonical_variable_name": "NEW_rainwater_harvesting_coverage",
+      "alias_used_in_paper": "integrated watershed and rainwater harvesting",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "watershed approach, in-situ and ex-situ water conservation",
+      "description": "Coverage of watershed/rainwater harvesting interventions for drought buffering and recharge support.",
+      "unit": "coverage index",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Mitigation recommendations",
+      "indian_data_source": "same",
+      "threshold_or_range": null,
+      "indicator_direction": "low_means_stressed",
+      "relevance": "contextual",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "recharge_dynamics",
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "agr1_2014::NEW_rainwater_harvesting_coverage::annual",
+      "source_paper": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "excerpt": "Integrated watershed approach... rainwater harvesting and recycling... necessary for combating drought."
+    }
+  ],
+  "new_variables": [],
+  "mechanism_blocks": [
+    {
+      "name": "climate_to_soil_moisture_stress",
+      "description": "Monsoon deficits, dry spells, and high ET reduce root-zone moisture and intensify agricultural drought.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "prec_annual_avg_rain",
+          "from_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var": "NEW_moisture_index",
+          "to_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "mechanism": "Lower rainfall relative to PET pushes the moisture index toward drier climatic classes.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "Annual water-balance framing",
+          "from_var_value_range": "Rainfall <50-75% of normal monsoon and precipitation deficit >25% used in drought framing",
+          "from_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var_value_range": "MI = (P-PET)/PET x 100",
+          "to_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "drought",
+          "mechanism_domains": [
+            "climate_forcing"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Moisture index is computed using annual precipitation (P) and annual water need (PET)."
+        },
+        {
+          "from_var": "prec_annual_avg_rain",
+          "from_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var": "NEW_soil_moisture_index",
+          "to_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "mechanism": "Deficient monsoon rainfall lowers effective wetting and root-zone moisture availability.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "Rainfed kharif systems",
+          "from_var_value_range": "Examples cited include very low monsoon rainfall years (for example 2002 and 1987 regional values)",
+          "from_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "climate_forcing",
+            "soil_moisture_dynamics"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Agricultural drought is deficiency of soil moisture in crop root zone."
+        },
+        {
+          "from_var": "drysp_4w_trend",
+          "from_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var": "NEW_soil_moisture_index",
+          "to_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "mechanism": "Long dry spells between rain events prolong moisture stress in crop root zones.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Erratic monsoon distribution",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "climate_forcing",
+            "soil_moisture_dynamics"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Long gaps between effective rains are a general phenomenon of agricultural drought in India."
+        },
+        {
+          "from_var": "et_annual_avg",
+          "from_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var": "NEW_soil_moisture_index",
+          "to_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "mechanism": "Higher ET demand relative to moisture supply accelerates root-zone depletion.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Negative rainfall-ET balance regions",
+          "from_var_value_range": "Negative annual rainfall-ET balance cited",
+          "from_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "soil_moisture_dynamics"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Water needed for evapotranspiration exceeds total moisture available in soil."
+        }
+      ],
+      "edge_ids": [
+        "e1",
+        "e2",
+        "e3",
+        "e4"
+      ],
+      "context_variables": [
+        "NEW_rainwater_harvesting_coverage"
+      ]
+    },
+    {
+      "name": "soil_moisture_to_crop_impacts",
+      "description": "Root-zone moisture stress translates into yield losses and cropped-area reduction.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_soil_moisture_index",
+          "from_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "mechanism": "Soil moisture deficiency suppresses growth and productivity, reducing foodgrain output.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "Agricultural drought episodes",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var_value_range": "2002-03 foodgrain fall 38.66 million tonnes; kharif production decline about 5-7%",
+          "to_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "drought",
+          "mechanism_domains": [
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Drought is responsible for reduction in grain and fodder yield of field crops."
+        },
+        {
+          "from_var": "NEW_soil_moisture_index",
+          "from_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var": "cropping_area_trend",
+          "to_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "mechanism": "Moisture stress and insufficient supplemental water reduce viable sown area in drought seasons.",
+          "direction": "decrease_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Kharif drought years",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var_value_range": "Area under major kharif crops reduced by 5-20%",
+          "to_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "from_cluster_family": "rainfed_risk",
+          "to_cluster_family": "rainfed_risk",
+          "mechanism_domains": [
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Area under rice, pearlmillet, sorghum, maize, groundnut and soybean was reduced by 5 to 20%."
+        }
+      ],
+      "edge_ids": [
+        "e5",
+        "e6"
+      ],
+      "context_variables": [
+        "NEW_water_use_efficiency"
+      ]
+    },
+    {
+      "name": "surface_to_groundwater_stress_pathway",
+      "description": "Surface-water depletion raises irrigation demand and pumping, leading to groundwater decline and quality stress.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "prec_annual_avg_rain",
+          "from_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var": "surface_water_area_avg",
+          "to_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "mechanism": "Monsoon failure reduces inflow and storage in reservoirs/rivers, contracting surface water availability.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "Deficient monsoon years",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "surface_water_availability"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Deficient rainfall led to drying of reservoirs and rivers and depletion of surface water."
+        },
+        {
+          "from_var": "surface_water_area_avg",
+          "from_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "mechanism": "Reduced surface supply raises supplemental irrigation demand from other sources.",
+          "direction": "decrease_causes_increase",
+          "strength": "moderate",
+          "conditions": "Life-saving irrigation context",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Groundwater could not meet water demands for crop, animal and human beings for a longer period."
+        },
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "mechanism": "Demand compensation through pumping accelerates groundwater depletion.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Groundwater-dependent drought response",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_depletion"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Excessive withdrawal of groundwater to save crops under drought has depleted groundwater."
+        },
+        {
+          "from_var": "g_annual_trend",
+          "from_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var": "well_depth",
+          "to_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "mechanism": "Water-table decline dries shallow wells and shifts dependence to deeper well access.",
+          "direction": "decrease_causes_increase",
+          "strength": "strong",
+          "conditions": "Repeated drought-pumping cycles",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_depletion"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The groundwater table declines and the wells, especially shallower ones, dry up."
+        },
+        {
+          "from_var": "g_annual_trend",
+          "from_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var": "salinity_level",
+          "to_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "mechanism": "Groundwater stress and lower dilution elevate salts and contaminants in groundwater.",
+          "direction": "decrease_causes_increase",
+          "strength": "moderate",
+          "conditions": "Drought quality-stress context",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "water_quality"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "groundwater",
+          "excerpt": "Concentrations of salts and toxic elements such as arsenic, fluoride and nitrate increase in groundwater."
+        }
+      ],
+      "edge_ids": [
+        "e7",
+        "e8",
+        "e9",
+        "e10",
+        "e11"
+      ],
+      "context_variables": [
+        "NEW_rainwater_harvesting_coverage"
+      ]
+    },
+    {
+      "name": "wue_mitigation_mechanism",
+      "description": "Improving water-use efficiency is presented as a strong mitigation lever for drought-affected food production.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_water_use_efficiency",
+          "from_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "mechanism": "Higher efficiency raises output per unit water and offsets drought-period production losses.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Adoption of conservation practices and efficient irrigation",
+          "from_var_value_range": "10% increase in WUE",
+          "from_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "to_var_value_range": "Potential gain about 50 million tonnes additional foodgrains",
+          "to_var_value_range_source": {
+            "paper_id": 2,
+            "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "drought",
+          "mechanism_domains": [
+            "adaptation_capacity"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "By 10% increase in WUE, country can gain about 50 million tonnes of additional foodgrains."
+        }
+      ],
+      "edge_ids": [
+        "e12"
+      ],
+      "context_variables": [
+        "NEW_rainwater_harvesting_coverage"
+      ]
+    }
+  ],
+  "causal_chains": [
+    {
+      "edge_id": "e1",
+      "from_var": "prec_annual_avg_rain",
+      "from_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var": "NEW_moisture_index",
+      "to_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "mechanism": "Lower rainfall relative to PET drives the moisture index downward into drier classes.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "Annual climatic water-balance framing",
+      "from_var_value_range": "Drought framing uses rainfall deficit >25%; severe >50%; agricultural drought below 50-75% monsoon normal",
+      "from_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var_value_range": "MI = (P-PET)/PET x 100",
+      "to_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Moisture index is computed using annual precipitation and PET."
+    },
+    {
+      "edge_id": "e2",
+      "from_var": "prec_annual_avg_rain",
+      "from_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var": "NEW_soil_moisture_index",
+      "to_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "mechanism": "Deficient and erratic monsoon rainfall lowers root-zone moisture availability.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "Rainfed kharif production",
+      "from_var_value_range": "Extreme drought examples include very low seasonal rainfall values",
+      "from_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_moisture_dynamics"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Agricultural drought is deficiency of soil moisture in crop root zone."
+    },
+    {
+      "edge_id": "e3",
+      "from_var": "drysp_4w_trend",
+      "from_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var": "NEW_soil_moisture_index",
+      "to_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "mechanism": "Long dry spells intensify soil-moisture stress between rainfall events.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Erratic rainfall distribution",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "climate_forcing",
+        "soil_moisture_dynamics"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Long gaps between rains are a general phenomenon of agricultural drought."
+    },
+    {
+      "edge_id": "e4",
+      "from_var": "et_annual_avg",
+      "from_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var": "NEW_soil_moisture_index",
+      "to_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "mechanism": "Higher evapotranspiration demand depletes available soil moisture faster.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Negative rainfall-ET balance areas",
+      "from_var_value_range": "Negative annual rainfall-ET balance cited",
+      "from_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "soil_moisture_dynamics"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Water needed for evapotranspiration exceeds soil moisture available."
+    },
+    {
+      "edge_id": "e5",
+      "from_var": "NEW_soil_moisture_index",
+      "from_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "mechanism": "Root-zone moisture deficit reduces crop growth and productivity.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "Drought years",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var_value_range": "2002-03 decline 38.66 million tonnes; kharif production decline about 5-7%",
+      "to_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "drought",
+      "mechanism_domains": [
+        "crop_water_demand"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Drought is responsible for reduction in grain and fodder yield of field crops."
+    },
+    {
+      "edge_id": "e6",
+      "from_var": "NEW_soil_moisture_index",
+      "from_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var": "cropping_area_trend",
+      "to_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "mechanism": "Severe moisture stress reduces area that can be successfully cultivated.",
+      "direction": "decrease_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Kharif drought stress",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var_value_range": "Major kharif crop area reduction 5-20%",
+      "to_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "from_cluster_family": "rainfed_risk",
+      "to_cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "crop_water_demand"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Area under major crops was reduced by 5 to 20% under drought."
+    },
+    {
+      "edge_id": "e7",
+      "from_var": "prec_annual_avg_rain",
+      "from_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var": "surface_water_area_avg",
+      "to_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "mechanism": "Monsoon deficit reduces storage and extent of surface water bodies.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "Drought years",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "surface_water_availability"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Deficient rainfall was associated with drying reservoirs and rivers."
+    },
+    {
+      "edge_id": "e8",
+      "from_var": "surface_water_area_avg",
+      "from_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "mechanism": "Reduced surface availability increases supplemental irrigation requirement.",
+      "direction": "decrease_causes_increase",
+      "strength": "moderate",
+      "conditions": "Life-saving irrigation decisions",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "crop_water_demand"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Water demand for crops rises as drought persists and surface sources shrink."
+    },
+    {
+      "edge_id": "e9",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "mechanism": "Higher drought-period pumping to meet irrigation demand lowers groundwater levels.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Groundwater-dependent irrigation",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Excessive groundwater withdrawal to save crops has depleted groundwater."
+    },
+    {
+      "edge_id": "e10",
+      "from_var": "g_annual_trend",
+      "from_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var": "well_depth",
+      "to_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "mechanism": "Declining groundwater causes shallow wells to fail and increases required well depth.",
+      "direction": "decrease_causes_increase",
+      "strength": "strong",
+      "conditions": "Recurring drought and low recharge",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Groundwater decline dries shallow wells."
+    },
+    {
+      "edge_id": "e11",
+      "from_var": "g_annual_trend",
+      "from_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var": "salinity_level",
+      "to_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "mechanism": "Groundwater stress and reduced dilution increase concentration of salts and toxic elements.",
+      "direction": "decrease_causes_increase",
+      "strength": "moderate",
+      "conditions": "Groundwater quality stress during drought",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "water_quality"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "groundwater",
+      "excerpt": "Salts and toxic elements increase in groundwater under drought."
+    },
+    {
+      "edge_id": "e12",
+      "from_var": "NEW_water_use_efficiency",
+      "from_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "mechanism": "Improved WUE can recover output under constrained water availability.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Adoption of efficiency-oriented drought mitigation",
+      "from_var_value_range": "10% WUE improvement",
+      "from_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "to_var_value_range": "Potential additional output about 50 million tonnes foodgrains",
+      "to_var_value_range_source": {
+        "paper_id": 2,
+        "paper_title": "Drought in India: Its impact and mitigation strategies – A review"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "drought",
+      "mechanism_domains": [
+        "adaptation_capacity"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "A 10% increase in WUE can add about 50 million tonnes foodgrains."
+    }
+  ],
+  "conditional_thresholds": [
+    {
+      "variable": "prec_annual_avg_rain",
+      "threshold": "precipitation deficit >25% of normal",
+      "condition": "Meteorological drought definition",
+      "implication": "Area enters drought conditions"
+    },
+    {
+      "variable": "prec_annual_avg_rain",
+      "threshold": "precipitation deficit >50% of long-term average",
+      "condition": "Severe meteorological drought definition",
+      "implication": "High-severity drought classification and stronger impacts"
+    },
+    {
+      "variable": "NEW_water_use_efficiency",
+      "threshold": "10% increase",
+      "condition": "Mitigation planning estimate",
+      "implication": "Potential additional foodgrain production around 50 million tonnes"
+    }
+  ],
+  "key_relationships": [
+    "prec_annual_avg_rain, drysp_4w_trend, and et_annual_avg jointly reduce NEW_soil_moisture_index.",
+    "NEW_soil_moisture_index decline is linked with crop_yield_trend decline and cropping_area_trend contraction.",
+    "prec_annual_avg_rain decline reduces surface_water_area_avg, raising irrigation_demand.",
+    "Higher irrigation_demand accelerates g_annual_trend decline and contributes to deeper well_depth stress.",
+    "g_annual_trend decline is associated with higher salinity_level in groundwater.",
+    "NEW_water_use_efficiency is presented as a key adaptation lever that improves crop_yield_trend under scarcity."
+  ],
+  "alias_resolution_rules": [
+    {
+      "alias_text": "soil moisture deficiency in root zone",
+      "canonical_variable_name": "NEW_soil_moisture_index",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Directly corresponds to agricultural drought definition."
+    },
+    {
+      "alias_text": "Moisture Index (P-PET)/PET",
+      "canonical_variable_name": "NEW_moisture_index",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Canonical composite moisture variable."
+    },
+    {
+      "alias_text": "groundwater table decline",
+      "canonical_variable_name": "g_annual_trend",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Matches mandatory mapping for groundwater trend."
+    }
+  ],
+  "mapping_notes": "This is a review paper; many values are historical summaries and policy ranges rather than one harmonized modeled dataset. Extracted variables prioritize quantifiable constructs and drought mechanisms repeatedly emphasized in the text.",
+  "limitations": "Causal effects are mostly qualitative and aggregated from multiple sources. Spatial and temporal comparability across cited studies is limited, so district/block implementation requires harmonized datasets and local validation.",
+  "important_variables": [
+    {
+      "variable_name": "prec_annual_avg_rain",
+      "significance": "Primary drought trigger used in definitions, classification, and historical impact narratives.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_soil_moisture_index",
+      "significance": "Core agronomic transmission variable linking climate anomalies to crop stress outcomes.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "g_annual_trend",
+      "significance": "Major cross-stressor consequence of drought adaptation through pumping, with long-term sustainability implications.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "crop_yield_trend",
+      "significance": "Main food-system outcome with explicit large historical production losses cited.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_water_use_efficiency",
+      "significance": "One of the few mitigation variables tied to an explicit quantitative potential gain.",
+      "evidence_strength": "moderate",
+      "recommendation": "existing_taxonomy"
+    }
+  ],
+  "important_variables_narrative": "The paper consistently treats rainfall deficit as the exogenous drought driver and root-zone moisture status as the immediate agronomic stress variable. Crop production losses are presented as the key measurable societal outcome. A critical cross-stressor pathway is drought-driven irrigation demand increasing groundwater depletion, which then propagates to well and water-quality stress. Among mitigation variables, improving water-use efficiency and expanding rainwater harvesting/watershed practices are emphasized as practical high-impact levers."
+}

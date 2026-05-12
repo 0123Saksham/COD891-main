@@ -1,0 +1,1189 @@
+{
+  "schema_version": "2.0",
+  "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India",
+  "paper_identity": {
+    "paper_id": 3,
+    "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+  },
+  "paper_summary": "This study investigates drought severity drivers in Marathwada (1996-2018) by combining rainfall trends, groundwater trends, and crop-pattern changes. It finds mostly non-significant mixed rainfall trends but substantial groundwater decline in most districts. The paper argues that expansion of high-water-requirement crops such as sugarcane and cotton, together with poor water management, amplifies drought impacts more than rainfall variability alone.",
+  "study_region": "Marathwada region, Maharashtra, India (Aurangabad, Jalna, Beed, Parbhani, Hingoli, Osmanabad, Latur, Nanded)",
+  "study_period": "Rainfall trends: 1981-2018; groundwater and crop data: 1996-2018",
+  "methodology": "District-level trend analysis using linear regression, t-test, and Mann-Kendall test on rainfall, groundwater level, crop area, and crop yield datasets.",
+  "paper_type": "mechanism",
+  "paper_type_rationale": "The paper explicitly tests linked climate-agriculture-groundwater pathways and concludes a causal amplification mechanism where crop-type shifts and water management drive drought severity beyond rainfall variability.",
+  "cluster_families_covered": [
+    "drought",
+    "rainfed_risk",
+    "groundwater_stress",
+    "irrigation_challenges",
+    "mixed"
+  ],
+  "mechanism_domains_covered": [
+    "climate_forcing",
+    "crop_water_demand",
+    "groundwater_depletion",
+    "adaptation_capacity",
+    "policy_incentives",
+    "agro_economic_transition"
+  ],
+  "mapped_variables": [
+    {
+      "taxonomy_name": "prec_annual_avg_rain",
+      "canonical_variable_name": "prec_annual_avg_rain",
+      "alias_used_in_paper": "summer monsoon rainfall / district rainfall trends",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "JJAS rainfall and annual mean rainfall",
+      "description": "District-level monsoon rainfall amount and trend used as primary climatic drought forcing.",
+      "unit": "mm/year",
+      "role": "driver",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "IMD Pune; IITM fill values",
+      "indian_data_source": "same",
+      "threshold_or_range": "Overall Marathwada mean 662.9 mm/year; whole-monsoon trend -0.111 mm/year (non-significant).",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "paper_context_id": "climate11_93_2023::prec_annual_avg_rain::annual",
+      "source_paper": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "excerpt": "A decreasing rainfall trend with annual mean 662.9 mm/year was noticed over Marathwada, but it was not statistically significant."
+    },
+    {
+      "taxonomy_name": "drought_freq",
+      "canonical_variable_name": "drought_freq",
+      "alias_used_in_paper": "decadal drought frequencies and severe drought years",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "severe drought years",
+      "description": "Frequency of severe drought years per decade in Marathwada.",
+      "unit": "events/decade",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Table 3 drought frequency analysis",
+      "indian_data_source": "same",
+      "threshold_or_range": "Drought frequencies: 2 (1981-1990), 0 (1991-2000), 2 (2001-2010), 3 (2011 onward).",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "paper_context_id": "climate11_93_2023::drought_freq::na",
+      "source_paper": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "excerpt": "Severe drought years were identified as 1982, 1987, 2002, 2009, 2012, 2014, and 2015."
+    },
+    {
+      "taxonomy_name": "g_annual_trend",
+      "canonical_variable_name": "g_annual_trend",
+      "alias_used_in_paper": "ground water level trend / annual groundwater decline",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "ground water level decline",
+      "description": "District-wise groundwater level trend indicating depletion or recovery.",
+      "unit": "m over period",
+      "role": "outcome",
+      "season": "annual",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Water Resources Information System of India",
+      "indian_data_source": "same",
+      "threshold_or_range": "Study area annual groundwater declined by about 3.5 m (1996-2018); district declines up to 5 m.",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion"
+      ],
+      "paper_context_id": "climate11_93_2023::g_annual_trend::annual",
+      "source_paper": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "excerpt": "The study area as a whole experienced a significantly declining trend (3.5 m/considered period) in annual ground water level."
+    },
+    {
+      "taxonomy_name": "irrigation_demand",
+      "canonical_variable_name": "irrigation_demand",
+      "alias_used_in_paper": "augmented water supply demand for cash crops",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "high water demand for crop irrigation",
+      "description": "Irrigation water demand associated with high-water-requirement crop systems.",
+      "unit": "mm/season or relative demand index",
+      "role": "mediator",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Derived from crop water requirement grouping and crop trend analysis",
+      "indian_data_source": "same",
+      "threshold_or_range": "High-water crops in study include cotton/rice/maize (~1200 mm) and sugarcane (~2700 mm).",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "crop_water_demand"
+      ],
+      "paper_context_id": "climate11_93_2023::irrigation_demand::kharif",
+      "source_paper": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "excerpt": "An increase in the yield of cash crops demands an augmented water supply."
+    },
+    {
+      "taxonomy_name": "NEW_crop_water_requirement",
+      "canonical_variable_name": "NEW_crop_water_requirement",
+      "alias_used_in_paper": "high-water-requirement crop class vs low-water-requirement crop class",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "crop water requirement categories",
+      "description": "Per-crop water requirement used to classify cropping systems into low vs high demand.",
+      "unit": "mm",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Table 1 crop water requirements",
+      "indian_data_source": "same",
+      "threshold_or_range": "Low group examples: bajra 200 mm, wheat 400 mm; high group examples: cotton/maize/rice 1200 mm, sugarcane 2700 mm.",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "agro_economic_transition",
+        "crop_water_demand"
+      ],
+      "paper_context_id": "climate11_93_2023::NEW_crop_water_requirement::na",
+      "source_paper": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "excerpt": "Major cultivated crops were grouped by low and high water requirement, with sugarcane requiring about 2700 mm."
+    },
+    {
+      "taxonomy_name": "crop_yield_trend",
+      "canonical_variable_name": "crop_yield_trend",
+      "alias_used_in_paper": "yield trends (tonnes/hectare) across districts",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "district crop yield trend",
+      "description": "Trend in crop yield per hectare for major crops.",
+      "unit": "tonnes/hectare",
+      "role": "outcome",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Seasonal crop production datasets (state/national agencies)",
+      "indian_data_source": "same",
+      "threshold_or_range": "Examples: sugarcane yield trend +2175.3 t/ha (Aurangabad); jowar trend -1210 t/ha (Nanded).",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "mixed",
+      "mechanism_domains": [
+        "agro_economic_transition"
+      ],
+      "paper_context_id": "climate11_93_2023::crop_yield_trend::kharif",
+      "source_paper": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "excerpt": "Low-water crop yields declined while high-water crop yields and area increased over many districts."
+    },
+    {
+      "taxonomy_name": "cropping_area_trend",
+      "canonical_variable_name": "cropping_area_trend",
+      "alias_used_in_paper": "area under low-water crops decreased and high-water crops increased",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "crop area shift",
+      "description": "Shift in area cultivated toward high-water cash crops and away from low-water crops.",
+      "unit": "ha/year or %",
+      "role": "mediator",
+      "season": "kharif",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "District crop cultivation trend figures",
+      "indian_data_source": "same",
+      "threshold_or_range": "High-water crop area increased markedly after around 2000; low-water crop area declined.",
+      "indicator_direction": "increasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "agro_economic_transition",
+        "crop_water_demand"
+      ],
+      "paper_context_id": "climate11_93_2023::cropping_area_trend::kharif",
+      "source_paper": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "excerpt": "Area under low-water crops declined, while area under cotton and sugarcane increased across much of Marathwada."
+    },
+    {
+      "taxonomy_name": "NEW_energy_cost_pumping",
+      "canonical_variable_name": "NEW_energy_cost_pumping",
+      "alias_used_in_paper": "groundwater withdrawal and drilling for agricultural activities",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "medium",
+      "candidate_merge_target": null,
+      "paper_terminology": "intensive groundwater extraction pressure",
+      "description": "Pumping-related intensity implied by increased groundwater extraction for irrigation.",
+      "unit": "proxy index",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Narrative evidence of extensive withdrawal and drilling",
+      "indian_data_source": "same",
+      "threshold_or_range": null,
+      "indicator_direction": "high_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "groundwater_depletion"
+      ],
+      "paper_context_id": "climate11_93_2023::NEW_energy_cost_pumping::na",
+      "source_paper": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "excerpt": "Ground water withdrawal and drilling for agricultural activities have dried many freshwater sources and bore wells."
+    },
+    {
+      "taxonomy_name": "NEW_water_use_efficiency",
+      "canonical_variable_name": "NEW_water_use_efficiency",
+      "alias_used_in_paper": "poor management of water resources / improve water-use efficiency",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "water-use efficiency in management recommendations",
+      "description": "Efficiency of water use under irrigation and farm management practices.",
+      "unit": "efficiency index",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Discussion and recommendations",
+      "indian_data_source": "same",
+      "threshold_or_range": null,
+      "indicator_direction": "low_means_stressed",
+      "relevance": "contextual",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "policy_incentives"
+      ],
+      "paper_context_id": "climate11_93_2023::NEW_water_use_efficiency::na",
+      "source_paper": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "excerpt": "Awareness and proper water management practices will help minimize water wastage and improve water-use efficiency."
+    },
+    {
+      "taxonomy_name": "NEW_rainwater_harvesting_coverage",
+      "canonical_variable_name": "NEW_rainwater_harvesting_coverage",
+      "alias_used_in_paper": "rainwater harvesting structures (rooftop systems, farm ponds)",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "rainwater harvesting adoption",
+      "description": "Coverage of rainwater harvesting practices as a drought mitigation strategy.",
+      "unit": "coverage %",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Recommendation section",
+      "indian_data_source": "same",
+      "threshold_or_range": null,
+      "indicator_direction": "low_means_stressed",
+      "relevance": "contextual",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "climate11_93_2023::NEW_rainwater_harvesting_coverage::na",
+      "source_paper": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "excerpt": "Rainwater harvesting structures like rooftop systems and farm ponds can help collect and store water for crop irrigation."
+    },
+    {
+      "taxonomy_name": "irrigated_area_fraction",
+      "canonical_variable_name": "irrigated_area_fraction",
+      "alias_used_in_paper": "most of area under rain-fed agriculture",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "rainfed dependence of Marathwada",
+      "description": "Share of cultivation dependent on rainfall versus irrigation buffering.",
+      "unit": "fraction",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Regional agriculture context",
+      "indian_data_source": "same",
+      "threshold_or_range": "Summer monsoon rainfall contributes about 70-80% to overall agricultural production.",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "contextual",
+      "cluster_family": "rainfed_risk",
+      "mechanism_domains": [
+        "adaptation_capacity"
+      ],
+      "paper_context_id": "climate11_93_2023::irrigated_area_fraction::na",
+      "source_paper": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "excerpt": "Most of the area of Marathwada is under rain-fed agriculture and summer monsoon contributes 70-80%."
+    }
+  ],
+  "new_variables": [],
+  "mechanism_blocks": [
+    {
+      "name": "rainfall_to_groundwater_stress",
+      "description": "Deficient and variable monsoon years co-occur with low groundwater levels, but rainfall trends alone are mostly non-significant.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "prec_annual_avg_rain",
+          "from_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var": "drought_freq",
+          "to_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "mechanism": "Rainfall deficits identify drought years and increase drought event counts per decade.",
+          "direction": "decrease_causes_increase",
+          "strength": "strong",
+          "conditions": "Monsoon-deficient years",
+          "from_var_value_range": "Whole-monsoon trend -0.111 mm/year overall (non-significant) with district-level mixed signs.",
+          "from_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var_value_range": "Severe drought years include 2002, 2009, 2012, 2014, 2015.",
+          "to_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "drought",
+          "mechanism_domains": [
+            "climate_forcing"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Prominent deficient years from 2001 to 2018 included 2002, 2009, 2012, 2014, and 2015."
+        },
+        {
+          "from_var": "drought_freq",
+          "from_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "mechanism": "Frequent drought years align with deeper groundwater decline due to repeated recharge stress and higher abstraction.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Multi-year drought episodes",
+          "from_var_value_range": "Drought frequencies rose to 3 per decade after 2011 in study table.",
+          "from_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var_value_range": "Regional groundwater declined by about 3.5 m; district declines up to 5 m.",
+          "to_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "climate_forcing",
+            "groundwater_depletion"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "During prominent deficient years, groundwater levels were also significantly low."
+        }
+      ],
+      "edge_ids": [
+        "e1",
+        "e2"
+      ],
+      "context_variables": [
+        "irrigated_area_fraction"
+      ]
+    },
+    {
+      "name": "crop_shift_amplifies_water_scarcity",
+      "description": "Shift from low-water crops to cash/high-water crops raises irrigation demand and accelerates groundwater depletion.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_crop_water_requirement",
+          "from_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var": "cropping_area_trend",
+          "to_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "mechanism": "Economic preference for cash crops drives area expansion of high-water-requirement crops.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Post-2000 agriculture transition",
+          "from_var_value_range": "High-water requirements include cotton/maize/rice ~1200 mm and sugarcane ~2700 mm.",
+          "from_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var_value_range": "High-water crop area and per-hectare production increased markedly after around 2000.",
+          "to_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "agro_economic_transition",
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Low-water crops were replaced with highly water-intensive crops such as cotton, maize, sugarcane, and rice."
+        },
+        {
+          "from_var": "cropping_area_trend",
+          "from_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "mechanism": "Larger area under water-intensive crops increases irrigation demand per season.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Cash-crop dominated districts",
+          "from_var_value_range": "Documented increase in sugarcane and cotton cultivation across key districts.",
+          "from_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var_value_range": "Augmented water supply demand stated for increasing cash-crop yield.",
+          "to_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Increase in cash-crop yield demands augmented water supply."
+        },
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "mechanism": "Higher irrigation demand is met through groundwater abstraction, causing persistent groundwater decline.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Limited alternate freshwater sources",
+          "from_var_value_range": "Sugarcane and cotton remained high even in drought years.",
+          "from_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var_value_range": "Groundwater decline of about 4-5 m observed across most districts in period.",
+          "to_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_depletion",
+            "crop_water_demand"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "As other freshwater sources are negligible, annual groundwater is overused for irrigation and post-cultivation activities."
+        }
+      ],
+      "edge_ids": [
+        "e3",
+        "e4",
+        "e5"
+      ],
+      "context_variables": [
+        "NEW_water_use_efficiency",
+        "NEW_rainwater_harvesting_coverage"
+      ]
+    },
+    {
+      "name": "drought_year_cash_crop_persistence",
+      "description": "Even during drought years, high-water crops continue expanding, worsening water scarcity impacts.",
+      "stressor_scope": "mixed",
+      "edge_drafts": [
+        {
+          "from_var": "drought_freq",
+          "from_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var": "cropping_area_trend",
+          "to_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "mechanism": "Despite drought episodes, cropping decisions continue favoring high-water cash crops for income, reinforcing stress.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Drought years 2002, 2012, 2014, 2015",
+          "from_var_value_range": "Identified severe drought years include 2002, 2009, 2012, 2014, 2015.",
+          "from_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var_value_range": "Increasing cotton and sugarcane trends observed over drought years.",
+          "to_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "agro_economic_transition",
+            "policy_incentives"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "kharif",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Increasing trends of cotton and sugarcane were examined over drought years."
+        },
+        {
+          "from_var": "cropping_area_trend",
+          "from_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var": "drought_freq",
+          "to_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "mechanism": "Higher dependence on water-intensive cropping increases socio-hydrological drought expression and perceived severity frequency.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Weak water governance and over-extraction context",
+          "from_var_value_range": "High-water crop expansion documented across districts since late 1990s/2000s.",
+          "from_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var_value_range": "Paper concludes drought severity enhancement is largely tied to changing agricultural practices.",
+          "to_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "drought",
+          "mechanism_domains": [
+            "agro_economic_transition",
+            "groundwater_depletion"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Compared to monsoon vagaries, use of high-water-demanding crop types largely influences enhancement of drought severities and frequencies."
+        }
+      ],
+      "edge_ids": [
+        "e6",
+        "e7"
+      ],
+      "context_variables": [
+        "NEW_water_use_efficiency",
+        "NEW_rainwater_harvesting_coverage",
+        "irrigated_area_fraction"
+      ]
+    },
+    {
+      "name": "management_levers_for_mitigation",
+      "description": "Improved water management, rainwater harvesting, and efficiency practices can reduce groundwater stress and drought impacts.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_rainwater_harvesting_coverage",
+          "from_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "mechanism": "Rainwater storage provides supplemental irrigation and reduces pressure on extraction sources.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Adoption of farm ponds/rooftop systems",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "adaptation_capacity"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Rainwater harvesting can help farmers collect and store rainwater for crop irrigation."
+        },
+        {
+          "from_var": "NEW_water_use_efficiency",
+          "from_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "mechanism": "Better water-use efficiency lowers wastage and groundwater abstraction intensity, moderating declines.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Implementation of sustainable water management practices",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "to_var_value_range": "Expected to reduce declining groundwater trajectory (no explicit numeric effect provided).",
+          "to_var_value_range_source": {
+            "paper_id": 3,
+            "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "adaptation_capacity",
+            "policy_incentives"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "annual",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Efficient use of water and improved water management practices can minimize water wastage and reduce drought brutality."
+        }
+      ],
+      "edge_ids": [
+        "e8",
+        "e9"
+      ],
+      "context_variables": [
+        "NEW_rainwater_harvesting_coverage",
+        "NEW_water_use_efficiency"
+      ]
+    }
+  ],
+  "causal_chains": [
+    {
+      "edge_id": "e1",
+      "from_var": "prec_annual_avg_rain",
+      "from_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var": "drought_freq",
+      "to_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "mechanism": "Lower monsoon rainfall years are classified as severe drought years, increasing event frequency in periods with repeated deficits.",
+      "direction": "decrease_causes_increase",
+      "strength": "strong",
+      "conditions": "Decadal drought accounting",
+      "from_var_value_range": "Overall whole-monsoon trend -0.111 mm/year; district-level mixed trends.",
+      "from_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var_value_range": "Severe drought years identified: 1982, 1987, 2002, 2009, 2012, 2014, 2015.",
+      "to_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "drought",
+      "mechanism_domains": [
+        "climate_forcing"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Rainfall-deficient years were mapped as severe drought years in the study period."
+    },
+    {
+      "edge_id": "e2",
+      "from_var": "drought_freq",
+      "from_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "mechanism": "Repeated drought years reduce recharge opportunities and coincide with larger groundwater declines.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Multi-year drought clusters",
+      "from_var_value_range": "Higher drought frequency after 2011 compared with 1991-2000.",
+      "from_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var_value_range": "Annual groundwater level declined by about 3.5 m regionally; up to 5 m in Parbhani.",
+      "to_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "climate_forcing",
+        "groundwater_depletion"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Groundwater was significantly low during prominent deficient rainfall years."
+    },
+    {
+      "edge_id": "e3",
+      "from_var": "NEW_crop_water_requirement",
+      "from_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var": "cropping_area_trend",
+      "to_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "mechanism": "Economic shifts toward high-return cash crops cause expansion of high-water crop area.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Post-2000 crop transition in Marathwada",
+      "from_var_value_range": "High-water classes include cotton/rice/maize at around 1200 mm and sugarcane around 2700 mm.",
+      "from_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var_value_range": "High-water crop area and production increased; low-water crop area declined.",
+      "to_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "agro_economic_transition"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Crop shifts from jowar/bajra/wheat to sugarcane and cotton were observed in key districts."
+    },
+    {
+      "edge_id": "e4",
+      "from_var": "cropping_area_trend",
+      "from_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "mechanism": "Area expansion of water-intensive crops increases seasonal irrigation requirement.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Districts with rising cotton and sugarcane trends",
+      "from_var_value_range": "Increase in high-water crop production and area after around 2000.",
+      "from_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var_value_range": "Augmented water supply demand reported with increasing cash-crop yield.",
+      "to_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "crop_water_demand"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Increasing yield of cash crops demands augmented water supply."
+    },
+    {
+      "edge_id": "e5",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "mechanism": "Irrigation demand is largely met through groundwater extraction, driving deeper annual groundwater declines.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Limited alternate water sources and continued high-water cropping",
+      "from_var_value_range": "Water-intensive crops expanded in drought years including 2002, 2012, 2014, 2015.",
+      "from_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var_value_range": "Groundwater fell by about 4-5 m over most districts in period.",
+      "to_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_depletion"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Groundwater overuse for irrigation and post-cultivation activities caused substantial annual decline."
+    },
+    {
+      "edge_id": "e6",
+      "from_var": "drought_freq",
+      "from_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var": "cropping_area_trend",
+      "to_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "mechanism": "Drought occurrence does not reduce high-water crop expansion; cash-crop incentives maintain or increase area even in drought years.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Drought-year crop choices",
+      "from_var_value_range": "Severe drought years listed in study include 2002, 2009, 2012, 2014, 2015.",
+      "from_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var_value_range": "High-water crops (cotton, sugarcane) still showed increasing trends during drought years.",
+      "to_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "policy_incentives",
+        "agro_economic_transition"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "kharif",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Increasing trends of cotton and sugarcane were examined over drought years."
+    },
+    {
+      "edge_id": "e7",
+      "from_var": "cropping_area_trend",
+      "from_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var": "drought_freq",
+      "to_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "mechanism": "Expansion of high-water crop systems increases socio-hydrological drought expression, making severe drought impacts more frequent.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Poor water management and groundwater over-exploitation",
+      "from_var_value_range": "Sustained post-2000 increase in high-water crop area and yield.",
+      "from_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var_value_range": "Study concludes enhanced drought severities/frequencies are more linked to agricultural practices than rainfall vagaries.",
+      "to_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "drought",
+      "mechanism_domains": [
+        "agro_economic_transition",
+        "groundwater_depletion"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "More than rainfall vagaries, severe drought impact reflects changing agricultural practices and poor water management."
+    },
+    {
+      "edge_id": "e8",
+      "from_var": "NEW_rainwater_harvesting_coverage",
+      "from_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "mechanism": "Rainwater harvesting availability reduces dependence on external or groundwater irrigation supply.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Community/farm-level adoption",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "adaptation_capacity"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Rainwater harvesting structures can collect and store water for irrigation."
+    },
+    {
+      "edge_id": "e9",
+      "from_var": "NEW_water_use_efficiency",
+      "from_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "mechanism": "Efficiency-focused water management reduces wastage and can moderate groundwater declines.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Adoption of sustainable management and precision irrigation",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "to_var_value_range": "Expected moderation of annual groundwater decline (no explicit numeric estimate).",
+      "to_var_value_range_source": {
+        "paper_id": 3,
+        "paper_title": "Exploring the Association between Changing Crop Types and Water Scarcity: A Case Study over West-Central India"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "adaptation_capacity",
+        "policy_incentives"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "annual",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Efficient use of water through proper management practices will help improve water-use efficiency."
+    }
+  ],
+  "conditional_thresholds": [
+    {
+      "variable": "NEW_crop_water_requirement",
+      "threshold": "Sugarcane approximately 2700 mm versus low-water crops like bajra about 200 mm",
+      "condition": "Crop selection under semi-arid water scarcity",
+      "implication": "High-water crop adoption strongly raises irrigation pressure and groundwater stress"
+    },
+    {
+      "variable": "g_annual_trend",
+      "threshold": "Decline by about 3.5 m regionally (up to 5 m in some districts) over 1996-2018",
+      "condition": "Annual groundwater trend assessment",
+      "implication": "Indicates severe and persistent groundwater stress"
+    },
+    {
+      "variable": "prec_annual_avg_rain",
+      "threshold": "Deficient years include 2002, 2009, 2012, 2014, 2015",
+      "condition": "Drought-year classification from rainfall series",
+      "implication": "These years coincide with heightened groundwater stress and socio-agricultural impacts"
+    }
+  ],
+  "key_relationships": [
+    "Rainfall trends are mostly non-significant and mixed by district, yet groundwater declines are pronounced.",
+    "Shift to high-water crops (cotton/sugarcane) increases irrigation_demand and is linked to g_annual_trend decline.",
+    "High-water crop expansion persists even in drought years, amplifying socio-hydrological drought impacts.",
+    "The study attributes drought severity more to agricultural practice shifts and poor water management than rainfall vagaries alone.",
+    "Rainwater harvesting and improved water-use efficiency are proposed as mitigation levers to reduce groundwater stress."
+  ],
+  "alias_resolution_rules": [
+    {
+      "alias_text": "ground water level decline",
+      "canonical_variable_name": "g_annual_trend",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Direct trend/depth wording mapped to annual groundwater trend."
+    },
+    {
+      "alias_text": "crop types shifting to sugarcane and cotton",
+      "canonical_variable_name": "cropping_area_trend",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Represents area composition shift by crop category."
+    },
+    {
+      "alias_text": "high-water-requirement crops",
+      "canonical_variable_name": "NEW_crop_water_requirement",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Paper provides explicit water requirement values."
+    },
+    {
+      "alias_text": "poor management of water resources",
+      "canonical_variable_name": "NEW_water_use_efficiency",
+      "resolution_method": "near_synonym_suggestion",
+      "resolution_confidence": "medium",
+      "notes": "Mapped as inverse of water-use efficiency/management quality."
+    }
+  ],
+  "mapping_notes": "The paper reports district-wise crop-specific yield slopes and area changes primarily for named crops rather than one unified index. These are represented through parent variables crop_yield_trend and cropping_area_trend with supporting ranges and excerpts.",
+  "limitations": "Many rainfall trends are statistically non-significant, and some causal inferences are based on co-trend comparison rather than controlled causal identification. Policy and management mechanisms are discussed qualitatively without quantified intervention effect sizes.",
+  "important_variables": [
+    {
+      "variable_name": "g_annual_trend",
+      "significance": "The strongest quantitative stress signal in the paper is sustained groundwater decline (regionally about 3.5 m and up to about 5 m in districts).",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_crop_water_requirement",
+      "significance": "Crop water requirement differences are central explanatory evidence for why crop shifts intensify scarcity.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "cropping_area_trend",
+      "significance": "Area shift toward water-intensive cash crops is the core anthropogenic mechanism emphasized by authors.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "irrigation_demand",
+      "significance": "Acts as the direct transmission variable connecting crop choices to groundwater depletion.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "prec_annual_avg_rain",
+      "significance": "Rainfall remains an important climatic driver and benchmark for deficient years, though not the sole explanation for severe impacts.",
+      "evidence_strength": "moderate",
+      "recommendation": "existing_taxonomy"
+    }
+  ],
+  "important_variables_narrative": "The paper places groundwater decline at the center of drought severity in Marathwada and shows that rainfall variability alone does not explain the observed crisis. The most explanatory mechanism is the shift toward high-water crops, which raises irrigation demand and accelerates groundwater depletion. Rainfall deficits still matter, especially in identifying drought years, but the authors emphasize that anthropogenic crop-choice and water-management pathways drive severity amplification. This makes crop-water requirement and cropping area composition key diagnostic variables for district-level monitoring."
+}

@@ -1,0 +1,1536 @@
+{
+  "schema_version": "2.0",
+  "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development",
+  "paper_identity": {
+    "paper_id": 27,
+    "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+  },
+  "paper_summary": "This review synthesizes four decades of secondary agricultural statistics and government reports for Punjab, linking Green Revolution rice–wheat intensification, very high irrigation dependence (especially groundwater), and input intensification to groundwater decline, soil degradation, salinity and waterlogging in the south-western belt, and broader sustainability and ethics concerns.",
+  "study_region": "Punjab, India (state-level and three agro-climatic zones A/B/C)",
+  "study_period": "Primarily 1970s–2010s with statistics through 2013–14 where cited; tubewell series 1970-71 to 2008-09; groundwater decline rate referenced since 2004-07",
+  "methodology": "Secondary data review and synthesis from Department of Agriculture Punjab, Statistical Abstract of Punjab, soil survey division, and cited zoning literature (no primary econometrics).",
+  "paper_type": "review",
+  "paper_type_rationale": "The article compiles published government statistics and prior studies to narrate resource-depletion patterns and policy implications rather than estimating new causal parameters from primary field data.",
+  "cluster_families_covered": [
+    "irrigation_challenges",
+    "groundwater_stress",
+    "drought",
+    "mixed"
+  ],
+  "mechanism_domains_covered": [
+    "agroclimatic_zoning",
+    "groundwater_dependence",
+    "groundwater_overdraft",
+    "input_intensification",
+    "intensive_land_use",
+    "intensive_rice_wheat",
+    "irrigation_governance",
+    "irrigation_source_mix",
+    "rainfed_pressure",
+    "salinity_waterlogging_zone_c",
+    "soil_degradation",
+    "tubewell_intensification",
+    "yield_stagnation_decline"
+  ],
+  "mapped_variables": [
+    {
+      "taxonomy_name": "g_annual_trend",
+      "canonical_variable_name": "g_annual_trend",
+      "alias_used_in_paper": "water table falling",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "0.94 meters per year; steep falling ground water",
+      "description": "Groundwater table decline rate in Punjab's central (Zone B) irrigated belt.",
+      "unit": "m/year",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Dept. of Agriculture / agro-climatic zone statistics as cited",
+      "indian_data_source": "CGWB monitoring / state groundwater cell",
+      "threshold_or_range": "0.94 m/year average decline since 2004-07 (Zone B)",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_overdraft",
+        "tubewell_intensification"
+      ],
+      "paper_context_id": "kumar2016_punjab_resource_ethics::g_annual_trend::zone_b",
+      "source_paper": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "excerpt": "The water table in this region has been falling at an alarming average rate of 0.94 meters per year since 2004-07."
+    },
+    {
+      "taxonomy_name": "irrigation_demand",
+      "canonical_variable_name": "irrigation_demand",
+      "alias_used_in_paper": "requirement of water increased twofold",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "severe exploitation of natural water resources",
+      "description": "Irrigation water requirement and extraction intensity under rice-wheat intensive systems.",
+      "unit": "relative_intensity",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Author synthesis of Green Revolution irrigation shift",
+      "indian_data_source": "CGWB GEC irrigation estimates / canal command records",
+      "threshold_or_range": "Water requirement increased twofold immediately, then manifold subsequently (narrative)",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "intensive_rice_wheat",
+        "groundwater_overdraft"
+      ],
+      "paper_context_id": "kumar2016_punjab_resource_ethics::irrigation_demand::punjab",
+      "source_paper": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "excerpt": "Requirement of water increased twofold immediately, then to manifold subsequently, which lead to severe exploitation of natural water resources..."
+    },
+    {
+      "taxonomy_name": "irrigated_area_fraction",
+      "canonical_variable_name": "irrigated_area_fraction",
+      "alias_used_in_paper": "Irrigated Area 98%",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "98% irrigated; 27% surface 73% ground water",
+      "description": "Share of gross cropped area irrigated and source mix (surface vs groundwater) in Punjab.",
+      "unit": "%",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Dept. of Agriculture, Punjab, 2013-14 as cited",
+      "indian_data_source": "same",
+      "threshold_or_range": "98% gross irrigated area; 27% surface water vs 73% groundwater (state aggregates)",
+      "indicator_direction": "categorical",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_source_mix",
+        "groundwater_dependence"
+      ],
+      "paper_context_id": "kumar2016_punjab_resource_ethics::irrigated_area_fraction::state",
+      "source_paper": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "excerpt": "Irrigated Area: Surface water 27%, Ground water 73% ... 98% (Highest in India)."
+    },
+    {
+      "taxonomy_name": "prec_annual_avg_rain",
+      "canonical_variable_name": "prec_annual_avg_rain",
+      "alias_used_in_paper": "average annual rainfall",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": ">1,100 mm per annum (Zone A)",
+      "description": "Average annual rainfall in Punjab sub-mountainous agro-climatic zone.",
+      "unit": "mm/year",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Sidhu and Vatta, 2014 zoning as cited",
+      "indian_data_source": "IMD gridded / district gauge records",
+      "threshold_or_range": ">1,100 mm/year (Zone A, ~17% of state area)",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "contextual",
+      "cluster_family": "mixed",
+      "mechanism_domains": [
+        "agroclimatic_zoning"
+      ],
+      "paper_context_id": "kumar2016_punjab_resource_ethics::prec_annual_avg_rain::zone_a",
+      "source_paper": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "excerpt": "This zone has particularly abundant rainfall that averages approximately up to more than 1,100 mm per annum."
+    },
+    {
+      "taxonomy_name": "prec_annual_avg_rain",
+      "canonical_variable_name": "prec_annual_avg_rain",
+      "alias_used_in_paper": "average annual rainfall",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "about 760 mm (Zone B)",
+      "description": "Average annual rainfall in Punjab central (sweetwater) belt.",
+      "unit": "mm/year",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Sidhu and Vatta, 2014 zoning as cited",
+      "indian_data_source": "IMD gridded / district gauge records",
+      "threshold_or_range": "~760 mm/year (Zone B, ~47% of state area)",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "contextual",
+      "cluster_family": "mixed",
+      "mechanism_domains": [
+        "agroclimatic_zoning"
+      ],
+      "paper_context_id": "kumar2016_punjab_resource_ethics::prec_annual_avg_rain::zone_b",
+      "source_paper": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "excerpt": "Average annual rainfall in this region is about 760 mm."
+    },
+    {
+      "taxonomy_name": "prec_annual_avg_rain",
+      "canonical_variable_name": "prec_annual_avg_rain",
+      "alias_used_in_paper": "average annual rainfall",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "360mm (Zone C)",
+      "description": "Average annual rainfall in Punjab south-western cotton belt.",
+      "unit": "mm/year",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Sidhu and Vatta, 2014 zoning as cited",
+      "indian_data_source": "IMD gridded / district gauge records",
+      "threshold_or_range": "~360 mm/year (Zone C, drier belt)",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "rainfed_pressure",
+        "agroclimatic_zoning"
+      ],
+      "paper_context_id": "kumar2016_punjab_resource_ethics::prec_annual_avg_rain::zone_c",
+      "source_paper": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "excerpt": "The average annual rainfall of this region is 360mm. It is much drier than the other two zones."
+    },
+    {
+      "taxonomy_name": "cropping_intensity_trend",
+      "canonical_variable_name": "cropping_intensity_trend",
+      "alias_used_in_paper": "Cropping Intensity 190%",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "more than 200% cropping intensity",
+      "description": "Cropping intensity (gross cropped to net sown) as indicator of land-use pressure and irrigation demand.",
+      "unit": "%",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Dept. of Agriculture, Punjab profile as cited",
+      "indian_data_source": "MoA land use statistics",
+      "threshold_or_range": "190% reported (highest in India); narrative also cites >200%",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "intensive_land_use"
+      ],
+      "paper_context_id": "kumar2016_punjab_resource_ethics::cropping_intensity_trend::state",
+      "source_paper": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "excerpt": "The over dependence on wheat and rice and intensive use of farm land with more than 200% cropping intensity have led to a crisis in terms of over exploitation of natural resources viz. Soil and ground water."
+    },
+    {
+      "taxonomy_name": "NEW_fertilizer_use_intensity",
+      "canonical_variable_name": "NEW_fertilizer_use_intensity",
+      "alias_used_in_paper": "Fertilizer Consumption",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "239 kg/hectare; time series to 251 kg/ha",
+      "description": "Chemical fertilizer application intensity linked to soil degradation and yield response.",
+      "unit": "kg/ha",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Department of Agriculture, Punjab (table 1960-2013)",
+      "indian_data_source": "same",
+      "threshold_or_range": "239 kg/ha headline (2013-14 profile); 251 kg/ha total nutrients 2013-14 in table",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "input_intensification",
+        "soil_degradation"
+      ],
+      "paper_context_id": "kumar2016_punjab_resource_ethics::NEW_fertilizer_use_intensity::punjab",
+      "source_paper": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "excerpt": "Fertilizer Consumption: 239 kg/hectare (Highest in India) ... productivity of the land has been declining due to over use of chemical fertilizers."
+    },
+    {
+      "taxonomy_name": "crop_yield_trend",
+      "canonical_variable_name": "crop_yield_trend",
+      "alias_used_in_paper": "declining trend in the per unit production",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "declining marginal production",
+      "description": "Crop productivity / marginal productivity trends discussed for major crops and zones.",
+      "unit": "kg/ha_or_index",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Dept. of Agriculture production series / author interpretation",
+      "indian_data_source": "DES crop statistics",
+      "threshold_or_range": null,
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "yield_stagnation_decline"
+      ],
+      "paper_context_id": "kumar2016_punjab_resource_ethics::crop_yield_trend::punjab",
+      "source_paper": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "excerpt": "There has been considerable decline in the overall marginal production of different crops in the region."
+    },
+    {
+      "taxonomy_name": "salinity_level",
+      "canonical_variable_name": "salinity_level",
+      "alias_used_in_paper": "brackish ground water",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "deep and brackish ground water",
+      "description": "Groundwater salinity / brackish quality in south-western Punjab.",
+      "unit": "dS/m_or_categorical",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "groundwater",
+      "data_source_in_paper": "Agro-climatic zone description (Zone C)",
+      "indian_data_source": "CGWB water quality maps",
+      "threshold_or_range": null,
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "salinity_waterlogging_zone_c"
+      ],
+      "paper_context_id": "kumar2016_punjab_resource_ethics::salinity_level::gw_zone_c",
+      "source_paper": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "excerpt": "This region is endowed with deep and brackish ground water and sandy soil."
+    },
+    {
+      "taxonomy_name": "salinity_level",
+      "canonical_variable_name": "salinity_level",
+      "alias_used_in_paper": "salt accumulation on the soil surface",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "salt accumulation on the soil surface",
+      "description": "Soil surface salinity linked to rice expansion and brackish groundwater use in Zone C.",
+      "unit": "index_or_%",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "soil",
+      "data_source_in_paper": "Results discussion Zone C",
+      "indian_data_source": "ICAR soil salinity / soil testing",
+      "threshold_or_range": null,
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "salinity_waterlogging_zone_c"
+      ],
+      "paper_context_id": "kumar2016_punjab_resource_ethics::salinity_level::soil_zone_c",
+      "source_paper": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "excerpt": "The increase in area under rice has increased salt accumulation on the soil surface due to the continuous use of underground water which is brackish..."
+    },
+    {
+      "taxonomy_name": "NEW_waterlogging_area",
+      "canonical_variable_name": "NEW_waterlogging_area",
+      "alias_used_in_paper": "water logging of the soil",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "water logging of the soil",
+      "description": "Waterlogging extent/severity in poorly drained soils under rice expansion with brackish irrigation.",
+      "unit": "categorical_area_pressure",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Zone C narrative",
+      "indian_data_source": "Remote sensing / drainage department records",
+      "threshold_or_range": null,
+      "indicator_direction": "high_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "salinity_waterlogging_zone_c"
+      ],
+      "paper_context_id": "kumar2016_punjab_resource_ethics::NEW_waterlogging_area::zone_c",
+      "source_paper": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "excerpt": "...has led to water logging of the soil."
+    },
+    {
+      "taxonomy_name": "NEW_electricity_subsidy_intensity",
+      "canonical_variable_name": "NEW_electricity_subsidy_intensity",
+      "alias_used_in_paper": "power subsidies",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "fuelled by power subsidies",
+      "description": "Electricity subsidy intensity enabling tubewell pumping and groundwater extraction.",
+      "unit": "policy_intensity_index",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Author interpretation of tubewell growth drivers",
+      "indian_data_source": "State electricity utility / tariff orders",
+      "threshold_or_range": null,
+      "indicator_direction": "high_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "tubewell_intensification"
+      ],
+      "paper_context_id": "kumar2016_punjab_resource_ethics::NEW_electricity_subsidy_intensity::punjab",
+      "source_paper": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "excerpt": "...massive increase in the number of tube wells ... that has inexorably been fuelled by power subsidies."
+    },
+    {
+      "taxonomy_name": "NEW_water_use_efficiency",
+      "canonical_variable_name": "NEW_water_use_efficiency",
+      "alias_used_in_paper": "wastages and inefficiencies in water use",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "wastages and in efficiencies in water use",
+      "description": "On-farm and system water-use inefficiency as irrigation reform concern.",
+      "unit": "index",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Irrigation and Water Management section",
+      "indian_data_source": "MoA PMKSY / WUA monitoring",
+      "threshold_or_range": null,
+      "indicator_direction": "low_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_governance"
+      ],
+      "paper_context_id": "kumar2016_punjab_resource_ethics::NEW_water_use_efficiency::punjab",
+      "source_paper": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "excerpt": "Major areas of concern in irrigation are: ... wastages and in efficiencies in water use..."
+    },
+    {
+      "taxonomy_name": "NEW_soil_organic_carbon",
+      "canonical_variable_name": "NEW_soil_organic_carbon",
+      "alias_used_in_paper": "soil quality",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "deteriorated the soil quality",
+      "description": "Soil organic carbon / soil health proxy for chemical-input-induced degradation.",
+      "unit": "%_or_index",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "soil",
+      "data_source_in_paper": "Land issues / soil survey citations",
+      "indian_data_source": "ICAR soil health card scheme",
+      "threshold_or_range": null,
+      "indicator_direction": "low_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "soil_degradation"
+      ],
+      "paper_context_id": "kumar2016_punjab_resource_ethics::NEW_soil_organic_carbon::punjab",
+      "source_paper": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "excerpt": "Post implementation of Green revolution, Punjab saw an indiscriminate use of chemical fertilizers and pesticides which have deteriorated the soil quality."
+    },
+    {
+      "taxonomy_name": "acquifer",
+      "canonical_variable_name": "acquifer",
+      "alias_used_in_paper": "deep and brackish ground water",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "deep and brackish ground water; sandy soil",
+      "description": "Aquifer / hydrogeological setting (deep brackish groundwater) in south-western Punjab.",
+      "unit": "categorical",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Zone C agro-climatic description",
+      "indian_data_source": "CGWB aquifer maps",
+      "threshold_or_range": null,
+      "indicator_direction": "categorical",
+      "relevance": "contextual",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "salinity_waterlogging_zone_c"
+      ],
+      "paper_context_id": "kumar2016_punjab_resource_ethics::acquifer::zone_c",
+      "source_paper": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "excerpt": "This region is endowed with deep and brackish ground water and sandy soil."
+    }
+  ],
+  "new_variables": [
+    {
+      "variable_name": "NEW_pesticide_application_intensity",
+      "canonical_variable_name": "NEW_pesticide_application_intensity",
+      "alias_used_in_paper": "Pesticide Consumption 923g/ha",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "why_new": "No taxonomy variable for pesticide application rate; paper reports state-level intensity.",
+      "description": "Chemical pesticide application per hectare linked with soil and water contamination concerns.",
+      "unit": "g/ha",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Dept. of Agriculture, Punjab, 2013-14 profile",
+      "indian_data_source": "same",
+      "threshold_or_range": "923 g/ha (highest in India, cited)",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "input_intensification",
+        "soil_degradation"
+      ],
+      "paper_context_id": "kumar2016_punjab_resource_ethics::NEW_pesticide_application_intensity::punjab",
+      "source_paper": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "excerpt": "Pesticide Consumption: 923g/ha (Highest in India)"
+    }
+  ],
+  "mechanism_blocks": [
+    {
+      "name": "tubewell_subsidized_groundwater_overdraft",
+      "description": "Electricity-subsidized tubewell expansion and rice-wheat irrigation intensity drive rapid groundwater table decline in Punjab's central belt.",
+      "stressor_scope": "mixed",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_electricity_subsidy_intensity",
+          "from_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "mechanism": "Cheap electricity subsidies lower marginal pumping costs, expanding tubewell irrigation capacity and water applied per hectare.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Punjab power-policy context as argued in paper",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "tubewell_intensification"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "...massive increase in the number of tube wells ... inexorably been fuelled by power subsidies."
+        },
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "mechanism": "Higher irrigation withdrawals under rice-wheat intensification and tubewell-based delivery lower groundwater levels when recharge is insufficient.",
+          "direction": "increase_causes_decrease",
+          "strength": "strong",
+          "conditions": "Zone B central belt; 2004-07 onward statistic",
+          "from_var_value_range": "Water demand increased twofold then manifold (narrative); tubewells increased from 192,000 (1970-71) to 1,276,200 (2008-09)",
+          "from_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var_value_range": "0.94 m/year average water-table decline since 2004-07",
+          "to_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_overdraft",
+            "tubewell_intensification"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The water table in this region has been falling at an alarming average rate of 0.94 meters per year since 2004-07."
+        }
+      ],
+      "edge_ids": [
+        "e2",
+        "e1"
+      ],
+      "context_variables": [
+        "cropping_intensity_trend",
+        "irrigated_area_fraction"
+      ]
+    },
+    {
+      "name": "intensive_cropping_water_demand",
+      "description": "Extreme cropping intensity and low-rainfall south-western conditions amplify irrigation demand beyond natural recharge capacity.",
+      "stressor_scope": "mixed",
+      "edge_drafts": [
+        {
+          "from_var": "cropping_intensity_trend",
+          "from_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "mechanism": "Very high cropping intensity on limited net sown area increases seasonal irrigation rounds and total seasonal water demand.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Statewide intensive rice-wheat system",
+          "from_var_value_range": "190% cropping intensity (highest India); narrative cites >200%",
+          "from_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "intensive_land_use"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The over dependence on wheat and rice and intensive use of farm land with more than 200% cropping intensity have led to a crisis... over exploitation of natural resources viz. Soil and ground water."
+        },
+        {
+          "from_var": "prec_annual_avg_rain",
+          "from_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "mechanism": "Lower mean rainfall in the south-western belt increases reliance on irrigation to sustain rice-wheat and cotton systems.",
+          "direction": "decrease_causes_increase",
+          "strength": "moderate",
+          "conditions": "Zone C ~360 mm/year mean rainfall",
+          "from_var_value_range": "~360 mm/year average rainfall (Zone C)",
+          "from_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "rainfed_pressure"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The average annual rainfall of this region is 360mm... increase in area under rice..."
+        }
+      ],
+      "edge_ids": [
+        "e3",
+        "e5"
+      ],
+      "context_variables": [
+        "prec_annual_avg_rain"
+      ]
+    },
+    {
+      "name": "groundwater_dependence_decline",
+      "description": "Statewide reliance on groundwater irrigation concentrates extraction and aligns with documented water-table fall rates.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "irrigated_area_fraction",
+          "from_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "mechanism": "High statewide irrigated area with a large groundwater share concentrates extraction on aquifers supporting rice-wheat.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "State aggregate source mix 73% groundwater irrigation",
+          "from_var_value_range": "98% irrigated area; 73% from groundwater vs 27% surface",
+          "from_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var_value_range": "0.94 m/year decline cited for central belt (Zone B) as headline groundwater stress statistic",
+          "to_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "groundwater_dependence"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Irrigated Area ... Ground water 73% ... The water table in this region has been falling at an alarming average rate of 0.94 meters per year..."
+        }
+      ],
+      "edge_ids": [
+        "e4"
+      ],
+      "context_variables": [
+        "irrigation_demand"
+      ]
+    },
+    {
+      "name": "brackish_water_salinity_waterlogging",
+      "description": "In Zone C, rice expansion using brackish groundwater increases soil salinity and waterlogging on sandy soils.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "salinity_level",
+          "from_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var": "salinity_level",
+          "to_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "mechanism": "Continuous irrigation with brackish groundwater loads salts into the root zone and evaporatively concentrates salts at the soil surface.",
+          "direction": "increase_causes_increase",
+          "strength": "strong",
+          "conditions": "Zone C; rice expansion on brackish groundwater",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "salinity_waterlogging_zone_c"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The increase in area under rice has increased salt accumulation on the soil surface due to the continuous use of underground water which is brackish..."
+        },
+        {
+          "from_var": "salinity_level",
+          "from_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var": "NEW_waterlogging_area",
+          "to_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "mechanism": "Poor drainage under rice on brackish-water-irrigated sandy soils promotes waterlogging alongside salinity buildup.",
+          "direction": "increase_causes_increase",
+          "strength": "moderate",
+          "conditions": "Zone C cotton belt narrative",
+          "from_var_value_range": null,
+          "from_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "salinity_waterlogging_zone_c"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "soil",
+          "excerpt": "...increased salt accumulation on the soil surface ... has led to water logging of the soil."
+        }
+      ],
+      "edge_ids": [
+        "e6",
+        "e7"
+      ],
+      "context_variables": [
+        "acquifer",
+        "prec_annual_avg_rain"
+      ]
+    },
+    {
+      "name": "chemical_intensification_soil_yield",
+      "description": "High fertilizer and pesticide intensities degrade soil quality and contribute to declining crop productivity.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_fertilizer_use_intensity",
+          "from_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "mechanism": "Excessive fertilizer-driven nutrient imbalance and soil degradation contribute to declining marginal productivity of major crops.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "HYV rice-wheat system with high NPK loads",
+          "from_var_value_range": "239-251 kg/ha total fertilizer intensity (cited ranges)",
+          "from_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "yield_stagnation_decline",
+            "soil_degradation"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Due to the over use of chemical fertilizers and pesticides... the productivity of the land has been declining."
+        },
+        {
+          "from_var": "NEW_fertilizer_use_intensity",
+          "from_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var": "NEW_soil_organic_carbon",
+          "to_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "mechanism": "Indiscriminate chemical fertilizer use depletes organic matter and degrades soil physical-chemical quality over time.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Post-Green Revolution Punjab soils",
+          "from_var_value_range": "239 kg/ha headline consumption (2013-14 profile)",
+          "from_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "soil_degradation"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "soil",
+          "excerpt": "Punjab saw an indiscriminate use of chemical fertilizers and pesticides which have deteriorated the soil quality."
+        },
+        {
+          "from_var": "NEW_pesticide_application_intensity",
+          "from_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var": "NEW_soil_organic_carbon",
+          "to_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "mechanism": "Heavy pesticide loads accompany chemical-intensive farming and are implicated in soil and food-chain contamination pathways.",
+          "direction": "increase_causes_decrease",
+          "strength": "weak",
+          "conditions": "State-level highest pesticide intensity narrative",
+          "from_var_value_range": "923 g/ha (cited)",
+          "from_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "soil_degradation"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "soil",
+          "excerpt": "Pesticide Consumption: 923g/ha (Highest in India) ... deteriorated the soil quality."
+        }
+      ],
+      "edge_ids": [
+        "e8",
+        "e9",
+        "e10"
+      ],
+      "context_variables": [
+        "crop_yield_trend"
+      ]
+    },
+    {
+      "name": "groundwater_decline_production_capacity",
+      "description": "Falling water tables jointly with soil fertility loss threaten long-run agricultural production capacity.",
+      "stressor_scope": "cross_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "g_annual_trend",
+          "from_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "mechanism": "Sustained groundwater decline threatens long-run irrigation reliability and productive capacity of the central belt.",
+          "direction": "decrease_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Sustainability framing for Zone B",
+          "from_var_value_range": "0.94 m/year average decline since 2004-07",
+          "from_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "to_var_value_range": null,
+          "to_var_value_range_source": {
+            "paper_id": 27,
+            "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+          },
+          "from_cluster_family": "groundwater_stress",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "yield_stagnation_decline"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The falling water table and declining soil fertility threaten the sustainability of the production capacity of this region."
+        }
+      ],
+      "edge_ids": [
+        "e11"
+      ],
+      "context_variables": [
+        "NEW_soil_organic_carbon",
+        "irrigation_demand"
+      ]
+    }
+  ],
+  "causal_chains": [
+    {
+      "edge_id": "e1",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "mechanism": "Higher irrigation withdrawals under rice-wheat intensification and tubewell-based delivery lower groundwater levels when recharge is insufficient.",
+      "direction": "increase_causes_decrease",
+      "strength": "strong",
+      "conditions": "Zone B central belt; 2004-07 onward statistic",
+      "from_var_value_range": "Water demand increased twofold then manifold (narrative); tubewells increased from 192,000 (1970-71) to 1,276,200 (2008-09)",
+      "from_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var_value_range": "0.94 m/year average water-table decline since 2004-07",
+      "to_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_overdraft",
+        "tubewell_intensification"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The water table in this region has been falling at an alarming average rate of 0.94 meters per year since 2004-07."
+    },
+    {
+      "edge_id": "e2",
+      "from_var": "NEW_electricity_subsidy_intensity",
+      "from_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "mechanism": "Cheap electricity subsidies lower marginal pumping costs, expanding tubewell irrigation capacity and water applied per hectare.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Punjab power-policy context as argued in paper",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "tubewell_intensification"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "...massive increase in the number of tube wells ... inexorably been fuelled by power subsidies."
+    },
+    {
+      "edge_id": "e3",
+      "from_var": "cropping_intensity_trend",
+      "from_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "mechanism": "Very high cropping intensity on limited net sown area increases seasonal irrigation rounds and total seasonal water demand.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Statewide intensive rice-wheat system",
+      "from_var_value_range": "190% cropping intensity (highest India); narrative cites >200%",
+      "from_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "intensive_land_use"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The over dependence on wheat and rice and intensive use of farm land with more than 200% cropping intensity have led to a crisis... over exploitation of natural resources viz. Soil and ground water."
+    },
+    {
+      "edge_id": "e4",
+      "from_var": "irrigated_area_fraction",
+      "from_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "mechanism": "High statewide irrigated area with a large groundwater share concentrates extraction on aquifers supporting rice-wheat.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "State aggregate source mix 73% groundwater irrigation",
+      "from_var_value_range": "98% irrigated area; 73% from groundwater vs 27% surface",
+      "from_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var_value_range": "0.94 m/year decline cited for central belt (Zone B) as headline groundwater stress statistic",
+      "to_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "groundwater_dependence"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Irrigated Area ... Ground water 73% ... The water table in this region has been falling at an alarming average rate of 0.94 meters per year..."
+    },
+    {
+      "edge_id": "e5",
+      "from_var": "prec_annual_avg_rain",
+      "from_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "mechanism": "Lower mean rainfall in the south-western belt increases reliance on irrigation to sustain rice-wheat and cotton systems.",
+      "direction": "decrease_causes_increase",
+      "strength": "moderate",
+      "conditions": "Zone C ~360 mm/year mean rainfall",
+      "from_var_value_range": "~360 mm/year average rainfall (Zone C)",
+      "from_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "rainfed_pressure"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The average annual rainfall of this region is 360mm... increase in area under rice..."
+    },
+    {
+      "edge_id": "e6",
+      "from_var": "salinity_level",
+      "from_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var": "salinity_level",
+      "to_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "mechanism": "Continuous irrigation with brackish groundwater loads salts into the root zone and evaporatively concentrates salts at the soil surface.",
+      "direction": "increase_causes_increase",
+      "strength": "strong",
+      "conditions": "Zone C; rice expansion on brackish groundwater",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "salinity_waterlogging_zone_c"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The increase in area under rice has increased salt accumulation on the soil surface due to the continuous use of underground water which is brackish..."
+    },
+    {
+      "edge_id": "e7",
+      "from_var": "salinity_level",
+      "from_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var": "NEW_waterlogging_area",
+      "to_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "mechanism": "Poor drainage under rice on brackish-water-irrigated sandy soils promotes waterlogging alongside salinity buildup.",
+      "direction": "increase_causes_increase",
+      "strength": "moderate",
+      "conditions": "Zone C cotton belt narrative",
+      "from_var_value_range": null,
+      "from_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "salinity_waterlogging_zone_c"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "soil",
+      "excerpt": "...increased salt accumulation on the soil surface ... has led to water logging of the soil."
+    },
+    {
+      "edge_id": "e8",
+      "from_var": "NEW_fertilizer_use_intensity",
+      "from_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "mechanism": "Excessive fertilizer-driven nutrient imbalance and soil degradation contribute to declining marginal productivity of major crops.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "HYV rice-wheat system with high NPK loads",
+      "from_var_value_range": "239-251 kg/ha total fertilizer intensity (cited ranges)",
+      "from_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "yield_stagnation_decline",
+        "soil_degradation"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Due to the over use of chemical fertilizers and pesticides... the productivity of the land has been declining."
+    },
+    {
+      "edge_id": "e9",
+      "from_var": "NEW_fertilizer_use_intensity",
+      "from_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var": "NEW_soil_organic_carbon",
+      "to_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "mechanism": "Indiscriminate chemical fertilizer use depletes organic matter and degrades soil physical-chemical quality over time.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Post-Green Revolution Punjab soils",
+      "from_var_value_range": "239 kg/ha headline consumption (2013-14 profile)",
+      "from_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "soil_degradation"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "soil",
+      "excerpt": "Punjab saw an indiscriminate use of chemical fertilizers and pesticides which have deteriorated the soil quality."
+    },
+    {
+      "edge_id": "e10",
+      "from_var": "NEW_pesticide_application_intensity",
+      "from_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var": "NEW_soil_organic_carbon",
+      "to_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "mechanism": "Heavy pesticide loads accompany chemical-intensive farming and are implicated in soil and food-chain contamination pathways.",
+      "direction": "increase_causes_decrease",
+      "strength": "weak",
+      "conditions": "State-level highest pesticide intensity narrative",
+      "from_var_value_range": "923 g/ha (cited)",
+      "from_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "soil_degradation"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "soil",
+      "excerpt": "Pesticide Consumption: 923g/ha (Highest in India) ... deteriorated the soil quality."
+    },
+    {
+      "edge_id": "e11",
+      "from_var": "g_annual_trend",
+      "from_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "mechanism": "Sustained groundwater decline threatens long-run irrigation reliability and productive capacity of the central belt.",
+      "direction": "decrease_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Sustainability framing for Zone B",
+      "from_var_value_range": "0.94 m/year average decline since 2004-07",
+      "from_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "to_var_value_range": null,
+      "to_var_value_range_source": {
+        "paper_id": 27,
+        "paper_title": "Agricultural Resource Depletion and Arising Concerns of Environmental Ethics in Punjab: A Dire Need of Rescue, Revival and Sustainable Development"
+      },
+      "from_cluster_family": "groundwater_stress",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "yield_stagnation_decline"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The falling water table and declining soil fertility threaten the sustainability of the production capacity of this region."
+    }
+  ],
+  "conditional_thresholds": [
+    {
+      "variable": "g_annual_trend",
+      "threshold": "0.94 m/year average decline since 2004-07 (Zone B)",
+      "condition": "Punjab central belt sweetwater region",
+      "implication": "Signals severe groundwater overdraft under current irrigation-intensive cropping"
+    },
+    {
+      "variable": "cropping_intensity_trend",
+      "threshold": "190% (highest India); narrative >200%",
+      "condition": "Statewide intensive land use",
+      "implication": "Elevates seasonal irrigation load on aquifers and soils"
+    },
+    {
+      "variable": "NEW_fertilizer_use_intensity",
+      "threshold": "239 kg/ha state profile; up to ~251 kg/ha total nutrients in series",
+      "condition": "Punjab aggregate fertilizer application",
+      "implication": "High chemical load linked to soil degradation and yield concerns"
+    }
+  ],
+  "key_relationships": [
+    "Groundwater development 170% (March 2009) cited alongside irrigation statistics.",
+    "Net irrigated area by source: tubewells rose from 1,592 thousand ha (1970-71) to 2,915 thousand ha (2010-11) while canal-irrigated area fell from 1,291 to 1,116 (Statistical Abstract of Punjab, 2012 table).",
+    "Rice-wheat rotation occupies ~77% of cropped area in Punjab agriculture profile.",
+    "Zone rainfall gradient: Zone A >1,100 mm, Zone B ~760 mm, Zone C ~360 mm annual rainfall."
+  ],
+  "alias_resolution_rules": [
+    {
+      "alias_text": "water table falling / steep falling ground water",
+      "canonical_variable_name": "g_annual_trend",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": null
+    },
+    {
+      "alias_text": "Cropping Intensity 190%",
+      "canonical_variable_name": "cropping_intensity_trend",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": null
+    },
+    {
+      "alias_text": "brackish ground water / salt accumulation",
+      "canonical_variable_name": "salinity_level",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "Use medium groundwater vs soil per sentence."
+    }
+  ],
+  "mapping_notes": "Three prec_annual_avg_rain instances correspond to zones A/B/C (same canonical variable, distinct paper_context_id). Pesticide intensity has no taxonomy match so NEW_pesticide_application_intensity. Tubewell counts appear as numeric support on irrigation_demand -> g_annual_trend edge rather than a separate node. Verification: Zone A rainfall mapped with cluster_family mixed (high-rainfall context, not drought); mechanism blocks that mix within- and cross-stressor edges use stressor_scope mixed; e5 to_var_value_range set null (no numeric irrigation_demand on link); e6 salinity GW->soil edge uses medium_scope not_applicable because both media are involved. Groundwater development 170% (March 2009) remains in key_relationships (no single canonical rate variable in taxonomy).",
+  "limitations": "Review relies on aggregated official statistics; zone-level rainfall and groundwater decline rates are not block-replicated causal estimates; some social and health claims are qualitative.",
+  "important_variables": [
+    {
+      "variable_name": "g_annual_trend",
+      "significance": "Quantified 0.94 m/year decline in the central belt anchors the groundwater sustainability crisis narrative.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "irrigated_area_fraction",
+      "significance": "98% irrigated with 73% groundwater share explains concentrated aquifer stress.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "cropping_intensity_trend",
+      "significance": "190%+ intensity is repeatedly tied to soil and groundwater over-exploitation.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_fertilizer_use_intensity",
+      "significance": "Among the highest national fertilizer intensities, directly linked to soil degradation and yield concerns.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_pesticide_application_intensity",
+      "significance": "Extreme pesticide intensity statistic supports contamination and soil-health risk framing.",
+      "evidence_strength": "moderate",
+      "recommendation": "candidate_for_taxonomy"
+    }
+  ],
+  "important_variables_narrative": "The paper foregrounds groundwater table decline in the intensively irrigated central belt, the state's near-universal irrigation dependence with a dominant groundwater share, and extreme cropping and chemical input intensities as joint drivers of resource depletion. South-western agro-climatic dryness and brackish groundwater set up salinity and waterlogging risks under rice expansion, while fertilizer and pesticide loads underpin soil-quality and productivity concerns for district-level monitoring agendas."
+}

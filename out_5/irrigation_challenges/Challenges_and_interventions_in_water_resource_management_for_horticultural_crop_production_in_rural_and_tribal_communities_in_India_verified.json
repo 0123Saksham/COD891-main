@@ -1,0 +1,1518 @@
+{
+  "schema_version": "2.0",
+  "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India",
+  "paper_identity": {
+    "paper_id": 29,
+    "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+  },
+  "paper_summary": "This mixed-methods case study in Ransai village (Raigad, Maharashtra) combines FGDs, transect walks, participant observation, March 2024 soil testing, and CropWat 8.0 analysis of bitter gourd and other horticultural crops. It documents dry-season water scarcity despite high annual rainfall, dominance of flood/furrow irrigation with low system efficiency, limited rainwater harvesting, structural barriers to micro-irrigation adoption, and a yield gap versus potential under better water management.",
+  "study_region": "Ransai village, Uran taluka, Raigad district, Maharashtra, India (Konkan; panchayat area 1631.64 ha)",
+  "study_period": "Field work February 2024; irrigation observations 2022–2023 seasons; long-term climate for CropWat; soil tests March 2024",
+  "methodology": "Qualitative participatory methods (FGDs n=6, transect walks, participant observation, resource mapping) plus CropWat 8.0 crop water assessment and laboratory soil analysis (0–30 cm).",
+  "paper_type": "case_study",
+  "paper_type_rationale": "Single tribal village deep dive with triangulated qualitative evidence and site-specific CropWat/soil data rather than broad statistical causal identification.",
+  "cluster_families_covered": [
+    "irrigation_challenges",
+    "groundwater_stress",
+    "drought",
+    "mixed"
+  ],
+  "mechanism_domains_covered": [
+    "credit_constraint",
+    "crop_water_requirement",
+    "demographic_context",
+    "dry_season_depletion",
+    "dry_season_et",
+    "extension_gap",
+    "horticultural_water_use",
+    "irrigation_method_performance",
+    "irrigation_scheduling",
+    "land_fragmentation",
+    "monsoon_dependence",
+    "rainwater_storage_gap",
+    "seasonal_water_deficit",
+    "soil_health",
+    "soil_moisture_buffer",
+    "soil_physical_chemical",
+    "surface_water_supply",
+    "technology_adoption_barrier",
+    "yield_gap"
+  ],
+  "mapped_variables": [
+    {
+      "taxonomy_name": "prec_annual_avg_rain",
+      "canonical_variable_name": "prec_annual_avg_rain",
+      "alias_used_in_paper": "annual rainfall",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "2131 mm average; 2000–3000 mm district; monsoon June–September",
+      "description": "Mean and seasonal rainfall distribution driving dry-season irrigation dependence in Konkan/Ransai context.",
+      "unit": "mm/year",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "CropWat climatic data Table 2 / cited district literature",
+      "indian_data_source": "IMD gridded / CHIRPS (typical)",
+      "threshold_or_range": "Long-term average ~2131 mm/year at study site; Oct–Dec very low; Jan–May dry",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "drought",
+      "mechanism_domains": [
+        "seasonal_water_deficit",
+        "monsoon_dependence"
+      ],
+      "paper_context_id": "bisheko2025_ransai_horticulture_water::prec_annual_avg_rain::rainsai_climate",
+      "source_paper": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "excerpt": "Generally, the area experiences high annual rainfall (2131 mm)... Months of October to December experience very low rainfall while January to May is dry, thus crop production is only dependent on irrigation."
+    },
+    {
+      "taxonomy_name": "et_annual_avg",
+      "canonical_variable_name": "et_annual_avg",
+      "alias_used_in_paper": "reference evapotranspiration ETo",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "ETo mm/day; average 4.01 mm/day",
+      "description": "Reference evapotranspiration from CropWat climatic inputs driving crop water demand.",
+      "unit": "mm/day",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "CropWat Table 2",
+      "indian_data_source": "same",
+      "threshold_or_range": "Monthly ETo e.g. May 5.41 mm/day; annual context from CropWat average row",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "crop_water_requirement",
+        "dry_season_et"
+      ],
+      "paper_context_id": "bisheko2025_ransai_horticulture_water::et_annual_avg::cropwat",
+      "source_paper": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "excerpt": "Climatic data from CropWat... ETo mm/day (Table 2); highest temperatures and ETo in dry months increase irrigation need."
+    },
+    {
+      "taxonomy_name": "irrigation_demand",
+      "canonical_variable_name": "irrigation_demand",
+      "alias_used_in_paper": "irrigation requirement",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "311.4 mm seasonal irrigation requirement; gross 213.46 m³",
+      "description": "Net and gross irrigation requirements for horticultural crops (bitter gourd case) vs effective rainfall.",
+      "unit": "mm_season_or_m3",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "CropWat 8.0 Table 3 and seasonal totals",
+      "indian_data_source": "MoAg / PMKSY norms (typical)",
+      "threshold_or_range": "Seasonal effective rainfall 89.4 mm vs irrigation requirement 311.4 mm (bitter gourd season); gross irrigation 213.46 m³ modeled; farmers applied ~252 m³/season (0.9 m³/day, 0.16 ha)",
+      "indicator_direction": "high_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_scheduling",
+        "horticultural_water_use"
+      ],
+      "paper_context_id": "bisheko2025_ransai_horticulture_water::irrigation_demand::bitter_gourd_season",
+      "source_paper": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "excerpt": "The seasonal effective rainfall is 89.4 mm, while the total irrigation requirement is 311.4 mm... gross irrigation for bitter gourd amounts to 213.46 m³... farmers... total irrigation amount of 252 m³ per season."
+    },
+    {
+      "taxonomy_name": "NEW_water_use_efficiency",
+      "canonical_variable_name": "NEW_water_use_efficiency",
+      "alias_used_in_paper": "furrow irrigation system efficiency",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "system efficiency 70% for furrow irrigation",
+      "description": "Irrigation application efficiency for dominant furrow practice; low efficiency implies higher gross water need.",
+      "unit": "fraction",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "CropWat analysis text",
+      "indian_data_source": "WUA / PMKSY efficiency audits (typical)",
+      "threshold_or_range": "Furrow irrigation system efficiency estimated 70%",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_method_performance"
+      ],
+      "paper_context_id": "bisheko2025_ransai_horticulture_water::NEW_water_use_efficiency::furrow",
+      "source_paper": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "excerpt": "The system efficiency in furrow irrigation is estimated to be 70%, because it is prone to loss of water..."
+    },
+    {
+      "taxonomy_name": "NEW_rainwater_harvesting_coverage",
+      "canonical_variable_name": "NEW_rainwater_harvesting_coverage",
+      "alias_used_in_paper": "lack of rainwater harvesting",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "~90% of rainwater lost due to lack of harvesting/storage",
+      "description": "Share of rainfall effectively harvested/stored versus lost as runoff (inverse coverage proxy).",
+      "unit": "%_lost_or_coverage_proxy",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "FGDs, resource mapping, participant observation",
+      "indian_data_source": "Watershed / farm pond schemes (typical)",
+      "threshold_or_range": "Almost 90% of rainwater lost due to lack of sufficient rainwater harvesting and storage systems (narrative)",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "rainwater_storage_gap"
+      ],
+      "paper_context_id": "bisheko2025_ransai_horticulture_water::NEW_rainwater_harvesting_coverage::rainsai",
+      "source_paper": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "excerpt": "Almost 90% of this rainwater is lost because of a lack of sufficient rainwater harvesting and storage systems."
+    },
+    {
+      "taxonomy_name": "NEW_micro_irrigation_adoption",
+      "canonical_variable_name": "NEW_micro_irrigation_adoption",
+      "alias_used_in_paper": "drip and sprinkler",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "modern irrigation technologies not adopted",
+      "description": "Adoption of drip/sprinkler versus flood/furrow dominance.",
+      "unit": "adoption_level",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Participant observation, FGDs",
+      "indian_data_source": "PMKSY micro-irrigation subsidy records (typical)",
+      "threshold_or_range": "Near-zero adoption of drip/sprinkler reported; flood and furrow dominant",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "technology_adoption_barrier"
+      ],
+      "paper_context_id": "bisheko2025_ransai_horticulture_water::NEW_micro_irrigation_adoption::rainsai",
+      "source_paper": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "excerpt": "Modern irrigation technologies like drip and sprinkler irrigation systems are not being adopted by farmers in the village."
+    },
+    {
+      "taxonomy_name": "NEW_land_holding_size",
+      "canonical_variable_name": "NEW_land_holding_size",
+      "alias_used_in_paper": "landholding sizes",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "0.16 to 0.60 ha marginal and smallholders",
+      "description": "Operational holding size constraining capital-intensive water infrastructure.",
+      "unit": "ha",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Surveys and FGDs",
+      "indian_data_source": "Agriculture census landholding classes",
+      "threshold_or_range": "0.16–0.60 ha dominant smallholder plots",
+      "indicator_direction": "categorical",
+      "relevance": "contextual",
+      "cluster_family": "mixed",
+      "mechanism_domains": [
+        "land_fragmentation"
+      ],
+      "paper_context_id": "bisheko2025_ransai_horticulture_water::NEW_land_holding_size::rainsai",
+      "source_paper": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "excerpt": "Marginal and smallholders with landholding sizes between 0.16 and 0.60 ha dominate the village's agricultural sector."
+    },
+    {
+      "taxonomy_name": "NEW_institutional_credit_access",
+      "canonical_variable_name": "NEW_institutional_credit_access",
+      "alias_used_in_paper": "access to credit",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "lack access to credit; no collateral",
+      "description": "Formal credit access for irrigation technology investment.",
+      "unit": "ordinal",
+      "role": "driver",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "FGDs",
+      "indian_data_source": "KCC / NABARD / SHG finance (typical)",
+      "threshold_or_range": null,
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "credit_constraint"
+      ],
+      "paper_context_id": "bisheko2025_ransai_horticulture_water::NEW_institutional_credit_access::rainsai",
+      "source_paper": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "excerpt": "Most farmers lack access to credit... We don't have collateral or own any land, so they won't grant us loans."
+    },
+    {
+      "taxonomy_name": "g_annual_trend",
+      "canonical_variable_name": "g_annual_trend",
+      "alias_used_in_paper": "falling water tables",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "drying river; dam level dropping; wells and borewells falling",
+      "description": "Groundwater and surface storage decline in dry season observed in field study.",
+      "unit": "m_or_qualitative",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "FGDs, participant observation",
+      "indian_data_source": "CGWB monitoring (typical)",
+      "threshold_or_range": "Dam water shifts 1–2 km from fields in summer; river dries; wells/borewells falling (qualitative)",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "dry_season_depletion"
+      ],
+      "paper_context_id": "bisheko2025_ransai_horticulture_water::g_annual_trend::rainsai_summer",
+      "source_paper": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "excerpt": "Drying up of the river, dropping of the level of the Ransai dam, and falling water tables of the village's open wells and borewells during summer."
+    },
+    {
+      "taxonomy_name": "NEW_surface_water_availability",
+      "canonical_variable_name": "NEW_surface_water_availability",
+      "alias_used_in_paper": "river and dam water",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "insufficient surface water in dry season",
+      "description": "Availability of river/dam water for irrigation in non-monsoon months.",
+      "unit": "categorical",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Participant observation, FGDs",
+      "indian_data_source": "WRIS / state irrigation department (typical)",
+      "threshold_or_range": "River leaves stagnant patches; dam volume diminishes summer; diesel pumping costs rise",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "surface_water_supply"
+      ],
+      "paper_context_id": "bisheko2025_ransai_horticulture_water::NEW_surface_water_availability::rainsai",
+      "source_paper": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "excerpt": "The amount of water from this river is insufficient... it dries up... the volume of water in the dam tends to diminish in the summer and shift 1 km or 2 km away."
+    },
+    {
+      "taxonomy_name": "crop_yield_trend",
+      "canonical_variable_name": "crop_yield_trend",
+      "alias_used_in_paper": "yield",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "5–6 t/ha vs potential 10–12 t/ha bitter gourd",
+      "description": "Realized bitter gourd yield vs cited potential under better water/nutrient management.",
+      "unit": "t/ha",
+      "role": "outcome",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Field survey 2022–2023 vs literature (Valyaie et al.)",
+      "indian_data_source": "DES crop cutting (typical)",
+      "threshold_or_range": "Farmers obtain ~5–6 t/ha vs potential 10–12 t/ha (bitter gourd)",
+      "indicator_direction": "decreasing_trend_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "yield_gap"
+      ],
+      "paper_context_id": "bisheko2025_ransai_horticulture_water::crop_yield_trend::bitter_gourd",
+      "source_paper": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "excerpt": "The bitter gourd can give a potential yield of 10–12 tons per hectare but farmers only get a yield of 5–6 tons per hectare."
+    },
+    {
+      "taxonomy_name": "salinity_level",
+      "canonical_variable_name": "salinity_level",
+      "alias_used_in_paper": "electrical conductivity EC",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "0.12 dS/m soil",
+      "description": "Soil salinity (EC) from village soil test 0–30 cm.",
+      "unit": "dS/m",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "soil",
+      "data_source_in_paper": "Soil testing March 2024 Table 1",
+      "indian_data_source": "Soil health card scheme",
+      "threshold_or_range": "0.12 dS/m (low salinity, suitable for most crops)",
+      "indicator_direction": "categorical",
+      "relevance": "contextual",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "soil_physical_chemical"
+      ],
+      "paper_context_id": "bisheko2025_ransai_horticulture_water::salinity_level::soil_rainsai",
+      "source_paper": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "excerpt": "Electrical Conductivity (EC) 0.12 dS/m — low values suggest very minimal level of salinity."
+    },
+    {
+      "taxonomy_name": "NEW_soil_organic_carbon",
+      "canonical_variable_name": "NEW_soil_organic_carbon",
+      "alias_used_in_paper": "organic carbon",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "0.75% organic carbon",
+      "description": "Soil organic matter level affecting water retention and fertility.",
+      "unit": "%",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "soil",
+      "data_source_in_paper": "Soil testing Table 1",
+      "indian_data_source": "Soil health card",
+      "threshold_or_range": "0.75% (low vs >1.5% fertile reference in table)",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "soil_health"
+      ],
+      "paper_context_id": "bisheko2025_ransai_horticulture_water::NEW_soil_organic_carbon::rainsai",
+      "source_paper": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "excerpt": "Organic Carbon 0.75% — suggests a low level of organic matter... reduces ability of the soil to retain water."
+    },
+    {
+      "taxonomy_name": "NEW_water_holding_capacity",
+      "canonical_variable_name": "NEW_water_holding_capacity",
+      "alias_used_in_paper": "water retention 10–15%",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "10–15% water retention by weight",
+      "description": "Soil water-holding capacity for sandy loam profile.",
+      "unit": "%",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "soil",
+      "data_source_in_paper": "Soil testing Table 1",
+      "indian_data_source": "Soil survey (typical)",
+      "threshold_or_range": "10–15% (moderate retention; frequent irrigation needed in dry periods)",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "proxy",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "soil_moisture_buffer"
+      ],
+      "paper_context_id": "bisheko2025_ransai_horticulture_water::NEW_water_holding_capacity::rainsai",
+      "source_paper": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "excerpt": "Water holding capacity 10–15%... moderate capacity to retain water, but regular irrigation is needed during dry periods."
+    },
+    {
+      "taxonomy_name": "NEW_population_density",
+      "canonical_variable_name": "NEW_population_density",
+      "alias_used_in_paper": "population density",
+      "definition_source": "taxonomy",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "paper_terminology": "1 person per hectare; 3000 residents in 1631.64 ha panchayat",
+      "description": "Population pressure on land and water resources in study panchayat.",
+      "unit": "persons/ha",
+      "role": "context",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "Census update Feb 2024 with Sarpanch",
+      "indian_data_source": "Census of India",
+      "threshold_or_range": "~1 person/ha; 3000 people; 381 agricultural households",
+      "indicator_direction": "categorical",
+      "relevance": "contextual",
+      "cluster_family": "mixed",
+      "mechanism_domains": [
+        "demographic_context"
+      ],
+      "paper_context_id": "bisheko2025_ransai_horticulture_water::NEW_population_density::rainsai",
+      "source_paper": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "excerpt": "Population density is 1 person per hectare... 3000 residents... 381 agricultural households."
+    }
+  ],
+  "new_variables": [
+    {
+      "variable_name": "NEW_extension_service_access",
+      "canonical_variable_name": "NEW_extension_service_access",
+      "alias_used_in_paper": "agricultural extension services officers visits",
+      "definition_source": "paper",
+      "canonicalization_confidence": "high",
+      "candidate_merge_target": null,
+      "why_new": "No taxonomy variable for extension visit frequency or advisory access; central to adoption barriers described.",
+      "description": "Frequency and quality of public agricultural extension contact enabling knowledge of efficient irrigation and conservation.",
+      "unit": "ordinal",
+      "role": "mediator",
+      "season": "not_applicable",
+      "severity": "not_applicable",
+      "medium": "not_applicable",
+      "data_source_in_paper": "FGDs, transect walks, participant observation",
+      "indian_data_source": "ATMA / KVK visit logs (typical)",
+      "threshold_or_range": "Participants report visits often absent for a year or more",
+      "indicator_direction": "low_means_stressed",
+      "relevance": "direct",
+      "cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "extension_gap"
+      ],
+      "paper_context_id": "bisheko2025_ransai_horticulture_water::NEW_extension_service_access::rainsai",
+      "source_paper": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "excerpt": "A year can pass without being visited by any agricultural extension services agent."
+    }
+  ],
+  "mechanism_blocks": [
+    {
+      "name": "rainfall_storage_irrigation_pressure",
+      "description": "Monsoon rainfall is poorly harvested, and dry-season deficits force high supplemental irrigation demand for vegetables.",
+      "stressor_scope": "mixed",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_rainwater_harvesting_coverage",
+          "from_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "mechanism": "Without storage, monsoon water is not retained for dry-season horticulture, forcing higher supplemental irrigation withdrawals.",
+          "direction": "decrease_causes_increase",
+          "strength": "strong",
+          "conditions": "Tribal village with hilly runoff; ~90% rainfall loss narrative",
+          "from_var_value_range": "Almost 90% of annual rainfall not captured by harvesting/storage (cited)",
+          "from_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var_value_range": "Seasonal irrigation requirement 311.4 mm vs 89.4 mm effective rain (bitter gourd)",
+          "to_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "rainwater_storage_gap",
+            "horticultural_water_use"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Almost 90% of this rainwater is lost because of a lack of sufficient rainwater harvesting..."
+        },
+        {
+          "from_var": "prec_annual_avg_rain",
+          "from_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "mechanism": "October–May low rainfall periods leave crop water demand uncovered by rainfall for vegetable systems.",
+          "direction": "decrease_causes_increase",
+          "strength": "strong",
+          "conditions": "Non-monsoon vegetable season",
+          "from_var_value_range": "Oct–Dec very low rain; Jan–May dry; annual mean 2131 mm concentrated in monsoon",
+          "from_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var_value_range": "Supplemental then full irrigation required (CropWat seasonal totals)",
+          "to_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "from_cluster_family": "drought",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "seasonal_water_deficit"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Months of October to December experience very low rainfall while January to May is dry, thus crop production is only dependent on irrigation."
+        }
+      ],
+      "edge_ids": [
+        "e1",
+        "e2"
+      ],
+      "context_variables": [
+        "prec_annual_avg_rain",
+        "NEW_surface_water_availability"
+      ]
+    },
+    {
+      "name": "low_efficiency_high_gross_irrigation",
+      "description": "Non-adoption of micro-irrigation and low furrow efficiency lead to excessive applied water relative to CropWat recommendations.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_micro_irrigation_adoption",
+          "from_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var": "NEW_water_use_efficiency",
+          "to_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "mechanism": "Dominance of flood and furrow without drip/sprinkler caps field application efficiency at ~70% for furrow.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "Ransai vegetable farmers",
+          "from_var_value_range": "Drip/sprinkler not adopted (qualitative)",
+          "from_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var_value_range": "Furrow system efficiency ~70%",
+          "to_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "irrigation_method_performance"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Modern irrigation technologies like drip and sprinkler... are not being adopted... furrow irrigation... efficiency is estimated to be 70%."
+        },
+        {
+          "from_var": "NEW_water_use_efficiency",
+          "from_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "mechanism": "Lower application efficiency and over-application relative to CropWat net need inflates gross irrigation volume and pumping.",
+          "direction": "decrease_causes_increase",
+          "strength": "moderate",
+          "conditions": "Bitter gourd 0.16 ha plot practice",
+          "from_var_value_range": "System efficiency 0.7 (furrow)",
+          "from_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var_value_range": "Applied ~252 m³/season vs modeled gross 213.46 m³",
+          "to_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "irrigation_scheduling"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Total irrigation amount of 252 m³... higher than the recommended irrigation levels... low water use efficiency and leaching of nutrients."
+        }
+      ],
+      "edge_ids": [
+        "e3",
+        "e4"
+      ],
+      "context_variables": [
+        "irrigation_demand"
+      ]
+    },
+    {
+      "name": "pumping_depletion_yield_gap",
+      "description": "Intensive dry-season irrigation stresses wells and interacts with poor water productivity to leave yields below potential.",
+      "stressor_scope": "mixed",
+      "edge_drafts": [
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var": "g_annual_trend",
+          "to_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "mechanism": "Heavy dry-season pumping from wells/borewells and distant dam supplies depresses local groundwater and storage levels.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Summer months February–June",
+          "from_var_value_range": "High seasonal irrigation demand (311.4 mm net need class)",
+          "from_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var_value_range": "Falling well levels and dam drawdown (observed)",
+          "to_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "groundwater_stress",
+          "mechanism_domains": [
+            "dry_season_depletion"
+          ],
+          "is_cross_stressor": true,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Falling water tables of the village's open wells and borewells during summer..."
+        },
+        {
+          "from_var": "irrigation_demand",
+          "from_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var": "crop_yield_trend",
+          "to_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "mechanism": "Excessive irrigation versus recommendation increases leaching and reduces water productivity, contributing to yield gap vs genetic potential.",
+          "direction": "increase_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Bitter gourd commercial plots",
+          "from_var_value_range": "Applied 252 m³/season vs recommended gross 213.46 m³",
+          "from_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var_value_range": "Yield ~5–6 t/ha vs potential 10–12 t/ha",
+          "to_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "yield_gap"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "This amount of water is higher than the recommended irrigation levels, which results in low water use efficiency and leaching... farmers only get 5–6 tons per hectare."
+        }
+      ],
+      "edge_ids": [
+        "e5",
+        "e6"
+      ],
+      "context_variables": [
+        "crop_yield_trend",
+        "g_annual_trend"
+      ]
+    },
+    {
+      "name": "structural_barriers_to_micro_irrigation",
+      "description": "Small holdings, credit constraints, and weak extension reduce adoption of efficient irrigation technologies.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_land_holding_size",
+          "from_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var": "NEW_micro_irrigation_adoption",
+          "to_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "mechanism": "Very small fragmented plots raise fixed costs per hectare and block economies of scale for drip/sprinkler systems.",
+          "direction": "decrease_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Marginal/smallholders 0.16–0.60 ha",
+          "from_var_value_range": "Plot sizes 0.16–0.60 ha dominant",
+          "from_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var_value_range": "Drip/sprinkler not adopted (stated incompatibility with small plots/cost)",
+          "to_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "from_cluster_family": "mixed",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "land_fragmentation",
+            "technology_adoption_barrier"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Our plots are so tiny and scattered... not feasible to invest in modern irrigation systems... yield from such a small plot would not justify the investment cost."
+        },
+        {
+          "from_var": "NEW_institutional_credit_access",
+          "from_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var": "NEW_micro_irrigation_adoption",
+          "to_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "mechanism": "Lack of collateral and formal credit limits upfront investment in micro-irrigation hardware.",
+          "direction": "decrease_causes_decrease",
+          "strength": "strong",
+          "conditions": "Tribal tenants / non-owners",
+          "from_var_value_range": "Credit access low (FGD)",
+          "from_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var_value_range": "Micro-irrigation not adopted",
+          "to_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "credit_constraint"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Without access to finance, we can't invest in water-efficient irrigation technologies..."
+        },
+        {
+          "from_var": "NEW_extension_service_access",
+          "from_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var": "NEW_micro_irrigation_adoption",
+          "to_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "mechanism": "Sparse extension contact limits exposure to demonstrations and agronomic guidance on efficient irrigation packages.",
+          "direction": "decrease_causes_decrease",
+          "strength": "moderate",
+          "conditions": "Ransai village",
+          "from_var_value_range": "Visits often absent ≥1 year (FGD)",
+          "from_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var_value_range": "Limited knowledge of drip/sprinkler benefits (FGD)",
+          "to_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "extension_gap",
+            "technology_adoption_barrier"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "Farmers indicated very limited knowledge about the advantages of implementing modern irrigation systems... extension services... nowhere to be seen."
+        }
+      ],
+      "edge_ids": [
+        "e7",
+        "e8",
+        "e9"
+      ],
+      "context_variables": [
+        "NEW_land_holding_size",
+        "NEW_institutional_credit_access"
+      ]
+    },
+    {
+      "name": "surface_supply_shrinkage",
+      "description": "Diminishing river and dam availability in summer increases reliance on pumped irrigation.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_surface_water_availability",
+          "from_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "mechanism": "When river and dam supplies shrink and relocate in summer, farmers rely more on pumped groundwater and longer conveyance, raising effective irrigation energy and demand intensity.",
+          "direction": "decrease_causes_increase",
+          "strength": "moderate",
+          "conditions": "Dry season vegetable irrigation",
+          "from_var_value_range": "River low/stagnant; dam 1–2 km from fields in summer",
+          "from_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var_value_range": "Supplemental irrigation vital Oct–Dec; full irrigation Jan–May",
+          "to_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "surface_water_supply"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "not_applicable",
+          "excerpt": "The river... insufficient... dries up... dam... diminish in the summer and shift 1 km or 2 km away... high fuel expenditures for diesel pumps."
+        }
+      ],
+      "edge_ids": [
+        "e10"
+      ],
+      "context_variables": [
+        "g_annual_trend"
+      ]
+    },
+    {
+      "name": "soil_moisture_buffer_irrigation_frequency",
+      "description": "Low soil organic carbon weakens water retention, reinforcing irrigation dependence.",
+      "stressor_scope": "within_stressor",
+      "edge_drafts": [
+        {
+          "from_var": "NEW_soil_organic_carbon",
+          "from_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var": "irrigation_demand",
+          "to_var_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "mechanism": "Low organic matter reduces soil moisture buffer, increasing irrigation frequency needed in dry spells for horticultural crops.",
+          "direction": "decrease_causes_increase",
+          "strength": "weak",
+          "conditions": "Sandy loam root zone 0–30 cm",
+          "from_var_value_range": "Organic carbon 0.75% (below fertile benchmark)",
+          "from_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "to_var_value_range": "Frequent irrigation needed in dry periods (soil table narrative)",
+          "to_var_value_range_source": {
+            "paper_id": 29,
+            "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+          },
+          "from_cluster_family": "irrigation_challenges",
+          "to_cluster_family": "irrigation_challenges",
+          "mechanism_domains": [
+            "soil_health"
+          ],
+          "is_cross_stressor": false,
+          "season_scope": "not_applicable",
+          "severity_scope": "not_applicable",
+          "medium_scope": "soil",
+          "excerpt": "Inadequate organic matter reduces the ability of the soil to retain water... regular irrigation is needed during dry periods."
+        }
+      ],
+      "edge_ids": [
+        "e11"
+      ],
+      "context_variables": [
+        "NEW_water_holding_capacity"
+      ]
+    }
+  ],
+  "causal_chains": [
+    {
+      "edge_id": "e1",
+      "from_var": "NEW_rainwater_harvesting_coverage",
+      "from_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "mechanism": "Without storage, monsoon water is not retained for dry-season horticulture, forcing higher supplemental irrigation withdrawals.",
+      "direction": "decrease_causes_increase",
+      "strength": "strong",
+      "conditions": "Tribal village with hilly runoff; ~90% rainfall loss narrative",
+      "from_var_value_range": "Almost 90% of annual rainfall not captured by harvesting/storage (cited)",
+      "from_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var_value_range": "Seasonal irrigation requirement 311.4 mm vs 89.4 mm effective rain (bitter gourd)",
+      "to_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "rainwater_storage_gap",
+        "horticultural_water_use"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Almost 90% of this rainwater is lost because of a lack of sufficient rainwater harvesting..."
+    },
+    {
+      "edge_id": "e2",
+      "from_var": "prec_annual_avg_rain",
+      "from_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "mechanism": "October–May low rainfall periods leave crop water demand uncovered by rainfall for vegetable systems.",
+      "direction": "decrease_causes_increase",
+      "strength": "strong",
+      "conditions": "Non-monsoon vegetable season",
+      "from_var_value_range": "Oct–Dec very low rain; Jan–May dry; annual mean 2131 mm concentrated in monsoon",
+      "from_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var_value_range": "Supplemental then full irrigation required (CropWat seasonal totals)",
+      "to_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "from_cluster_family": "drought",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "seasonal_water_deficit"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Months of October to December experience very low rainfall while January to May is dry, thus crop production is only dependent on irrigation."
+    },
+    {
+      "edge_id": "e3",
+      "from_var": "NEW_micro_irrigation_adoption",
+      "from_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var": "NEW_water_use_efficiency",
+      "to_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "mechanism": "Dominance of flood and furrow without drip/sprinkler caps field application efficiency at ~70% for furrow.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "Ransai vegetable farmers",
+      "from_var_value_range": "Drip/sprinkler not adopted (qualitative)",
+      "from_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var_value_range": "Furrow system efficiency ~70%",
+      "to_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_method_performance"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Modern irrigation technologies like drip and sprinkler... are not being adopted... furrow irrigation... efficiency is estimated to be 70%."
+    },
+    {
+      "edge_id": "e4",
+      "from_var": "NEW_water_use_efficiency",
+      "from_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "mechanism": "Lower application efficiency and over-application relative to CropWat net need inflates gross irrigation volume and pumping.",
+      "direction": "decrease_causes_increase",
+      "strength": "moderate",
+      "conditions": "Bitter gourd 0.16 ha plot practice",
+      "from_var_value_range": "System efficiency 0.7 (furrow)",
+      "from_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var_value_range": "Applied ~252 m³/season vs modeled gross 213.46 m³",
+      "to_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "irrigation_scheduling"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Total irrigation amount of 252 m³... higher than the recommended irrigation levels... low water use efficiency and leaching of nutrients."
+    },
+    {
+      "edge_id": "e5",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var": "g_annual_trend",
+      "to_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "mechanism": "Heavy dry-season pumping from wells/borewells and distant dam supplies depresses local groundwater and storage levels.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Summer months February–June",
+      "from_var_value_range": "High seasonal irrigation demand (311.4 mm net need class)",
+      "from_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var_value_range": "Falling well levels and dam drawdown (observed)",
+      "to_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "groundwater_stress",
+      "mechanism_domains": [
+        "dry_season_depletion"
+      ],
+      "is_cross_stressor": true,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Falling water tables of the village's open wells and borewells during summer..."
+    },
+    {
+      "edge_id": "e6",
+      "from_var": "irrigation_demand",
+      "from_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var": "crop_yield_trend",
+      "to_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "mechanism": "Excessive irrigation versus recommendation increases leaching and reduces water productivity, contributing to yield gap vs genetic potential.",
+      "direction": "increase_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Bitter gourd commercial plots",
+      "from_var_value_range": "Applied 252 m³/season vs recommended gross 213.46 m³",
+      "from_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var_value_range": "Yield ~5–6 t/ha vs potential 10–12 t/ha",
+      "to_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "yield_gap"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "This amount of water is higher than the recommended irrigation levels, which results in low water use efficiency and leaching... farmers only get 5–6 tons per hectare."
+    },
+    {
+      "edge_id": "e7",
+      "from_var": "NEW_land_holding_size",
+      "from_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var": "NEW_micro_irrigation_adoption",
+      "to_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "mechanism": "Very small fragmented plots raise fixed costs per hectare and block economies of scale for drip/sprinkler systems.",
+      "direction": "decrease_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Marginal/smallholders 0.16–0.60 ha",
+      "from_var_value_range": "Plot sizes 0.16–0.60 ha dominant",
+      "from_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var_value_range": "Drip/sprinkler not adopted (stated incompatibility with small plots/cost)",
+      "to_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "from_cluster_family": "mixed",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "land_fragmentation",
+        "technology_adoption_barrier"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Our plots are so tiny and scattered... not feasible to invest in modern irrigation systems... yield from such a small plot would not justify the investment cost."
+    },
+    {
+      "edge_id": "e8",
+      "from_var": "NEW_institutional_credit_access",
+      "from_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var": "NEW_micro_irrigation_adoption",
+      "to_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "mechanism": "Lack of collateral and formal credit limits upfront investment in micro-irrigation hardware.",
+      "direction": "decrease_causes_decrease",
+      "strength": "strong",
+      "conditions": "Tribal tenants / non-owners",
+      "from_var_value_range": "Credit access low (FGD)",
+      "from_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var_value_range": "Micro-irrigation not adopted",
+      "to_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "credit_constraint"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Without access to finance, we can't invest in water-efficient irrigation technologies..."
+    },
+    {
+      "edge_id": "e9",
+      "from_var": "NEW_extension_service_access",
+      "from_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var": "NEW_micro_irrigation_adoption",
+      "to_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "mechanism": "Sparse extension contact limits exposure to demonstrations and agronomic guidance on efficient irrigation packages.",
+      "direction": "decrease_causes_decrease",
+      "strength": "moderate",
+      "conditions": "Ransai village",
+      "from_var_value_range": "Visits often absent ≥1 year (FGD)",
+      "from_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var_value_range": "Limited knowledge of drip/sprinkler benefits (FGD)",
+      "to_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "extension_gap",
+        "technology_adoption_barrier"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "Farmers indicated very limited knowledge about the advantages of implementing modern irrigation systems... extension services... nowhere to be seen."
+    },
+    {
+      "edge_id": "e10",
+      "from_var": "NEW_surface_water_availability",
+      "from_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "mechanism": "When river and dam supplies shrink and relocate in summer, farmers rely more on pumped groundwater and longer conveyance, raising effective irrigation energy and demand intensity.",
+      "direction": "decrease_causes_increase",
+      "strength": "moderate",
+      "conditions": "Dry season vegetable irrigation",
+      "from_var_value_range": "River low/stagnant; dam 1–2 km from fields in summer",
+      "from_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var_value_range": "Supplemental irrigation vital Oct–Dec; full irrigation Jan–May",
+      "to_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "surface_water_supply"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "not_applicable",
+      "excerpt": "The river... insufficient... dries up... dam... diminish in the summer and shift 1 km or 2 km away... high fuel expenditures for diesel pumps."
+    },
+    {
+      "edge_id": "e11",
+      "from_var": "NEW_soil_organic_carbon",
+      "from_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var": "irrigation_demand",
+      "to_var_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "mechanism": "Low organic matter reduces soil moisture buffer, increasing irrigation frequency needed in dry spells for horticultural crops.",
+      "direction": "decrease_causes_increase",
+      "strength": "weak",
+      "conditions": "Sandy loam root zone 0–30 cm",
+      "from_var_value_range": "Organic carbon 0.75% (below fertile benchmark)",
+      "from_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "to_var_value_range": "Frequent irrigation needed in dry periods (soil table narrative)",
+      "to_var_value_range_source": {
+        "paper_id": 29,
+        "paper_title": "Challenges and interventions in water resource management for horticultural crop production in rural and tribal communities in India"
+      },
+      "from_cluster_family": "irrigation_challenges",
+      "to_cluster_family": "irrigation_challenges",
+      "mechanism_domains": [
+        "soil_health"
+      ],
+      "is_cross_stressor": false,
+      "season_scope": "not_applicable",
+      "severity_scope": "not_applicable",
+      "medium_scope": "soil",
+      "excerpt": "Inadequate organic matter reduces the ability of the soil to retain water... regular irrigation is needed during dry periods."
+    }
+  ],
+  "conditional_thresholds": [
+    {
+      "variable": "irrigation_demand",
+      "threshold": "Seasonal irrigation requirement 311.4 mm vs effective rainfall 89.4 mm (bitter gourd season, CropWat)",
+      "condition": "Vegetable season late September–January with dry-season peak need",
+      "implication": "Dry-season horticulture is irrigation-dependent even in high-rainfall agroecology without storage"
+    },
+    {
+      "variable": "NEW_water_use_efficiency",
+      "threshold": "Furrow irrigation system efficiency ~70%",
+      "condition": "Dominant farmer practice in study village",
+      "implication": "Gross irrigation must exceed net crop need; water losses via runoff, evaporation, seepage"
+    },
+    {
+      "variable": "crop_yield_trend",
+      "threshold": "Observed ~5–6 t/ha vs cited potential 10–12 t/ha (bitter gourd)",
+      "condition": "Farmer practice vs literature potential",
+      "implication": "Water and nutrient management not achieving yield potential"
+    }
+  ],
+  "key_relationships": [
+    "Maharashtra monsoon supplies ~80% of annual precipitation; non-monsoon horticulture relies on irrigation (cited state context).",
+    "Raigad district rainfall cited 2000–3000 mm/year mainly monsoon yet summer water scarcity due to storage/runoff dynamics.",
+    "Farmers apply 252 m³/season vs CropWat gross 213.46 m³ for bitter gourd on 0.16 ha (over-application linked to low WUE and leaching).",
+    "Government micro-irrigation subsidies cited 55–75% in discussion (policy lever, not village-specific outcome)."
+  ],
+  "alias_resolution_rules": [
+    {
+      "alias_text": "falling water tables / drying river / dam level dropping",
+      "canonical_variable_name": "g_annual_trend",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": "Combined surface and groundwater storage stress in dry season"
+    },
+    {
+      "alias_text": "crop water requirement / irrigation requirement",
+      "canonical_variable_name": "irrigation_demand",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": null
+    },
+    {
+      "alias_text": "ETo / reference evapotranspiration",
+      "canonical_variable_name": "et_annual_avg",
+      "resolution_method": "alias_table_match",
+      "resolution_confidence": "high",
+      "notes": null
+    },
+    {
+      "alias_text": "electrical conductivity EC soil",
+      "canonical_variable_name": "salinity_level",
+      "resolution_method": "exact_canonical_match",
+      "resolution_confidence": "high",
+      "notes": "medium=soil"
+    }
+  ],
+  "mapping_notes": "Extension service access is a new variable (no taxonomy match). Rainwater harvesting is encoded as NEW_rainwater_harvesting_coverage with low value implied by ~90% loss narrative. Village name appears as Ransai/Ransia in different sections of the PDF; geography refers to one study site. Verification: mechanism_blocks stressor_scope set to mixed where blocks combine only within-stressor edges with cross-stressor edges (rainfall_storage_irrigation_pressure, pumping_depletion_yield_gap); e7 is_cross_stressor false because from_cluster_family is mixed (per extraction rule: cross-stressor flag when both endpoints are non-mixed, non-unknown families).",
+  "limitations": "Qualitative causal claims are triangulated but not econometrically identified; CropWat results are for representative crop schedules; some policy examples are from other states cited for intervention design.",
+  "important_variables": [
+    {
+      "variable_name": "irrigation_demand",
+      "significance": "CropWat quantifies large gap between effective rainfall and irrigation requirement for the vegetable season, anchoring dry-season scarcity for horticulture.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_water_use_efficiency",
+      "significance": "Furrow efficiency 70% and measured over-irrigation versus model gross requirement explain water waste and nutrient leaching narrative.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_rainwater_harvesting_coverage",
+      "significance": "~90% rainfall loss from lack of harvesting/storage is central to why high annual rainfall does not buffer dry-season irrigation stress.",
+      "evidence_strength": "moderate",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "NEW_micro_irrigation_adoption",
+      "significance": "Non-adoption of drip/sprinkler is the key behavioral/technology node linking cultural, credit, land, and extension barriers to inefficient irrigation.",
+      "evidence_strength": "strong",
+      "recommendation": "existing_taxonomy"
+    },
+    {
+      "variable_name": "crop_yield_trend",
+      "significance": "Reported bitter gourd yield gap motivates the water-management intervention framing.",
+      "evidence_strength": "moderate",
+      "recommendation": "existing_taxonomy"
+    }
+  ],
+  "important_variables_narrative": "The study’s quantitative spine is CropWat-based irrigation demand versus effective rainfall for horticultural crops, combined with measured over-application under furrow irrigation and low system efficiency. Qualitative evidence stresses missing rainwater storage, fragmented holdings, credit exclusion, and weak extension as barriers to micro-irrigation. Together these explain persistent dry-season scarcity and groundwater/storage stress despite a humid annual rainfall regime, and the observed yield gap for bitter gourd."
+}
